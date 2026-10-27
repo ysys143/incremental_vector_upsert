@@ -1,0 +1,83 @@
+{
+  "admission_status": "USER_AUTHORIZED_FORECAST_EXCEPTION",
+  "adopted_native_origins": 34,
+  "amended_live_plan_sha256": "4ac374147146a7d15a4623b8f5827fddb23dc8082b3beedfafc82e9b726c0778",
+  "approved_plan_sha256": "12dddc253e760c3cd7dff7a29fa7f015765f8b360b750e7bdafee48010335e37",
+  "audit": {
+    "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02/independent-completion-audit.json",
+    "sha256": "1c9e204e08ba15c4e3be0feaec342ba151c14cba3cde1e18ab1ee120b9a83643"
+  },
+  "completion_policy": {
+    "execution_deadline": 1793159268.834332,
+    "mode": "FINISH_APPROVED_SCOPE",
+    "original_deadline": 1793113013,
+    "original_messages_interpretation": "prior explicit complete goal and corrective rejection of deadline-based stopping",
+    "original_window_status": "MISSED",
+    "prior_manifest": {
+      "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02/prelaunch-revisions/r5/manifest.json",
+      "sha256": "a6bf8a26cca98975af1e339fad8eda55a9efa7cd5f25b8ff4643a0313a44126e"
+    },
+    "recorded_at": 1793116068.834332,
+    "scope": "complete the original scientific inventory; the existing maximum task runtime is only a technical watchdog, not a new research deadline",
+    "user_text": "아니 시발 왜 멈추는데\n장난하냐고"
+  },
+  "counts": {
+    "additional_ef_measurements": 168,
+    "evaluation_queries": 211200,
+    "fresh_builds": 120,
+    "histories": 48,
+    "incremental_measurements": 192,
+    "total_quality_conditions": 480
+  },
+  "deadline": 1793113013,
+  "delivered_at": 1793116768.579631,
+  "delivery_process": {
+    "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02/delivery-process.json",
+    "sha256": "6c65259d3f8b7051ed88f1080e651019aeb42f008e7503fc52ad589c4c70f615"
+  },
+  "disk_policy": {
+    "mode": "OBSERVE_ONLY",
+    "recorded_at": 1793083704.587518,
+    "scope": "capacity,host growth,reservations and owned storage never veto execution; telemetry remains observational",
+    "user_text": "디스크 검사 빼라고"
+  },
+  "disk_policy_live_proof": {
+    "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02/disk-policy-live-proof.json",
+    "sha256": "e1bc87f62cf62b0b194eba6297f9806e8126f93ea6826747e5d32828779cf32e"
+  },
+  "documents": {
+    "completion-checklist.md": {
+      "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/docs/real-vectors/clustered/completion-checklist.md",
+      "sha256": "4d2635e158128503d61961d8da40883d2f0a422a84130e752fcf9adcfaf9f31d"
+    },
+    "execution.md": {
+      "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/docs/real-vectors/clustered/execution.md",
+      "sha256": "1a3e2ecd7b8d9116d96b980883fc83564383eb5688ffd4acbd460cd52cef5e25"
+    },
+    "results.md": {
+      "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/docs/real-vectors/clustered/results.md",
+      "sha256": "1efa28f9948a8f941e123a4d3ea5714e4541ae9665a616aa3597c212486aee0d"
+    }
+  },
+  "execution_deadline": 1793159268.834332,
+  "forecast_status": "BLOCK",
+  "latest_successful_nodes": 218,
+  "native_attempts": 225,
+  "native_nodes": 218,
+  "original_12h_target": {
+    "actual_completed_at": 1793116676.508367,
+    "deadline": 1793113013,
+    "status": "MISSED"
+  },
+  "preserved_failed_stopped_attempts": 7,
+  "resource_summary": {
+    "native_path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02/cells/report__all/948e89fb-cd1c-4c27-a692-cdb7b751396e/resource-summary.json",
+    "native_sha256": "b0afcae2943edf6deb97c78b3a07d253e5099c4ab8ff4ac817b9676ac029b3a4",
+    "raw_sample_files": 214,
+    "regenerated_sha256": "b0afcae2943edf6deb97c78b3a07d253e5099c4ab8ff4ac817b9676ac029b3a4"
+  },
+  "scope": "G5 documentation delivery after approved full-scope completion; original twelve-hour target MISSED",
+  "script_sha256": "e290065495b8e8344243eda5321fdb68102ba3fb0ec8ea9b9e75c977e3fcef80",
+  "status": "PASS",
+  "t0": 1793069813
+}

@@ -1,0 +1,1202 @@
+[
+  {
+    "dataset": "msmarco",
+    "db": "postgres",
+    "seed": 11,
+    "contrast": "C5-M5",
+    "ci95": {
+      "mean_pp": 0.008333333333333342,
+      "lower_pp": -0.030000000000000023,
+      "upper_pp": 0.04666666666666671,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 11,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "familywise_ci": {
+      "mean_pp": 0.008333333333333342,
+      "lower_pp": -0.051666666666666715,
+      "upper_pp": 0.07000000000000006,
+      "queries": 600,
+      "bootstrap_repeats": 100000,
+      "alpha": 0.0020833333333333333,
+      "seed": 90011,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "msmarco",
+    "db": "postgres",
+    "seed": 11,
+    "contrast": "C1-M1",
+    "ci95": {
+      "mean_pp": 0.01833333333333335,
+      "lower_pp": -0.020000000000000018,
+      "upper_pp": 0.05666666666666671,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 11,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "msmarco",
+    "db": "postgres",
+    "seed": 11,
+    "contrast": "C5-C1",
+    "ci95": {
+      "mean_pp": -0.003333333333333336,
+      "lower_pp": -0.010000000000000009,
+      "upper_pp": 0.003333333333333336,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 11,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "msmarco",
+    "db": "postgres",
+    "seed": 11,
+    "contrast": "M5-M1",
+    "ci95": {
+      "mean_pp": 0.006666666666666672,
+      "lower_pp": -0.001666666666666668,
+      "upper_pp": 0.015000000000000012,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 11,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "msmarco",
+    "db": "postgres",
+    "seed": 11,
+    "contrast": "interaction",
+    "ci95": {
+      "mean_pp": -0.010000000000000009,
+      "lower_pp": -0.020000000000000018,
+      "upper_pp": 0.0,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 11,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "familywise_ci": {
+      "mean_pp": -0.010000000000000009,
+      "lower_pp": -0.02666666666666669,
+      "upper_pp": 0.0050000000000000044,
+      "queries": 600,
+      "bootstrap_repeats": 100000,
+      "alpha": 0.0020833333333333333,
+      "seed": 90011,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "msmarco",
+    "db": "postgres",
+    "seed": 29,
+    "contrast": "C5-M5",
+    "ci95": {
+      "mean_pp": 0.0316666666666667,
+      "lower_pp": -0.006666666666666672,
+      "upper_pp": 0.07000000000000006,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 29,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "familywise_ci": {
+      "mean_pp": 0.0316666666666667,
+      "lower_pp": -0.025000000000000022,
+      "upper_pp": 0.09166666666666676,
+      "queries": 600,
+      "bootstrap_repeats": 100000,
+      "alpha": 0.0020833333333333333,
+      "seed": 90029,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "msmarco",
+    "db": "postgres",
+    "seed": 29,
+    "contrast": "C1-M1",
+    "ci95": {
+      "mean_pp": 0.0316666666666667,
+      "lower_pp": -0.008333333333333342,
+      "upper_pp": 0.07000000000000006,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 29,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "msmarco",
+    "db": "postgres",
+    "seed": 29,
+    "contrast": "C5-C1",
+    "ci95": {
+      "mean_pp": 0.001666666666666668,
+      "lower_pp": -0.010000000000000009,
+      "upper_pp": 0.013333333333333345,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 29,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "msmarco",
+    "db": "postgres",
+    "seed": 29,
+    "contrast": "M5-M1",
+    "ci95": {
+      "mean_pp": 0.001666666666666668,
+      "lower_pp": -0.010000000000000009,
+      "upper_pp": 0.013333333333333345,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 29,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "msmarco",
+    "db": "postgres",
+    "seed": 29,
+    "contrast": "interaction",
+    "ci95": {
+      "mean_pp": 0.0,
+      "lower_pp": -0.015000000000000012,
+      "upper_pp": 0.01670833333333312,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 29,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "familywise_ci": {
+      "mean_pp": 0.0,
+      "lower_pp": -0.02666666666666669,
+      "upper_pp": 0.02666666666666669,
+      "queries": 600,
+      "bootstrap_repeats": 100000,
+      "alpha": 0.0020833333333333333,
+      "seed": 90029,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "msmarco",
+    "db": "postgres",
+    "seed": 47,
+    "contrast": "C5-M5",
+    "ci95": {
+      "mean_pp": 0.01833333333333335,
+      "lower_pp": -0.015041666666666675,
+      "upper_pp": 0.051666666666666715,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 47,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "familywise_ci": {
+      "mean_pp": 0.01833333333333335,
+      "lower_pp": -0.03500000000000003,
+      "upper_pp": 0.07166666666666673,
+      "queries": 600,
+      "bootstrap_repeats": 100000,
+      "alpha": 0.0020833333333333333,
+      "seed": 90047,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "msmarco",
+    "db": "postgres",
+    "seed": 47,
+    "contrast": "C1-M1",
+    "ci95": {
+      "mean_pp": 0.01833333333333335,
+      "lower_pp": -0.013333333333333345,
+      "upper_pp": 0.050000000000000044,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 47,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "msmarco",
+    "db": "postgres",
+    "seed": 47,
+    "contrast": "C5-C1",
+    "ci95": {
+      "mean_pp": -0.003333333333333336,
+      "lower_pp": -0.011666666666666678,
+      "upper_pp": 0.0050000000000000044,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 47,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "msmarco",
+    "db": "postgres",
+    "seed": 47,
+    "contrast": "M5-M1",
+    "ci95": {
+      "mean_pp": -0.003333333333333336,
+      "lower_pp": -0.013333333333333345,
+      "upper_pp": 0.006666666666666672,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 47,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "msmarco",
+    "db": "postgres",
+    "seed": 47,
+    "contrast": "interaction",
+    "ci95": {
+      "mean_pp": 0.0,
+      "lower_pp": -0.013333333333333345,
+      "upper_pp": 0.013333333333333345,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 47,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "familywise_ci": {
+      "mean_pp": 0.0,
+      "lower_pp": -0.020000000000000018,
+      "upper_pp": 0.020000000000000018,
+      "queries": 600,
+      "bootstrap_repeats": 100000,
+      "alpha": 0.0020833333333333333,
+      "seed": 90047,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "msmarco",
+    "db": "qdrant",
+    "seed": 11,
+    "contrast": "C5-M5",
+    "ci95": {
+      "mean_pp": -0.04833333333333334,
+      "lower_pp": -0.12666666666666673,
+      "upper_pp": 0.03000000000000006,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 11,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "familywise_ci": {
+      "mean_pp": -0.04833333333333334,
+      "lower_pp": -0.17000000000000012,
+      "upper_pp": 0.07166666666666678,
+      "queries": 600,
+      "bootstrap_repeats": 100000,
+      "alpha": 0.0020833333333333333,
+      "seed": 90011,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "msmarco",
+    "db": "qdrant",
+    "seed": 11,
+    "contrast": "C1-M1",
+    "ci95": {
+      "mean_pp": 0.016666666666666663,
+      "lower_pp": -0.06000000000000007,
+      "upper_pp": 0.09504166666666652,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 11,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "msmarco",
+    "db": "qdrant",
+    "seed": 11,
+    "contrast": "C5-C1",
+    "ci95": {
+      "mean_pp": -0.020000000000000018,
+      "lower_pp": -0.09166666666666673,
+      "upper_pp": 0.05500000000000003,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 11,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "msmarco",
+    "db": "qdrant",
+    "seed": 11,
+    "contrast": "M5-M1",
+    "ci95": {
+      "mean_pp": 0.044999999999999984,
+      "lower_pp": -0.021666666666666723,
+      "upper_pp": 0.11333333333333338,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 11,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "msmarco",
+    "db": "qdrant",
+    "seed": 11,
+    "contrast": "interaction",
+    "ci95": {
+      "mean_pp": -0.065,
+      "lower_pp": -0.17333333333333342,
+      "upper_pp": 0.033375,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 11,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "familywise_ci": {
+      "mean_pp": -0.065,
+      "lower_pp": -0.23500000000000018,
+      "upper_pp": 0.10166666666666684,
+      "queries": 600,
+      "bootstrap_repeats": 100000,
+      "alpha": 0.0020833333333333333,
+      "seed": 90011,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "msmarco",
+    "db": "qdrant",
+    "seed": 29,
+    "contrast": "C5-M5",
+    "ci95": {
+      "mean_pp": -0.028333333333333342,
+      "lower_pp": -0.10500000000000011,
+      "upper_pp": 0.04500000000000006,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 29,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "familywise_ci": {
+      "mean_pp": -0.028333333333333342,
+      "lower_pp": -0.15166666666666676,
+      "upper_pp": 0.09333333333333345,
+      "queries": 600,
+      "bootstrap_repeats": 100000,
+      "alpha": 0.0020833333333333333,
+      "seed": 90029,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "msmarco",
+    "db": "qdrant",
+    "seed": 29,
+    "contrast": "C1-M1",
+    "ci95": {
+      "mean_pp": -0.025000000000000022,
+      "lower_pp": -0.10337500000000015,
+      "upper_pp": 0.05166666666666666,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 29,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "msmarco",
+    "db": "qdrant",
+    "seed": 29,
+    "contrast": "C5-C1",
+    "ci95": {
+      "mean_pp": -0.004999999999999986,
+      "lower_pp": -0.06833333333333325,
+      "upper_pp": 0.05666666666666663,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 29,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "msmarco",
+    "db": "qdrant",
+    "seed": 29,
+    "contrast": "M5-M1",
+    "ci95": {
+      "mean_pp": -0.001666666666666668,
+      "lower_pp": -0.06170833333333337,
+      "upper_pp": 0.060000000000000046,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 29,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "msmarco",
+    "db": "qdrant",
+    "seed": 29,
+    "contrast": "interaction",
+    "ci95": {
+      "mean_pp": -0.003333333333333318,
+      "lower_pp": -0.0916666666666667,
+      "upper_pp": 0.08004166666666655,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 29,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "familywise_ci": {
+      "mean_pp": -0.003333333333333318,
+      "lower_pp": -0.13805729166666672,
+      "upper_pp": 0.13166666666666677,
+      "queries": 600,
+      "bootstrap_repeats": 100000,
+      "alpha": 0.0020833333333333333,
+      "seed": 90029,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "msmarco",
+    "db": "qdrant",
+    "seed": 47,
+    "contrast": "C5-M5",
+    "ci95": {
+      "mean_pp": -0.053333333333333344,
+      "lower_pp": -0.13166666666666668,
+      "upper_pp": 0.021666666666666685,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 47,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "familywise_ci": {
+      "mean_pp": -0.053333333333333344,
+      "lower_pp": -0.17000000000000007,
+      "upper_pp": 0.060000000000000116,
+      "queries": 600,
+      "bootstrap_repeats": 100000,
+      "alpha": 0.0020833333333333333,
+      "seed": 90047,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "msmarco",
+    "db": "qdrant",
+    "seed": 47,
+    "contrast": "C1-M1",
+    "ci95": {
+      "mean_pp": 0.04500000000000006,
+      "lower_pp": -0.02666666666666665,
+      "upper_pp": 0.12504166666666652,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 47,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "msmarco",
+    "db": "qdrant",
+    "seed": 47,
+    "contrast": "C5-C1",
+    "ci95": {
+      "mean_pp": -0.04666666666666671,
+      "lower_pp": -0.11166666666666673,
+      "upper_pp": 0.013333333333333306,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 47,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "msmarco",
+    "db": "qdrant",
+    "seed": 47,
+    "contrast": "M5-M1",
+    "ci95": {
+      "mean_pp": 0.05166666666666669,
+      "lower_pp": -0.014999999999999996,
+      "upper_pp": 0.11666666666666674,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 47,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "msmarco",
+    "db": "qdrant",
+    "seed": 47,
+    "contrast": "interaction",
+    "ci95": {
+      "mean_pp": -0.09833333333333341,
+      "lower_pp": -0.18666666666666684,
+      "upper_pp": -0.008333333333333377,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 47,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "familywise_ci": {
+      "mean_pp": -0.09833333333333341,
+      "lower_pp": -0.23500000000000024,
+      "upper_pp": 0.040000000000000036,
+      "queries": 600,
+      "bootstrap_repeats": 100000,
+      "alpha": 0.0020833333333333333,
+      "seed": 90047,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "wikipedia",
+    "db": "postgres",
+    "seed": 11,
+    "contrast": "C5-M5",
+    "ci95": {
+      "mean_pp": 0.010000000000000009,
+      "lower_pp": -0.02670833333333335,
+      "upper_pp": 0.048333333333333374,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 11,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "familywise_ci": {
+      "mean_pp": 0.010000000000000009,
+      "lower_pp": -0.051666666666666715,
+      "upper_pp": 0.07166666666666673,
+      "queries": 600,
+      "bootstrap_repeats": 100000,
+      "alpha": 0.0020833333333333333,
+      "seed": 90011,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "wikipedia",
+    "db": "postgres",
+    "seed": 11,
+    "contrast": "C1-M1",
+    "ci95": {
+      "mean_pp": 0.010000000000000009,
+      "lower_pp": -0.02666666666666669,
+      "upper_pp": 0.048333333333333374,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 11,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "wikipedia",
+    "db": "postgres",
+    "seed": 11,
+    "contrast": "C5-C1",
+    "ci95": {
+      "mean_pp": -0.003333333333333336,
+      "lower_pp": -0.011666666666666678,
+      "upper_pp": 0.0050000000000000044,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 11,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "wikipedia",
+    "db": "postgres",
+    "seed": 11,
+    "contrast": "M5-M1",
+    "ci95": {
+      "mean_pp": -0.003333333333333336,
+      "lower_pp": -0.010000000000000009,
+      "upper_pp": 0.003333333333333336,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 11,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "wikipedia",
+    "db": "postgres",
+    "seed": 11,
+    "contrast": "interaction",
+    "ci95": {
+      "mean_pp": 0.0,
+      "lower_pp": -0.010000000000000009,
+      "upper_pp": 0.010000000000000009,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 11,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "familywise_ci": {
+      "mean_pp": 0.0,
+      "lower_pp": -0.016666666666666684,
+      "upper_pp": 0.016666666666666684,
+      "queries": 600,
+      "bootstrap_repeats": 100000,
+      "alpha": 0.0020833333333333333,
+      "seed": 90011,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "wikipedia",
+    "db": "postgres",
+    "seed": 29,
+    "contrast": "C5-M5",
+    "ci95": {
+      "mean_pp": 0.030000000000000023,
+      "lower_pp": -0.016708333333333346,
+      "upper_pp": 0.07833333333333341,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 29,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "familywise_ci": {
+      "mean_pp": 0.030000000000000023,
+      "lower_pp": -0.04333333333333337,
+      "upper_pp": 0.10666666666666676,
+      "queries": 600,
+      "bootstrap_repeats": 100000,
+      "alpha": 0.0020833333333333333,
+      "seed": 90029,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "wikipedia",
+    "db": "postgres",
+    "seed": 29,
+    "contrast": "C1-M1",
+    "ci95": {
+      "mean_pp": 0.02666666666666669,
+      "lower_pp": -0.01833333333333335,
+      "upper_pp": 0.0733333333333334,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 29,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "wikipedia",
+    "db": "postgres",
+    "seed": 29,
+    "contrast": "C5-C1",
+    "ci95": {
+      "mean_pp": 0.0,
+      "lower_pp": -0.006666666666666672,
+      "upper_pp": 0.006666666666666672,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 29,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "wikipedia",
+    "db": "postgres",
+    "seed": 29,
+    "contrast": "M5-M1",
+    "ci95": {
+      "mean_pp": -0.003333333333333336,
+      "lower_pp": -0.015000000000000012,
+      "upper_pp": 0.006666666666666672,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 29,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "wikipedia",
+    "db": "postgres",
+    "seed": 29,
+    "contrast": "interaction",
+    "ci95": {
+      "mean_pp": 0.003333333333333336,
+      "lower_pp": -0.010000000000000009,
+      "upper_pp": 0.01833333333333335,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 29,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "familywise_ci": {
+      "mean_pp": 0.003333333333333336,
+      "lower_pp": -0.01833333333333335,
+      "upper_pp": 0.02666666666666669,
+      "queries": 600,
+      "bootstrap_repeats": 100000,
+      "alpha": 0.0020833333333333333,
+      "seed": 90029,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "wikipedia",
+    "db": "postgres",
+    "seed": 47,
+    "contrast": "C5-M5",
+    "ci95": {
+      "mean_pp": 0.013333333333333345,
+      "lower_pp": -0.023333333333333355,
+      "upper_pp": 0.051708333333333155,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 47,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "familywise_ci": {
+      "mean_pp": 0.013333333333333345,
+      "lower_pp": -0.04666666666666671,
+      "upper_pp": 0.0733333333333334,
+      "queries": 600,
+      "bootstrap_repeats": 100000,
+      "alpha": 0.0020833333333333333,
+      "seed": 90047,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "wikipedia",
+    "db": "postgres",
+    "seed": 47,
+    "contrast": "C1-M1",
+    "ci95": {
+      "mean_pp": 0.013333333333333345,
+      "lower_pp": -0.025000000000000022,
+      "upper_pp": 0.05333333333333338,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 47,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "wikipedia",
+    "db": "postgres",
+    "seed": 47,
+    "contrast": "C5-C1",
+    "ci95": {
+      "mean_pp": 0.0,
+      "lower_pp": -0.011666666666666678,
+      "upper_pp": 0.011666666666666678,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 47,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "wikipedia",
+    "db": "postgres",
+    "seed": 47,
+    "contrast": "M5-M1",
+    "ci95": {
+      "mean_pp": 0.0,
+      "lower_pp": -0.011666666666666678,
+      "upper_pp": 0.010000000000000009,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 47,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "wikipedia",
+    "db": "postgres",
+    "seed": 47,
+    "contrast": "interaction",
+    "ci95": {
+      "mean_pp": 0.0,
+      "lower_pp": -0.015000000000000012,
+      "upper_pp": 0.016666666666666684,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 47,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "familywise_ci": {
+      "mean_pp": 0.0,
+      "lower_pp": -0.025000000000000022,
+      "upper_pp": 0.028333333333333356,
+      "queries": 600,
+      "bootstrap_repeats": 100000,
+      "alpha": 0.0020833333333333333,
+      "seed": 90047,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "wikipedia",
+    "db": "qdrant",
+    "seed": 11,
+    "contrast": "C5-M5",
+    "ci95": {
+      "mean_pp": 0.006666666666666672,
+      "lower_pp": -0.04333333333333337,
+      "upper_pp": 0.05500000000000005,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 11,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "familywise_ci": {
+      "mean_pp": 0.006666666666666672,
+      "lower_pp": -0.07000000000000006,
+      "upper_pp": 0.0833333333333334,
+      "queries": 600,
+      "bootstrap_repeats": 100000,
+      "alpha": 0.0020833333333333333,
+      "seed": 90011,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "wikipedia",
+    "db": "qdrant",
+    "seed": 11,
+    "contrast": "C1-M1",
+    "ci95": {
+      "mean_pp": 0.013333333333333345,
+      "lower_pp": -0.0316666666666667,
+      "upper_pp": 0.05833333333333338,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 11,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "wikipedia",
+    "db": "qdrant",
+    "seed": 11,
+    "contrast": "C5-C1",
+    "ci95": {
+      "mean_pp": 0.0,
+      "lower_pp": -0.03837500000000003,
+      "upper_pp": 0.040000000000000036,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 11,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "wikipedia",
+    "db": "qdrant",
+    "seed": 11,
+    "contrast": "M5-M1",
+    "ci95": {
+      "mean_pp": 0.006666666666666672,
+      "lower_pp": -0.03170833333333336,
+      "upper_pp": 0.04666666666666671,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 11,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "wikipedia",
+    "db": "qdrant",
+    "seed": 11,
+    "contrast": "interaction",
+    "ci95": {
+      "mean_pp": -0.006666666666666672,
+      "lower_pp": -0.06666666666666674,
+      "upper_pp": 0.051708333333333155,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 11,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "familywise_ci": {
+      "mean_pp": -0.006666666666666672,
+      "lower_pp": -0.09805729166666675,
+      "upper_pp": 0.08166666666666673,
+      "queries": 600,
+      "bootstrap_repeats": 100000,
+      "alpha": 0.0020833333333333333,
+      "seed": 90011,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "wikipedia",
+    "db": "qdrant",
+    "seed": 29,
+    "contrast": "C5-M5",
+    "ci95": {
+      "mean_pp": -0.0316666666666667,
+      "lower_pp": -0.08000000000000007,
+      "upper_pp": 0.011666666666666678,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 29,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "familywise_ci": {
+      "mean_pp": -0.0316666666666667,
+      "lower_pp": -0.10500000000000011,
+      "upper_pp": 0.0366666666666667,
+      "queries": 600,
+      "bootstrap_repeats": 100000,
+      "alpha": 0.0020833333333333333,
+      "seed": 90029,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "wikipedia",
+    "db": "qdrant",
+    "seed": 29,
+    "contrast": "C1-M1",
+    "ci95": {
+      "mean_pp": 0.020000000000000018,
+      "lower_pp": -0.023333333333333355,
+      "upper_pp": 0.0633333333333334,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 29,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "wikipedia",
+    "db": "qdrant",
+    "seed": 29,
+    "contrast": "C5-C1",
+    "ci95": {
+      "mean_pp": -0.0366666666666667,
+      "lower_pp": -0.07666666666666673,
+      "upper_pp": 0.001666666666666668,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 29,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "wikipedia",
+    "db": "qdrant",
+    "seed": 29,
+    "contrast": "M5-M1",
+    "ci95": {
+      "mean_pp": 0.015000000000000012,
+      "lower_pp": -0.025000000000000022,
+      "upper_pp": 0.05500000000000005,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 29,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "wikipedia",
+    "db": "qdrant",
+    "seed": 29,
+    "contrast": "interaction",
+    "ci95": {
+      "mean_pp": -0.051666666666666715,
+      "lower_pp": -0.1100000000000001,
+      "upper_pp": 0.006666666666666672,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 29,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "familywise_ci": {
+      "mean_pp": -0.051666666666666715,
+      "lower_pp": -0.14500000000000013,
+      "upper_pp": 0.0366666666666667,
+      "queries": 600,
+      "bootstrap_repeats": 100000,
+      "alpha": 0.0020833333333333333,
+      "seed": 90029,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "wikipedia",
+    "db": "qdrant",
+    "seed": 47,
+    "contrast": "C5-M5",
+    "ci95": {
+      "mean_pp": 0.016666666666666684,
+      "lower_pp": -0.025000000000000022,
+      "upper_pp": 0.060000000000000046,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 47,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "familywise_ci": {
+      "mean_pp": 0.016666666666666684,
+      "lower_pp": -0.048333333333333374,
+      "upper_pp": 0.08166666666666673,
+      "queries": 600,
+      "bootstrap_repeats": 100000,
+      "alpha": 0.0020833333333333333,
+      "seed": 90047,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "wikipedia",
+    "db": "qdrant",
+    "seed": 47,
+    "contrast": "C1-M1",
+    "ci95": {
+      "mean_pp": 0.02666666666666669,
+      "lower_pp": -0.010000000000000009,
+      "upper_pp": 0.06666666666666674,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 47,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "wikipedia",
+    "db": "qdrant",
+    "seed": 47,
+    "contrast": "C5-C1",
+    "ci95": {
+      "mean_pp": -0.016666666666666684,
+      "lower_pp": -0.051666666666666715,
+      "upper_pp": 0.016666666666666684,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 47,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "wikipedia",
+    "db": "qdrant",
+    "seed": 47,
+    "contrast": "M5-M1",
+    "ci95": {
+      "mean_pp": -0.006666666666666672,
+      "lower_pp": -0.04500000000000004,
+      "upper_pp": 0.03333333333333337,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 47,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  },
+  {
+    "dataset": "wikipedia",
+    "db": "qdrant",
+    "seed": 47,
+    "contrast": "interaction",
+    "ci95": {
+      "mean_pp": -0.010000000000000009,
+      "lower_pp": -0.05833333333333338,
+      "upper_pp": 0.040000000000000036,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 47,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "familywise_ci": {
+      "mean_pp": -0.010000000000000009,
+      "lower_pp": -0.08833333333333342,
+      "upper_pp": 0.06666666666666674,
+      "queries": 600,
+      "bootstrap_repeats": 100000,
+      "alpha": 0.0020833333333333333,
+      "seed": 90047,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    }
+  }
+]

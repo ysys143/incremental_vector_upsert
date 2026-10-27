@@ -1,0 +1,1671 @@
+{
+  "schema": "planning-inventory-v1",
+  "status": "PROPOSAL_NOT_EXECUTABLE",
+  "runner_config": false,
+  "time_limit_seconds": 43200,
+  "time_limit_confirmed": true,
+  "execution_authorized": false,
+  "datasets": [
+    "msmarco",
+    "wikipedia"
+  ],
+  "databases": [
+    "postgres",
+    "qdrant"
+  ],
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "initial_count": 10000,
+  "new_count": 10000,
+  "cluster_count": 5,
+  "cluster_size_policy": "natural; M5 boundaries match C5",
+  "queries": {
+    "intermediate": 200,
+    "final": 600
+  },
+  "expected": {
+    "strata": 12,
+    "initial_snapshots": 12,
+    "histories": 48,
+    "incremental_measurements": 192,
+    "fresh_builds": 120,
+    "additional_ef_measurements": 168,
+    "total_quality_conditions": 480,
+    "evaluation_queries": 211200
+  },
+  "histories": [
+    {
+      "id": "msmarco-postgres-s11-M1",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 11,
+      "initial_snapshot_group": "msmarco-postgres-s11",
+      "name": "M1",
+      "order": "mixed",
+      "waves": 1,
+      "observed_steps": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "msmarco-postgres-s11-M5",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 11,
+      "initial_snapshot_group": "msmarco-postgres-s11",
+      "name": "M5",
+      "order": "mixed",
+      "waves": 5,
+      "observed_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "msmarco-postgres-s11-C1",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 11,
+      "initial_snapshot_group": "msmarco-postgres-s11",
+      "name": "C1",
+      "order": "clustered",
+      "waves": 1,
+      "observed_steps": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "msmarco-postgres-s11-C5",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 11,
+      "initial_snapshot_group": "msmarco-postgres-s11",
+      "name": "C5",
+      "order": "clustered",
+      "waves": 5,
+      "observed_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "msmarco-postgres-s29-M1",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 29,
+      "initial_snapshot_group": "msmarco-postgres-s29",
+      "name": "M1",
+      "order": "mixed",
+      "waves": 1,
+      "observed_steps": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "msmarco-postgres-s29-M5",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 29,
+      "initial_snapshot_group": "msmarco-postgres-s29",
+      "name": "M5",
+      "order": "mixed",
+      "waves": 5,
+      "observed_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "msmarco-postgres-s29-C1",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 29,
+      "initial_snapshot_group": "msmarco-postgres-s29",
+      "name": "C1",
+      "order": "clustered",
+      "waves": 1,
+      "observed_steps": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "msmarco-postgres-s29-C5",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 29,
+      "initial_snapshot_group": "msmarco-postgres-s29",
+      "name": "C5",
+      "order": "clustered",
+      "waves": 5,
+      "observed_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "msmarco-postgres-s47-M1",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 47,
+      "initial_snapshot_group": "msmarco-postgres-s47",
+      "name": "M1",
+      "order": "mixed",
+      "waves": 1,
+      "observed_steps": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "msmarco-postgres-s47-M5",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 47,
+      "initial_snapshot_group": "msmarco-postgres-s47",
+      "name": "M5",
+      "order": "mixed",
+      "waves": 5,
+      "observed_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "msmarco-postgres-s47-C1",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 47,
+      "initial_snapshot_group": "msmarco-postgres-s47",
+      "name": "C1",
+      "order": "clustered",
+      "waves": 1,
+      "observed_steps": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "msmarco-postgres-s47-C5",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 47,
+      "initial_snapshot_group": "msmarco-postgres-s47",
+      "name": "C5",
+      "order": "clustered",
+      "waves": 5,
+      "observed_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "msmarco-qdrant-s11-M1",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 11,
+      "initial_snapshot_group": "msmarco-qdrant-s11",
+      "name": "M1",
+      "order": "mixed",
+      "waves": 1,
+      "observed_steps": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "msmarco-qdrant-s11-M5",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 11,
+      "initial_snapshot_group": "msmarco-qdrant-s11",
+      "name": "M5",
+      "order": "mixed",
+      "waves": 5,
+      "observed_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "msmarco-qdrant-s11-C1",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 11,
+      "initial_snapshot_group": "msmarco-qdrant-s11",
+      "name": "C1",
+      "order": "clustered",
+      "waves": 1,
+      "observed_steps": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "msmarco-qdrant-s11-C5",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 11,
+      "initial_snapshot_group": "msmarco-qdrant-s11",
+      "name": "C5",
+      "order": "clustered",
+      "waves": 5,
+      "observed_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "msmarco-qdrant-s29-M1",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 29,
+      "initial_snapshot_group": "msmarco-qdrant-s29",
+      "name": "M1",
+      "order": "mixed",
+      "waves": 1,
+      "observed_steps": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "msmarco-qdrant-s29-M5",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 29,
+      "initial_snapshot_group": "msmarco-qdrant-s29",
+      "name": "M5",
+      "order": "mixed",
+      "waves": 5,
+      "observed_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "msmarco-qdrant-s29-C1",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 29,
+      "initial_snapshot_group": "msmarco-qdrant-s29",
+      "name": "C1",
+      "order": "clustered",
+      "waves": 1,
+      "observed_steps": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "msmarco-qdrant-s29-C5",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 29,
+      "initial_snapshot_group": "msmarco-qdrant-s29",
+      "name": "C5",
+      "order": "clustered",
+      "waves": 5,
+      "observed_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "msmarco-qdrant-s47-M1",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 47,
+      "initial_snapshot_group": "msmarco-qdrant-s47",
+      "name": "M1",
+      "order": "mixed",
+      "waves": 1,
+      "observed_steps": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "msmarco-qdrant-s47-M5",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 47,
+      "initial_snapshot_group": "msmarco-qdrant-s47",
+      "name": "M5",
+      "order": "mixed",
+      "waves": 5,
+      "observed_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "msmarco-qdrant-s47-C1",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 47,
+      "initial_snapshot_group": "msmarco-qdrant-s47",
+      "name": "C1",
+      "order": "clustered",
+      "waves": 1,
+      "observed_steps": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "msmarco-qdrant-s47-C5",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 47,
+      "initial_snapshot_group": "msmarco-qdrant-s47",
+      "name": "C5",
+      "order": "clustered",
+      "waves": 5,
+      "observed_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "wikipedia-postgres-s11-M1",
+      "dataset": "wikipedia",
+      "db": "postgres",
+      "seed": 11,
+      "initial_snapshot_group": "wikipedia-postgres-s11",
+      "name": "M1",
+      "order": "mixed",
+      "waves": 1,
+      "observed_steps": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "wikipedia-postgres-s11-M5",
+      "dataset": "wikipedia",
+      "db": "postgres",
+      "seed": 11,
+      "initial_snapshot_group": "wikipedia-postgres-s11",
+      "name": "M5",
+      "order": "mixed",
+      "waves": 5,
+      "observed_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "wikipedia-postgres-s11-C1",
+      "dataset": "wikipedia",
+      "db": "postgres",
+      "seed": 11,
+      "initial_snapshot_group": "wikipedia-postgres-s11",
+      "name": "C1",
+      "order": "clustered",
+      "waves": 1,
+      "observed_steps": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "wikipedia-postgres-s11-C5",
+      "dataset": "wikipedia",
+      "db": "postgres",
+      "seed": 11,
+      "initial_snapshot_group": "wikipedia-postgres-s11",
+      "name": "C5",
+      "order": "clustered",
+      "waves": 5,
+      "observed_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "wikipedia-postgres-s29-M1",
+      "dataset": "wikipedia",
+      "db": "postgres",
+      "seed": 29,
+      "initial_snapshot_group": "wikipedia-postgres-s29",
+      "name": "M1",
+      "order": "mixed",
+      "waves": 1,
+      "observed_steps": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "wikipedia-postgres-s29-M5",
+      "dataset": "wikipedia",
+      "db": "postgres",
+      "seed": 29,
+      "initial_snapshot_group": "wikipedia-postgres-s29",
+      "name": "M5",
+      "order": "mixed",
+      "waves": 5,
+      "observed_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "wikipedia-postgres-s29-C1",
+      "dataset": "wikipedia",
+      "db": "postgres",
+      "seed": 29,
+      "initial_snapshot_group": "wikipedia-postgres-s29",
+      "name": "C1",
+      "order": "clustered",
+      "waves": 1,
+      "observed_steps": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "wikipedia-postgres-s29-C5",
+      "dataset": "wikipedia",
+      "db": "postgres",
+      "seed": 29,
+      "initial_snapshot_group": "wikipedia-postgres-s29",
+      "name": "C5",
+      "order": "clustered",
+      "waves": 5,
+      "observed_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "wikipedia-postgres-s47-M1",
+      "dataset": "wikipedia",
+      "db": "postgres",
+      "seed": 47,
+      "initial_snapshot_group": "wikipedia-postgres-s47",
+      "name": "M1",
+      "order": "mixed",
+      "waves": 1,
+      "observed_steps": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "wikipedia-postgres-s47-M5",
+      "dataset": "wikipedia",
+      "db": "postgres",
+      "seed": 47,
+      "initial_snapshot_group": "wikipedia-postgres-s47",
+      "name": "M5",
+      "order": "mixed",
+      "waves": 5,
+      "observed_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "wikipedia-postgres-s47-C1",
+      "dataset": "wikipedia",
+      "db": "postgres",
+      "seed": 47,
+      "initial_snapshot_group": "wikipedia-postgres-s47",
+      "name": "C1",
+      "order": "clustered",
+      "waves": 1,
+      "observed_steps": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "wikipedia-postgres-s47-C5",
+      "dataset": "wikipedia",
+      "db": "postgres",
+      "seed": 47,
+      "initial_snapshot_group": "wikipedia-postgres-s47",
+      "name": "C5",
+      "order": "clustered",
+      "waves": 5,
+      "observed_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "wikipedia-qdrant-s11-M1",
+      "dataset": "wikipedia",
+      "db": "qdrant",
+      "seed": 11,
+      "initial_snapshot_group": "wikipedia-qdrant-s11",
+      "name": "M1",
+      "order": "mixed",
+      "waves": 1,
+      "observed_steps": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "wikipedia-qdrant-s11-M5",
+      "dataset": "wikipedia",
+      "db": "qdrant",
+      "seed": 11,
+      "initial_snapshot_group": "wikipedia-qdrant-s11",
+      "name": "M5",
+      "order": "mixed",
+      "waves": 5,
+      "observed_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "wikipedia-qdrant-s11-C1",
+      "dataset": "wikipedia",
+      "db": "qdrant",
+      "seed": 11,
+      "initial_snapshot_group": "wikipedia-qdrant-s11",
+      "name": "C1",
+      "order": "clustered",
+      "waves": 1,
+      "observed_steps": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "wikipedia-qdrant-s11-C5",
+      "dataset": "wikipedia",
+      "db": "qdrant",
+      "seed": 11,
+      "initial_snapshot_group": "wikipedia-qdrant-s11",
+      "name": "C5",
+      "order": "clustered",
+      "waves": 5,
+      "observed_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "wikipedia-qdrant-s29-M1",
+      "dataset": "wikipedia",
+      "db": "qdrant",
+      "seed": 29,
+      "initial_snapshot_group": "wikipedia-qdrant-s29",
+      "name": "M1",
+      "order": "mixed",
+      "waves": 1,
+      "observed_steps": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "wikipedia-qdrant-s29-M5",
+      "dataset": "wikipedia",
+      "db": "qdrant",
+      "seed": 29,
+      "initial_snapshot_group": "wikipedia-qdrant-s29",
+      "name": "M5",
+      "order": "mixed",
+      "waves": 5,
+      "observed_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "wikipedia-qdrant-s29-C1",
+      "dataset": "wikipedia",
+      "db": "qdrant",
+      "seed": 29,
+      "initial_snapshot_group": "wikipedia-qdrant-s29",
+      "name": "C1",
+      "order": "clustered",
+      "waves": 1,
+      "observed_steps": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "wikipedia-qdrant-s29-C5",
+      "dataset": "wikipedia",
+      "db": "qdrant",
+      "seed": 29,
+      "initial_snapshot_group": "wikipedia-qdrant-s29",
+      "name": "C5",
+      "order": "clustered",
+      "waves": 5,
+      "observed_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "wikipedia-qdrant-s47-M1",
+      "dataset": "wikipedia",
+      "db": "qdrant",
+      "seed": 47,
+      "initial_snapshot_group": "wikipedia-qdrant-s47",
+      "name": "M1",
+      "order": "mixed",
+      "waves": 1,
+      "observed_steps": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "wikipedia-qdrant-s47-M5",
+      "dataset": "wikipedia",
+      "db": "qdrant",
+      "seed": 47,
+      "initial_snapshot_group": "wikipedia-qdrant-s47",
+      "name": "M5",
+      "order": "mixed",
+      "waves": 5,
+      "observed_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "wikipedia-qdrant-s47-C1",
+      "dataset": "wikipedia",
+      "db": "qdrant",
+      "seed": 47,
+      "initial_snapshot_group": "wikipedia-qdrant-s47",
+      "name": "C1",
+      "order": "clustered",
+      "waves": 1,
+      "observed_steps": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "wikipedia-qdrant-s47-C5",
+      "dataset": "wikipedia",
+      "db": "qdrant",
+      "seed": 47,
+      "initial_snapshot_group": "wikipedia-qdrant-s47",
+      "name": "C5",
+      "order": "clustered",
+      "waves": 5,
+      "observed_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "fresh_builds": [
+    {
+      "id": "msmarco-postgres-s11-initial-fresh-0",
+      "group": "msmarco-postgres-s11",
+      "state": "initial",
+      "repeat": 0,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-postgres-s11-initial-fresh-1",
+      "group": "msmarco-postgres-s11",
+      "state": "initial",
+      "repeat": 1,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-postgres-s11-initial-fresh-2",
+      "group": "msmarco-postgres-s11",
+      "state": "initial",
+      "repeat": 2,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-postgres-s11-final-fresh-0",
+      "group": "msmarco-postgres-s11",
+      "state": "final",
+      "repeat": 0,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-postgres-s11-final-fresh-1",
+      "group": "msmarco-postgres-s11",
+      "state": "final",
+      "repeat": 1,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-postgres-s11-final-fresh-2",
+      "group": "msmarco-postgres-s11",
+      "state": "final",
+      "repeat": 2,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-postgres-s11-M5-step2-fresh-0",
+      "group": "msmarco-postgres-s11",
+      "state": "M5:step2",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "msmarco-postgres-s11-M5-step4-fresh-0",
+      "group": "msmarco-postgres-s11",
+      "state": "M5:step4",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "msmarco-postgres-s11-C5-step2-fresh-0",
+      "group": "msmarco-postgres-s11",
+      "state": "C5:step2",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "msmarco-postgres-s11-C5-step4-fresh-0",
+      "group": "msmarco-postgres-s11",
+      "state": "C5:step4",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "msmarco-postgres-s29-initial-fresh-0",
+      "group": "msmarco-postgres-s29",
+      "state": "initial",
+      "repeat": 0,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-postgres-s29-initial-fresh-1",
+      "group": "msmarco-postgres-s29",
+      "state": "initial",
+      "repeat": 1,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-postgres-s29-initial-fresh-2",
+      "group": "msmarco-postgres-s29",
+      "state": "initial",
+      "repeat": 2,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-postgres-s29-final-fresh-0",
+      "group": "msmarco-postgres-s29",
+      "state": "final",
+      "repeat": 0,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-postgres-s29-final-fresh-1",
+      "group": "msmarco-postgres-s29",
+      "state": "final",
+      "repeat": 1,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-postgres-s29-final-fresh-2",
+      "group": "msmarco-postgres-s29",
+      "state": "final",
+      "repeat": 2,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-postgres-s29-M5-step2-fresh-0",
+      "group": "msmarco-postgres-s29",
+      "state": "M5:step2",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "msmarco-postgres-s29-M5-step4-fresh-0",
+      "group": "msmarco-postgres-s29",
+      "state": "M5:step4",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "msmarco-postgres-s29-C5-step2-fresh-0",
+      "group": "msmarco-postgres-s29",
+      "state": "C5:step2",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "msmarco-postgres-s29-C5-step4-fresh-0",
+      "group": "msmarco-postgres-s29",
+      "state": "C5:step4",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "msmarco-postgres-s47-initial-fresh-0",
+      "group": "msmarco-postgres-s47",
+      "state": "initial",
+      "repeat": 0,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-postgres-s47-initial-fresh-1",
+      "group": "msmarco-postgres-s47",
+      "state": "initial",
+      "repeat": 1,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-postgres-s47-initial-fresh-2",
+      "group": "msmarco-postgres-s47",
+      "state": "initial",
+      "repeat": 2,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-postgres-s47-final-fresh-0",
+      "group": "msmarco-postgres-s47",
+      "state": "final",
+      "repeat": 0,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-postgres-s47-final-fresh-1",
+      "group": "msmarco-postgres-s47",
+      "state": "final",
+      "repeat": 1,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-postgres-s47-final-fresh-2",
+      "group": "msmarco-postgres-s47",
+      "state": "final",
+      "repeat": 2,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-postgres-s47-M5-step2-fresh-0",
+      "group": "msmarco-postgres-s47",
+      "state": "M5:step2",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "msmarco-postgres-s47-M5-step4-fresh-0",
+      "group": "msmarco-postgres-s47",
+      "state": "M5:step4",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "msmarco-postgres-s47-C5-step2-fresh-0",
+      "group": "msmarco-postgres-s47",
+      "state": "C5:step2",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "msmarco-postgres-s47-C5-step4-fresh-0",
+      "group": "msmarco-postgres-s47",
+      "state": "C5:step4",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "msmarco-qdrant-s11-initial-fresh-0",
+      "group": "msmarco-qdrant-s11",
+      "state": "initial",
+      "repeat": 0,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-qdrant-s11-initial-fresh-1",
+      "group": "msmarco-qdrant-s11",
+      "state": "initial",
+      "repeat": 1,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-qdrant-s11-initial-fresh-2",
+      "group": "msmarco-qdrant-s11",
+      "state": "initial",
+      "repeat": 2,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-qdrant-s11-final-fresh-0",
+      "group": "msmarco-qdrant-s11",
+      "state": "final",
+      "repeat": 0,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-qdrant-s11-final-fresh-1",
+      "group": "msmarco-qdrant-s11",
+      "state": "final",
+      "repeat": 1,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-qdrant-s11-final-fresh-2",
+      "group": "msmarco-qdrant-s11",
+      "state": "final",
+      "repeat": 2,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-qdrant-s11-M5-step2-fresh-0",
+      "group": "msmarco-qdrant-s11",
+      "state": "M5:step2",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "msmarco-qdrant-s11-M5-step4-fresh-0",
+      "group": "msmarco-qdrant-s11",
+      "state": "M5:step4",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "msmarco-qdrant-s11-C5-step2-fresh-0",
+      "group": "msmarco-qdrant-s11",
+      "state": "C5:step2",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "msmarco-qdrant-s11-C5-step4-fresh-0",
+      "group": "msmarco-qdrant-s11",
+      "state": "C5:step4",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "msmarco-qdrant-s29-initial-fresh-0",
+      "group": "msmarco-qdrant-s29",
+      "state": "initial",
+      "repeat": 0,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-qdrant-s29-initial-fresh-1",
+      "group": "msmarco-qdrant-s29",
+      "state": "initial",
+      "repeat": 1,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-qdrant-s29-initial-fresh-2",
+      "group": "msmarco-qdrant-s29",
+      "state": "initial",
+      "repeat": 2,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-qdrant-s29-final-fresh-0",
+      "group": "msmarco-qdrant-s29",
+      "state": "final",
+      "repeat": 0,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-qdrant-s29-final-fresh-1",
+      "group": "msmarco-qdrant-s29",
+      "state": "final",
+      "repeat": 1,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-qdrant-s29-final-fresh-2",
+      "group": "msmarco-qdrant-s29",
+      "state": "final",
+      "repeat": 2,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-qdrant-s29-M5-step2-fresh-0",
+      "group": "msmarco-qdrant-s29",
+      "state": "M5:step2",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "msmarco-qdrant-s29-M5-step4-fresh-0",
+      "group": "msmarco-qdrant-s29",
+      "state": "M5:step4",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "msmarco-qdrant-s29-C5-step2-fresh-0",
+      "group": "msmarco-qdrant-s29",
+      "state": "C5:step2",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "msmarco-qdrant-s29-C5-step4-fresh-0",
+      "group": "msmarco-qdrant-s29",
+      "state": "C5:step4",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "msmarco-qdrant-s47-initial-fresh-0",
+      "group": "msmarco-qdrant-s47",
+      "state": "initial",
+      "repeat": 0,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-qdrant-s47-initial-fresh-1",
+      "group": "msmarco-qdrant-s47",
+      "state": "initial",
+      "repeat": 1,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-qdrant-s47-initial-fresh-2",
+      "group": "msmarco-qdrant-s47",
+      "state": "initial",
+      "repeat": 2,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-qdrant-s47-final-fresh-0",
+      "group": "msmarco-qdrant-s47",
+      "state": "final",
+      "repeat": 0,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-qdrant-s47-final-fresh-1",
+      "group": "msmarco-qdrant-s47",
+      "state": "final",
+      "repeat": 1,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-qdrant-s47-final-fresh-2",
+      "group": "msmarco-qdrant-s47",
+      "state": "final",
+      "repeat": 2,
+      "queries": 600
+    },
+    {
+      "id": "msmarco-qdrant-s47-M5-step2-fresh-0",
+      "group": "msmarco-qdrant-s47",
+      "state": "M5:step2",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "msmarco-qdrant-s47-M5-step4-fresh-0",
+      "group": "msmarco-qdrant-s47",
+      "state": "M5:step4",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "msmarco-qdrant-s47-C5-step2-fresh-0",
+      "group": "msmarco-qdrant-s47",
+      "state": "C5:step2",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "msmarco-qdrant-s47-C5-step4-fresh-0",
+      "group": "msmarco-qdrant-s47",
+      "state": "C5:step4",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "wikipedia-postgres-s11-initial-fresh-0",
+      "group": "wikipedia-postgres-s11",
+      "state": "initial",
+      "repeat": 0,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-postgres-s11-initial-fresh-1",
+      "group": "wikipedia-postgres-s11",
+      "state": "initial",
+      "repeat": 1,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-postgres-s11-initial-fresh-2",
+      "group": "wikipedia-postgres-s11",
+      "state": "initial",
+      "repeat": 2,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-postgres-s11-final-fresh-0",
+      "group": "wikipedia-postgres-s11",
+      "state": "final",
+      "repeat": 0,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-postgres-s11-final-fresh-1",
+      "group": "wikipedia-postgres-s11",
+      "state": "final",
+      "repeat": 1,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-postgres-s11-final-fresh-2",
+      "group": "wikipedia-postgres-s11",
+      "state": "final",
+      "repeat": 2,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-postgres-s11-M5-step2-fresh-0",
+      "group": "wikipedia-postgres-s11",
+      "state": "M5:step2",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "wikipedia-postgres-s11-M5-step4-fresh-0",
+      "group": "wikipedia-postgres-s11",
+      "state": "M5:step4",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "wikipedia-postgres-s11-C5-step2-fresh-0",
+      "group": "wikipedia-postgres-s11",
+      "state": "C5:step2",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "wikipedia-postgres-s11-C5-step4-fresh-0",
+      "group": "wikipedia-postgres-s11",
+      "state": "C5:step4",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "wikipedia-postgres-s29-initial-fresh-0",
+      "group": "wikipedia-postgres-s29",
+      "state": "initial",
+      "repeat": 0,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-postgres-s29-initial-fresh-1",
+      "group": "wikipedia-postgres-s29",
+      "state": "initial",
+      "repeat": 1,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-postgres-s29-initial-fresh-2",
+      "group": "wikipedia-postgres-s29",
+      "state": "initial",
+      "repeat": 2,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-postgres-s29-final-fresh-0",
+      "group": "wikipedia-postgres-s29",
+      "state": "final",
+      "repeat": 0,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-postgres-s29-final-fresh-1",
+      "group": "wikipedia-postgres-s29",
+      "state": "final",
+      "repeat": 1,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-postgres-s29-final-fresh-2",
+      "group": "wikipedia-postgres-s29",
+      "state": "final",
+      "repeat": 2,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-postgres-s29-M5-step2-fresh-0",
+      "group": "wikipedia-postgres-s29",
+      "state": "M5:step2",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "wikipedia-postgres-s29-M5-step4-fresh-0",
+      "group": "wikipedia-postgres-s29",
+      "state": "M5:step4",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "wikipedia-postgres-s29-C5-step2-fresh-0",
+      "group": "wikipedia-postgres-s29",
+      "state": "C5:step2",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "wikipedia-postgres-s29-C5-step4-fresh-0",
+      "group": "wikipedia-postgres-s29",
+      "state": "C5:step4",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "wikipedia-postgres-s47-initial-fresh-0",
+      "group": "wikipedia-postgres-s47",
+      "state": "initial",
+      "repeat": 0,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-postgres-s47-initial-fresh-1",
+      "group": "wikipedia-postgres-s47",
+      "state": "initial",
+      "repeat": 1,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-postgres-s47-initial-fresh-2",
+      "group": "wikipedia-postgres-s47",
+      "state": "initial",
+      "repeat": 2,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-postgres-s47-final-fresh-0",
+      "group": "wikipedia-postgres-s47",
+      "state": "final",
+      "repeat": 0,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-postgres-s47-final-fresh-1",
+      "group": "wikipedia-postgres-s47",
+      "state": "final",
+      "repeat": 1,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-postgres-s47-final-fresh-2",
+      "group": "wikipedia-postgres-s47",
+      "state": "final",
+      "repeat": 2,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-postgres-s47-M5-step2-fresh-0",
+      "group": "wikipedia-postgres-s47",
+      "state": "M5:step2",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "wikipedia-postgres-s47-M5-step4-fresh-0",
+      "group": "wikipedia-postgres-s47",
+      "state": "M5:step4",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "wikipedia-postgres-s47-C5-step2-fresh-0",
+      "group": "wikipedia-postgres-s47",
+      "state": "C5:step2",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "wikipedia-postgres-s47-C5-step4-fresh-0",
+      "group": "wikipedia-postgres-s47",
+      "state": "C5:step4",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "wikipedia-qdrant-s11-initial-fresh-0",
+      "group": "wikipedia-qdrant-s11",
+      "state": "initial",
+      "repeat": 0,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-qdrant-s11-initial-fresh-1",
+      "group": "wikipedia-qdrant-s11",
+      "state": "initial",
+      "repeat": 1,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-qdrant-s11-initial-fresh-2",
+      "group": "wikipedia-qdrant-s11",
+      "state": "initial",
+      "repeat": 2,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-qdrant-s11-final-fresh-0",
+      "group": "wikipedia-qdrant-s11",
+      "state": "final",
+      "repeat": 0,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-qdrant-s11-final-fresh-1",
+      "group": "wikipedia-qdrant-s11",
+      "state": "final",
+      "repeat": 1,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-qdrant-s11-final-fresh-2",
+      "group": "wikipedia-qdrant-s11",
+      "state": "final",
+      "repeat": 2,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-qdrant-s11-M5-step2-fresh-0",
+      "group": "wikipedia-qdrant-s11",
+      "state": "M5:step2",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "wikipedia-qdrant-s11-M5-step4-fresh-0",
+      "group": "wikipedia-qdrant-s11",
+      "state": "M5:step4",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "wikipedia-qdrant-s11-C5-step2-fresh-0",
+      "group": "wikipedia-qdrant-s11",
+      "state": "C5:step2",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "wikipedia-qdrant-s11-C5-step4-fresh-0",
+      "group": "wikipedia-qdrant-s11",
+      "state": "C5:step4",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "wikipedia-qdrant-s29-initial-fresh-0",
+      "group": "wikipedia-qdrant-s29",
+      "state": "initial",
+      "repeat": 0,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-qdrant-s29-initial-fresh-1",
+      "group": "wikipedia-qdrant-s29",
+      "state": "initial",
+      "repeat": 1,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-qdrant-s29-initial-fresh-2",
+      "group": "wikipedia-qdrant-s29",
+      "state": "initial",
+      "repeat": 2,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-qdrant-s29-final-fresh-0",
+      "group": "wikipedia-qdrant-s29",
+      "state": "final",
+      "repeat": 0,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-qdrant-s29-final-fresh-1",
+      "group": "wikipedia-qdrant-s29",
+      "state": "final",
+      "repeat": 1,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-qdrant-s29-final-fresh-2",
+      "group": "wikipedia-qdrant-s29",
+      "state": "final",
+      "repeat": 2,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-qdrant-s29-M5-step2-fresh-0",
+      "group": "wikipedia-qdrant-s29",
+      "state": "M5:step2",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "wikipedia-qdrant-s29-M5-step4-fresh-0",
+      "group": "wikipedia-qdrant-s29",
+      "state": "M5:step4",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "wikipedia-qdrant-s29-C5-step2-fresh-0",
+      "group": "wikipedia-qdrant-s29",
+      "state": "C5:step2",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "wikipedia-qdrant-s29-C5-step4-fresh-0",
+      "group": "wikipedia-qdrant-s29",
+      "state": "C5:step4",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "wikipedia-qdrant-s47-initial-fresh-0",
+      "group": "wikipedia-qdrant-s47",
+      "state": "initial",
+      "repeat": 0,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-qdrant-s47-initial-fresh-1",
+      "group": "wikipedia-qdrant-s47",
+      "state": "initial",
+      "repeat": 1,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-qdrant-s47-initial-fresh-2",
+      "group": "wikipedia-qdrant-s47",
+      "state": "initial",
+      "repeat": 2,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-qdrant-s47-final-fresh-0",
+      "group": "wikipedia-qdrant-s47",
+      "state": "final",
+      "repeat": 0,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-qdrant-s47-final-fresh-1",
+      "group": "wikipedia-qdrant-s47",
+      "state": "final",
+      "repeat": 1,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-qdrant-s47-final-fresh-2",
+      "group": "wikipedia-qdrant-s47",
+      "state": "final",
+      "repeat": 2,
+      "queries": 600
+    },
+    {
+      "id": "wikipedia-qdrant-s47-M5-step2-fresh-0",
+      "group": "wikipedia-qdrant-s47",
+      "state": "M5:step2",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "wikipedia-qdrant-s47-M5-step4-fresh-0",
+      "group": "wikipedia-qdrant-s47",
+      "state": "M5:step4",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "wikipedia-qdrant-s47-C5-step2-fresh-0",
+      "group": "wikipedia-qdrant-s47",
+      "state": "C5:step2",
+      "repeat": 0,
+      "queries": 200
+    },
+    {
+      "id": "wikipedia-qdrant-s47-C5-step4-fresh-0",
+      "group": "wikipedia-qdrant-s47",
+      "state": "C5:step4",
+      "repeat": 0,
+      "queries": 200
+    }
+  ],
+  "additional_ef": {
+    "values_per_index": 2,
+    "incremental_terminal_indexes": 48,
+    "fresh_terminal_indexes": 36,
+    "queries_each": 600
+  },
+  "stage_budget_hours": {
+    "S0": 1.5,
+    "S1": 0.75,
+    "S2": 1.5,
+    "S3": 0.75,
+    "S4": 5,
+    "S5": 1,
+    "reserve": 1.5
+  },
+  "notes": [
+    "Not a run manifest or authorization receipt.",
+    "Actual cluster sizes, source/state hashes and chosen ef are frozen at execution gates.",
+    "Calibration, smoke, warmup and instrumentation excluded from evaluation query count but included in 12h cost."
+  ]
+}

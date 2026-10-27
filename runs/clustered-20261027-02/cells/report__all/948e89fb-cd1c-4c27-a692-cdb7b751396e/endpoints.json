@@ -1,0 +1,1730 @@
+[
+  {
+    "id": "msmarco-postgres-s11-C1",
+    "dataset": "msmarco",
+    "db": "postgres",
+    "seed": 11,
+    "path": "C1",
+    "recall10": 0.9995,
+    "recall100": 0.9970333333333333,
+    "fresh_mean100": 0.9970611111111112,
+    "fresh_range100": [
+      0.9966333333333334,
+      0.9973333333333335,
+      0.9972166666666668
+    ],
+    "history_gap10": {
+      "mean_pp": 0.01666666666666672,
+      "lower_pp": -0.03333333333333327,
+      "upper_pp": 0.06666666666666674,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 21,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": -0.002777777777777416,
+      "lower_pp": -0.03723611111111088,
+      "upper_pp": 0.03166666666666734,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 111,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "0ed590fb1b5ea345af3af21af1d64025f19dbd0a646c2dde4b08d7f803a1259d"
+  },
+  {
+    "id": "msmarco-postgres-s11-M1",
+    "dataset": "msmarco",
+    "db": "postgres",
+    "seed": 11,
+    "path": "M1",
+    "recall10": 0.9995,
+    "recall100": 0.99685,
+    "fresh_mean100": 0.9970611111111112,
+    "fresh_range100": [
+      0.9966333333333334,
+      0.9973333333333335,
+      0.9972166666666668
+    ],
+    "history_gap10": {
+      "mean_pp": 0.01666666666666672,
+      "lower_pp": -0.03333333333333327,
+      "upper_pp": 0.06666666666666674,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 21,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": -0.02111111111111077,
+      "lower_pp": -0.05722222222222182,
+      "upper_pp": 0.014458333333333863,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 111,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "0ed590fb1b5ea345af3af21af1d64025f19dbd0a646c2dde4b08d7f803a1259d"
+  },
+  {
+    "id": "msmarco-postgres-s11-M5",
+    "dataset": "msmarco",
+    "db": "postgres",
+    "seed": 11,
+    "path": "M5",
+    "recall10": 0.9995,
+    "recall100": 0.9969166666666667,
+    "fresh_mean100": 0.9970611111111112,
+    "fresh_range100": [
+      0.9966333333333334,
+      0.9973333333333335,
+      0.9972166666666668
+    ],
+    "history_gap10": {
+      "mean_pp": 0.01666666666666672,
+      "lower_pp": -0.03333333333333327,
+      "upper_pp": 0.06666666666666674,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 21,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": -0.014444444444444093,
+      "lower_pp": -0.05111111111111076,
+      "upper_pp": 0.02112500000000054,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 111,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "0ed590fb1b5ea345af3af21af1d64025f19dbd0a646c2dde4b08d7f803a1259d"
+  },
+  {
+    "id": "msmarco-postgres-s11-C5",
+    "dataset": "msmarco",
+    "db": "postgres",
+    "seed": 11,
+    "path": "C5",
+    "recall10": 0.9995,
+    "recall100": 0.9970000000000001,
+    "fresh_mean100": 0.9970611111111112,
+    "fresh_range100": [
+      0.9966333333333334,
+      0.9973333333333335,
+      0.9972166666666668
+    ],
+    "history_gap10": {
+      "mean_pp": 0.01666666666666672,
+      "lower_pp": -0.03333333333333327,
+      "upper_pp": 0.06666666666666674,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 21,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": -0.006111111111110753,
+      "lower_pp": -0.040555555555555296,
+      "upper_pp": 0.028888888888889137,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 111,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "0ed590fb1b5ea345af3af21af1d64025f19dbd0a646c2dde4b08d7f803a1259d"
+  },
+  {
+    "id": "msmarco-postgres-s29-M1",
+    "dataset": "msmarco",
+    "db": "postgres",
+    "seed": 29,
+    "path": "M1",
+    "recall10": 0.9996666666666666,
+    "recall100": 0.9976333333333334,
+    "fresh_mean100": 0.9973500000000002,
+    "fresh_range100": [
+      0.9974333333333334,
+      0.9973166666666666,
+      0.9973
+    ],
+    "history_gap10": {
+      "mean_pp": 0.011111111111111146,
+      "lower_pp": -0.016666666666666573,
+      "upper_pp": 0.038888888888888896,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 39,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": 0.02833333333333351,
+      "lower_pp": -0.008888888888888764,
+      "upper_pp": 0.06555555555555588,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 129,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "5ed9d913bc7f68f28ded0462335b6681cb486d33b60fd18c0abdb193fc838965"
+  },
+  {
+    "id": "msmarco-postgres-s29-C5",
+    "dataset": "msmarco",
+    "db": "postgres",
+    "seed": 29,
+    "path": "C5",
+    "recall10": 0.9993333333333332,
+    "recall100": 0.9979666666666667,
+    "fresh_mean100": 0.9973500000000002,
+    "fresh_range100": [
+      0.9974333333333334,
+      0.9973166666666666,
+      0.9973
+    ],
+    "history_gap10": {
+      "mean_pp": -0.02222222222222218,
+      "lower_pp": -0.07222222222222216,
+      "upper_pp": 0.016666666666666698,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 39,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": 0.06166666666666687,
+      "lower_pp": 0.020000000000000295,
+      "upper_pp": 0.0988888888888889,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 129,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "5ed9d913bc7f68f28ded0462335b6681cb486d33b60fd18c0abdb193fc838965"
+  },
+  {
+    "id": "msmarco-postgres-s29-M5",
+    "dataset": "msmarco",
+    "db": "postgres",
+    "seed": 29,
+    "path": "M5",
+    "recall10": 0.9996666666666666,
+    "recall100": 0.99765,
+    "fresh_mean100": 0.9973500000000002,
+    "fresh_range100": [
+      0.9974333333333334,
+      0.9973166666666666,
+      0.9973
+    ],
+    "history_gap10": {
+      "mean_pp": 0.011111111111111146,
+      "lower_pp": -0.016666666666666573,
+      "upper_pp": 0.038888888888888896,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 39,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": 0.030000000000000176,
+      "lower_pp": -0.005555555555555666,
+      "upper_pp": 0.06555555555555583,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 129,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "5ed9d913bc7f68f28ded0462335b6681cb486d33b60fd18c0abdb193fc838965"
+  },
+  {
+    "id": "msmarco-postgres-s29-C1",
+    "dataset": "msmarco",
+    "db": "postgres",
+    "seed": 29,
+    "path": "C1",
+    "recall10": 0.9993333333333332,
+    "recall100": 0.99795,
+    "fresh_mean100": 0.9973500000000002,
+    "fresh_range100": [
+      0.9974333333333334,
+      0.9973166666666666,
+      0.9973
+    ],
+    "history_gap10": {
+      "mean_pp": -0.02222222222222218,
+      "lower_pp": -0.07222222222222216,
+      "upper_pp": 0.016666666666666698,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 39,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": 0.0600000000000002,
+      "lower_pp": 0.01998611111111119,
+      "upper_pp": 0.09833333333333338,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 129,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "5ed9d913bc7f68f28ded0462335b6681cb486d33b60fd18c0abdb193fc838965"
+  },
+  {
+    "id": "msmarco-postgres-s47-M5",
+    "dataset": "msmarco",
+    "db": "postgres",
+    "seed": 47,
+    "path": "M5",
+    "recall10": 0.9996666666666666,
+    "recall100": 0.9977000000000001,
+    "fresh_mean100": 0.9974555555555557,
+    "fresh_range100": [
+      0.9972000000000001,
+      0.9975333333333333,
+      0.9976333333333334
+    ],
+    "history_gap10": {
+      "mean_pp": 0.011111111111111146,
+      "lower_pp": -0.03888888888888886,
+      "upper_pp": 0.0555555555555556,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 57,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": 0.02444444444444475,
+      "lower_pp": -0.012236111111110911,
+      "upper_pp": 0.06168055555555603,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 147,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "fda82449d5fe5199c9300ba90a8b9a8387252b3b1d5547a0cd6b0c0f079e00c5"
+  },
+  {
+    "id": "msmarco-postgres-s47-C1",
+    "dataset": "msmarco",
+    "db": "postgres",
+    "seed": 47,
+    "path": "C1",
+    "recall10": 0.9993333333333334,
+    "recall100": 0.9979166666666667,
+    "fresh_mean100": 0.9974555555555557,
+    "fresh_range100": [
+      0.9972000000000001,
+      0.9975333333333333,
+      0.9976333333333334
+    ],
+    "history_gap10": {
+      "mean_pp": -0.02222222222222218,
+      "lower_pp": -0.08888888888888882,
+      "upper_pp": 0.03333333333333338,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 57,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": 0.046111111111111436,
+      "lower_pp": 0.007763888888889091,
+      "upper_pp": 0.08333333333333376,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 147,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "fda82449d5fe5199c9300ba90a8b9a8387252b3b1d5547a0cd6b0c0f079e00c5"
+  },
+  {
+    "id": "msmarco-postgres-s47-C5",
+    "dataset": "msmarco",
+    "db": "postgres",
+    "seed": 47,
+    "path": "C5",
+    "recall10": 0.9993333333333334,
+    "recall100": 0.9978833333333333,
+    "fresh_mean100": 0.9974555555555557,
+    "fresh_range100": [
+      0.9972000000000001,
+      0.9975333333333333,
+      0.9976333333333334
+    ],
+    "history_gap10": {
+      "mean_pp": -0.02222222222222218,
+      "lower_pp": -0.08888888888888882,
+      "upper_pp": 0.03333333333333338,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 57,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": 0.0427777777777781,
+      "lower_pp": 0.004416666666666866,
+      "upper_pp": 0.07890277777777828,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 147,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "fda82449d5fe5199c9300ba90a8b9a8387252b3b1d5547a0cd6b0c0f079e00c5"
+  },
+  {
+    "id": "msmarco-postgres-s47-M1",
+    "dataset": "msmarco",
+    "db": "postgres",
+    "seed": 47,
+    "path": "M1",
+    "recall10": 0.9996666666666666,
+    "recall100": 0.9977333333333334,
+    "fresh_mean100": 0.9974555555555557,
+    "fresh_range100": [
+      0.9972000000000001,
+      0.9975333333333333,
+      0.9976333333333334
+    ],
+    "history_gap10": {
+      "mean_pp": 0.011111111111111146,
+      "lower_pp": -0.03888888888888886,
+      "upper_pp": 0.0555555555555556,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 57,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": 0.02777777777777809,
+      "lower_pp": -0.009472222222222009,
+      "upper_pp": 0.06556944444444486,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 147,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "fda82449d5fe5199c9300ba90a8b9a8387252b3b1d5547a0cd6b0c0f079e00c5"
+  },
+  {
+    "id": "msmarco-qdrant-s11-C1",
+    "dataset": "msmarco",
+    "db": "qdrant",
+    "seed": 11,
+    "path": "C1",
+    "recall10": 0.9985,
+    "recall100": 0.9893500000000001,
+    "fresh_mean100": 0.9899722222222223,
+    "fresh_range100": [
+      0.9898666666666666,
+      0.99005,
+      0.99
+    ],
+    "history_gap10": {
+      "mean_pp": 0.02777777777777781,
+      "lower_pp": -0.0944444444444444,
+      "upper_pp": 0.14999999999999997,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 21,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": -0.062222222222219806,
+      "lower_pp": -0.1455555555555533,
+      "upper_pp": 0.021125000000002447,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 111,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "c5ed396ab77c6724cdd5fa33d50131256a09345ea867bc5fb978ca946a9db1fd"
+  },
+  {
+    "id": "msmarco-qdrant-s11-M1",
+    "dataset": "msmarco",
+    "db": "qdrant",
+    "seed": 11,
+    "path": "M1",
+    "recall10": 0.9981666666666666,
+    "recall100": 0.9891833333333333,
+    "fresh_mean100": 0.9899722222222223,
+    "fresh_range100": [
+      0.9898666666666666,
+      0.99005,
+      0.99
+    ],
+    "history_gap10": {
+      "mean_pp": -0.005555555555555518,
+      "lower_pp": -0.13333333333333328,
+      "upper_pp": 0.1111111111111111,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 21,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": -0.07888888888888647,
+      "lower_pp": -0.1689027777777753,
+      "upper_pp": 0.010555555555557804,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 111,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "c5ed396ab77c6724cdd5fa33d50131256a09345ea867bc5fb978ca946a9db1fd"
+  },
+  {
+    "id": "msmarco-qdrant-s11-M5",
+    "dataset": "msmarco",
+    "db": "qdrant",
+    "seed": 11,
+    "path": "M5",
+    "recall10": 0.9981666666666666,
+    "recall100": 0.9896333333333333,
+    "fresh_mean100": 0.9899722222222223,
+    "fresh_range100": [
+      0.9898666666666666,
+      0.99005,
+      0.99
+    ],
+    "history_gap10": {
+      "mean_pp": -0.005555555555555518,
+      "lower_pp": -0.1277777777777777,
+      "upper_pp": 0.10555555555555561,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 21,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": -0.03388888888888649,
+      "lower_pp": -0.12224999999999764,
+      "upper_pp": 0.0561388888888908,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 111,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "c5ed396ab77c6724cdd5fa33d50131256a09345ea867bc5fb978ca946a9db1fd"
+  },
+  {
+    "id": "msmarco-qdrant-s11-C5",
+    "dataset": "msmarco",
+    "db": "qdrant",
+    "seed": 11,
+    "path": "C5",
+    "recall10": 0.9978333333333335,
+    "recall100": 0.98915,
+    "fresh_mean100": 0.9899722222222223,
+    "fresh_range100": [
+      0.9898666666666666,
+      0.99005,
+      0.99
+    ],
+    "history_gap10": {
+      "mean_pp": -0.03888888888888884,
+      "lower_pp": -0.16666666666666663,
+      "upper_pp": 0.08888888888888892,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 21,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": -0.08222222222221982,
+      "lower_pp": -0.17222222222222025,
+      "upper_pp": 0.005000000000002595,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 111,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "c5ed396ab77c6724cdd5fa33d50131256a09345ea867bc5fb978ca946a9db1fd"
+  },
+  {
+    "id": "msmarco-qdrant-s29-M1",
+    "dataset": "msmarco",
+    "db": "qdrant",
+    "seed": 29,
+    "path": "M1",
+    "recall10": 0.9985,
+    "recall100": 0.99005,
+    "fresh_mean100": 0.9895444444444444,
+    "fresh_range100": [
+      0.9895333333333334,
+      0.98955,
+      0.98955
+    ],
+    "history_gap10": {
+      "mean_pp": -0.08333333333333331,
+      "lower_pp": -0.19999999999999996,
+      "upper_pp": 0.033333333333333326,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 39,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": 0.050555555555557755,
+      "lower_pp": -0.045013888888886744,
+      "upper_pp": 0.15333333333333546,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 129,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "bddd1eeefa7e3864f11bf2d63e17e478e25e1d0b97d3b0472bb3e5d8e4a08949"
+  },
+  {
+    "id": "msmarco-qdrant-s29-C5",
+    "dataset": "msmarco",
+    "db": "qdrant",
+    "seed": 29,
+    "path": "C5",
+    "recall10": 0.9993333333333334,
+    "recall100": 0.98975,
+    "fresh_mean100": 0.9895444444444444,
+    "fresh_range100": [
+      0.9895333333333334,
+      0.98955,
+      0.98955
+    ],
+    "history_gap10": {
+      "mean_pp": 0.0,
+      "lower_pp": -0.09999999999999998,
+      "upper_pp": 0.09999999999999998,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 39,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": 0.020555555555557752,
+      "lower_pp": -0.0766805555555533,
+      "upper_pp": 0.1189305555555578,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 129,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "bddd1eeefa7e3864f11bf2d63e17e478e25e1d0b97d3b0472bb3e5d8e4a08949"
+  },
+  {
+    "id": "msmarco-qdrant-s29-M5",
+    "dataset": "msmarco",
+    "db": "qdrant",
+    "seed": 29,
+    "path": "M5",
+    "recall10": 0.9986666666666667,
+    "recall100": 0.9900333333333333,
+    "fresh_mean100": 0.9895444444444444,
+    "fresh_range100": [
+      0.9895333333333334,
+      0.98955,
+      0.98955
+    ],
+    "history_gap10": {
+      "mean_pp": -0.06666666666666665,
+      "lower_pp": -0.18333333333333326,
+      "upper_pp": 0.04999999999999999,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 39,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": 0.048888888888891084,
+      "lower_pp": -0.04445833333333109,
+      "upper_pp": 0.14945833333333577,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 129,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "bddd1eeefa7e3864f11bf2d63e17e478e25e1d0b97d3b0472bb3e5d8e4a08949"
+  },
+  {
+    "id": "msmarco-qdrant-s29-C1",
+    "dataset": "msmarco",
+    "db": "qdrant",
+    "seed": 29,
+    "path": "C1",
+    "recall10": 0.9988333333333332,
+    "recall100": 0.9898,
+    "fresh_mean100": 0.9895444444444444,
+    "fresh_range100": [
+      0.9895333333333334,
+      0.98955,
+      0.98955
+    ],
+    "history_gap10": {
+      "mean_pp": -0.04999999999999999,
+      "lower_pp": -0.15041666666666662,
+      "upper_pp": 0.06666666666666665,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 39,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": 0.025555555555557736,
+      "lower_pp": -0.06777777777777547,
+      "upper_pp": 0.12669444444444644,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 129,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "bddd1eeefa7e3864f11bf2d63e17e478e25e1d0b97d3b0472bb3e5d8e4a08949"
+  },
+  {
+    "id": "msmarco-qdrant-s47-M5",
+    "dataset": "msmarco",
+    "db": "qdrant",
+    "seed": 47,
+    "path": "M5",
+    "recall10": 0.9985,
+    "recall100": 0.9905333333333334,
+    "fresh_mean100": 0.9894055555555555,
+    "fresh_range100": [
+      0.9894166666666666,
+      0.9895166666666667,
+      0.9892833333333334
+    ],
+    "history_gap10": {
+      "mean_pp": 0.1111111111111111,
+      "lower_pp": -0.027777777777777735,
+      "upper_pp": 0.24999999999999992,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 57,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": 0.11277777777778027,
+      "lower_pp": 0.020000000000002554,
+      "upper_pp": 0.21113888888889135,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 147,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "5ad9837a70b3f2eb8334911971310833bd6cb60909f54662c539e65f9c2df8da"
+  },
+  {
+    "id": "msmarco-qdrant-s47-C1",
+    "dataset": "msmarco",
+    "db": "qdrant",
+    "seed": 47,
+    "path": "C1",
+    "recall10": 0.9971666666666666,
+    "recall100": 0.9904666666666666,
+    "fresh_mean100": 0.9894055555555555,
+    "fresh_range100": [
+      0.9894166666666666,
+      0.9895166666666667,
+      0.9892833333333334
+    ],
+    "history_gap10": {
+      "mean_pp": -0.0222222222222222,
+      "lower_pp": -0.1555555555555555,
+      "upper_pp": 0.11666666666666663,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 57,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": 0.10611111111111361,
+      "lower_pp": 0.010541666666669523,
+      "upper_pp": 0.20112500000000255,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 147,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "5ad9837a70b3f2eb8334911971310833bd6cb60909f54662c539e65f9c2df8da"
+  },
+  {
+    "id": "msmarco-qdrant-s47-C5",
+    "dataset": "msmarco",
+    "db": "qdrant",
+    "seed": 47,
+    "path": "C5",
+    "recall10": 0.9968333333333333,
+    "recall100": 0.99,
+    "fresh_mean100": 0.9894055555555555,
+    "fresh_range100": [
+      0.9894166666666666,
+      0.9895166666666667,
+      0.9892833333333334
+    ],
+    "history_gap10": {
+      "mean_pp": -0.055555555555555525,
+      "lower_pp": -0.1777777777777777,
+      "upper_pp": 0.05555555555555558,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 57,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": 0.0594444444444469,
+      "lower_pp": -0.03279166666666435,
+      "upper_pp": 0.1594444444444469,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 147,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "5ad9837a70b3f2eb8334911971310833bd6cb60909f54662c539e65f9c2df8da"
+  },
+  {
+    "id": "msmarco-qdrant-s47-M1",
+    "dataset": "msmarco",
+    "db": "qdrant",
+    "seed": 47,
+    "path": "M1",
+    "recall10": 0.9976666666666667,
+    "recall100": 0.9900166666666667,
+    "fresh_mean100": 0.9894055555555555,
+    "fresh_range100": [
+      0.9894166666666666,
+      0.9895166666666667,
+      0.9892833333333334
+    ],
+    "history_gap10": {
+      "mean_pp": 0.02777777777777779,
+      "lower_pp": -0.08333333333333331,
+      "upper_pp": 0.14444444444444443,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 57,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": 0.06111111111111356,
+      "lower_pp": -0.03390277777777557,
+      "upper_pp": 0.15779166666666913,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 147,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "5ad9837a70b3f2eb8334911971310833bd6cb60909f54662c539e65f9c2df8da"
+  },
+  {
+    "id": "wikipedia-postgres-s11-C1",
+    "dataset": "wikipedia",
+    "db": "postgres",
+    "seed": 11,
+    "path": "C1",
+    "recall10": 1.0,
+    "recall100": 0.9973500000000002,
+    "fresh_mean100": 0.9974333333333332,
+    "fresh_range100": [
+      0.9973666666666666,
+      0.9973,
+      0.9976333333333334
+    ],
+    "history_gap10": {
+      "mean_pp": 0.005555555555555555,
+      "lower_pp": 0.0,
+      "upper_pp": 0.016666666666666663,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 21,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": -0.008333333333333063,
+      "lower_pp": -0.04833333333333305,
+      "upper_pp": 0.02777777777777816,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 111,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "c8e6695f85b5e79748d5f283b883cfb671c595b93e90add41500d012d98302ee"
+  },
+  {
+    "id": "wikipedia-postgres-s11-M1",
+    "dataset": "wikipedia",
+    "db": "postgres",
+    "seed": 11,
+    "path": "M1",
+    "recall10": 0.9995,
+    "recall100": 0.9972500000000001,
+    "fresh_mean100": 0.9974333333333332,
+    "fresh_range100": [
+      0.9973666666666666,
+      0.9973,
+      0.9976333333333334
+    ],
+    "history_gap10": {
+      "mean_pp": -0.04444444444444444,
+      "lower_pp": -0.11111111111111109,
+      "upper_pp": 0.005555555555555555,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 21,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": -0.018333333333333073,
+      "lower_pp": -0.05445833333333319,
+      "upper_pp": 0.017222222222222458,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 111,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "c8e6695f85b5e79748d5f283b883cfb671c595b93e90add41500d012d98302ee"
+  },
+  {
+    "id": "wikipedia-postgres-s11-M5",
+    "dataset": "wikipedia",
+    "db": "postgres",
+    "seed": 11,
+    "path": "M5",
+    "recall10": 0.9995,
+    "recall100": 0.9972166666666668,
+    "fresh_mean100": 0.9974333333333332,
+    "fresh_range100": [
+      0.9973666666666666,
+      0.9973,
+      0.9976333333333334
+    ],
+    "history_gap10": {
+      "mean_pp": -0.04444444444444444,
+      "lower_pp": -0.11111111111111109,
+      "upper_pp": 0.005555555555555555,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 21,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": -0.021666666666666407,
+      "lower_pp": -0.05888888888888849,
+      "upper_pp": 0.015569444444444759,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 111,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "c8e6695f85b5e79748d5f283b883cfb671c595b93e90add41500d012d98302ee"
+  },
+  {
+    "id": "wikipedia-postgres-s11-C5",
+    "dataset": "wikipedia",
+    "db": "postgres",
+    "seed": 11,
+    "path": "C5",
+    "recall10": 1.0,
+    "recall100": 0.9973166666666669,
+    "fresh_mean100": 0.9974333333333332,
+    "fresh_range100": [
+      0.9973666666666666,
+      0.9973,
+      0.9976333333333334
+    ],
+    "history_gap10": {
+      "mean_pp": 0.005555555555555555,
+      "lower_pp": 0.0,
+      "upper_pp": 0.016666666666666663,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 21,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": -0.0116666666666664,
+      "lower_pp": -0.05222222222222204,
+      "upper_pp": 0.02444444444444473,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 111,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "c8e6695f85b5e79748d5f283b883cfb671c595b93e90add41500d012d98302ee"
+  },
+  {
+    "id": "wikipedia-postgres-s29-M1",
+    "dataset": "wikipedia",
+    "db": "postgres",
+    "seed": 29,
+    "path": "M1",
+    "recall10": 0.9998333333333332,
+    "recall100": 0.9967499999999999,
+    "fresh_mean100": 0.9971666666666666,
+    "fresh_range100": [
+      0.9972000000000001,
+      0.9970166666666668,
+      0.9972833333333333
+    ],
+    "history_gap10": {
+      "mean_pp": 0.02777777777777779,
+      "lower_pp": 0.005555555555555555,
+      "upper_pp": 0.06111111111111115,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 39,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": -0.041666666666666595,
+      "lower_pp": -0.08722222222222216,
+      "upper_pp": 0.0016666666666666499,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 129,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "dc280e34724aa226fe246859cb167b738f68cf01151f33a764b7231899cb588b"
+  },
+  {
+    "id": "wikipedia-postgres-s29-C5",
+    "dataset": "wikipedia",
+    "db": "postgres",
+    "seed": 29,
+    "path": "C5",
+    "recall10": 0.9998333333333332,
+    "recall100": 0.9970166666666668,
+    "fresh_mean100": 0.9971666666666666,
+    "fresh_range100": [
+      0.9972000000000001,
+      0.9970166666666668,
+      0.9972833333333333
+    ],
+    "history_gap10": {
+      "mean_pp": 0.02777777777777779,
+      "lower_pp": 0.005555555555555555,
+      "upper_pp": 0.06111111111111115,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 39,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": -0.0149999999999999,
+      "lower_pp": -0.052777777777777826,
+      "upper_pp": 0.02334722222222242,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 129,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "dc280e34724aa226fe246859cb167b738f68cf01151f33a764b7231899cb588b"
+  },
+  {
+    "id": "wikipedia-postgres-s29-M5",
+    "dataset": "wikipedia",
+    "db": "postgres",
+    "seed": 29,
+    "path": "M5",
+    "recall10": 0.9998333333333332,
+    "recall100": 0.9967166666666666,
+    "fresh_mean100": 0.9971666666666666,
+    "fresh_range100": [
+      0.9972000000000001,
+      0.9970166666666668,
+      0.9972833333333333
+    ],
+    "history_gap10": {
+      "mean_pp": 0.02777777777777779,
+      "lower_pp": 0.005555555555555555,
+      "upper_pp": 0.06111111111111115,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 39,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": -0.04499999999999993,
+      "lower_pp": -0.09277777777777776,
+      "upper_pp": 2.035408878478444e-17,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 129,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "dc280e34724aa226fe246859cb167b738f68cf01151f33a764b7231899cb588b"
+  },
+  {
+    "id": "wikipedia-postgres-s29-C1",
+    "dataset": "wikipedia",
+    "db": "postgres",
+    "seed": 29,
+    "path": "C1",
+    "recall10": 0.9998333333333332,
+    "recall100": 0.9970166666666668,
+    "fresh_mean100": 0.9971666666666666,
+    "fresh_range100": [
+      0.9972000000000001,
+      0.9970166666666668,
+      0.9972833333333333
+    ],
+    "history_gap10": {
+      "mean_pp": 0.02777777777777779,
+      "lower_pp": 0.005555555555555555,
+      "upper_pp": 0.06111111111111115,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 39,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": -0.0149999999999999,
+      "lower_pp": -0.053888888888888875,
+      "upper_pp": 0.022222222222222476,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 129,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "dc280e34724aa226fe246859cb167b738f68cf01151f33a764b7231899cb588b"
+  },
+  {
+    "id": "wikipedia-postgres-s47-M5",
+    "dataset": "wikipedia",
+    "db": "postgres",
+    "seed": 47,
+    "path": "M5",
+    "recall10": 1.0,
+    "recall100": 0.9971166666666667,
+    "fresh_mean100": 0.9970888888888889,
+    "fresh_range100": [
+      0.9972833333333333,
+      0.9969000000000001,
+      0.9970833333333333
+    ],
+    "history_gap10": {
+      "mean_pp": 0.01111111111111111,
+      "lower_pp": 0.0,
+      "upper_pp": 0.027777777777777773,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 57,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": 0.0027777777777778976,
+      "lower_pp": -0.03333333333333309,
+      "upper_pp": 0.03777777777777773,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 147,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "9bbe43593799a50843dc36715502db63212d2d386bb32c512898204adcdc53e6"
+  },
+  {
+    "id": "wikipedia-postgres-s47-C1",
+    "dataset": "wikipedia",
+    "db": "postgres",
+    "seed": 47,
+    "path": "C1",
+    "recall10": 1.0,
+    "recall100": 0.9972500000000001,
+    "fresh_mean100": 0.9970888888888889,
+    "fresh_range100": [
+      0.9972833333333333,
+      0.9969000000000001,
+      0.9970833333333333
+    ],
+    "history_gap10": {
+      "mean_pp": 0.01111111111111111,
+      "lower_pp": 0.0,
+      "upper_pp": 0.027777777777777773,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 57,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": 0.016111111111111243,
+      "lower_pp": -0.02333333333333332,
+      "upper_pp": 0.05445833333333348,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 147,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "9bbe43593799a50843dc36715502db63212d2d386bb32c512898204adcdc53e6"
+  },
+  {
+    "id": "wikipedia-postgres-s47-C5",
+    "dataset": "wikipedia",
+    "db": "postgres",
+    "seed": 47,
+    "path": "C5",
+    "recall10": 1.0,
+    "recall100": 0.9972500000000001,
+    "fresh_mean100": 0.9970888888888889,
+    "fresh_range100": [
+      0.9972833333333333,
+      0.9969000000000001,
+      0.9970833333333333
+    ],
+    "history_gap10": {
+      "mean_pp": 0.01111111111111111,
+      "lower_pp": 0.0,
+      "upper_pp": 0.027777777777777773,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 57,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": 0.016111111111111243,
+      "lower_pp": -0.022236111111110995,
+      "upper_pp": 0.057222222222222396,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 147,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "9bbe43593799a50843dc36715502db63212d2d386bb32c512898204adcdc53e6"
+  },
+  {
+    "id": "wikipedia-postgres-s47-M1",
+    "dataset": "wikipedia",
+    "db": "postgres",
+    "seed": 47,
+    "path": "M1",
+    "recall10": 1.0,
+    "recall100": 0.9971166666666667,
+    "fresh_mean100": 0.9970888888888889,
+    "fresh_range100": [
+      0.9972833333333333,
+      0.9969000000000001,
+      0.9970833333333333
+    ],
+    "history_gap10": {
+      "mean_pp": 0.01111111111111111,
+      "lower_pp": 0.0,
+      "upper_pp": 0.027777777777777773,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 57,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": 0.0027777777777778976,
+      "lower_pp": -0.03277777777777776,
+      "upper_pp": 0.04001388888888921,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 147,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "9bbe43593799a50843dc36715502db63212d2d386bb32c512898204adcdc53e6"
+  },
+  {
+    "id": "wikipedia-qdrant-s11-C1",
+    "dataset": "wikipedia",
+    "db": "qdrant",
+    "seed": 11,
+    "path": "C1",
+    "recall10": 0.9998333333333332,
+    "recall100": 0.9970000000000001,
+    "fresh_mean100": 0.9970333333333333,
+    "fresh_range100": [
+      0.9970833333333333,
+      0.9969500000000001,
+      0.9970666666666667
+    ],
+    "history_gap10": {
+      "mean_pp": 0.0,
+      "lower_pp": -0.04999999999999999,
+      "upper_pp": 0.04999999999999999,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 21,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": -0.0033333333333319857,
+      "lower_pp": -0.05668055555555449,
+      "upper_pp": 0.048902777777779294,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 111,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "df2e2db1fdc98192ae361b24f76bfc1735bb4855a728c98c6bdc4c59988b01bf"
+  },
+  {
+    "id": "wikipedia-qdrant-s11-M1",
+    "dataset": "wikipedia",
+    "db": "qdrant",
+    "seed": 11,
+    "path": "M1",
+    "recall10": 0.9995,
+    "recall100": 0.9968666666666669,
+    "fresh_mean100": 0.9970333333333333,
+    "fresh_range100": [
+      0.9970833333333333,
+      0.9969500000000001,
+      0.9970666666666667
+    ],
+    "history_gap10": {
+      "mean_pp": -0.033333333333333326,
+      "lower_pp": -0.09999999999999998,
+      "upper_pp": 0.016666666666666663,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 21,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": -0.01666666666666533,
+      "lower_pp": -0.07166666666666549,
+      "upper_pp": 0.038347222222223636,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 111,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "df2e2db1fdc98192ae361b24f76bfc1735bb4855a728c98c6bdc4c59988b01bf"
+  },
+  {
+    "id": "wikipedia-qdrant-s11-M5",
+    "dataset": "wikipedia",
+    "db": "qdrant",
+    "seed": 11,
+    "path": "M5",
+    "recall10": 0.9998333333333332,
+    "recall100": 0.9969333333333334,
+    "fresh_mean100": 0.9970333333333333,
+    "fresh_range100": [
+      0.9970833333333333,
+      0.9969500000000001,
+      0.9970666666666667
+    ],
+    "history_gap10": {
+      "mean_pp": 0.0,
+      "lower_pp": -0.04999999999999999,
+      "upper_pp": 0.04999999999999999,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 21,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": -0.00999999999999866,
+      "lower_pp": -0.059999999999998554,
+      "upper_pp": 0.041666666666668115,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 111,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "df2e2db1fdc98192ae361b24f76bfc1735bb4855a728c98c6bdc4c59988b01bf"
+  },
+  {
+    "id": "wikipedia-qdrant-s11-C5",
+    "dataset": "wikipedia",
+    "db": "qdrant",
+    "seed": 11,
+    "path": "C5",
+    "recall10": 0.9998333333333332,
+    "recall100": 0.9970000000000001,
+    "fresh_mean100": 0.9970333333333333,
+    "fresh_range100": [
+      0.9970833333333333,
+      0.9969500000000001,
+      0.9970666666666667
+    ],
+    "history_gap10": {
+      "mean_pp": 0.0,
+      "lower_pp": -0.04999999999999999,
+      "upper_pp": 0.04999999999999999,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 21,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": -0.0033333333333319857,
+      "lower_pp": -0.060555555555554225,
+      "upper_pp": 0.04834722222222374,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 111,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "df2e2db1fdc98192ae361b24f76bfc1735bb4855a728c98c6bdc4c59988b01bf"
+  },
+  {
+    "id": "wikipedia-qdrant-s29-M1",
+    "dataset": "wikipedia",
+    "db": "qdrant",
+    "seed": 29,
+    "path": "M1",
+    "recall10": 1.0,
+    "recall100": 0.9973166666666669,
+    "fresh_mean100": 0.9969500000000001,
+    "fresh_range100": [
+      0.9969499999999999,
+      0.9969333333333334,
+      0.9969666666666668
+    ],
+    "history_gap10": {
+      "mean_pp": 0.0,
+      "lower_pp": 0.0,
+      "upper_pp": 0.0,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 39,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": 0.036666666666668034,
+      "lower_pp": -0.018333333333331838,
+      "upper_pp": 0.08611111111111233,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 129,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "30872adf989c8d3623d8c97c3766cccd202c9aae8116d139756ed4a30acd853c"
+  },
+  {
+    "id": "wikipedia-qdrant-s29-C5",
+    "dataset": "wikipedia",
+    "db": "qdrant",
+    "seed": 29,
+    "path": "C5",
+    "recall10": 1.0,
+    "recall100": 0.99715,
+    "fresh_mean100": 0.9969500000000001,
+    "fresh_range100": [
+      0.9969499999999999,
+      0.9969333333333334,
+      0.9969666666666668
+    ],
+    "history_gap10": {
+      "mean_pp": 0.0,
+      "lower_pp": 0.0,
+      "upper_pp": 0.0,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 39,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": 0.02000000000000135,
+      "lower_pp": -0.027791666666665556,
+      "upper_pp": 0.07000000000000153,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 129,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "30872adf989c8d3623d8c97c3766cccd202c9aae8116d139756ed4a30acd853c"
+  },
+  {
+    "id": "wikipedia-qdrant-s29-M5",
+    "dataset": "wikipedia",
+    "db": "qdrant",
+    "seed": 29,
+    "path": "M5",
+    "recall10": 0.9998333333333332,
+    "recall100": 0.9974666666666667,
+    "fresh_mean100": 0.9969500000000001,
+    "fresh_range100": [
+      0.9969499999999999,
+      0.9969333333333334,
+      0.9969666666666668
+    ],
+    "history_gap10": {
+      "mean_pp": -0.016666666666666663,
+      "lower_pp": -0.04999999999999999,
+      "upper_pp": 0.0,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 39,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": 0.05166666666666805,
+      "lower_pp": 0.004430555555557048,
+      "upper_pp": 0.09444444444444591,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 129,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "30872adf989c8d3623d8c97c3766cccd202c9aae8116d139756ed4a30acd853c"
+  },
+  {
+    "id": "wikipedia-qdrant-s29-C1",
+    "dataset": "wikipedia",
+    "db": "qdrant",
+    "seed": 29,
+    "path": "C1",
+    "recall10": 0.9998333333333332,
+    "recall100": 0.9975166666666666,
+    "fresh_mean100": 0.9969500000000001,
+    "fresh_range100": [
+      0.9969499999999999,
+      0.9969333333333334,
+      0.9969666666666668
+    ],
+    "history_gap10": {
+      "mean_pp": -0.016666666666666663,
+      "lower_pp": -0.04999999999999999,
+      "upper_pp": 0.0,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 39,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": 0.056666666666668045,
+      "lower_pp": 0.008333333333334633,
+      "upper_pp": 0.10500000000000154,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 129,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "30872adf989c8d3623d8c97c3766cccd202c9aae8116d139756ed4a30acd853c"
+  },
+  {
+    "id": "wikipedia-qdrant-s47-M5",
+    "dataset": "wikipedia",
+    "db": "qdrant",
+    "seed": 47,
+    "path": "M5",
+    "recall10": 0.9996666666666666,
+    "recall100": 0.9972500000000001,
+    "fresh_mean100": 0.9969555555555557,
+    "fresh_range100": [
+      0.9969499999999999,
+      0.9969499999999999,
+      0.9969666666666668
+    ],
+    "history_gap10": {
+      "mean_pp": 0.033333333333333326,
+      "lower_pp": -0.033333333333333326,
+      "upper_pp": 0.09999999999999998,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 57,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": 0.029444444444445845,
+      "lower_pp": -0.02999999999999844,
+      "upper_pp": 0.08890277777777936,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 147,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "774b7442951cd3a9117f98ef247200f641fafe3662279541bdc2ac9a7a50466a"
+  },
+  {
+    "id": "wikipedia-qdrant-s47-C1",
+    "dataset": "wikipedia",
+    "db": "qdrant",
+    "seed": 47,
+    "path": "C1",
+    "recall10": 0.9996666666666666,
+    "recall100": 0.9975833333333333,
+    "fresh_mean100": 0.9969555555555557,
+    "fresh_range100": [
+      0.9969499999999999,
+      0.9969499999999999,
+      0.9969666666666668
+    ],
+    "history_gap10": {
+      "mean_pp": 0.033333333333333326,
+      "lower_pp": -0.033333333333333326,
+      "upper_pp": 0.09999999999999998,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 57,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": 0.06277777777777921,
+      "lower_pp": 0.007763888888890011,
+      "upper_pp": 0.11722222222222373,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 147,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "774b7442951cd3a9117f98ef247200f641fafe3662279541bdc2ac9a7a50466a"
+  },
+  {
+    "id": "wikipedia-qdrant-s47-C5",
+    "dataset": "wikipedia",
+    "db": "qdrant",
+    "seed": 47,
+    "path": "C5",
+    "recall10": 0.9996666666666666,
+    "recall100": 0.9974166666666667,
+    "fresh_mean100": 0.9969555555555557,
+    "fresh_range100": [
+      0.9969499999999999,
+      0.9969499999999999,
+      0.9969666666666668
+    ],
+    "history_gap10": {
+      "mean_pp": 0.033333333333333326,
+      "lower_pp": -0.033333333333333326,
+      "upper_pp": 0.09999999999999998,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 57,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": 0.04611111111111253,
+      "lower_pp": -0.008347222222220802,
+      "upper_pp": 0.10001388888889062,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 147,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "774b7442951cd3a9117f98ef247200f641fafe3662279541bdc2ac9a7a50466a"
+  },
+  {
+    "id": "wikipedia-qdrant-s47-M1",
+    "dataset": "wikipedia",
+    "db": "qdrant",
+    "seed": 47,
+    "path": "M1",
+    "recall10": 0.9996666666666666,
+    "recall100": 0.9973166666666669,
+    "fresh_mean100": 0.9969555555555557,
+    "fresh_range100": [
+      0.9969499999999999,
+      0.9969499999999999,
+      0.9969666666666668
+    ],
+    "history_gap10": {
+      "mean_pp": 0.033333333333333326,
+      "lower_pp": -0.033333333333333326,
+      "upper_pp": 0.09999999999999998,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 57,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "history_gap100": {
+      "mean_pp": 0.036111111111112516,
+      "lower_pp": -0.01888888888888715,
+      "upper_pp": 0.09112500000000155,
+      "queries": 600,
+      "bootstrap_repeats": 2000,
+      "alpha": 0.05,
+      "seed": 147,
+      "scope": "conditional on fixed data and built indexes; not product-level uncertainty"
+    },
+    "initial_snapshot_sha256": "774b7442951cd3a9117f98ef247200f641fafe3662279541bdc2ac9a7a50466a"
+  }
+]

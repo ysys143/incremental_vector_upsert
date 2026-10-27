@@ -1,0 +1,3143 @@
+{
+  "version": 1,
+  "status": "PLAN_ONLY_NOT_EXECUTABLE",
+  "approval": "PENDING",
+  "latest_user_instruction": "계획 문서 갱신하고 승인받아.",
+  "user_instruction": "12시간 이내 가능한 플랜으로 갱신.",
+  "created_at": "2026-10-26T19:43:02.413332+09:00",
+  "clock": {
+    "start": "next implementation/execution instruction T0; not this document editing turn",
+    "wall_seconds": 43200,
+    "main_admission_seconds": 37800,
+    "reserve_seconds": 5400,
+    "no_reset_on_resume": true
+  },
+  "budget_minutes": {
+    "repair_prepare_smoke": 120,
+    "unfiltered_histories_fresh_curves": 420,
+    "filtered_study": 60,
+    "analysis_report": 30,
+    "reserve": 90
+  },
+  "resources": {
+    "db_slots": 1,
+    "db_cpus": 2,
+    "db_ram_gib": 4,
+    "host_free_floor_gib": 10,
+    "owned_outputs_plus_reservations_cap_gib": 8
+  },
+  "fixed": {
+    "n": 10000,
+    "max_n": 20000,
+    "min_n": 5000,
+    "dimension": 768,
+    "metric": "ip",
+    "query_subset": 200,
+    "terminal_queries": 600,
+    "fresh_repeats": 3
+  },
+  "settings_to_revalidate": {
+    "msmarco-postgres": {
+      "m": 16,
+      "ef_construction": 100,
+      "ef": 1000
+    },
+    "wikipedia-postgres": {
+      "m": 16,
+      "ef_construction": 100,
+      "ef": 512
+    },
+    "msmarco-qdrant": {
+      "m": 48,
+      "ef_construction": 300,
+      "ef": 256
+    },
+    "wikipedia-qdrant": {
+      "m": 48,
+      "ef_construction": 300,
+      "ef": 256
+    }
+  },
+  "histories": [
+    {
+      "id": "msmarco-s11-postgres-insert-r100-w1",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 11,
+      "source_case": "insert-r100-w1",
+      "waves": 1,
+      "quality_steps": [
+        0,
+        1
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-11/insert-r100-w1/events.npz",
+      "terminal_ledger": "bf29f239b54bd4328d8fcab08347d5cf29901507fb52b19f7265d8eb5b2f2573"
+    },
+    {
+      "id": "msmarco-s11-postgres-insert-r100-w5",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 11,
+      "source_case": "insert-r100-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-11/insert-r100-w5/events.npz",
+      "terminal_ledger": "bf29f239b54bd4328d8fcab08347d5cf29901507fb52b19f7265d8eb5b2f2573"
+    },
+    {
+      "id": "msmarco-s11-postgres-delete-r50-w1",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 11,
+      "source_case": "delete-r50-w1",
+      "waves": 1,
+      "quality_steps": [
+        0,
+        1
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-11/delete-r50-w1/events.npz",
+      "terminal_ledger": "8af039dcfdea87833f7e55bae7d44539f3f93c3f96dfabf530cdf033dbfe896a"
+    },
+    {
+      "id": "msmarco-s11-postgres-delete-r50-w5",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 11,
+      "source_case": "delete-r50-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-11/delete-r50-w5/events.npz",
+      "terminal_ledger": "8af039dcfdea87833f7e55bae7d44539f3f93c3f96dfabf530cdf033dbfe896a"
+    },
+    {
+      "id": "msmarco-s11-postgres-churn-r50-w1",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 11,
+      "source_case": "churn-r50-w1",
+      "waves": 1,
+      "quality_steps": [
+        0,
+        1
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-11/churn-r50-w1/events.npz",
+      "terminal_ledger": "f48265b63c4f44e688188724bbf2f11d20902e843cc82d07dc8d6633dc22f2be"
+    },
+    {
+      "id": "msmarco-s11-postgres-churn-r50-w5",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 11,
+      "source_case": "churn-r50-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-11/churn-r50-w5/events.npz",
+      "terminal_ledger": "f48265b63c4f44e688188724bbf2f11d20902e843cc82d07dc8d6633dc22f2be"
+    },
+    {
+      "id": "msmarco-s11-postgres-upsert-r50-w1",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 11,
+      "source_case": "upsert-r50-w1",
+      "waves": 1,
+      "quality_steps": [
+        0,
+        1
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-11/upsert-r50-w1/events.npz",
+      "terminal_ledger": "d3f8cdc52e1265035c626a0f9f5afcb52277b5bcbff7b2df68d24eb79d8b9606"
+    },
+    {
+      "id": "msmarco-s11-postgres-upsert-r50-w5",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 11,
+      "source_case": "upsert-r50-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-11/upsert-r50-w5/events.npz",
+      "terminal_ledger": "d3f8cdc52e1265035c626a0f9f5afcb52277b5bcbff7b2df68d24eb79d8b9606"
+    },
+    {
+      "id": "msmarco-s11-postgres-reinsert-r50-w5",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 11,
+      "source_case": "reinsert-r50-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-11/reinsert-r50-w5/events.npz",
+      "terminal_ledger": "14e1880667ce58202fe1e8e67712be8f313f26d8922346f029e0f94419d0f0fb"
+    },
+    {
+      "id": "msmarco-s11-postgres-same_vector-r50-w5",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 11,
+      "source_case": "same_vector-r50-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-11/same_vector-r50-w5/events.npz",
+      "terminal_ledger": "5d9e1d9fc12bfb2c06bd5e527ebdae476cf2eea3e17780f87f6ffa7d5278a5a0"
+    },
+    {
+      "id": "msmarco-s11-postgres-metadata-r50-w5",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 11,
+      "source_case": "metadata-r50-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-11/metadata-r50-w5/events.npz",
+      "terminal_ledger": "b054cbda3538b63b49438dc79f1d86171a1dbf764e30eb025cd608643d42ddb1"
+    },
+    {
+      "id": "msmarco-s11-postgres-read_only-long",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 11,
+      "source_case": "read_only-long",
+      "waves": 50,
+      "quality_steps": [
+        0,
+        1,
+        5,
+        10,
+        25,
+        50
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "5": 200,
+        "10": 200,
+        "25": 200,
+        "50": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-11/read_only-long/events.npz",
+      "terminal_ledger": "5d9e1d9fc12bfb2c06bd5e527ebdae476cf2eea3e17780f87f6ffa7d5278a5a0"
+    },
+    {
+      "id": "msmarco-s11-postgres-churn-long-uniform",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 11,
+      "source_case": "churn-long-uniform",
+      "waves": 50,
+      "quality_steps": [
+        0,
+        1,
+        5,
+        10,
+        25,
+        50
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "5": 200,
+        "10": 200,
+        "25": 200,
+        "50": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-11/churn-long-uniform/events.npz",
+      "terminal_ledger": "389aac50f09fd58cda5bd5d4d8cff49fee6b43c9d1b5ade10194da8fcc8240f3"
+    },
+    {
+      "id": "msmarco-s11-postgres-upsert-long-uniform",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 11,
+      "source_case": "upsert-long-uniform",
+      "waves": 50,
+      "quality_steps": [
+        0,
+        1,
+        5,
+        10,
+        25,
+        50
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "5": 200,
+        "10": 200,
+        "25": 200,
+        "50": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-11/upsert-long-uniform/events.npz",
+      "terminal_ledger": "0d2a846b2144c947f0dfc245d39e42e25676e9f06ac370830289f4de5c1c5215"
+    },
+    {
+      "id": "msmarco-s11-qdrant-insert-r100-w1",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 11,
+      "source_case": "insert-r100-w1",
+      "waves": 1,
+      "quality_steps": [
+        0,
+        1
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-11/insert-r100-w1/events.npz",
+      "terminal_ledger": "bf29f239b54bd4328d8fcab08347d5cf29901507fb52b19f7265d8eb5b2f2573"
+    },
+    {
+      "id": "msmarco-s11-qdrant-insert-r100-w5",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 11,
+      "source_case": "insert-r100-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-11/insert-r100-w5/events.npz",
+      "terminal_ledger": "bf29f239b54bd4328d8fcab08347d5cf29901507fb52b19f7265d8eb5b2f2573"
+    },
+    {
+      "id": "msmarco-s11-qdrant-delete-r50-w1",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 11,
+      "source_case": "delete-r50-w1",
+      "waves": 1,
+      "quality_steps": [
+        0,
+        1
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-11/delete-r50-w1/events.npz",
+      "terminal_ledger": "8af039dcfdea87833f7e55bae7d44539f3f93c3f96dfabf530cdf033dbfe896a"
+    },
+    {
+      "id": "msmarco-s11-qdrant-delete-r50-w5",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 11,
+      "source_case": "delete-r50-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-11/delete-r50-w5/events.npz",
+      "terminal_ledger": "8af039dcfdea87833f7e55bae7d44539f3f93c3f96dfabf530cdf033dbfe896a"
+    },
+    {
+      "id": "msmarco-s11-qdrant-churn-r50-w1",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 11,
+      "source_case": "churn-r50-w1",
+      "waves": 1,
+      "quality_steps": [
+        0,
+        1
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-11/churn-r50-w1/events.npz",
+      "terminal_ledger": "f48265b63c4f44e688188724bbf2f11d20902e843cc82d07dc8d6633dc22f2be"
+    },
+    {
+      "id": "msmarco-s11-qdrant-churn-r50-w5",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 11,
+      "source_case": "churn-r50-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-11/churn-r50-w5/events.npz",
+      "terminal_ledger": "f48265b63c4f44e688188724bbf2f11d20902e843cc82d07dc8d6633dc22f2be"
+    },
+    {
+      "id": "msmarco-s11-qdrant-upsert-r50-w1",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 11,
+      "source_case": "upsert-r50-w1",
+      "waves": 1,
+      "quality_steps": [
+        0,
+        1
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-11/upsert-r50-w1/events.npz",
+      "terminal_ledger": "d3f8cdc52e1265035c626a0f9f5afcb52277b5bcbff7b2df68d24eb79d8b9606"
+    },
+    {
+      "id": "msmarco-s11-qdrant-upsert-r50-w5",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 11,
+      "source_case": "upsert-r50-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-11/upsert-r50-w5/events.npz",
+      "terminal_ledger": "d3f8cdc52e1265035c626a0f9f5afcb52277b5bcbff7b2df68d24eb79d8b9606"
+    },
+    {
+      "id": "msmarco-s11-qdrant-reinsert-r50-w5",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 11,
+      "source_case": "reinsert-r50-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-11/reinsert-r50-w5/events.npz",
+      "terminal_ledger": "14e1880667ce58202fe1e8e67712be8f313f26d8922346f029e0f94419d0f0fb"
+    },
+    {
+      "id": "msmarco-s11-qdrant-same_vector-r50-w5",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 11,
+      "source_case": "same_vector-r50-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-11/same_vector-r50-w5/events.npz",
+      "terminal_ledger": "5d9e1d9fc12bfb2c06bd5e527ebdae476cf2eea3e17780f87f6ffa7d5278a5a0"
+    },
+    {
+      "id": "msmarco-s11-qdrant-metadata-r50-w5",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 11,
+      "source_case": "metadata-r50-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-11/metadata-r50-w5/events.npz",
+      "terminal_ledger": "b054cbda3538b63b49438dc79f1d86171a1dbf764e30eb025cd608643d42ddb1"
+    },
+    {
+      "id": "msmarco-s11-qdrant-read_only-long",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 11,
+      "source_case": "read_only-long",
+      "waves": 50,
+      "quality_steps": [
+        0,
+        1,
+        5,
+        10,
+        25,
+        50
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "5": 200,
+        "10": 200,
+        "25": 200,
+        "50": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-11/read_only-long/events.npz",
+      "terminal_ledger": "5d9e1d9fc12bfb2c06bd5e527ebdae476cf2eea3e17780f87f6ffa7d5278a5a0"
+    },
+    {
+      "id": "msmarco-s11-qdrant-churn-long-uniform",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 11,
+      "source_case": "churn-long-uniform",
+      "waves": 50,
+      "quality_steps": [
+        0,
+        1,
+        5,
+        10,
+        25,
+        50
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "5": 200,
+        "10": 200,
+        "25": 200,
+        "50": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-11/churn-long-uniform/events.npz",
+      "terminal_ledger": "389aac50f09fd58cda5bd5d4d8cff49fee6b43c9d1b5ade10194da8fcc8240f3"
+    },
+    {
+      "id": "msmarco-s11-qdrant-upsert-long-uniform",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 11,
+      "source_case": "upsert-long-uniform",
+      "waves": 50,
+      "quality_steps": [
+        0,
+        1,
+        5,
+        10,
+        25,
+        50
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "5": 200,
+        "10": 200,
+        "25": 200,
+        "50": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-11/upsert-long-uniform/events.npz",
+      "terminal_ledger": "0d2a846b2144c947f0dfc245d39e42e25676e9f06ac370830289f4de5c1c5215"
+    },
+    {
+      "id": "msmarco-s29-postgres-insert-r100-w1",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 29,
+      "source_case": "insert-r100-w1",
+      "waves": 1,
+      "quality_steps": [
+        0,
+        1
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-29/insert-r100-w1/events.npz",
+      "terminal_ledger": "a8039bb8654fa596333b21ab93f166b19753038864eb4de437b96970b55b94d4"
+    },
+    {
+      "id": "msmarco-s29-postgres-insert-r100-w5",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 29,
+      "source_case": "insert-r100-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-29/insert-r100-w5/events.npz",
+      "terminal_ledger": "a8039bb8654fa596333b21ab93f166b19753038864eb4de437b96970b55b94d4"
+    },
+    {
+      "id": "msmarco-s29-postgres-churn-r50-w5",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 29,
+      "source_case": "churn-r50-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-29/churn-r50-w5/events.npz",
+      "terminal_ledger": "469bb1433c4da0dbaf05ea414822a13312d44d674837d56efa8455f5138fe288"
+    },
+    {
+      "id": "msmarco-s29-postgres-upsert-r50-w5",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 29,
+      "source_case": "upsert-r50-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-29/upsert-r50-w5/events.npz",
+      "terminal_ledger": "df376fb8a5698bc26521aecf5c3541cbd56ce866ae247c72ec246d5d38d0c0c2"
+    },
+    {
+      "id": "msmarco-s29-qdrant-insert-r100-w1",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 29,
+      "source_case": "insert-r100-w1",
+      "waves": 1,
+      "quality_steps": [
+        0,
+        1
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-29/insert-r100-w1/events.npz",
+      "terminal_ledger": "a8039bb8654fa596333b21ab93f166b19753038864eb4de437b96970b55b94d4"
+    },
+    {
+      "id": "msmarco-s29-qdrant-insert-r100-w5",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 29,
+      "source_case": "insert-r100-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-29/insert-r100-w5/events.npz",
+      "terminal_ledger": "a8039bb8654fa596333b21ab93f166b19753038864eb4de437b96970b55b94d4"
+    },
+    {
+      "id": "msmarco-s29-qdrant-churn-r50-w5",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 29,
+      "source_case": "churn-r50-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-29/churn-r50-w5/events.npz",
+      "terminal_ledger": "469bb1433c4da0dbaf05ea414822a13312d44d674837d56efa8455f5138fe288"
+    },
+    {
+      "id": "msmarco-s29-qdrant-upsert-r50-w5",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 29,
+      "source_case": "upsert-r50-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/seed-29/upsert-r50-w5/events.npz",
+      "terminal_ledger": "df376fb8a5698bc26521aecf5c3541cbd56ce866ae247c72ec246d5d38d0c0c2"
+    },
+    {
+      "id": "wikipedia-s11-postgres-insert-r100-w1",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "postgres",
+      "seed": 11,
+      "source_case": "insert-r100-w1",
+      "waves": 1,
+      "quality_steps": [
+        0,
+        1
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/seed-11/insert-r100-w1/events.npz",
+      "terminal_ledger": "51d26bb807ab59da65adc7b5c700bc77e64ab9a9d1fc9825c89813dffe36c49f"
+    },
+    {
+      "id": "wikipedia-s11-postgres-insert-r100-w5",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "postgres",
+      "seed": 11,
+      "source_case": "insert-r100-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/seed-11/insert-r100-w5/events.npz",
+      "terminal_ledger": "51d26bb807ab59da65adc7b5c700bc77e64ab9a9d1fc9825c89813dffe36c49f"
+    },
+    {
+      "id": "wikipedia-s11-postgres-delete-r50-w1",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "postgres",
+      "seed": 11,
+      "source_case": "delete-r50-w1",
+      "waves": 1,
+      "quality_steps": [
+        0,
+        1
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/seed-11/delete-r50-w1/events.npz",
+      "terminal_ledger": "98f7b5a232118b69b774a4b483b3e8b69301a67f5c1c508918890407429f85a0"
+    },
+    {
+      "id": "wikipedia-s11-postgres-delete-r50-w5",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "postgres",
+      "seed": 11,
+      "source_case": "delete-r50-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/seed-11/delete-r50-w5/events.npz",
+      "terminal_ledger": "98f7b5a232118b69b774a4b483b3e8b69301a67f5c1c508918890407429f85a0"
+    },
+    {
+      "id": "wikipedia-s11-postgres-churn-r50-w1",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "postgres",
+      "seed": 11,
+      "source_case": "churn-r50-w1",
+      "waves": 1,
+      "quality_steps": [
+        0,
+        1
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/seed-11/churn-r50-w1/events.npz",
+      "terminal_ledger": "a1a565358644cf19f6f34468164bb0aeda4a587dca7096c18983a04e6ae924fc"
+    },
+    {
+      "id": "wikipedia-s11-postgres-churn-r50-w5",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "postgres",
+      "seed": 11,
+      "source_case": "churn-r50-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/seed-11/churn-r50-w5/events.npz",
+      "terminal_ledger": "a1a565358644cf19f6f34468164bb0aeda4a587dca7096c18983a04e6ae924fc"
+    },
+    {
+      "id": "wikipedia-s11-postgres-upsert-r50-w1",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "postgres",
+      "seed": 11,
+      "source_case": "upsert-r50-w1",
+      "waves": 1,
+      "quality_steps": [
+        0,
+        1
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/seed-11/upsert-r50-w1/events.npz",
+      "terminal_ledger": "4e2440856f69c45253acc8758c918f3d05fe16632cb3ab08ed8bcd0ce67443c7"
+    },
+    {
+      "id": "wikipedia-s11-postgres-upsert-r50-w5",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "postgres",
+      "seed": 11,
+      "source_case": "upsert-r50-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/seed-11/upsert-r50-w5/events.npz",
+      "terminal_ledger": "4e2440856f69c45253acc8758c918f3d05fe16632cb3ab08ed8bcd0ce67443c7"
+    },
+    {
+      "id": "wikipedia-s11-postgres-reinsert-r50-w5",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "postgres",
+      "seed": 11,
+      "source_case": "reinsert-r50-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/seed-11/reinsert-r50-w5/events.npz",
+      "terminal_ledger": "e710f5242685451a53bf5afd778ed6956cbc2e5226c328507d76463848bd85cb"
+    },
+    {
+      "id": "wikipedia-s11-postgres-same_vector-r50-w5",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "postgres",
+      "seed": 11,
+      "source_case": "same_vector-r50-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/seed-11/same_vector-r50-w5/events.npz",
+      "terminal_ledger": "bd1e9cd1473e65b8817acd1b47f17e4923361a2e5ec37119ebbd320ccb59c7c2"
+    },
+    {
+      "id": "wikipedia-s11-postgres-metadata-r50-w5",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "postgres",
+      "seed": 11,
+      "source_case": "metadata-r50-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/seed-11/metadata-r50-w5/events.npz",
+      "terminal_ledger": "ba010f6842aa115d259bb3599b0674ae50688c369670137f2f4504da66ff8aa8"
+    },
+    {
+      "id": "wikipedia-s11-postgres-read_only-long",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "postgres",
+      "seed": 11,
+      "source_case": "read_only-long",
+      "waves": 50,
+      "quality_steps": [
+        0,
+        1,
+        5,
+        10,
+        25,
+        50
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "5": 200,
+        "10": 200,
+        "25": 200,
+        "50": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/seed-11/read_only-long/events.npz",
+      "terminal_ledger": "bd1e9cd1473e65b8817acd1b47f17e4923361a2e5ec37119ebbd320ccb59c7c2"
+    },
+    {
+      "id": "wikipedia-s11-qdrant-insert-r100-w1",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "qdrant",
+      "seed": 11,
+      "source_case": "insert-r100-w1",
+      "waves": 1,
+      "quality_steps": [
+        0,
+        1
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/seed-11/insert-r100-w1/events.npz",
+      "terminal_ledger": "51d26bb807ab59da65adc7b5c700bc77e64ab9a9d1fc9825c89813dffe36c49f"
+    },
+    {
+      "id": "wikipedia-s11-qdrant-insert-r100-w5",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "qdrant",
+      "seed": 11,
+      "source_case": "insert-r100-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/seed-11/insert-r100-w5/events.npz",
+      "terminal_ledger": "51d26bb807ab59da65adc7b5c700bc77e64ab9a9d1fc9825c89813dffe36c49f"
+    },
+    {
+      "id": "wikipedia-s11-qdrant-delete-r50-w1",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "qdrant",
+      "seed": 11,
+      "source_case": "delete-r50-w1",
+      "waves": 1,
+      "quality_steps": [
+        0,
+        1
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/seed-11/delete-r50-w1/events.npz",
+      "terminal_ledger": "98f7b5a232118b69b774a4b483b3e8b69301a67f5c1c508918890407429f85a0"
+    },
+    {
+      "id": "wikipedia-s11-qdrant-delete-r50-w5",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "qdrant",
+      "seed": 11,
+      "source_case": "delete-r50-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/seed-11/delete-r50-w5/events.npz",
+      "terminal_ledger": "98f7b5a232118b69b774a4b483b3e8b69301a67f5c1c508918890407429f85a0"
+    },
+    {
+      "id": "wikipedia-s11-qdrant-churn-r50-w1",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "qdrant",
+      "seed": 11,
+      "source_case": "churn-r50-w1",
+      "waves": 1,
+      "quality_steps": [
+        0,
+        1
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/seed-11/churn-r50-w1/events.npz",
+      "terminal_ledger": "a1a565358644cf19f6f34468164bb0aeda4a587dca7096c18983a04e6ae924fc"
+    },
+    {
+      "id": "wikipedia-s11-qdrant-churn-r50-w5",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "qdrant",
+      "seed": 11,
+      "source_case": "churn-r50-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/seed-11/churn-r50-w5/events.npz",
+      "terminal_ledger": "a1a565358644cf19f6f34468164bb0aeda4a587dca7096c18983a04e6ae924fc"
+    },
+    {
+      "id": "wikipedia-s11-qdrant-upsert-r50-w1",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "qdrant",
+      "seed": 11,
+      "source_case": "upsert-r50-w1",
+      "waves": 1,
+      "quality_steps": [
+        0,
+        1
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/seed-11/upsert-r50-w1/events.npz",
+      "terminal_ledger": "4e2440856f69c45253acc8758c918f3d05fe16632cb3ab08ed8bcd0ce67443c7"
+    },
+    {
+      "id": "wikipedia-s11-qdrant-upsert-r50-w5",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "qdrant",
+      "seed": 11,
+      "source_case": "upsert-r50-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/seed-11/upsert-r50-w5/events.npz",
+      "terminal_ledger": "4e2440856f69c45253acc8758c918f3d05fe16632cb3ab08ed8bcd0ce67443c7"
+    },
+    {
+      "id": "wikipedia-s11-qdrant-reinsert-r50-w5",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "qdrant",
+      "seed": 11,
+      "source_case": "reinsert-r50-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/seed-11/reinsert-r50-w5/events.npz",
+      "terminal_ledger": "e710f5242685451a53bf5afd778ed6956cbc2e5226c328507d76463848bd85cb"
+    },
+    {
+      "id": "wikipedia-s11-qdrant-same_vector-r50-w5",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "qdrant",
+      "seed": 11,
+      "source_case": "same_vector-r50-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/seed-11/same_vector-r50-w5/events.npz",
+      "terminal_ledger": "bd1e9cd1473e65b8817acd1b47f17e4923361a2e5ec37119ebbd320ccb59c7c2"
+    },
+    {
+      "id": "wikipedia-s11-qdrant-metadata-r50-w5",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "qdrant",
+      "seed": 11,
+      "source_case": "metadata-r50-w5",
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/seed-11/metadata-r50-w5/events.npz",
+      "terminal_ledger": "ba010f6842aa115d259bb3599b0674ae50688c369670137f2f4504da66ff8aa8"
+    },
+    {
+      "id": "wikipedia-s11-qdrant-read_only-long",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "qdrant",
+      "seed": 11,
+      "source_case": "read_only-long",
+      "waves": 50,
+      "quality_steps": [
+        0,
+        1,
+        5,
+        10,
+        25,
+        50
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "5": 200,
+        "10": 200,
+        "25": 200,
+        "50": 600
+      },
+      "source_events": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/seed-11/read_only-long/events.npz",
+      "terminal_ledger": "bd1e9cd1473e65b8817acd1b47f17e4923361a2e5ec37119ebbd320ccb59c7c2"
+    },
+    {
+      "id": "msmarco-s11-postgres-insert-r100-w5-near",
+      "family": "geometry",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 11,
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "input_status": "TO_PREPARE_FROM_PUBLIC_POOL",
+      "selection": "near"
+    },
+    {
+      "id": "msmarco-s11-postgres-insert-r100-w5-far",
+      "family": "geometry",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 11,
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "input_status": "TO_PREPARE_FROM_PUBLIC_POOL",
+      "selection": "far"
+    },
+    {
+      "id": "msmarco-s11-postgres-filtered-upsert-r50-w5",
+      "family": "filter",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 11,
+      "waves": 5,
+      "quality_steps": [
+        0,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "5": 600
+      },
+      "input_status": "TO_PREPARE_WITH_FIXED_FILTER_LABELS"
+    },
+    {
+      "id": "msmarco-s11-qdrant-insert-r100-w5-near",
+      "family": "geometry",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 11,
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "input_status": "TO_PREPARE_FROM_PUBLIC_POOL",
+      "selection": "near"
+    },
+    {
+      "id": "msmarco-s11-qdrant-insert-r100-w5-far",
+      "family": "geometry",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 11,
+      "waves": 5,
+      "quality_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "1": 200,
+        "2": 200,
+        "3": 200,
+        "4": 200,
+        "5": 600
+      },
+      "input_status": "TO_PREPARE_FROM_PUBLIC_POOL",
+      "selection": "far"
+    },
+    {
+      "id": "msmarco-s11-qdrant-filtered-upsert-r50-w5",
+      "family": "filter",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 11,
+      "waves": 5,
+      "quality_steps": [
+        0,
+        5
+      ],
+      "queries_by_step": {
+        "0": 200,
+        "5": 600
+      },
+      "input_status": "TO_PREPARE_WITH_FIXED_FILTER_LABELS"
+    }
+  ],
+  "fresh_groups": [
+    {
+      "id": "msmarco-s11-postgres-bf29f239b54bd4328d8fcab08347d5cf29901507fb52b19f7265d8eb5b2f2573",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 11,
+      "terminal_ledger": "bf29f239b54bd4328d8fcab08347d5cf29901507fb52b19f7265d8eb5b2f2573",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/checkpoints/states/bf29f239b54bd4328d8fcab08347d5cf29901507fb52b19f7265d8eb5b2f2573.npz",
+        "sha256": "ba67c86e7ba5547b950e099ecb1f14bc5731ba32be14ffa412ec169d4137a35d",
+        "ledger_sha256": "bf29f239b54bd4328d8fcab08347d5cf29901507fb52b19f7265d8eb5b2f2573",
+        "count": 20000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "msmarco-s11-postgres-8af039dcfdea87833f7e55bae7d44539f3f93c3f96dfabf530cdf033dbfe896a",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 11,
+      "terminal_ledger": "8af039dcfdea87833f7e55bae7d44539f3f93c3f96dfabf530cdf033dbfe896a",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/checkpoints/states/8af039dcfdea87833f7e55bae7d44539f3f93c3f96dfabf530cdf033dbfe896a.npz",
+        "sha256": "6357dc3de84c7b0311321550a24fa02de2806c47773d086446efaf6b34d438e6",
+        "ledger_sha256": "8af039dcfdea87833f7e55bae7d44539f3f93c3f96dfabf530cdf033dbfe896a",
+        "count": 5000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "msmarco-s11-postgres-f48265b63c4f44e688188724bbf2f11d20902e843cc82d07dc8d6633dc22f2be",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 11,
+      "terminal_ledger": "f48265b63c4f44e688188724bbf2f11d20902e843cc82d07dc8d6633dc22f2be",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/checkpoints/states/f48265b63c4f44e688188724bbf2f11d20902e843cc82d07dc8d6633dc22f2be.npz",
+        "sha256": "4c8599c8f1beeee1b2945c5c4fdacab142705896075ab8599f6bbf848900e0bf",
+        "ledger_sha256": "f48265b63c4f44e688188724bbf2f11d20902e843cc82d07dc8d6633dc22f2be",
+        "count": 10000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "msmarco-s11-postgres-d3f8cdc52e1265035c626a0f9f5afcb52277b5bcbff7b2df68d24eb79d8b9606",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 11,
+      "terminal_ledger": "d3f8cdc52e1265035c626a0f9f5afcb52277b5bcbff7b2df68d24eb79d8b9606",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/checkpoints/states/d3f8cdc52e1265035c626a0f9f5afcb52277b5bcbff7b2df68d24eb79d8b9606.npz",
+        "sha256": "4a914ba9dc6444cc975e140409e219b4e46c8f7bd566aa3688ca68afac3de025",
+        "ledger_sha256": "d3f8cdc52e1265035c626a0f9f5afcb52277b5bcbff7b2df68d24eb79d8b9606",
+        "count": 10000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "msmarco-s11-postgres-14e1880667ce58202fe1e8e67712be8f313f26d8922346f029e0f94419d0f0fb",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 11,
+      "terminal_ledger": "14e1880667ce58202fe1e8e67712be8f313f26d8922346f029e0f94419d0f0fb",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/checkpoints/states/14e1880667ce58202fe1e8e67712be8f313f26d8922346f029e0f94419d0f0fb.npz",
+        "sha256": "d43640bef980bc3051900eb9d80228ba3e956e6cf290cb100f3053b11834cf0b",
+        "ledger_sha256": "14e1880667ce58202fe1e8e67712be8f313f26d8922346f029e0f94419d0f0fb",
+        "count": 10000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "msmarco-s11-postgres-5d9e1d9fc12bfb2c06bd5e527ebdae476cf2eea3e17780f87f6ffa7d5278a5a0",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 11,
+      "terminal_ledger": "5d9e1d9fc12bfb2c06bd5e527ebdae476cf2eea3e17780f87f6ffa7d5278a5a0",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/checkpoints/states/5d9e1d9fc12bfb2c06bd5e527ebdae476cf2eea3e17780f87f6ffa7d5278a5a0.npz",
+        "sha256": "b78060ef58d92cc4f8a74a683309cbde8810c67e361883e587348a4276643610",
+        "ledger_sha256": "5d9e1d9fc12bfb2c06bd5e527ebdae476cf2eea3e17780f87f6ffa7d5278a5a0",
+        "count": 10000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "msmarco-s11-postgres-b054cbda3538b63b49438dc79f1d86171a1dbf764e30eb025cd608643d42ddb1",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 11,
+      "terminal_ledger": "b054cbda3538b63b49438dc79f1d86171a1dbf764e30eb025cd608643d42ddb1",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/checkpoints/states/b054cbda3538b63b49438dc79f1d86171a1dbf764e30eb025cd608643d42ddb1.npz",
+        "sha256": "c4e020fab4517a9d7f992ed8e17db43d1ac20a1c5fa038baffe8a320513e164b",
+        "ledger_sha256": "b054cbda3538b63b49438dc79f1d86171a1dbf764e30eb025cd608643d42ddb1",
+        "count": 10000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "msmarco-s11-postgres-389aac50f09fd58cda5bd5d4d8cff49fee6b43c9d1b5ade10194da8fcc8240f3",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 11,
+      "terminal_ledger": "389aac50f09fd58cda5bd5d4d8cff49fee6b43c9d1b5ade10194da8fcc8240f3",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/checkpoints/states/389aac50f09fd58cda5bd5d4d8cff49fee6b43c9d1b5ade10194da8fcc8240f3.npz",
+        "sha256": "e8ee1de2ddbf9c338399c5f26aeee4c458982a5a32b1c3dade594efc3553fc24",
+        "ledger_sha256": "389aac50f09fd58cda5bd5d4d8cff49fee6b43c9d1b5ade10194da8fcc8240f3",
+        "count": 10000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "msmarco-s11-postgres-0d2a846b2144c947f0dfc245d39e42e25676e9f06ac370830289f4de5c1c5215",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 11,
+      "terminal_ledger": "0d2a846b2144c947f0dfc245d39e42e25676e9f06ac370830289f4de5c1c5215",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/checkpoints/states/0d2a846b2144c947f0dfc245d39e42e25676e9f06ac370830289f4de5c1c5215.npz",
+        "sha256": "4bdfe3f019a639d423b82f87216b342246cc8e654e557a4ff2f214c7dd7a4159",
+        "ledger_sha256": "0d2a846b2144c947f0dfc245d39e42e25676e9f06ac370830289f4de5c1c5215",
+        "count": 10000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "msmarco-s11-qdrant-bf29f239b54bd4328d8fcab08347d5cf29901507fb52b19f7265d8eb5b2f2573",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 11,
+      "terminal_ledger": "bf29f239b54bd4328d8fcab08347d5cf29901507fb52b19f7265d8eb5b2f2573",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/checkpoints/states/bf29f239b54bd4328d8fcab08347d5cf29901507fb52b19f7265d8eb5b2f2573.npz",
+        "sha256": "ba67c86e7ba5547b950e099ecb1f14bc5731ba32be14ffa412ec169d4137a35d",
+        "ledger_sha256": "bf29f239b54bd4328d8fcab08347d5cf29901507fb52b19f7265d8eb5b2f2573",
+        "count": 20000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "msmarco-s11-qdrant-8af039dcfdea87833f7e55bae7d44539f3f93c3f96dfabf530cdf033dbfe896a",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 11,
+      "terminal_ledger": "8af039dcfdea87833f7e55bae7d44539f3f93c3f96dfabf530cdf033dbfe896a",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/checkpoints/states/8af039dcfdea87833f7e55bae7d44539f3f93c3f96dfabf530cdf033dbfe896a.npz",
+        "sha256": "6357dc3de84c7b0311321550a24fa02de2806c47773d086446efaf6b34d438e6",
+        "ledger_sha256": "8af039dcfdea87833f7e55bae7d44539f3f93c3f96dfabf530cdf033dbfe896a",
+        "count": 5000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "msmarco-s11-qdrant-f48265b63c4f44e688188724bbf2f11d20902e843cc82d07dc8d6633dc22f2be",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 11,
+      "terminal_ledger": "f48265b63c4f44e688188724bbf2f11d20902e843cc82d07dc8d6633dc22f2be",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/checkpoints/states/f48265b63c4f44e688188724bbf2f11d20902e843cc82d07dc8d6633dc22f2be.npz",
+        "sha256": "4c8599c8f1beeee1b2945c5c4fdacab142705896075ab8599f6bbf848900e0bf",
+        "ledger_sha256": "f48265b63c4f44e688188724bbf2f11d20902e843cc82d07dc8d6633dc22f2be",
+        "count": 10000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "msmarco-s11-qdrant-d3f8cdc52e1265035c626a0f9f5afcb52277b5bcbff7b2df68d24eb79d8b9606",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 11,
+      "terminal_ledger": "d3f8cdc52e1265035c626a0f9f5afcb52277b5bcbff7b2df68d24eb79d8b9606",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/checkpoints/states/d3f8cdc52e1265035c626a0f9f5afcb52277b5bcbff7b2df68d24eb79d8b9606.npz",
+        "sha256": "4a914ba9dc6444cc975e140409e219b4e46c8f7bd566aa3688ca68afac3de025",
+        "ledger_sha256": "d3f8cdc52e1265035c626a0f9f5afcb52277b5bcbff7b2df68d24eb79d8b9606",
+        "count": 10000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "msmarco-s11-qdrant-14e1880667ce58202fe1e8e67712be8f313f26d8922346f029e0f94419d0f0fb",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 11,
+      "terminal_ledger": "14e1880667ce58202fe1e8e67712be8f313f26d8922346f029e0f94419d0f0fb",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/checkpoints/states/14e1880667ce58202fe1e8e67712be8f313f26d8922346f029e0f94419d0f0fb.npz",
+        "sha256": "d43640bef980bc3051900eb9d80228ba3e956e6cf290cb100f3053b11834cf0b",
+        "ledger_sha256": "14e1880667ce58202fe1e8e67712be8f313f26d8922346f029e0f94419d0f0fb",
+        "count": 10000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "msmarco-s11-qdrant-5d9e1d9fc12bfb2c06bd5e527ebdae476cf2eea3e17780f87f6ffa7d5278a5a0",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 11,
+      "terminal_ledger": "5d9e1d9fc12bfb2c06bd5e527ebdae476cf2eea3e17780f87f6ffa7d5278a5a0",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/checkpoints/states/5d9e1d9fc12bfb2c06bd5e527ebdae476cf2eea3e17780f87f6ffa7d5278a5a0.npz",
+        "sha256": "b78060ef58d92cc4f8a74a683309cbde8810c67e361883e587348a4276643610",
+        "ledger_sha256": "5d9e1d9fc12bfb2c06bd5e527ebdae476cf2eea3e17780f87f6ffa7d5278a5a0",
+        "count": 10000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "msmarco-s11-qdrant-b054cbda3538b63b49438dc79f1d86171a1dbf764e30eb025cd608643d42ddb1",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 11,
+      "terminal_ledger": "b054cbda3538b63b49438dc79f1d86171a1dbf764e30eb025cd608643d42ddb1",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/checkpoints/states/b054cbda3538b63b49438dc79f1d86171a1dbf764e30eb025cd608643d42ddb1.npz",
+        "sha256": "c4e020fab4517a9d7f992ed8e17db43d1ac20a1c5fa038baffe8a320513e164b",
+        "ledger_sha256": "b054cbda3538b63b49438dc79f1d86171a1dbf764e30eb025cd608643d42ddb1",
+        "count": 10000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "msmarco-s11-qdrant-389aac50f09fd58cda5bd5d4d8cff49fee6b43c9d1b5ade10194da8fcc8240f3",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 11,
+      "terminal_ledger": "389aac50f09fd58cda5bd5d4d8cff49fee6b43c9d1b5ade10194da8fcc8240f3",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/checkpoints/states/389aac50f09fd58cda5bd5d4d8cff49fee6b43c9d1b5ade10194da8fcc8240f3.npz",
+        "sha256": "e8ee1de2ddbf9c338399c5f26aeee4c458982a5a32b1c3dade594efc3553fc24",
+        "ledger_sha256": "389aac50f09fd58cda5bd5d4d8cff49fee6b43c9d1b5ade10194da8fcc8240f3",
+        "count": 10000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "msmarco-s11-qdrant-0d2a846b2144c947f0dfc245d39e42e25676e9f06ac370830289f4de5c1c5215",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 11,
+      "terminal_ledger": "0d2a846b2144c947f0dfc245d39e42e25676e9f06ac370830289f4de5c1c5215",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/checkpoints/states/0d2a846b2144c947f0dfc245d39e42e25676e9f06ac370830289f4de5c1c5215.npz",
+        "sha256": "4bdfe3f019a639d423b82f87216b342246cc8e654e557a4ff2f214c7dd7a4159",
+        "ledger_sha256": "0d2a846b2144c947f0dfc245d39e42e25676e9f06ac370830289f4de5c1c5215",
+        "count": 10000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "msmarco-s29-postgres-a8039bb8654fa596333b21ab93f166b19753038864eb4de437b96970b55b94d4",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 29,
+      "terminal_ledger": "a8039bb8654fa596333b21ab93f166b19753038864eb4de437b96970b55b94d4",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/checkpoints/states/a8039bb8654fa596333b21ab93f166b19753038864eb4de437b96970b55b94d4.npz",
+        "sha256": "45838eee00181112bea62fef5bb1ced671378acf1acaca97d1726e02b7bd9e37",
+        "ledger_sha256": "a8039bb8654fa596333b21ab93f166b19753038864eb4de437b96970b55b94d4",
+        "count": 20000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "msmarco-s29-postgres-469bb1433c4da0dbaf05ea414822a13312d44d674837d56efa8455f5138fe288",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 29,
+      "terminal_ledger": "469bb1433c4da0dbaf05ea414822a13312d44d674837d56efa8455f5138fe288",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/checkpoints/states/469bb1433c4da0dbaf05ea414822a13312d44d674837d56efa8455f5138fe288.npz",
+        "sha256": "3c101b2e3ab1f6fb8a7ff4f164854149981a63de8139e614746b946868fea0e1",
+        "ledger_sha256": "469bb1433c4da0dbaf05ea414822a13312d44d674837d56efa8455f5138fe288",
+        "count": 10000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "msmarco-s29-postgres-df376fb8a5698bc26521aecf5c3541cbd56ce866ae247c72ec246d5d38d0c0c2",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "postgres",
+      "seed": 29,
+      "terminal_ledger": "df376fb8a5698bc26521aecf5c3541cbd56ce866ae247c72ec246d5d38d0c0c2",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/checkpoints/states/df376fb8a5698bc26521aecf5c3541cbd56ce866ae247c72ec246d5d38d0c0c2.npz",
+        "sha256": "b0f4239c5df84069416561c524cb3cc7366dd4c0bc49a72dbce85117f6106308",
+        "ledger_sha256": "df376fb8a5698bc26521aecf5c3541cbd56ce866ae247c72ec246d5d38d0c0c2",
+        "count": 10000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "msmarco-s29-qdrant-a8039bb8654fa596333b21ab93f166b19753038864eb4de437b96970b55b94d4",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 29,
+      "terminal_ledger": "a8039bb8654fa596333b21ab93f166b19753038864eb4de437b96970b55b94d4",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/checkpoints/states/a8039bb8654fa596333b21ab93f166b19753038864eb4de437b96970b55b94d4.npz",
+        "sha256": "45838eee00181112bea62fef5bb1ced671378acf1acaca97d1726e02b7bd9e37",
+        "ledger_sha256": "a8039bb8654fa596333b21ab93f166b19753038864eb4de437b96970b55b94d4",
+        "count": 20000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "msmarco-s29-qdrant-469bb1433c4da0dbaf05ea414822a13312d44d674837d56efa8455f5138fe288",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 29,
+      "terminal_ledger": "469bb1433c4da0dbaf05ea414822a13312d44d674837d56efa8455f5138fe288",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/checkpoints/states/469bb1433c4da0dbaf05ea414822a13312d44d674837d56efa8455f5138fe288.npz",
+        "sha256": "3c101b2e3ab1f6fb8a7ff4f164854149981a63de8139e614746b946868fea0e1",
+        "ledger_sha256": "469bb1433c4da0dbaf05ea414822a13312d44d674837d56efa8455f5138fe288",
+        "count": 10000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "msmarco-s29-qdrant-df376fb8a5698bc26521aecf5c3541cbd56ce866ae247c72ec246d5d38d0c0c2",
+      "family": "baseline",
+      "dataset": "msmarco",
+      "db": "qdrant",
+      "seed": 29,
+      "terminal_ledger": "df376fb8a5698bc26521aecf5c3541cbd56ce866ae247c72ec246d5d38d0c0c2",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__msmarco/7ca49249-51c1-4249-be11-ed7ebcb02d7f/checkpoints/states/df376fb8a5698bc26521aecf5c3541cbd56ce866ae247c72ec246d5d38d0c0c2.npz",
+        "sha256": "b0f4239c5df84069416561c524cb3cc7366dd4c0bc49a72dbce85117f6106308",
+        "ledger_sha256": "df376fb8a5698bc26521aecf5c3541cbd56ce866ae247c72ec246d5d38d0c0c2",
+        "count": 10000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "wikipedia-s11-postgres-51d26bb807ab59da65adc7b5c700bc77e64ab9a9d1fc9825c89813dffe36c49f",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "postgres",
+      "seed": 11,
+      "terminal_ledger": "51d26bb807ab59da65adc7b5c700bc77e64ab9a9d1fc9825c89813dffe36c49f",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/checkpoints/states/51d26bb807ab59da65adc7b5c700bc77e64ab9a9d1fc9825c89813dffe36c49f.npz",
+        "sha256": "7b3d3a8d2872162fa2195b9ad20107a534f82baedaadc7178df5ea4d5fbaaa86",
+        "ledger_sha256": "51d26bb807ab59da65adc7b5c700bc77e64ab9a9d1fc9825c89813dffe36c49f",
+        "count": 20000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "wikipedia-s11-postgres-98f7b5a232118b69b774a4b483b3e8b69301a67f5c1c508918890407429f85a0",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "postgres",
+      "seed": 11,
+      "terminal_ledger": "98f7b5a232118b69b774a4b483b3e8b69301a67f5c1c508918890407429f85a0",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/checkpoints/states/98f7b5a232118b69b774a4b483b3e8b69301a67f5c1c508918890407429f85a0.npz",
+        "sha256": "143a5a6f949f811248fc1d70bfa2355a59060495ac3825746eac5d15555c502c",
+        "ledger_sha256": "98f7b5a232118b69b774a4b483b3e8b69301a67f5c1c508918890407429f85a0",
+        "count": 5000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "wikipedia-s11-postgres-a1a565358644cf19f6f34468164bb0aeda4a587dca7096c18983a04e6ae924fc",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "postgres",
+      "seed": 11,
+      "terminal_ledger": "a1a565358644cf19f6f34468164bb0aeda4a587dca7096c18983a04e6ae924fc",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/checkpoints/states/a1a565358644cf19f6f34468164bb0aeda4a587dca7096c18983a04e6ae924fc.npz",
+        "sha256": "d762d40a9ba5cc0e328bbfc6b52d3b99b54f228bb09bf195df925ff0104f5987",
+        "ledger_sha256": "a1a565358644cf19f6f34468164bb0aeda4a587dca7096c18983a04e6ae924fc",
+        "count": 10000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "wikipedia-s11-postgres-4e2440856f69c45253acc8758c918f3d05fe16632cb3ab08ed8bcd0ce67443c7",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "postgres",
+      "seed": 11,
+      "terminal_ledger": "4e2440856f69c45253acc8758c918f3d05fe16632cb3ab08ed8bcd0ce67443c7",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/checkpoints/states/4e2440856f69c45253acc8758c918f3d05fe16632cb3ab08ed8bcd0ce67443c7.npz",
+        "sha256": "a473bae1a9c353f4b504ef873a72e0bf7054dc45d1cb9f0d47f641d17f37d9b4",
+        "ledger_sha256": "4e2440856f69c45253acc8758c918f3d05fe16632cb3ab08ed8bcd0ce67443c7",
+        "count": 10000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "wikipedia-s11-postgres-e710f5242685451a53bf5afd778ed6956cbc2e5226c328507d76463848bd85cb",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "postgres",
+      "seed": 11,
+      "terminal_ledger": "e710f5242685451a53bf5afd778ed6956cbc2e5226c328507d76463848bd85cb",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/checkpoints/states/e710f5242685451a53bf5afd778ed6956cbc2e5226c328507d76463848bd85cb.npz",
+        "sha256": "4db14c7c6a1cfaab5d9f2369801771f51a50a42ccc2904d9eb0bf984254ff914",
+        "ledger_sha256": "e710f5242685451a53bf5afd778ed6956cbc2e5226c328507d76463848bd85cb",
+        "count": 10000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "wikipedia-s11-postgres-bd1e9cd1473e65b8817acd1b47f17e4923361a2e5ec37119ebbd320ccb59c7c2",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "postgres",
+      "seed": 11,
+      "terminal_ledger": "bd1e9cd1473e65b8817acd1b47f17e4923361a2e5ec37119ebbd320ccb59c7c2",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/checkpoints/states/bd1e9cd1473e65b8817acd1b47f17e4923361a2e5ec37119ebbd320ccb59c7c2.npz",
+        "sha256": "e9a5f527df0b378de0580c26f2b9ec4fdc0d759d85ccdfc22eec48a7b9fc49ae",
+        "ledger_sha256": "bd1e9cd1473e65b8817acd1b47f17e4923361a2e5ec37119ebbd320ccb59c7c2",
+        "count": 10000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "wikipedia-s11-postgres-ba010f6842aa115d259bb3599b0674ae50688c369670137f2f4504da66ff8aa8",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "postgres",
+      "seed": 11,
+      "terminal_ledger": "ba010f6842aa115d259bb3599b0674ae50688c369670137f2f4504da66ff8aa8",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/checkpoints/states/ba010f6842aa115d259bb3599b0674ae50688c369670137f2f4504da66ff8aa8.npz",
+        "sha256": "2ab010250679ca3ecf27e61797d05f10c46961f89161f48cd3357bce1361997f",
+        "ledger_sha256": "ba010f6842aa115d259bb3599b0674ae50688c369670137f2f4504da66ff8aa8",
+        "count": 10000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "wikipedia-s11-qdrant-51d26bb807ab59da65adc7b5c700bc77e64ab9a9d1fc9825c89813dffe36c49f",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "qdrant",
+      "seed": 11,
+      "terminal_ledger": "51d26bb807ab59da65adc7b5c700bc77e64ab9a9d1fc9825c89813dffe36c49f",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/checkpoints/states/51d26bb807ab59da65adc7b5c700bc77e64ab9a9d1fc9825c89813dffe36c49f.npz",
+        "sha256": "7b3d3a8d2872162fa2195b9ad20107a534f82baedaadc7178df5ea4d5fbaaa86",
+        "ledger_sha256": "51d26bb807ab59da65adc7b5c700bc77e64ab9a9d1fc9825c89813dffe36c49f",
+        "count": 20000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "wikipedia-s11-qdrant-98f7b5a232118b69b774a4b483b3e8b69301a67f5c1c508918890407429f85a0",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "qdrant",
+      "seed": 11,
+      "terminal_ledger": "98f7b5a232118b69b774a4b483b3e8b69301a67f5c1c508918890407429f85a0",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/checkpoints/states/98f7b5a232118b69b774a4b483b3e8b69301a67f5c1c508918890407429f85a0.npz",
+        "sha256": "143a5a6f949f811248fc1d70bfa2355a59060495ac3825746eac5d15555c502c",
+        "ledger_sha256": "98f7b5a232118b69b774a4b483b3e8b69301a67f5c1c508918890407429f85a0",
+        "count": 5000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "wikipedia-s11-qdrant-a1a565358644cf19f6f34468164bb0aeda4a587dca7096c18983a04e6ae924fc",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "qdrant",
+      "seed": 11,
+      "terminal_ledger": "a1a565358644cf19f6f34468164bb0aeda4a587dca7096c18983a04e6ae924fc",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/checkpoints/states/a1a565358644cf19f6f34468164bb0aeda4a587dca7096c18983a04e6ae924fc.npz",
+        "sha256": "d762d40a9ba5cc0e328bbfc6b52d3b99b54f228bb09bf195df925ff0104f5987",
+        "ledger_sha256": "a1a565358644cf19f6f34468164bb0aeda4a587dca7096c18983a04e6ae924fc",
+        "count": 10000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "wikipedia-s11-qdrant-4e2440856f69c45253acc8758c918f3d05fe16632cb3ab08ed8bcd0ce67443c7",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "qdrant",
+      "seed": 11,
+      "terminal_ledger": "4e2440856f69c45253acc8758c918f3d05fe16632cb3ab08ed8bcd0ce67443c7",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/checkpoints/states/4e2440856f69c45253acc8758c918f3d05fe16632cb3ab08ed8bcd0ce67443c7.npz",
+        "sha256": "a473bae1a9c353f4b504ef873a72e0bf7054dc45d1cb9f0d47f641d17f37d9b4",
+        "ledger_sha256": "4e2440856f69c45253acc8758c918f3d05fe16632cb3ab08ed8bcd0ce67443c7",
+        "count": 10000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "wikipedia-s11-qdrant-e710f5242685451a53bf5afd778ed6956cbc2e5226c328507d76463848bd85cb",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "qdrant",
+      "seed": 11,
+      "terminal_ledger": "e710f5242685451a53bf5afd778ed6956cbc2e5226c328507d76463848bd85cb",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/checkpoints/states/e710f5242685451a53bf5afd778ed6956cbc2e5226c328507d76463848bd85cb.npz",
+        "sha256": "4db14c7c6a1cfaab5d9f2369801771f51a50a42ccc2904d9eb0bf984254ff914",
+        "ledger_sha256": "e710f5242685451a53bf5afd778ed6956cbc2e5226c328507d76463848bd85cb",
+        "count": 10000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "wikipedia-s11-qdrant-bd1e9cd1473e65b8817acd1b47f17e4923361a2e5ec37119ebbd320ccb59c7c2",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "qdrant",
+      "seed": 11,
+      "terminal_ledger": "bd1e9cd1473e65b8817acd1b47f17e4923361a2e5ec37119ebbd320ccb59c7c2",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/checkpoints/states/bd1e9cd1473e65b8817acd1b47f17e4923361a2e5ec37119ebbd320ccb59c7c2.npz",
+        "sha256": "e9a5f527df0b378de0580c26f2b9ec4fdc0d759d85ccdfc22eec48a7b9fc49ae",
+        "ledger_sha256": "bd1e9cd1473e65b8817acd1b47f17e4923361a2e5ec37119ebbd320ccb59c7c2",
+        "count": 10000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "wikipedia-s11-qdrant-ba010f6842aa115d259bb3599b0674ae50688c369670137f2f4504da66ff8aa8",
+      "family": "baseline",
+      "dataset": "wikipedia",
+      "db": "qdrant",
+      "seed": 11,
+      "terminal_ledger": "ba010f6842aa115d259bb3599b0674ae50688c369670137f2f4504da66ff8aa8",
+      "state": {
+        "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/real-results/baseline-setup-20261026-01/cells/inputs__wikipedia/387be67d-1177-4208-8a0d-5e968aba7ff6/checkpoints/states/ba010f6842aa115d259bb3599b0674ae50688c369670137f2f4504da66ff8aa8.npz",
+        "sha256": "2ab010250679ca3ecf27e61797d05f10c46961f89161f48cd3357bce1361997f",
+        "ledger_sha256": "ba010f6842aa115d259bb3599b0674ae50688c369670137f2f4504da66ff8aa8",
+        "count": 10000
+      },
+      "builds": 3,
+      "queries_per_build": 600
+    },
+    {
+      "id": "msmarco-s11-postgres-insert-r100-w5-near-fresh",
+      "family": "geometry",
+      "builds": 3,
+      "queries_per_build": 600,
+      "ledger_status": "TO_PREPARE"
+    },
+    {
+      "id": "msmarco-s11-postgres-insert-r100-w5-far-fresh",
+      "family": "geometry",
+      "builds": 3,
+      "queries_per_build": 600,
+      "ledger_status": "TO_PREPARE"
+    },
+    {
+      "id": "msmarco-s11-postgres-filtered-upsert-r50-w5-state0-fresh",
+      "family": "filter",
+      "builds": 3,
+      "queries_per_build": 600,
+      "ledger_status": "TO_PREPARE"
+    },
+    {
+      "id": "msmarco-s11-postgres-filtered-upsert-r50-w5-state5-fresh",
+      "family": "filter",
+      "builds": 3,
+      "queries_per_build": 600,
+      "ledger_status": "TO_PREPARE"
+    },
+    {
+      "id": "msmarco-s11-qdrant-insert-r100-w5-near-fresh",
+      "family": "geometry",
+      "builds": 3,
+      "queries_per_build": 600,
+      "ledger_status": "TO_PREPARE"
+    },
+    {
+      "id": "msmarco-s11-qdrant-insert-r100-w5-far-fresh",
+      "family": "geometry",
+      "builds": 3,
+      "queries_per_build": 600,
+      "ledger_status": "TO_PREPARE"
+    },
+    {
+      "id": "msmarco-s11-qdrant-filtered-upsert-r50-w5-state0-fresh",
+      "family": "filter",
+      "builds": 3,
+      "queries_per_build": 600,
+      "ledger_status": "TO_PREPARE"
+    },
+    {
+      "id": "msmarco-s11-qdrant-filtered-upsert-r50-w5-state5-fresh",
+      "family": "filter",
+      "builds": 3,
+      "queries_per_build": 600,
+      "ledger_status": "TO_PREPARE"
+    }
+  ],
+  "filter_profiles": [
+    {
+      "id": "F1",
+      "field": "cat10",
+      "predicate": "equality",
+      "cardinality": 10,
+      "target_selectivity": 0.1,
+      "relation": "independent",
+      "distribution": "uniform"
+    },
+    {
+      "id": "F2",
+      "field": "cat1000",
+      "predicate": "IN 10 categories",
+      "cardinality": 1000,
+      "target_selectivity": 0.01,
+      "relation": "independent",
+      "distribution": "uniform"
+    },
+    {
+      "id": "F3",
+      "field": "cat1000",
+      "predicate": "equality",
+      "cardinality": 1000,
+      "target_selectivity": 0.001,
+      "relation": "independent",
+      "distribution": "uniform"
+    },
+    {
+      "id": "F4",
+      "field": "cat1000_spatial",
+      "predicate": "equality",
+      "cardinality": 1000,
+      "target_selectivity": 0.001,
+      "relation": "correlated at initial state, report after update",
+      "distribution": "uniform"
+    },
+    {
+      "id": "F5",
+      "field": "cat1000_skew",
+      "predicate": "equality on designated head category",
+      "cardinality": 1000,
+      "target_selectivity": 0.1,
+      "relation": "independent",
+      "distribution": "head heavy"
+    },
+    {
+      "id": "F6",
+      "field": "cat1000 AND rank",
+      "predicate": "compound yielding exactly one eligible ID",
+      "cardinality": 1000,
+      "target_selectivity": 0.0001,
+      "relation": "independent",
+      "distribution": "uniform"
+    },
+    {
+      "id": "F7",
+      "field": "cat1000",
+      "predicate": "equality on absent category",
+      "cardinality": 1000,
+      "target_selectivity": 0,
+      "relation": "independent",
+      "distribution": "uniform"
+    },
+    {
+      "id": "F8",
+      "field": "rank",
+      "predicate": "range yielding exactly 100 eligible IDs",
+      "cardinality": 10000,
+      "target_selectivity": 0.01,
+      "relation": "independent",
+      "distribution": "unique rank"
+    }
+  ],
+  "filter_probes": [
+    {
+      "id": "postgres-initial-incremental-F1",
+      "db": "postgres",
+      "state": "initial",
+      "index": "incremental",
+      "profile": "F1",
+      "queries": 200
+    },
+    {
+      "id": "postgres-initial-incremental-F2",
+      "db": "postgres",
+      "state": "initial",
+      "index": "incremental",
+      "profile": "F2",
+      "queries": 200
+    },
+    {
+      "id": "postgres-initial-incremental-F3",
+      "db": "postgres",
+      "state": "initial",
+      "index": "incremental",
+      "profile": "F3",
+      "queries": 200
+    },
+    {
+      "id": "postgres-initial-incremental-F4",
+      "db": "postgres",
+      "state": "initial",
+      "index": "incremental",
+      "profile": "F4",
+      "queries": 200
+    },
+    {
+      "id": "postgres-initial-incremental-F5",
+      "db": "postgres",
+      "state": "initial",
+      "index": "incremental",
+      "profile": "F5",
+      "queries": 200
+    },
+    {
+      "id": "postgres-initial-incremental-F6",
+      "db": "postgres",
+      "state": "initial",
+      "index": "incremental",
+      "profile": "F6",
+      "queries": 200
+    },
+    {
+      "id": "postgres-initial-incremental-F7",
+      "db": "postgres",
+      "state": "initial",
+      "index": "incremental",
+      "profile": "F7",
+      "queries": 200
+    },
+    {
+      "id": "postgres-initial-incremental-F8",
+      "db": "postgres",
+      "state": "initial",
+      "index": "incremental",
+      "profile": "F8",
+      "queries": 200
+    },
+    {
+      "id": "postgres-initial-fresh-repeat0-F1",
+      "db": "postgres",
+      "state": "initial",
+      "index": "fresh-repeat0",
+      "profile": "F1",
+      "queries": 200
+    },
+    {
+      "id": "postgres-initial-fresh-repeat0-F2",
+      "db": "postgres",
+      "state": "initial",
+      "index": "fresh-repeat0",
+      "profile": "F2",
+      "queries": 200
+    },
+    {
+      "id": "postgres-initial-fresh-repeat0-F3",
+      "db": "postgres",
+      "state": "initial",
+      "index": "fresh-repeat0",
+      "profile": "F3",
+      "queries": 200
+    },
+    {
+      "id": "postgres-initial-fresh-repeat0-F4",
+      "db": "postgres",
+      "state": "initial",
+      "index": "fresh-repeat0",
+      "profile": "F4",
+      "queries": 200
+    },
+    {
+      "id": "postgres-initial-fresh-repeat0-F5",
+      "db": "postgres",
+      "state": "initial",
+      "index": "fresh-repeat0",
+      "profile": "F5",
+      "queries": 200
+    },
+    {
+      "id": "postgres-initial-fresh-repeat0-F6",
+      "db": "postgres",
+      "state": "initial",
+      "index": "fresh-repeat0",
+      "profile": "F6",
+      "queries": 200
+    },
+    {
+      "id": "postgres-initial-fresh-repeat0-F7",
+      "db": "postgres",
+      "state": "initial",
+      "index": "fresh-repeat0",
+      "profile": "F7",
+      "queries": 200
+    },
+    {
+      "id": "postgres-initial-fresh-repeat0-F8",
+      "db": "postgres",
+      "state": "initial",
+      "index": "fresh-repeat0",
+      "profile": "F8",
+      "queries": 200
+    },
+    {
+      "id": "postgres-final-incremental-F1",
+      "db": "postgres",
+      "state": "final",
+      "index": "incremental",
+      "profile": "F1",
+      "queries": 200
+    },
+    {
+      "id": "postgres-final-incremental-F2",
+      "db": "postgres",
+      "state": "final",
+      "index": "incremental",
+      "profile": "F2",
+      "queries": 200
+    },
+    {
+      "id": "postgres-final-incremental-F3",
+      "db": "postgres",
+      "state": "final",
+      "index": "incremental",
+      "profile": "F3",
+      "queries": 200
+    },
+    {
+      "id": "postgres-final-incremental-F4",
+      "db": "postgres",
+      "state": "final",
+      "index": "incremental",
+      "profile": "F4",
+      "queries": 200
+    },
+    {
+      "id": "postgres-final-incremental-F5",
+      "db": "postgres",
+      "state": "final",
+      "index": "incremental",
+      "profile": "F5",
+      "queries": 200
+    },
+    {
+      "id": "postgres-final-incremental-F6",
+      "db": "postgres",
+      "state": "final",
+      "index": "incremental",
+      "profile": "F6",
+      "queries": 200
+    },
+    {
+      "id": "postgres-final-incremental-F7",
+      "db": "postgres",
+      "state": "final",
+      "index": "incremental",
+      "profile": "F7",
+      "queries": 200
+    },
+    {
+      "id": "postgres-final-incremental-F8",
+      "db": "postgres",
+      "state": "final",
+      "index": "incremental",
+      "profile": "F8",
+      "queries": 200
+    },
+    {
+      "id": "postgres-final-fresh-repeat0-F1",
+      "db": "postgres",
+      "state": "final",
+      "index": "fresh-repeat0",
+      "profile": "F1",
+      "queries": 200
+    },
+    {
+      "id": "postgres-final-fresh-repeat0-F2",
+      "db": "postgres",
+      "state": "final",
+      "index": "fresh-repeat0",
+      "profile": "F2",
+      "queries": 200
+    },
+    {
+      "id": "postgres-final-fresh-repeat0-F3",
+      "db": "postgres",
+      "state": "final",
+      "index": "fresh-repeat0",
+      "profile": "F3",
+      "queries": 200
+    },
+    {
+      "id": "postgres-final-fresh-repeat0-F4",
+      "db": "postgres",
+      "state": "final",
+      "index": "fresh-repeat0",
+      "profile": "F4",
+      "queries": 200
+    },
+    {
+      "id": "postgres-final-fresh-repeat0-F5",
+      "db": "postgres",
+      "state": "final",
+      "index": "fresh-repeat0",
+      "profile": "F5",
+      "queries": 200
+    },
+    {
+      "id": "postgres-final-fresh-repeat0-F6",
+      "db": "postgres",
+      "state": "final",
+      "index": "fresh-repeat0",
+      "profile": "F6",
+      "queries": 200
+    },
+    {
+      "id": "postgres-final-fresh-repeat0-F7",
+      "db": "postgres",
+      "state": "final",
+      "index": "fresh-repeat0",
+      "profile": "F7",
+      "queries": 200
+    },
+    {
+      "id": "postgres-final-fresh-repeat0-F8",
+      "db": "postgres",
+      "state": "final",
+      "index": "fresh-repeat0",
+      "profile": "F8",
+      "queries": 200
+    },
+    {
+      "id": "qdrant-initial-incremental-F1",
+      "db": "qdrant",
+      "state": "initial",
+      "index": "incremental",
+      "profile": "F1",
+      "queries": 200
+    },
+    {
+      "id": "qdrant-initial-incremental-F2",
+      "db": "qdrant",
+      "state": "initial",
+      "index": "incremental",
+      "profile": "F2",
+      "queries": 200
+    },
+    {
+      "id": "qdrant-initial-incremental-F3",
+      "db": "qdrant",
+      "state": "initial",
+      "index": "incremental",
+      "profile": "F3",
+      "queries": 200
+    },
+    {
+      "id": "qdrant-initial-incremental-F4",
+      "db": "qdrant",
+      "state": "initial",
+      "index": "incremental",
+      "profile": "F4",
+      "queries": 200
+    },
+    {
+      "id": "qdrant-initial-incremental-F5",
+      "db": "qdrant",
+      "state": "initial",
+      "index": "incremental",
+      "profile": "F5",
+      "queries": 200
+    },
+    {
+      "id": "qdrant-initial-incremental-F6",
+      "db": "qdrant",
+      "state": "initial",
+      "index": "incremental",
+      "profile": "F6",
+      "queries": 200
+    },
+    {
+      "id": "qdrant-initial-incremental-F7",
+      "db": "qdrant",
+      "state": "initial",
+      "index": "incremental",
+      "profile": "F7",
+      "queries": 200
+    },
+    {
+      "id": "qdrant-initial-incremental-F8",
+      "db": "qdrant",
+      "state": "initial",
+      "index": "incremental",
+      "profile": "F8",
+      "queries": 200
+    },
+    {
+      "id": "qdrant-initial-fresh-repeat0-F1",
+      "db": "qdrant",
+      "state": "initial",
+      "index": "fresh-repeat0",
+      "profile": "F1",
+      "queries": 200
+    },
+    {
+      "id": "qdrant-initial-fresh-repeat0-F2",
+      "db": "qdrant",
+      "state": "initial",
+      "index": "fresh-repeat0",
+      "profile": "F2",
+      "queries": 200
+    },
+    {
+      "id": "qdrant-initial-fresh-repeat0-F3",
+      "db": "qdrant",
+      "state": "initial",
+      "index": "fresh-repeat0",
+      "profile": "F3",
+      "queries": 200
+    },
+    {
+      "id": "qdrant-initial-fresh-repeat0-F4",
+      "db": "qdrant",
+      "state": "initial",
+      "index": "fresh-repeat0",
+      "profile": "F4",
+      "queries": 200
+    },
+    {
+      "id": "qdrant-initial-fresh-repeat0-F5",
+      "db": "qdrant",
+      "state": "initial",
+      "index": "fresh-repeat0",
+      "profile": "F5",
+      "queries": 200
+    },
+    {
+      "id": "qdrant-initial-fresh-repeat0-F6",
+      "db": "qdrant",
+      "state": "initial",
+      "index": "fresh-repeat0",
+      "profile": "F6",
+      "queries": 200
+    },
+    {
+      "id": "qdrant-initial-fresh-repeat0-F7",
+      "db": "qdrant",
+      "state": "initial",
+      "index": "fresh-repeat0",
+      "profile": "F7",
+      "queries": 200
+    },
+    {
+      "id": "qdrant-initial-fresh-repeat0-F8",
+      "db": "qdrant",
+      "state": "initial",
+      "index": "fresh-repeat0",
+      "profile": "F8",
+      "queries": 200
+    },
+    {
+      "id": "qdrant-final-incremental-F1",
+      "db": "qdrant",
+      "state": "final",
+      "index": "incremental",
+      "profile": "F1",
+      "queries": 200
+    },
+    {
+      "id": "qdrant-final-incremental-F2",
+      "db": "qdrant",
+      "state": "final",
+      "index": "incremental",
+      "profile": "F2",
+      "queries": 200
+    },
+    {
+      "id": "qdrant-final-incremental-F3",
+      "db": "qdrant",
+      "state": "final",
+      "index": "incremental",
+      "profile": "F3",
+      "queries": 200
+    },
+    {
+      "id": "qdrant-final-incremental-F4",
+      "db": "qdrant",
+      "state": "final",
+      "index": "incremental",
+      "profile": "F4",
+      "queries": 200
+    },
+    {
+      "id": "qdrant-final-incremental-F5",
+      "db": "qdrant",
+      "state": "final",
+      "index": "incremental",
+      "profile": "F5",
+      "queries": 200
+    },
+    {
+      "id": "qdrant-final-incremental-F6",
+      "db": "qdrant",
+      "state": "final",
+      "index": "incremental",
+      "profile": "F6",
+      "queries": 200
+    },
+    {
+      "id": "qdrant-final-incremental-F7",
+      "db": "qdrant",
+      "state": "final",
+      "index": "incremental",
+      "profile": "F7",
+      "queries": 200
+    },
+    {
+      "id": "qdrant-final-incremental-F8",
+      "db": "qdrant",
+      "state": "final",
+      "index": "incremental",
+      "profile": "F8",
+      "queries": 200
+    },
+    {
+      "id": "qdrant-final-fresh-repeat0-F1",
+      "db": "qdrant",
+      "state": "final",
+      "index": "fresh-repeat0",
+      "profile": "F1",
+      "queries": 200
+    },
+    {
+      "id": "qdrant-final-fresh-repeat0-F2",
+      "db": "qdrant",
+      "state": "final",
+      "index": "fresh-repeat0",
+      "profile": "F2",
+      "queries": 200
+    },
+    {
+      "id": "qdrant-final-fresh-repeat0-F3",
+      "db": "qdrant",
+      "state": "final",
+      "index": "fresh-repeat0",
+      "profile": "F3",
+      "queries": 200
+    },
+    {
+      "id": "qdrant-final-fresh-repeat0-F4",
+      "db": "qdrant",
+      "state": "final",
+      "index": "fresh-repeat0",
+      "profile": "F4",
+      "queries": 200
+    },
+    {
+      "id": "qdrant-final-fresh-repeat0-F5",
+      "db": "qdrant",
+      "state": "final",
+      "index": "fresh-repeat0",
+      "profile": "F5",
+      "queries": 200
+    },
+    {
+      "id": "qdrant-final-fresh-repeat0-F6",
+      "db": "qdrant",
+      "state": "final",
+      "index": "fresh-repeat0",
+      "profile": "F6",
+      "queries": 200
+    },
+    {
+      "id": "qdrant-final-fresh-repeat0-F7",
+      "db": "qdrant",
+      "state": "final",
+      "index": "fresh-repeat0",
+      "profile": "F7",
+      "queries": 200
+    },
+    {
+      "id": "qdrant-final-fresh-repeat0-F8",
+      "db": "qdrant",
+      "state": "final",
+      "index": "fresh-repeat0",
+      "profile": "F8",
+      "queries": 200
+    }
+  ],
+  "ef_curves": [
+    {
+      "id": "postgres-initial-incremental-ef100",
+      "db": "postgres",
+      "state": "initial",
+      "index": "incremental",
+      "ef": 100,
+      "queries": 200
+    },
+    {
+      "id": "postgres-initial-incremental-ef256",
+      "db": "postgres",
+      "state": "initial",
+      "index": "incremental",
+      "ef": 256,
+      "queries": 200
+    },
+    {
+      "id": "postgres-initial-incremental-ef1000",
+      "db": "postgres",
+      "state": "initial",
+      "index": "incremental",
+      "ef": 1000,
+      "queries": 200
+    },
+    {
+      "id": "postgres-initial-fresh-repeat0-ef100",
+      "db": "postgres",
+      "state": "initial",
+      "index": "fresh-repeat0",
+      "ef": 100,
+      "queries": 200
+    },
+    {
+      "id": "postgres-initial-fresh-repeat0-ef256",
+      "db": "postgres",
+      "state": "initial",
+      "index": "fresh-repeat0",
+      "ef": 256,
+      "queries": 200
+    },
+    {
+      "id": "postgres-initial-fresh-repeat0-ef1000",
+      "db": "postgres",
+      "state": "initial",
+      "index": "fresh-repeat0",
+      "ef": 1000,
+      "queries": 200
+    },
+    {
+      "id": "postgres-final-upsert-r50-w5-incremental-ef100",
+      "db": "postgres",
+      "state": "final-upsert-r50-w5",
+      "index": "incremental",
+      "ef": 100,
+      "queries": 200
+    },
+    {
+      "id": "postgres-final-upsert-r50-w5-incremental-ef256",
+      "db": "postgres",
+      "state": "final-upsert-r50-w5",
+      "index": "incremental",
+      "ef": 256,
+      "queries": 200
+    },
+    {
+      "id": "postgres-final-upsert-r50-w5-incremental-ef1000",
+      "db": "postgres",
+      "state": "final-upsert-r50-w5",
+      "index": "incremental",
+      "ef": 1000,
+      "queries": 200
+    },
+    {
+      "id": "postgres-final-upsert-r50-w5-fresh-repeat0-ef100",
+      "db": "postgres",
+      "state": "final-upsert-r50-w5",
+      "index": "fresh-repeat0",
+      "ef": 100,
+      "queries": 200
+    },
+    {
+      "id": "postgres-final-upsert-r50-w5-fresh-repeat0-ef256",
+      "db": "postgres",
+      "state": "final-upsert-r50-w5",
+      "index": "fresh-repeat0",
+      "ef": 256,
+      "queries": 200
+    },
+    {
+      "id": "postgres-final-upsert-r50-w5-fresh-repeat0-ef1000",
+      "db": "postgres",
+      "state": "final-upsert-r50-w5",
+      "index": "fresh-repeat0",
+      "ef": 1000,
+      "queries": 200
+    },
+    {
+      "id": "qdrant-initial-incremental-ef100",
+      "db": "qdrant",
+      "state": "initial",
+      "index": "incremental",
+      "ef": 100,
+      "queries": 200
+    },
+    {
+      "id": "qdrant-initial-incremental-ef256",
+      "db": "qdrant",
+      "state": "initial",
+      "index": "incremental",
+      "ef": 256,
+      "queries": 200
+    },
+    {
+      "id": "qdrant-initial-incremental-ef512",
+      "db": "qdrant",
+      "state": "initial",
+      "index": "incremental",
+      "ef": 512,
+      "queries": 200
+    },
+    {
+      "id": "qdrant-initial-fresh-repeat0-ef100",
+      "db": "qdrant",
+      "state": "initial",
+      "index": "fresh-repeat0",
+      "ef": 100,
+      "queries": 200
+    },
+    {
+      "id": "qdrant-initial-fresh-repeat0-ef256",
+      "db": "qdrant",
+      "state": "initial",
+      "index": "fresh-repeat0",
+      "ef": 256,
+      "queries": 200
+    },
+    {
+      "id": "qdrant-initial-fresh-repeat0-ef512",
+      "db": "qdrant",
+      "state": "initial",
+      "index": "fresh-repeat0",
+      "ef": 512,
+      "queries": 200
+    },
+    {
+      "id": "qdrant-final-upsert-r50-w5-incremental-ef100",
+      "db": "qdrant",
+      "state": "final-upsert-r50-w5",
+      "index": "incremental",
+      "ef": 100,
+      "queries": 200
+    },
+    {
+      "id": "qdrant-final-upsert-r50-w5-incremental-ef256",
+      "db": "qdrant",
+      "state": "final-upsert-r50-w5",
+      "index": "incremental",
+      "ef": 256,
+      "queries": 200
+    },
+    {
+      "id": "qdrant-final-upsert-r50-w5-incremental-ef512",
+      "db": "qdrant",
+      "state": "final-upsert-r50-w5",
+      "index": "incremental",
+      "ef": 512,
+      "queries": 200
+    },
+    {
+      "id": "qdrant-final-upsert-r50-w5-fresh-repeat0-ef100",
+      "db": "qdrant",
+      "state": "final-upsert-r50-w5",
+      "index": "fresh-repeat0",
+      "ef": 100,
+      "queries": 200
+    },
+    {
+      "id": "qdrant-final-upsert-r50-w5-fresh-repeat0-ef256",
+      "db": "qdrant",
+      "state": "final-upsert-r50-w5",
+      "index": "fresh-repeat0",
+      "ef": 256,
+      "queries": 200
+    },
+    {
+      "id": "qdrant-final-upsert-r50-w5-fresh-repeat0-ef512",
+      "db": "qdrant",
+      "state": "final-upsert-r50-w5",
+      "index": "fresh-repeat0",
+      "ef": 512,
+      "queries": 200
+    }
+  ],
+  "summary": {
+    "history_paths": 66,
+    "baseline_paths": 60,
+    "geometry_paths": 4,
+    "filter_paths": 2,
+    "unfiltered_history_points": 316,
+    "fresh_builds": 138,
+    "filter_probe_points": 64,
+    "ef_curve_points": 24,
+    "history_queries": 89600,
+    "fresh_queries": 82800,
+    "filter_queries": 12800,
+    "ef_curve_queries": 4800,
+    "total_quality_points": 542,
+    "total_measured_queries": 190000
+  },
+  "exclusions_are_deferred_research_not_completed": true,
+  "runtime_code_changed": false
+}

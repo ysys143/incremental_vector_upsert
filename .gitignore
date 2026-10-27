@@ -1,0 +1,23 @@
+.cwf
+.omc
+.omo
+.local
+.venv
+.env
+node_modules/
+__pycache__/
+*.pyc
+*.log
+.DS_Store
+.idea/
+.vscode/
+dist/
+build/
+*.egg-info/
+
+# Local datasets, DB snapshots and execution logs; selected evidence is added explicitly.
+/runs/*
+!/runs/README.md
+/results/
+/real-results/
+/study-results/

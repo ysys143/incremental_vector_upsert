@@ -1,0 +1,1102 @@
+{
+  "msmarco": {
+    "seeds": {
+      "7": {
+        "wave_sizes": [
+          3152,
+          1240,
+          858,
+          3395,
+          1355
+        ],
+        "cohort_counts": {
+          "old": 11,
+          "new": 14,
+          "boundary": 175,
+          "no_new_neighbor": 0,
+          "mixed": 18,
+          "dominant_cluster_0": 46,
+          "dominant_cluster_1": 25,
+          "dominant_cluster_2": 78,
+          "dominant_cluster_3": 42,
+          "dominant_cluster_4": 9
+        },
+        "diagnostics": {
+          "algorithm": "spherical-kmeans",
+          "k": 5,
+          "restarts": 3,
+          "max_iter": 50,
+          "relative_tolerance": 0.0001,
+          "winning_restart": 1,
+          "objectives": [
+            {
+              "restart": 0,
+              "iterations": 12,
+              "objective": 7208.961356559688
+            },
+            {
+              "restart": 1,
+              "iterations": 14,
+              "objective": 7221.4330402461055
+            },
+            {
+              "restart": 2,
+              "iterations": 9,
+              "objective": 7208.321114554157
+            }
+          ],
+          "sizes_canonical": [
+            3395,
+            858,
+            3152,
+            1355,
+            1240
+          ],
+          "cluster_order": [
+            2,
+            4,
+            1,
+            0,
+            3
+          ],
+          "wave_sizes": [
+            3152,
+            1240,
+            858,
+            3395,
+            1355
+          ],
+          "centroid_cosine": [
+            [
+              1.0000000000000002,
+              0.9107529452514439,
+              0.9528055364947363,
+              0.9288342063326227,
+              0.9263984214497183
+            ],
+            [
+              0.9107529452514439,
+              0.9999999999999997,
+              0.906394806941265,
+              0.9093429270744979,
+              0.8801310139402676
+            ],
+            [
+              0.9528055364947363,
+              0.906394806941265,
+              1.0000000000000007,
+              0.9199791250245013,
+              0.9595863863278127
+            ],
+            [
+              0.9288342063326227,
+              0.9093429270744979,
+              0.9199791250245013,
+              1.0000000000000007,
+              0.8968936154027292
+            ],
+            [
+              0.9263984214497183,
+              0.8801310139402676,
+              0.9595863863278127,
+              0.8968936154027292,
+              1.0
+            ]
+          ],
+          "within_cosine_mean": [
+            0.7049481208850398,
+            0.7540810788352179,
+            0.7238734436959992,
+            0.7424574390204891,
+            0.7205271611276023
+          ],
+          "norm_min": 8.703978747400347,
+          "norm_median": 9.845091753205256,
+          "norm_max": 12.256263103783828,
+          "anchor_old_count": 512,
+          "anchor_new_count": 256,
+          "old_neighbor_fraction_in_new_top20_ip_mean": 0.6666015625000001,
+          "same_cluster_fraction_among_new_top20_ip_mean": 0.6791483581522644,
+          "normalized_nearest_cosine_distance_mean": 0.34134443606853726,
+          "old_norm_min_median_max": [
+            8.744917922028733,
+            9.83363510548546,
+            11.189797752477473
+          ],
+          "new_norm_min_median_max": [
+            8.987724383365126,
+            9.841958775832857,
+            11.026351749961597
+          ],
+          "sample_scope": "fixed 512 old / 256 new anchors; sampled original IP and normalized cosine, not HNSW edges"
+        }
+      },
+      "11": {
+        "wave_sizes": [
+          918,
+          1259,
+          3393,
+          2992,
+          1438
+        ],
+        "cohort_counts": {
+          "old": 35,
+          "new": 31,
+          "boundary": 534,
+          "no_new_neighbor": 0,
+          "mixed": 112,
+          "dominant_cluster_0": 184,
+          "dominant_cluster_1": 94,
+          "dominant_cluster_2": 37,
+          "dominant_cluster_3": 109,
+          "dominant_cluster_4": 176
+        },
+        "diagnostics": {
+          "algorithm": "spherical-kmeans",
+          "k": 5,
+          "restarts": 3,
+          "max_iter": 50,
+          "relative_tolerance": 0.0001,
+          "winning_restart": 1,
+          "objectives": [
+            {
+              "restart": 0,
+              "iterations": 14,
+              "objective": 7210.867549222891
+            },
+            {
+              "restart": 1,
+              "iterations": 11,
+              "objective": 7223.72418244744
+            },
+            {
+              "restart": 2,
+              "iterations": 10,
+              "objective": 7210.11609732141
+            }
+          ],
+          "sizes_canonical": [
+            3393,
+            918,
+            1438,
+            1259,
+            2992
+          ],
+          "cluster_order": [
+            1,
+            3,
+            0,
+            4,
+            2
+          ],
+          "wave_sizes": [
+            918,
+            1259,
+            3393,
+            2992,
+            1438
+          ],
+          "centroid_cosine": [
+            [
+              1.0000000000000002,
+              0.9120625815324236,
+              0.9320375744025862,
+              0.9297071085906254,
+              0.9526963469769972
+            ],
+            [
+              0.9120625815324236,
+              1.0000000000000004,
+              0.8836773211206449,
+              0.9081409710651908,
+              0.905265704164518
+            ],
+            [
+              0.9320375744025862,
+              0.8836773211206449,
+              0.9999999999999979,
+              0.904086052036656,
+              0.9622331681690147
+            ],
+            [
+              0.9297071085906254,
+              0.9081409710651908,
+              0.904086052036656,
+              0.9999999999999998,
+              0.9191842866544155
+            ],
+            [
+              0.9526963469769972,
+              0.905265704164518,
+              0.9622331681690147,
+              0.9191842866544155,
+              1.0
+            ]
+          ],
+          "within_cosine_mean": [
+            0.7062902017031196,
+            0.7538665724163096,
+            0.7157996593315124,
+            0.7423217602117894,
+            0.7257115669669871
+          ],
+          "norm_min": 8.756074990327077,
+          "norm_median": 9.851684441678179,
+          "norm_max": 12.800239222026223,
+          "anchor_old_count": 512,
+          "anchor_new_count": 256,
+          "old_neighbor_fraction_in_new_top20_ip_mean": 0.6693359375,
+          "same_cluster_fraction_among_new_top20_ip_mean": 0.6833317073551449,
+          "normalized_nearest_cosine_distance_mean": 0.3455394171127031,
+          "old_norm_min_median_max": [
+            8.977638645688794,
+            9.851990791823566,
+            12.257582599943612
+          ],
+          "new_norm_min_median_max": [
+            8.993995024322672,
+            9.862828574756863,
+            11.250169471684364
+          ],
+          "sample_scope": "fixed 512 old / 256 new anchors; sampled original IP and normalized cosine, not HNSW edges"
+        }
+      },
+      "29": {
+        "wave_sizes": [
+          4240,
+          1281,
+          1046,
+          2535,
+          898
+        ],
+        "cohort_counts": {
+          "old": 39,
+          "new": 23,
+          "boundary": 538,
+          "no_new_neighbor": 2,
+          "mixed": 72,
+          "dominant_cluster_0": 111,
+          "dominant_cluster_1": 246,
+          "dominant_cluster_2": 38,
+          "dominant_cluster_3": 109,
+          "dominant_cluster_4": 94
+        },
+        "diagnostics": {
+          "algorithm": "spherical-kmeans",
+          "k": 5,
+          "restarts": 3,
+          "max_iter": 50,
+          "relative_tolerance": 0.0001,
+          "winning_restart": 0,
+          "objectives": [
+            {
+              "restart": 0,
+              "iterations": 7,
+              "objective": 7220.529432506184
+            },
+            {
+              "restart": 1,
+              "iterations": 9,
+              "objective": 7197.235714167282
+            },
+            {
+              "restart": 2,
+              "iterations": 6,
+              "objective": 7220.094875040409
+            }
+          ],
+          "sizes_canonical": [
+            1281,
+            4240,
+            1046,
+            2535,
+            898
+          ],
+          "cluster_order": [
+            1,
+            0,
+            2,
+            3,
+            4
+          ],
+          "wave_sizes": [
+            4240,
+            1281,
+            1046,
+            2535,
+            898
+          ],
+          "centroid_cosine": [
+            [
+              1.0000000000000002,
+              0.9197938048268665,
+              0.9007529595939531,
+              0.9288607341837793,
+              0.9084079407500627
+            ],
+            [
+              0.9197938048268665,
+              0.9999999999999997,
+              0.9188016830039285,
+              0.9544786333089355,
+              0.9049083297767787
+            ],
+            [
+              0.9007529595939531,
+              0.9188016830039285,
+              1.0000000000000002,
+              0.9490048373063991,
+              0.8727242591061813
+            ],
+            [
+              0.9288607341837793,
+              0.9544786333089355,
+              0.9490048373063991,
+              1.000000000000001,
+              0.9161581538035619
+            ],
+            [
+              0.9084079407500627,
+              0.9049083297767787,
+              0.8727242591061813,
+              0.9161581538035619,
+              0.9999999999999993
+            ]
+          ],
+          "within_cosine_mean": [
+            0.7436889911951093,
+            0.7174351067352432,
+            0.7264383481403061,
+            0.7063047466172185,
+            0.7523406875260675
+          ],
+          "norm_min": 8.5250463850198,
+          "norm_median": 9.850416382897702,
+          "norm_max": 12.009776668422736,
+          "anchor_old_count": 512,
+          "anchor_new_count": 256,
+          "old_neighbor_fraction_in_new_top20_ip_mean": 0.6568359375,
+          "same_cluster_fraction_among_new_top20_ip_mean": 0.7060781449453324,
+          "normalized_nearest_cosine_distance_mean": 0.3485703135334759,
+          "old_norm_min_median_max": [
+            9.01432408905044,
+            9.863241341538053,
+            11.830386108329618
+          ],
+          "new_norm_min_median_max": [
+            9.090098236680413,
+            9.873715670202117,
+            11.647480688555827
+          ],
+          "sample_scope": "fixed 512 old / 256 new anchors; sampled original IP and normalized cosine, not HNSW edges"
+        }
+      },
+      "47": {
+        "wave_sizes": [
+          3160,
+          1257,
+          3430,
+          1274,
+          879
+        ],
+        "cohort_counts": {
+          "old": 23,
+          "new": 38,
+          "boundary": 539,
+          "no_new_neighbor": 1,
+          "mixed": 79,
+          "dominant_cluster_0": 236,
+          "dominant_cluster_1": 104,
+          "dominant_cluster_2": 99,
+          "dominant_cluster_3": 144,
+          "dominant_cluster_4": 16
+        },
+        "diagnostics": {
+          "algorithm": "spherical-kmeans",
+          "k": 5,
+          "restarts": 3,
+          "max_iter": 50,
+          "relative_tolerance": 0.0001,
+          "winning_restart": 0,
+          "objectives": [
+            {
+              "restart": 0,
+              "iterations": 12,
+              "objective": 7221.66723801753
+            },
+            {
+              "restart": 1,
+              "iterations": 11,
+              "objective": 7221.3983784399625
+            },
+            {
+              "restart": 2,
+              "iterations": 9,
+              "objective": 7206.894316654131
+            }
+          ],
+          "sizes_canonical": [
+            3160,
+            1274,
+            879,
+            3430,
+            1257
+          ],
+          "cluster_order": [
+            0,
+            4,
+            3,
+            1,
+            2
+          ],
+          "wave_sizes": [
+            3160,
+            1257,
+            3430,
+            1274,
+            879
+          ],
+          "centroid_cosine": [
+            [
+              0.9999999999999996,
+              0.9184351855869961,
+              0.9050764170514699,
+              0.9540750738682247,
+              0.9561448201895679
+            ],
+            [
+              0.9184351855869961,
+              1.0000000000000002,
+              0.9066151935044844,
+              0.9280289072747889,
+              0.8949464031791287
+            ],
+            [
+              0.9050764170514699,
+              0.9066151935044844,
+              0.9999999999999996,
+              0.9120748468015681,
+              0.8781124982612326
+            ],
+            [
+              0.9540750738682247,
+              0.9280289072747889,
+              0.9120748468015681,
+              1.0000000000000007,
+              0.9260525639885921
+            ],
+            [
+              0.9561448201895679,
+              0.8949464031791287,
+              0.8781124982612326,
+              0.9260525639885921,
+              1.0000000000000002
+            ]
+          ],
+          "within_cosine_mean": [
+            0.7244341542571295,
+            0.7422222087864282,
+            0.7540051879671216,
+            0.7057433461225514,
+            0.7186905164261254
+          ],
+          "norm_min": 8.730035359702965,
+          "norm_median": 9.847610478341968,
+          "norm_max": 12.401254212395893,
+          "anchor_old_count": 512,
+          "anchor_new_count": 256,
+          "old_neighbor_fraction_in_new_top20_ip_mean": 0.658984375,
+          "same_cluster_fraction_among_new_top20_ip_mean": 0.7082637414668664,
+          "normalized_nearest_cosine_distance_mean": 0.3423760948576856,
+          "old_norm_min_median_max": [
+            8.78246426338154,
+            9.824555895166633,
+            11.537705028107625
+          ],
+          "new_norm_min_median_max": [
+            8.959819632471042,
+            9.795229171468144,
+            11.42754511953186
+          ],
+          "sample_scope": "fixed 512 old / 256 new anchors; sampled original IP and normalized cosine, not HNSW edges"
+        }
+      }
+    },
+    "sample_overlap": {
+      "7-11": {
+        "document_count": 0,
+        "document_fraction": 0.0
+      },
+      "7-29": {
+        "document_count": 0,
+        "document_fraction": 0.0
+      },
+      "7-47": {
+        "document_count": 0,
+        "document_fraction": 0.0
+      },
+      "11-29": {
+        "document_count": 4979,
+        "document_fraction": 0.24895
+      },
+      "11-47": {
+        "document_count": 5011,
+        "document_fraction": 0.25055
+      },
+      "29-47": {
+        "document_count": 5001,
+        "document_fraction": 0.25005
+      }
+    }
+  },
+  "wikipedia": {
+    "seeds": {
+      "7": {
+        "wave_sizes": [
+          2149,
+          1262,
+          1763,
+          2695,
+          2131
+        ],
+        "cohort_counts": {
+          "old": 10,
+          "new": 12,
+          "boundary": 178,
+          "no_new_neighbor": 0,
+          "mixed": 31,
+          "dominant_cluster_0": 40,
+          "dominant_cluster_1": 48,
+          "dominant_cluster_2": 46,
+          "dominant_cluster_3": 45,
+          "dominant_cluster_4": 21
+        },
+        "diagnostics": {
+          "algorithm": "spherical-kmeans",
+          "k": 5,
+          "restarts": 3,
+          "max_iter": 50,
+          "relative_tolerance": 0.0001,
+          "winning_restart": 1,
+          "objectives": [
+            {
+              "restart": 0,
+              "iterations": 9,
+              "objective": 8492.91707930606
+            },
+            {
+              "restart": 1,
+              "iterations": 10,
+              "objective": 8493.675659456716
+            },
+            {
+              "restart": 2,
+              "iterations": 8,
+              "objective": 8491.482017780283
+            }
+          ],
+          "sizes_canonical": [
+            2695,
+            1763,
+            2149,
+            2131,
+            1262
+          ],
+          "cluster_order": [
+            2,
+            4,
+            1,
+            0,
+            3
+          ],
+          "wave_sizes": [
+            2149,
+            1262,
+            1763,
+            2695,
+            2131
+          ],
+          "centroid_cosine": [
+            [
+              1.0000000000000004,
+              0.9739629798954297,
+              0.9787277130811105,
+              0.9819157656318114,
+              0.9681473879828348
+            ],
+            [
+              0.9739629798954297,
+              1.0,
+              0.9705318718540802,
+              0.967444562607239,
+              0.9642850712901444
+            ],
+            [
+              0.9787277130811105,
+              0.9705318718540802,
+              1.0000000000000002,
+              0.975665517019372,
+              0.9660044646504881
+            ],
+            [
+              0.9819157656318114,
+              0.967444562607239,
+              0.975665517019372,
+              1.0000000000000004,
+              0.9632530671723012
+            ],
+            [
+              0.9681473879828348,
+              0.9642850712901444,
+              0.9660044646504881,
+              0.9632530671723012,
+              1.0
+            ]
+          ],
+          "within_cosine_mean": [
+            0.8656563580345598,
+            0.8336423980526212,
+            0.8448692183840385,
+            0.8414660445136838,
+            0.8575531977978184
+          ],
+          "norm_min": 12.361987062509863,
+          "norm_median": 13.632894035044707,
+          "norm_max": 16.36546338551105,
+          "anchor_old_count": 512,
+          "anchor_new_count": 256,
+          "old_neighbor_fraction_in_new_top20_ip_mean": 0.6656249999999999,
+          "same_cluster_fraction_among_new_top20_ip_mean": 0.5496159981511544,
+          "normalized_nearest_cosine_distance_mean": 0.18245790738512352,
+          "old_norm_min_median_max": [
+            12.526333600766932,
+            13.587621471272818,
+            15.775558125392857
+          ],
+          "new_norm_min_median_max": [
+            12.620337282717012,
+            13.607988053433417,
+            15.687092307526017
+          ],
+          "sample_scope": "fixed 512 old / 256 new anchors; sampled original IP and normalized cosine, not HNSW edges"
+        }
+      },
+      "11": {
+        "wave_sizes": [
+          1411,
+          2781,
+          1792,
+          1264,
+          2752
+        ],
+        "cohort_counts": {
+          "old": 41,
+          "new": 37,
+          "boundary": 522,
+          "no_new_neighbor": 2,
+          "mixed": 89,
+          "dominant_cluster_0": 125,
+          "dominant_cluster_1": 76,
+          "dominant_cluster_2": 202,
+          "dominant_cluster_3": 147,
+          "dominant_cluster_4": 48
+        },
+        "diagnostics": {
+          "algorithm": "spherical-kmeans",
+          "k": 5,
+          "restarts": 3,
+          "max_iter": 50,
+          "relative_tolerance": 0.0001,
+          "winning_restart": 2,
+          "objectives": [
+            {
+              "restart": 0,
+              "iterations": 9,
+              "objective": 8490.704506681292
+            },
+            {
+              "restart": 1,
+              "iterations": 8,
+              "objective": 8498.470097882935
+            },
+            {
+              "restart": 2,
+              "iterations": 11,
+              "objective": 8498.850864990274
+            }
+          ],
+          "sizes_canonical": [
+            1792,
+            1411,
+            2752,
+            2781,
+            1264
+          ],
+          "cluster_order": [
+            1,
+            3,
+            0,
+            4,
+            2
+          ],
+          "wave_sizes": [
+            1411,
+            2781,
+            1792,
+            1264,
+            2752
+          ],
+          "centroid_cosine": [
+            [
+              0.9999999999999998,
+              0.9677211231963625,
+              0.9687132577279175,
+              0.9732586575075124,
+              0.9634057945637708
+            ],
+            [
+              0.9677211231963625,
+              1.0,
+              0.9797515228330274,
+              0.978369367830346,
+              0.96532475474609
+            ],
+            [
+              0.9687132577279175,
+              0.9797515228330274,
+              1.0,
+              0.9791249212387413,
+              0.963970383356055
+            ],
+            [
+              0.9732586575075124,
+              0.978369367830346,
+              0.9791249212387413,
+              0.9999999999999999,
+              0.9695985268930963
+            ],
+            [
+              0.9634057945637708,
+              0.96532475474609,
+              0.963970383356055,
+              0.9695985268930963,
+              0.9999999999999993
+            ]
+          ],
+          "within_cosine_mean": [
+            0.8350217354410159,
+            0.8357252013406173,
+            0.8596453083481241,
+            0.8541249712659877,
+            0.8561853024712137
+          ],
+          "norm_min": 12.399352800193748,
+          "norm_median": 13.624057538527538,
+          "norm_max": 16.41415451004295,
+          "anchor_old_count": 512,
+          "anchor_new_count": 256,
+          "old_neighbor_fraction_in_new_top20_ip_mean": 0.67109375,
+          "same_cluster_fraction_among_new_top20_ip_mean": 0.6289933373917749,
+          "normalized_nearest_cosine_distance_mean": 0.1785899222553849,
+          "old_norm_min_median_max": [
+            12.599543317173426,
+            13.666111899956508,
+            16.04767231740809
+          ],
+          "new_norm_min_median_max": [
+            12.642407099117213,
+            13.580820365247856,
+            15.571393871203487
+          ],
+          "sample_scope": "fixed 512 old / 256 new anchors; sampled original IP and normalized cosine, not HNSW edges"
+        }
+      },
+      "29": {
+        "wave_sizes": [
+          1714,
+          2640,
+          2605,
+          1683,
+          1358
+        ],
+        "cohort_counts": {
+          "old": 29,
+          "new": 34,
+          "boundary": 537,
+          "no_new_neighbor": 1,
+          "mixed": 92,
+          "dominant_cluster_0": 148,
+          "dominant_cluster_1": 116,
+          "dominant_cluster_2": 169,
+          "dominant_cluster_3": 120,
+          "dominant_cluster_4": 46
+        },
+        "diagnostics": {
+          "algorithm": "spherical-kmeans",
+          "k": 5,
+          "restarts": 3,
+          "max_iter": 50,
+          "relative_tolerance": 0.0001,
+          "winning_restart": 0,
+          "objectives": [
+            {
+              "restart": 0,
+              "iterations": 11,
+              "objective": 8499.990458103657
+            },
+            {
+              "restart": 1,
+              "iterations": 9,
+              "objective": 8490.308614269361
+            },
+            {
+              "restart": 2,
+              "iterations": 8,
+              "objective": 8498.101292388947
+            }
+          ],
+          "sizes_canonical": [
+            2640,
+            1714,
+            2605,
+            1683,
+            1358
+          ],
+          "cluster_order": [
+            1,
+            0,
+            2,
+            3,
+            4
+          ],
+          "wave_sizes": [
+            1714,
+            2640,
+            2605,
+            1683,
+            1358
+          ],
+          "centroid_cosine": [
+            [
+              1.0000000000000002,
+              0.9720369878811236,
+              0.9785814500459482,
+              0.9782210807932261,
+              0.9665687608783406
+            ],
+            [
+              0.9720369878811236,
+              1.0000000000000004,
+              0.9730397466207469,
+              0.9611853820792651,
+              0.9648016462185538
+            ],
+            [
+              0.9785814500459482,
+              0.9730397466207469,
+              1.0000000000000004,
+              0.9735648770028162,
+              0.9697149494907444
+            ],
+            [
+              0.9782210807932261,
+              0.9611853820792651,
+              0.9735648770028162,
+              0.9999999999999997,
+              0.9598363754728034
+            ],
+            [
+              0.9665687608783406,
+              0.9648016462185538,
+              0.9697149494907444,
+              0.9598363754728034,
+              1.0000000000000004
+            ]
+          ],
+          "within_cosine_mean": [
+            0.8635145341143279,
+            0.8349068615935035,
+            0.8477043649793885,
+            0.8407282912505359,
+            0.8586643168811539
+          ],
+          "norm_min": 12.326765929109596,
+          "norm_median": 13.630401227944105,
+          "norm_max": 16.434892542308926,
+          "anchor_old_count": 512,
+          "anchor_new_count": 256,
+          "old_neighbor_fraction_in_new_top20_ip_mean": 0.667578125,
+          "same_cluster_fraction_among_new_top20_ip_mean": 0.616539981286075,
+          "normalized_nearest_cosine_distance_mean": 0.1752869179256275,
+          "old_norm_min_median_max": [
+            12.557159981757506,
+            13.619150025132965,
+            15.383524751099067
+          ],
+          "new_norm_min_median_max": [
+            12.558349788410288,
+            13.540669135922748,
+            15.383619249812808
+          ],
+          "sample_scope": "fixed 512 old / 256 new anchors; sampled original IP and normalized cosine, not HNSW edges"
+        }
+      },
+      "47": {
+        "wave_sizes": [
+          2484,
+          1291,
+          2812,
+          1578,
+          1835
+        ],
+        "cohort_counts": {
+          "old": 33,
+          "new": 30,
+          "boundary": 537,
+          "no_new_neighbor": 1,
+          "mixed": 92,
+          "dominant_cluster_0": 132,
+          "dominant_cluster_1": 104,
+          "dominant_cluster_2": 134,
+          "dominant_cluster_3": 178,
+          "dominant_cluster_4": 51
+        },
+        "diagnostics": {
+          "algorithm": "spherical-kmeans",
+          "k": 5,
+          "restarts": 3,
+          "max_iter": 50,
+          "relative_tolerance": 0.0001,
+          "winning_restart": 0,
+          "objectives": [
+            {
+              "restart": 0,
+              "iterations": 9,
+              "objective": 8493.420844941116
+            },
+            {
+              "restart": 1,
+              "iterations": 6,
+              "objective": 8490.28614473953
+            },
+            {
+              "restart": 2,
+              "iterations": 10,
+              "objective": 8487.724458404293
+            }
+          ],
+          "sizes_canonical": [
+            2484,
+            1578,
+            1835,
+            2812,
+            1291
+          ],
+          "cluster_order": [
+            0,
+            4,
+            3,
+            1,
+            2
+          ],
+          "wave_sizes": [
+            2484,
+            1291,
+            2812,
+            1578,
+            1835
+          ],
+          "centroid_cosine": [
+            [
+              0.9999999999999997,
+              0.9745690088544801,
+              0.9808842729469722,
+              0.9811934072066983,
+              0.9716912334917474
+            ],
+            [
+              0.9745690088544801,
+              0.9999999999999996,
+              0.9649565183088502,
+              0.9680738693053018,
+              0.9638971221224778
+            ],
+            [
+              0.9808842729469722,
+              0.9649565183088502,
+              1.0000000000000004,
+              0.9745649981162294,
+              0.963931673561245
+            ],
+            [
+              0.9811934072066983,
+              0.9680738693053018,
+              0.9745649981162294,
+              0.9999999999999997,
+              0.9652769079930141
+            ],
+            [
+              0.9716912334917474,
+              0.9638971221224778,
+              0.963931673561245,
+              0.9652769079930141,
+              0.9999999999999991
+            ]
+          ],
+          "within_cosine_mean": [
+            0.8616372476390487,
+            0.8347856762956134,
+            0.8310124950524361,
+            0.8553521398671521,
+            0.856439952659636
+          ],
+          "norm_min": 12.366781931446251,
+          "norm_median": 13.63545768135176,
+          "norm_max": 16.261715288851885,
+          "anchor_old_count": 512,
+          "anchor_new_count": 256,
+          "old_neighbor_fraction_in_new_top20_ip_mean": 0.65703125,
+          "same_cluster_fraction_among_new_top20_ip_mean": 0.5319563638461277,
+          "normalized_nearest_cosine_distance_mean": 0.1828832064479638,
+          "old_norm_min_median_max": [
+            12.326765929109596,
+            13.639422025277414,
+            15.889461102496751
+          ],
+          "new_norm_min_median_max": [
+            12.724531514298114,
+            13.649905391407227,
+            15.450144565096364
+          ],
+          "sample_scope": "fixed 512 old / 256 new anchors; sampled original IP and normalized cosine, not HNSW edges"
+        }
+      }
+    },
+    "sample_overlap": {
+      "7-11": {
+        "document_count": 0,
+        "document_fraction": 0.0
+      },
+      "7-29": {
+        "document_count": 0,
+        "document_fraction": 0.0
+      },
+      "7-47": {
+        "document_count": 0,
+        "document_fraction": 0.0
+      },
+      "11-29": {
+        "document_count": 4959,
+        "document_fraction": 0.24795
+      },
+      "11-47": {
+        "document_count": 5075,
+        "document_fraction": 0.25375
+      },
+      "29-47": {
+        "document_count": 5021,
+        "document_fraction": 0.25105
+      }
+    }
+  }
+}

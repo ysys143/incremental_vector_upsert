@@ -1,0 +1,30 @@
+[
+  {
+    "dataset": "msmarco",
+    "db": "postgres",
+    "seeds": [],
+    "investigate": false,
+    "scope": "preregistered diagnostic signal, not significance"
+  },
+  {
+    "dataset": "msmarco",
+    "db": "qdrant",
+    "seeds": [],
+    "investigate": false,
+    "scope": "preregistered diagnostic signal, not significance"
+  },
+  {
+    "dataset": "wikipedia",
+    "db": "postgres",
+    "seeds": [],
+    "investigate": false,
+    "scope": "preregistered diagnostic signal, not significance"
+  },
+  {
+    "dataset": "wikipedia",
+    "db": "qdrant",
+    "seeds": [],
+    "investigate": false,
+    "scope": "preregistered diagnostic signal, not significance"
+  }
+]

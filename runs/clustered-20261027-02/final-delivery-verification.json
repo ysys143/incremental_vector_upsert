@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "delivery_sha256": "99dff2be64cc6f6fd36bdd50749fb2b236d0f693ddd6cd8c75817e3b9e51b69c",
+  "documents_verified": [
+    "completion-checklist.md",
+    "execution.md",
+    "results.md"
+  ],
+  "counts": {
+    "additional_ef_measurements": 168,
+    "evaluation_queries": 211200,
+    "fresh_builds": 120,
+    "histories": 48,
+    "incremental_measurements": 192,
+    "total_quality_conditions": 480
+  },
+  "native_nodes": 218,
+  "native_checks": 218,
+  "cleanup_attempts": 225,
+  "original_12h_target": {
+    "status": "MISSED",
+    "deadline": 1793113013,
+    "actual_completed_at": 1793116676.508367
+  },
+  "verified_at": 1793116879.284893
+}

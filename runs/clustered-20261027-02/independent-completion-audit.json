@@ -1,0 +1,2081 @@
+{
+  "status": "PASS",
+  "audited_at": 1793116696.6947682,
+  "t0": 1793069813,
+  "deadline": 1793113013,
+  "execution_deadline": 1793159268.834332,
+  "original_12h_target": {
+    "status": "MISSED",
+    "deadline": 1793113013,
+    "actual_completed_at": 1793116676.508367
+  },
+  "completion_policy": {
+    "mode": "FINISH_APPROVED_SCOPE",
+    "original_deadline": 1793113013,
+    "original_window_status": "MISSED",
+    "user_text": "아니 시발 왜 멈추는데\n장난하냐고",
+    "recorded_at": 1793116068.834332,
+    "execution_deadline": 1793159268.834332,
+    "scope": "complete the original scientific inventory; the existing maximum task runtime is only a technical watchdog, not a new research deadline",
+    "original_messages_interpretation": "prior explicit complete goal and corrective rejection of deadline-based stopping",
+    "prior_manifest": {
+      "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02/prelaunch-revisions/r5/manifest.json",
+      "sha256": "a6bf8a26cca98975af1e339fad8eda55a9efa7cd5f25b8ff4643a0313a44126e"
+    }
+  },
+  "native_nodes": 218,
+  "native_runs": 214,
+  "native_checks": [
+    {
+      "node": "inputs:msmarco",
+      "run_id": "9c86f0e6-8599-44bd-bcb1-745e873b72f0",
+      "asset_key": [
+        "inputs"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco"
+    },
+    {
+      "node": "inputs:wikipedia",
+      "run_id": "9d388c70-510b-47cb-ad05-d7d992ae94a1",
+      "asset_key": [
+        "inputs"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia"
+    },
+    {
+      "node": "prepared:all",
+      "run_id": "5e8cc0da-ac79-4112-b8a8-1babfb4cba06",
+      "asset_key": [
+        "prepared"
+      ],
+      "check_name": "evidence",
+      "partition": null
+    },
+    {
+      "node": "calibration:msmarco-postgres-m16",
+      "run_id": "31ba542c-e5ff-4e7f-96aa-bdaeaf301b07",
+      "asset_key": [
+        "calibration"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-m16"
+    },
+    {
+      "node": "calibration:msmarco-postgres-m32",
+      "run_id": "da573260-1737-4e17-9c22-138e6c8a7fe4",
+      "asset_key": [
+        "calibration"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-m32"
+    },
+    {
+      "node": "tuning:msmarco-postgres",
+      "run_id": "666156ea-b227-4abf-8513-915c62ac09b8",
+      "asset_key": [
+        "tuning"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres"
+    },
+    {
+      "node": "calibration:msmarco-qdrant-m48",
+      "run_id": "2c996b4d-1afc-4415-8689-c03c113bae09",
+      "asset_key": [
+        "calibration"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-m48"
+    },
+    {
+      "node": "calibration:msmarco-qdrant-m64",
+      "run_id": "bbce3acc-6be8-4bae-9de4-63dcd106931c",
+      "asset_key": [
+        "calibration"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-m64"
+    },
+    {
+      "node": "tuning:msmarco-qdrant",
+      "run_id": "ba642698-f23c-453c-b13a-0ee810bdb630",
+      "asset_key": [
+        "tuning"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant"
+    },
+    {
+      "node": "calibration:wikipedia-postgres-m16",
+      "run_id": "05535365-94a6-425b-88bc-bbb06b0d4533",
+      "asset_key": [
+        "calibration"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-m16"
+    },
+    {
+      "node": "calibration:wikipedia-postgres-m32",
+      "run_id": "97afd6f5-a9f0-484b-afcd-c19ed5376a26",
+      "asset_key": [
+        "calibration"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-m32"
+    },
+    {
+      "node": "tuning:wikipedia-postgres",
+      "run_id": "95e88d43-f7b4-46ce-9885-ce1a90bbb72c",
+      "asset_key": [
+        "tuning"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres"
+    },
+    {
+      "node": "calibration:wikipedia-qdrant-m48",
+      "run_id": "16938869-7509-4554-9474-f5df90ed194b",
+      "asset_key": [
+        "calibration"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-m48"
+    },
+    {
+      "node": "calibration:wikipedia-qdrant-m64",
+      "run_id": "62dd25be-442e-48be-a2b9-3f826fbff5ce",
+      "asset_key": [
+        "calibration"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-m64"
+    },
+    {
+      "node": "tuning:wikipedia-qdrant",
+      "run_id": "2e2216e6-9113-4c7f-8d81-073298b6df02",
+      "asset_key": [
+        "tuning"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant"
+    },
+    {
+      "node": "tuned:all",
+      "run_id": "2aeadaad-e8de-4d24-a305-3134bc19a2c6",
+      "asset_key": [
+        "tuned"
+      ],
+      "check_name": "evidence",
+      "partition": null
+    },
+    {
+      "node": "smoke_initial:msmarco-postgres",
+      "run_id": "f909b54e-74ee-4edd-ac4f-8d104cc95436",
+      "asset_key": [
+        "smoke_initial"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres"
+    },
+    {
+      "node": "smoke_history:msmarco-postgres-M1",
+      "run_id": "1b210fee-e511-4e6d-b3ea-317a69b6657a",
+      "asset_key": [
+        "smoke_history"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-M1"
+    },
+    {
+      "node": "smoke_history:msmarco-postgres-C5",
+      "run_id": "eb0bc5e3-0825-47e8-a161-bb52e8542885",
+      "asset_key": [
+        "smoke_history"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-C5"
+    },
+    {
+      "node": "smoke_fresh:msmarco-postgres",
+      "run_id": "f909b54e-74ee-4edd-ac4f-8d104cc95436",
+      "asset_key": [
+        "smoke_fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres"
+    },
+    {
+      "node": "path_guard:postgres",
+      "run_id": "564e1e08-d613-406c-a093-3adcf40588f3",
+      "asset_key": [
+        "path_guard"
+      ],
+      "check_name": "evidence",
+      "partition": "postgres"
+    },
+    {
+      "node": "smoke_initial:msmarco-qdrant",
+      "run_id": "7101211a-6e6e-4d4f-b4d8-3d1f7ed9a59e",
+      "asset_key": [
+        "smoke_initial"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant"
+    },
+    {
+      "node": "smoke_history:msmarco-qdrant-M1",
+      "run_id": "5f8c06fd-99ab-40ae-a38e-37c95412d246",
+      "asset_key": [
+        "smoke_history"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-M1"
+    },
+    {
+      "node": "smoke_history:msmarco-qdrant-C5",
+      "run_id": "19223883-8ffb-46be-a3e1-3ad0967e5f15",
+      "asset_key": [
+        "smoke_history"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-C5"
+    },
+    {
+      "node": "smoke_fresh:msmarco-qdrant",
+      "run_id": "7101211a-6e6e-4d4f-b4d8-3d1f7ed9a59e",
+      "asset_key": [
+        "smoke_fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant"
+    },
+    {
+      "node": "path_guard:qdrant",
+      "run_id": "5d70081e-42be-4252-82d5-b28f95ca3374",
+      "asset_key": [
+        "path_guard"
+      ],
+      "check_name": "evidence",
+      "partition": "qdrant"
+    },
+    {
+      "node": "smoke_initial:wikipedia-postgres",
+      "run_id": "98686f09-5780-4088-9600-291ba48c6f42",
+      "asset_key": [
+        "smoke_initial"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres"
+    },
+    {
+      "node": "smoke_history:wikipedia-postgres-M1",
+      "run_id": "3cd72d65-9f9d-4872-bad1-11bb82f33a5b",
+      "asset_key": [
+        "smoke_history"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-M1"
+    },
+    {
+      "node": "smoke_history:wikipedia-postgres-C5",
+      "run_id": "09a388e6-ddb0-463c-8fe3-3203673e9f37",
+      "asset_key": [
+        "smoke_history"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-C5"
+    },
+    {
+      "node": "smoke_fresh:wikipedia-postgres",
+      "run_id": "98686f09-5780-4088-9600-291ba48c6f42",
+      "asset_key": [
+        "smoke_fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres"
+    },
+    {
+      "node": "smoke_initial:wikipedia-qdrant",
+      "run_id": "bc470ff0-aaf3-437a-9ada-48fca3d2d040",
+      "asset_key": [
+        "smoke_initial"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant"
+    },
+    {
+      "node": "smoke_history:wikipedia-qdrant-M1",
+      "run_id": "a07ddf5e-a39b-41d5-bac1-8c54b5600ba9",
+      "asset_key": [
+        "smoke_history"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-M1"
+    },
+    {
+      "node": "smoke_history:wikipedia-qdrant-C5",
+      "run_id": "5fed1599-b7bf-4d1c-a61c-c46874507ac6",
+      "asset_key": [
+        "smoke_history"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-C5"
+    },
+    {
+      "node": "smoke_fresh:wikipedia-qdrant",
+      "run_id": "bc470ff0-aaf3-437a-9ada-48fca3d2d040",
+      "asset_key": [
+        "smoke_fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant"
+    },
+    {
+      "node": "cost_gate:all",
+      "run_id": "97111ff1-96b7-43ce-846d-cab03d61c2b3",
+      "asset_key": [
+        "cost_gate"
+      ],
+      "check_name": "evidence",
+      "partition": null
+    },
+    {
+      "node": "initial:msmarco-postgres-s11",
+      "run_id": "35842163-f127-4458-8ba4-98ea27c70b92",
+      "asset_key": [
+        "initial"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s11"
+    },
+    {
+      "node": "initial:msmarco-postgres-s29",
+      "run_id": "8e64e6a0-fe67-4d8d-a8b7-2d926fb978f9",
+      "asset_key": [
+        "initial"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s29"
+    },
+    {
+      "node": "initial:msmarco-postgres-s47",
+      "run_id": "3e96ece9-a735-4f9d-af62-3ecd49fb899b",
+      "asset_key": [
+        "initial"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s47"
+    },
+    {
+      "node": "initial:msmarco-qdrant-s11",
+      "run_id": "780ee6f1-4ccf-4255-87f5-00e9c7d3ae86",
+      "asset_key": [
+        "initial"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s11"
+    },
+    {
+      "node": "initial:msmarco-qdrant-s29",
+      "run_id": "f058ea4d-fc1b-4ff8-8435-801c31c955e4",
+      "asset_key": [
+        "initial"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s29"
+    },
+    {
+      "node": "initial:msmarco-qdrant-s47",
+      "run_id": "f742dae4-97d8-4736-a79e-4f6072e7bec1",
+      "asset_key": [
+        "initial"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s47"
+    },
+    {
+      "node": "initial:wikipedia-postgres-s11",
+      "run_id": "7c3bc67d-dc82-4a07-b02a-cf89cf5a49e4",
+      "asset_key": [
+        "initial"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s11"
+    },
+    {
+      "node": "initial:wikipedia-postgres-s29",
+      "run_id": "bf52ee0d-d749-4b27-98cc-f325a2f24d99",
+      "asset_key": [
+        "initial"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s29"
+    },
+    {
+      "node": "initial:wikipedia-postgres-s47",
+      "run_id": "88e196ef-4e2b-4d89-8401-736dd91d217c",
+      "asset_key": [
+        "initial"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s47"
+    },
+    {
+      "node": "initial:wikipedia-qdrant-s11",
+      "run_id": "b1353aab-de3a-43a8-995e-4279b398f2ba",
+      "asset_key": [
+        "initial"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s11"
+    },
+    {
+      "node": "initial:wikipedia-qdrant-s29",
+      "run_id": "16a766b1-67ea-42cd-ae74-6761235e060c",
+      "asset_key": [
+        "initial"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s29"
+    },
+    {
+      "node": "initial:wikipedia-qdrant-s47",
+      "run_id": "5dc48638-b4ae-4a7c-806d-212153d9d182",
+      "asset_key": [
+        "initial"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s47"
+    },
+    {
+      "node": "initialized:all",
+      "run_id": "7f596766-c753-494f-9140-fe0bf9bef545",
+      "asset_key": [
+        "initialized"
+      ],
+      "check_name": "evidence",
+      "partition": null
+    },
+    {
+      "node": "history_slot0:msmarco-postgres-s11-C1",
+      "run_id": "8098926c-f997-43ec-9ee2-604bdd757b59",
+      "asset_key": [
+        "history_slot0"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s11-C1"
+    },
+    {
+      "node": "history_slot1:msmarco-postgres-s11-M1",
+      "run_id": "02915743-8721-4a09-b7c2-7b9714ebecbc",
+      "asset_key": [
+        "history_slot1"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s11-M1"
+    },
+    {
+      "node": "history_slot2:msmarco-postgres-s11-M5",
+      "run_id": "bde0ae52-5a96-4daa-a8cd-7a421110906b",
+      "asset_key": [
+        "history_slot2"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s11-M5"
+    },
+    {
+      "node": "history_slot3:msmarco-postgres-s11-C5",
+      "run_id": "788d3ed4-8f4b-445f-8bbd-bd335ee16c47",
+      "asset_key": [
+        "history_slot3"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s11-C5"
+    },
+    {
+      "node": "history_slot0:msmarco-postgres-s29-M1",
+      "run_id": "55e55417-f56d-4378-aab3-7fcebffe6a66",
+      "asset_key": [
+        "history_slot0"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s29-M1"
+    },
+    {
+      "node": "history_slot1:msmarco-postgres-s29-C5",
+      "run_id": "1361efb3-7935-4320-bf9e-113b4efc1664",
+      "asset_key": [
+        "history_slot1"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s29-C5"
+    },
+    {
+      "node": "history_slot2:msmarco-postgres-s29-M5",
+      "run_id": "e8622111-ad3a-413e-a600-198e83ec055f",
+      "asset_key": [
+        "history_slot2"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s29-M5"
+    },
+    {
+      "node": "history_slot3:msmarco-postgres-s29-C1",
+      "run_id": "ab71b848-c413-45f3-88e5-ff2288061bcc",
+      "asset_key": [
+        "history_slot3"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s29-C1"
+    },
+    {
+      "node": "history_slot0:msmarco-postgres-s47-M5",
+      "run_id": "d4c15dcf-af55-4836-ab58-bab061ad1828",
+      "asset_key": [
+        "history_slot0"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s47-M5"
+    },
+    {
+      "node": "history_slot1:msmarco-postgres-s47-C1",
+      "run_id": "91e2fc3c-c447-4dbc-a612-9387a438ce96",
+      "asset_key": [
+        "history_slot1"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s47-C1"
+    },
+    {
+      "node": "history_slot2:msmarco-postgres-s47-C5",
+      "run_id": "eb796917-5bfd-4aec-b882-941f42683039",
+      "asset_key": [
+        "history_slot2"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s47-C5"
+    },
+    {
+      "node": "history_slot3:msmarco-postgres-s47-M1",
+      "run_id": "47abc104-cc00-45bb-863c-0f4ddefe0a2f",
+      "asset_key": [
+        "history_slot3"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s47-M1"
+    },
+    {
+      "node": "history_slot0:msmarco-qdrant-s11-C1",
+      "run_id": "7e2f69d4-75e9-4560-945a-74a4146157c3",
+      "asset_key": [
+        "history_slot0"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s11-C1"
+    },
+    {
+      "node": "history_slot1:msmarco-qdrant-s11-M1",
+      "run_id": "2171d82e-5358-40a9-99c1-163cb4c6a267",
+      "asset_key": [
+        "history_slot1"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s11-M1"
+    },
+    {
+      "node": "history_slot2:msmarco-qdrant-s11-M5",
+      "run_id": "ce7de0df-83d0-4875-8bec-79a16784ccc5",
+      "asset_key": [
+        "history_slot2"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s11-M5"
+    },
+    {
+      "node": "history_slot3:msmarco-qdrant-s11-C5",
+      "run_id": "dccf2dff-04c7-4e28-b5bc-78580245b4f6",
+      "asset_key": [
+        "history_slot3"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s11-C5"
+    },
+    {
+      "node": "history_slot0:msmarco-qdrant-s29-M1",
+      "run_id": "c2ebea3b-265c-4fdd-a985-1a72cb21680e",
+      "asset_key": [
+        "history_slot0"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s29-M1"
+    },
+    {
+      "node": "history_slot1:msmarco-qdrant-s29-C5",
+      "run_id": "69d327d0-e2ce-4350-81d8-70eb5f52268f",
+      "asset_key": [
+        "history_slot1"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s29-C5"
+    },
+    {
+      "node": "history_slot2:msmarco-qdrant-s29-M5",
+      "run_id": "1a1e4bbb-176f-4211-9c0a-99f5e68667b8",
+      "asset_key": [
+        "history_slot2"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s29-M5"
+    },
+    {
+      "node": "history_slot3:msmarco-qdrant-s29-C1",
+      "run_id": "b38aa088-fc59-481a-be49-fe25f2b8dc46",
+      "asset_key": [
+        "history_slot3"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s29-C1"
+    },
+    {
+      "node": "history_slot0:msmarco-qdrant-s47-M5",
+      "run_id": "93580c95-d889-46c6-b111-397aa847d7e5",
+      "asset_key": [
+        "history_slot0"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s47-M5"
+    },
+    {
+      "node": "history_slot1:msmarco-qdrant-s47-C1",
+      "run_id": "34623bb2-6344-44c6-b333-ab07f9d25821",
+      "asset_key": [
+        "history_slot1"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s47-C1"
+    },
+    {
+      "node": "history_slot2:msmarco-qdrant-s47-C5",
+      "run_id": "9f58ba56-4b8f-4efb-8351-48dcf5b0bdbd",
+      "asset_key": [
+        "history_slot2"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s47-C5"
+    },
+    {
+      "node": "history_slot3:msmarco-qdrant-s47-M1",
+      "run_id": "324861e9-5541-40e8-a064-bbbe810462bf",
+      "asset_key": [
+        "history_slot3"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s47-M1"
+    },
+    {
+      "node": "history_slot0:wikipedia-postgres-s11-C1",
+      "run_id": "c7a7cd03-0e65-4ad9-b5c3-196fab3ce846",
+      "asset_key": [
+        "history_slot0"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s11-C1"
+    },
+    {
+      "node": "history_slot1:wikipedia-postgres-s11-M1",
+      "run_id": "9840cd87-d820-4f4c-aa29-d6687bf1012f",
+      "asset_key": [
+        "history_slot1"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s11-M1"
+    },
+    {
+      "node": "history_slot2:wikipedia-postgres-s11-M5",
+      "run_id": "394b3537-93f2-4d27-93a6-e29377cd0691",
+      "asset_key": [
+        "history_slot2"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s11-M5"
+    },
+    {
+      "node": "history_slot3:wikipedia-postgres-s11-C5",
+      "run_id": "405205a5-89b7-4b29-8f27-eafe47b9961d",
+      "asset_key": [
+        "history_slot3"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s11-C5"
+    },
+    {
+      "node": "history_slot0:wikipedia-postgres-s29-M1",
+      "run_id": "cba854f2-38d2-4642-bbac-5eb768dc6119",
+      "asset_key": [
+        "history_slot0"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s29-M1"
+    },
+    {
+      "node": "history_slot1:wikipedia-postgres-s29-C5",
+      "run_id": "2283777d-4743-4df3-a9f7-cc45c97a92ec",
+      "asset_key": [
+        "history_slot1"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s29-C5"
+    },
+    {
+      "node": "history_slot2:wikipedia-postgres-s29-M5",
+      "run_id": "afae1684-8791-402f-867f-83fa6289b2b3",
+      "asset_key": [
+        "history_slot2"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s29-M5"
+    },
+    {
+      "node": "history_slot3:wikipedia-postgres-s29-C1",
+      "run_id": "b72173a3-cc1e-4bdd-b25e-0bfc9379c4c7",
+      "asset_key": [
+        "history_slot3"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s29-C1"
+    },
+    {
+      "node": "history_slot0:wikipedia-postgres-s47-M5",
+      "run_id": "c0e5df16-929f-4ecb-b5e5-50045388ec23",
+      "asset_key": [
+        "history_slot0"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s47-M5"
+    },
+    {
+      "node": "history_slot1:wikipedia-postgres-s47-C1",
+      "run_id": "c58eb421-4005-433c-bea0-17cc5e306881",
+      "asset_key": [
+        "history_slot1"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s47-C1"
+    },
+    {
+      "node": "history_slot2:wikipedia-postgres-s47-C5",
+      "run_id": "d3eddc7f-e14b-4141-8b84-0cf8aeeac3cc",
+      "asset_key": [
+        "history_slot2"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s47-C5"
+    },
+    {
+      "node": "history_slot3:wikipedia-postgres-s47-M1",
+      "run_id": "2495da07-10fc-4e4c-b67d-353846bd8325",
+      "asset_key": [
+        "history_slot3"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s47-M1"
+    },
+    {
+      "node": "history_slot0:wikipedia-qdrant-s11-C1",
+      "run_id": "4515e2a7-ac08-43cc-9b92-1c8a7415900a",
+      "asset_key": [
+        "history_slot0"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s11-C1"
+    },
+    {
+      "node": "history_slot1:wikipedia-qdrant-s11-M1",
+      "run_id": "dab55499-75e9-448e-a582-673a0098bb6b",
+      "asset_key": [
+        "history_slot1"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s11-M1"
+    },
+    {
+      "node": "history_slot2:wikipedia-qdrant-s11-M5",
+      "run_id": "537e53a6-e780-4553-86b0-99979773f29f",
+      "asset_key": [
+        "history_slot2"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s11-M5"
+    },
+    {
+      "node": "history_slot3:wikipedia-qdrant-s11-C5",
+      "run_id": "1c11a3db-ff48-40a5-9049-b099cc9e1052",
+      "asset_key": [
+        "history_slot3"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s11-C5"
+    },
+    {
+      "node": "history_slot0:wikipedia-qdrant-s29-M1",
+      "run_id": "86ad3f6b-bffc-43f5-b362-8ee4093d6bf3",
+      "asset_key": [
+        "history_slot0"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s29-M1"
+    },
+    {
+      "node": "history_slot1:wikipedia-qdrant-s29-C5",
+      "run_id": "40b55cf7-7b17-4904-bb80-8256ae375758",
+      "asset_key": [
+        "history_slot1"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s29-C5"
+    },
+    {
+      "node": "history_slot2:wikipedia-qdrant-s29-M5",
+      "run_id": "217fe52b-b8de-4c2e-aa6d-e8fb7964eb5d",
+      "asset_key": [
+        "history_slot2"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s29-M5"
+    },
+    {
+      "node": "history_slot3:wikipedia-qdrant-s29-C1",
+      "run_id": "307fcbb7-39f3-41f0-9847-0398e8674ca1",
+      "asset_key": [
+        "history_slot3"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s29-C1"
+    },
+    {
+      "node": "history_slot0:wikipedia-qdrant-s47-M5",
+      "run_id": "72f6fdf5-6eef-4557-a0f4-cfb6a0cb03e9",
+      "asset_key": [
+        "history_slot0"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s47-M5"
+    },
+    {
+      "node": "history_slot1:wikipedia-qdrant-s47-C1",
+      "run_id": "443d2d35-4770-4ffb-bb1f-7870c3792061",
+      "asset_key": [
+        "history_slot1"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s47-C1"
+    },
+    {
+      "node": "history_slot2:wikipedia-qdrant-s47-C5",
+      "run_id": "adb4d1cb-1123-49b8-8946-e73a48ad7a34",
+      "asset_key": [
+        "history_slot2"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s47-C5"
+    },
+    {
+      "node": "history_slot3:wikipedia-qdrant-s47-M1",
+      "run_id": "3093e90d-50a1-4f26-a8e1-6ccb2ac6b97b",
+      "asset_key": [
+        "history_slot3"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s47-M1"
+    },
+    {
+      "node": "histories_done:all",
+      "run_id": "9fb3a36c-e692-4e12-a28d-4e3c81375fcb",
+      "asset_key": [
+        "histories_done"
+      ],
+      "check_name": "evidence",
+      "partition": null
+    },
+    {
+      "node": "fresh:msmarco-postgres-s11-initial-fresh-0",
+      "run_id": "ef8e716f-f766-47cd-822f-29c51b76ef50",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s11-initial-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-postgres-s11-initial-fresh-1",
+      "run_id": "00282443-889e-48bc-9de0-785f9a420b8b",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s11-initial-fresh-1"
+    },
+    {
+      "node": "fresh:msmarco-postgres-s11-initial-fresh-2",
+      "run_id": "feb99e74-c884-4365-8c2f-aca2b081f176",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s11-initial-fresh-2"
+    },
+    {
+      "node": "fresh:msmarco-postgres-s11-final-fresh-0",
+      "run_id": "016ee01e-1a8d-4beb-84d5-f7762f67f532",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s11-final-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-postgres-s11-final-fresh-1",
+      "run_id": "d10371f5-f92e-4c9f-bf04-c94f74a89c66",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s11-final-fresh-1"
+    },
+    {
+      "node": "fresh:msmarco-postgres-s11-final-fresh-2",
+      "run_id": "165e2705-1d67-4575-b696-ed4e369f400d",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s11-final-fresh-2"
+    },
+    {
+      "node": "fresh:msmarco-postgres-s11-M5-step2-fresh-0",
+      "run_id": "7220caf6-8181-40e6-ac46-31ad09330a00",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s11-M5-step2-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-postgres-s11-M5-step4-fresh-0",
+      "run_id": "6064facb-c925-4e07-83c3-c69bcade7dc3",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s11-M5-step4-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-postgres-s11-C5-step2-fresh-0",
+      "run_id": "735ce9bd-5443-48b2-b6ce-f61deed3bd0b",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s11-C5-step2-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-postgres-s11-C5-step4-fresh-0",
+      "run_id": "ac4ef781-fc01-4e7c-8841-0fee1fe6a1e6",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s11-C5-step4-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-postgres-s29-initial-fresh-0",
+      "run_id": "a63c2d96-85e1-4715-a118-0593b4c4b2fb",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s29-initial-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-postgres-s29-initial-fresh-1",
+      "run_id": "fe501878-46c1-451e-8f6a-d5426afcecca",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s29-initial-fresh-1"
+    },
+    {
+      "node": "fresh:msmarco-postgres-s29-initial-fresh-2",
+      "run_id": "b20bf099-075f-449b-b2c0-1878509e4988",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s29-initial-fresh-2"
+    },
+    {
+      "node": "fresh:msmarco-postgres-s29-final-fresh-0",
+      "run_id": "3878c7e0-12e5-4b06-a803-6773156215cb",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s29-final-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-postgres-s29-final-fresh-1",
+      "run_id": "9da78a6b-cbd9-4832-b3f4-63c5ec593183",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s29-final-fresh-1"
+    },
+    {
+      "node": "fresh:msmarco-postgres-s29-final-fresh-2",
+      "run_id": "7306405f-afce-41e1-b23c-76deb56a1828",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s29-final-fresh-2"
+    },
+    {
+      "node": "fresh:msmarco-postgres-s29-M5-step2-fresh-0",
+      "run_id": "3b5bca71-19d3-404d-9143-6f89d8875768",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s29-M5-step2-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-postgres-s29-M5-step4-fresh-0",
+      "run_id": "271d7c67-0a62-4105-b2b5-888c44a2ff2c",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s29-M5-step4-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-postgres-s29-C5-step2-fresh-0",
+      "run_id": "c6d04360-befb-4252-928b-2569e87f92c0",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s29-C5-step2-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-postgres-s29-C5-step4-fresh-0",
+      "run_id": "305ea033-0285-4306-9370-a4d9edab4571",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s29-C5-step4-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-postgres-s47-initial-fresh-0",
+      "run_id": "1d654647-133e-4da5-abbf-ff3b5f5c0cbe",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s47-initial-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-postgres-s47-initial-fresh-1",
+      "run_id": "2d159353-0cbf-43d6-a127-5c63f95c4cd5",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s47-initial-fresh-1"
+    },
+    {
+      "node": "fresh:msmarco-postgres-s47-initial-fresh-2",
+      "run_id": "0bc1e837-33d1-4674-82ee-97ef7f783af1",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s47-initial-fresh-2"
+    },
+    {
+      "node": "fresh:msmarco-postgres-s47-final-fresh-0",
+      "run_id": "52ccd7a3-6eae-444e-ab82-6cd4d566468b",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s47-final-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-postgres-s47-final-fresh-1",
+      "run_id": "4b7c5ef7-4728-4c75-ab13-6bd161aa65be",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s47-final-fresh-1"
+    },
+    {
+      "node": "fresh:msmarco-postgres-s47-final-fresh-2",
+      "run_id": "2c21c5fe-7ba4-4bcb-88fc-3315bfb5efa0",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s47-final-fresh-2"
+    },
+    {
+      "node": "fresh:msmarco-postgres-s47-M5-step2-fresh-0",
+      "run_id": "b1dba6ef-67ad-4963-a372-f444920aacf0",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s47-M5-step2-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-postgres-s47-M5-step4-fresh-0",
+      "run_id": "01ad7a26-7bd1-4683-a4d8-8d93cee4f2c9",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s47-M5-step4-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-postgres-s47-C5-step2-fresh-0",
+      "run_id": "7da614c0-f064-4e28-8589-1338033598cd",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s47-C5-step2-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-postgres-s47-C5-step4-fresh-0",
+      "run_id": "4e5943ea-28af-41c3-a247-df17265fa6aa",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-postgres-s47-C5-step4-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s11-initial-fresh-0",
+      "run_id": "3d75a7d2-7bdf-4401-8f29-918f89948c27",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s11-initial-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s11-initial-fresh-1",
+      "run_id": "5bb0fb55-a6ea-4e78-b049-16d03bf37500",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s11-initial-fresh-1"
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s11-initial-fresh-2",
+      "run_id": "195be3bf-5daa-44d2-838d-557addf83cb4",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s11-initial-fresh-2"
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s11-final-fresh-0",
+      "run_id": "f2e66b41-dc05-44c0-90d3-1748fd9a1159",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s11-final-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s11-final-fresh-1",
+      "run_id": "647e39b0-34e3-4b83-81e6-7c0e4738c086",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s11-final-fresh-1"
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s11-final-fresh-2",
+      "run_id": "2d7366b7-06d7-46ce-b677-8f70e6e96f83",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s11-final-fresh-2"
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s11-M5-step2-fresh-0",
+      "run_id": "96af62a2-2e58-42f1-b5fe-2e2b98882934",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s11-M5-step2-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s11-M5-step4-fresh-0",
+      "run_id": "85e34dcc-a09a-446c-8b76-58373e00a892",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s11-M5-step4-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s11-C5-step2-fresh-0",
+      "run_id": "a3ac57d4-7a1d-407b-a90c-2b6918424fb1",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s11-C5-step2-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s11-C5-step4-fresh-0",
+      "run_id": "764609be-c541-408e-8ebe-8ce3f4f7040a",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s11-C5-step4-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s29-initial-fresh-0",
+      "run_id": "acbc181d-62a6-42f2-bf1e-b69c81b00285",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s29-initial-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s29-initial-fresh-1",
+      "run_id": "451b7433-d0a2-476b-9da0-2364db29f5a5",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s29-initial-fresh-1"
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s29-initial-fresh-2",
+      "run_id": "166fbe82-cc34-495c-8aa3-ab5b743824fe",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s29-initial-fresh-2"
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s29-final-fresh-0",
+      "run_id": "149d8309-eab6-494b-97a5-b35ce4bba6da",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s29-final-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s29-final-fresh-1",
+      "run_id": "6a5562d9-0980-4f1b-a24c-5fac101e04bd",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s29-final-fresh-1"
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s29-final-fresh-2",
+      "run_id": "f46c802c-deac-4f0c-b82b-761aa5e7950c",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s29-final-fresh-2"
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s29-M5-step2-fresh-0",
+      "run_id": "1b40d7d9-36c1-471c-a7fc-f4343c460071",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s29-M5-step2-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s29-M5-step4-fresh-0",
+      "run_id": "8ed673f3-d8c9-46a3-a48a-70069e18b3f7",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s29-M5-step4-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s29-C5-step2-fresh-0",
+      "run_id": "880d9b6f-ca20-4503-884b-b8bce476e6c2",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s29-C5-step2-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s29-C5-step4-fresh-0",
+      "run_id": "a70232e7-79b3-4818-9f59-ca12c5ccfa1b",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s29-C5-step4-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s47-initial-fresh-0",
+      "run_id": "8462b827-a2c3-4057-9ecd-c0ec96b45a76",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s47-initial-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s47-initial-fresh-1",
+      "run_id": "90cdf591-ed5c-4045-894c-7808f87704b2",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s47-initial-fresh-1"
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s47-initial-fresh-2",
+      "run_id": "3f90697e-6ef6-434b-8495-391d0273582d",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s47-initial-fresh-2"
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s47-final-fresh-0",
+      "run_id": "7cceeb36-0105-4a87-826a-ee15727d4c50",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s47-final-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s47-final-fresh-1",
+      "run_id": "b91b2df0-e115-44c3-911e-9edb1106968d",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s47-final-fresh-1"
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s47-final-fresh-2",
+      "run_id": "bd32e57a-b9ec-4ed9-9f0e-88a286caaeca",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s47-final-fresh-2"
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s47-M5-step2-fresh-0",
+      "run_id": "4bfb2340-88d8-41e0-b684-3c3039431409",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s47-M5-step2-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s47-M5-step4-fresh-0",
+      "run_id": "5a9f55ff-e6a5-4038-af6f-fa19a02ef455",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s47-M5-step4-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s47-C5-step2-fresh-0",
+      "run_id": "9d286161-d52e-49eb-b5d1-3a79930e98c3",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s47-C5-step2-fresh-0"
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s47-C5-step4-fresh-0",
+      "run_id": "cb474c00-a429-45ab-9def-5fa9eb11692f",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "msmarco-qdrant-s47-C5-step4-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s11-initial-fresh-0",
+      "run_id": "31cd72a7-9407-4f5d-bde9-550c14129b3b",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s11-initial-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s11-initial-fresh-1",
+      "run_id": "5dfa1dac-dc2b-4d86-880f-a8ddf299b70f",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s11-initial-fresh-1"
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s11-initial-fresh-2",
+      "run_id": "69d23721-8e72-481f-aaea-6121889daaf4",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s11-initial-fresh-2"
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s11-final-fresh-0",
+      "run_id": "f40e355a-6a82-482f-a739-c615baacfe05",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s11-final-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s11-final-fresh-1",
+      "run_id": "c08425ff-2fa9-4535-a81c-db426ba5f08e",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s11-final-fresh-1"
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s11-final-fresh-2",
+      "run_id": "7c0a48e1-5e03-4bdd-a05a-bc4569b6d021",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s11-final-fresh-2"
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s11-M5-step2-fresh-0",
+      "run_id": "0d840033-1558-4367-98ee-6330d7a0e247",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s11-M5-step2-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s11-M5-step4-fresh-0",
+      "run_id": "6012b34e-74c3-42b3-814b-c9df4152489e",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s11-M5-step4-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s11-C5-step2-fresh-0",
+      "run_id": "fba790f4-5226-430c-b728-d1fda501e19e",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s11-C5-step2-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s11-C5-step4-fresh-0",
+      "run_id": "2410f681-e4e1-4087-91cb-d30f46a0eeb5",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s11-C5-step4-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s29-initial-fresh-0",
+      "run_id": "e7318e9d-e3d9-4335-8d87-f66a632931e7",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s29-initial-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s29-initial-fresh-1",
+      "run_id": "155a213f-9548-4f1d-8a43-56e192cc4c92",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s29-initial-fresh-1"
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s29-initial-fresh-2",
+      "run_id": "f5791b18-71fa-47de-bb6c-e72d6f64f442",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s29-initial-fresh-2"
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s29-final-fresh-0",
+      "run_id": "538c2d9a-0120-4d72-9415-24800c751e41",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s29-final-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s29-final-fresh-1",
+      "run_id": "70fe6a1d-519b-40a0-9b31-ee3f6c1a9d5c",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s29-final-fresh-1"
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s29-final-fresh-2",
+      "run_id": "7dcce67c-3ce3-4cc3-97e1-d5762d7cef60",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s29-final-fresh-2"
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s29-M5-step2-fresh-0",
+      "run_id": "684829a2-1575-4e67-b079-570951432ef6",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s29-M5-step2-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s29-M5-step4-fresh-0",
+      "run_id": "a133dcb7-5a0e-47a2-8c3b-048fb23d7bd9",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s29-M5-step4-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s29-C5-step2-fresh-0",
+      "run_id": "9f176f7b-217d-46ed-a1a4-bb15fc3ff6b1",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s29-C5-step2-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s29-C5-step4-fresh-0",
+      "run_id": "d085c401-5eaa-4bb1-83e1-511008eae946",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s29-C5-step4-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s47-initial-fresh-0",
+      "run_id": "2f94952f-5918-43f5-8019-b2e32fa4c4fa",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s47-initial-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s47-initial-fresh-1",
+      "run_id": "cc4a731e-0175-46c7-bb86-67681c8c9a3f",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s47-initial-fresh-1"
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s47-initial-fresh-2",
+      "run_id": "38b3e7e0-0ba0-4cbb-bac3-ad615a36532f",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s47-initial-fresh-2"
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s47-final-fresh-0",
+      "run_id": "f9e11925-cd86-4e8f-9419-69215f5a4960",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s47-final-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s47-final-fresh-1",
+      "run_id": "601d39c2-a9bd-4dea-83ab-d7c286e596b6",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s47-final-fresh-1"
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s47-final-fresh-2",
+      "run_id": "de0b5fc9-b56b-4955-8320-b6666f11ff7f",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s47-final-fresh-2"
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s47-M5-step2-fresh-0",
+      "run_id": "0914d5a9-1850-4467-a149-9775cdcdb48c",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s47-M5-step2-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s47-M5-step4-fresh-0",
+      "run_id": "a8d6e52f-8d42-4923-b6b1-29cfc92e0909",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s47-M5-step4-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s47-C5-step2-fresh-0",
+      "run_id": "496857c6-4277-4645-8a37-7fd8548125dd",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s47-C5-step2-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s47-C5-step4-fresh-0",
+      "run_id": "96b52835-5ab8-4048-80de-dbe08cd2e35c",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-postgres-s47-C5-step4-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s11-initial-fresh-0",
+      "run_id": "5a699ebb-652f-4c8e-9685-bcd70daa1702",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s11-initial-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s11-initial-fresh-1",
+      "run_id": "903260c4-a9ec-4b2e-bcb1-4b8c4c8cb55b",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s11-initial-fresh-1"
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s11-initial-fresh-2",
+      "run_id": "4425a30f-71ad-4d7f-940b-7bd25f4f08da",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s11-initial-fresh-2"
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s11-final-fresh-0",
+      "run_id": "351def62-4c4e-465f-8a87-ac18a9b317b6",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s11-final-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s11-final-fresh-1",
+      "run_id": "5f7293bb-0997-45f9-b82b-56e764f40929",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s11-final-fresh-1"
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s11-final-fresh-2",
+      "run_id": "48c2a37d-c933-4457-a15e-8493729565ba",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s11-final-fresh-2"
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s11-M5-step2-fresh-0",
+      "run_id": "88b32617-c667-4181-868d-d6edb3208a08",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s11-M5-step2-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s11-M5-step4-fresh-0",
+      "run_id": "da653609-c4bf-47a1-a3bb-b0f7a678152b",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s11-M5-step4-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s11-C5-step2-fresh-0",
+      "run_id": "67a4f411-b0ea-4ded-a4fb-0e4e81756e6b",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s11-C5-step2-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s11-C5-step4-fresh-0",
+      "run_id": "e5e28cc3-9d39-4077-b613-c1ac612ac4a6",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s11-C5-step4-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s29-initial-fresh-0",
+      "run_id": "fcd0149b-6a3e-408d-8457-f65659f370ca",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s29-initial-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s29-initial-fresh-1",
+      "run_id": "74a7016d-4833-4fcd-8570-3994935c1950",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s29-initial-fresh-1"
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s29-initial-fresh-2",
+      "run_id": "137b37f5-64a2-4d31-9a0d-a1663d424b21",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s29-initial-fresh-2"
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s29-final-fresh-0",
+      "run_id": "95cbf659-88f9-4530-a412-052a1503b716",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s29-final-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s29-final-fresh-1",
+      "run_id": "e019c146-f8ba-4ca0-b582-0fd8958ec803",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s29-final-fresh-1"
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s29-final-fresh-2",
+      "run_id": "6fcc35f5-2008-4876-9de3-7e7c7326790c",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s29-final-fresh-2"
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s29-M5-step2-fresh-0",
+      "run_id": "42749232-750a-4ddf-9add-53fbc22bbab6",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s29-M5-step2-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s29-M5-step4-fresh-0",
+      "run_id": "64d0efc4-8a03-4940-a220-f703f2ca40bd",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s29-M5-step4-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s29-C5-step2-fresh-0",
+      "run_id": "a9d87d45-b440-4897-828d-395259bc0755",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s29-C5-step2-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s29-C5-step4-fresh-0",
+      "run_id": "4cf22d1e-eb22-4c5d-84b9-67707710d238",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s29-C5-step4-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s47-initial-fresh-0",
+      "run_id": "f871fd9b-2738-45bf-b8a8-ff3b5a0433ca",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s47-initial-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s47-initial-fresh-1",
+      "run_id": "1c5d7323-06ec-4f35-b7a0-045d84f9b7b5",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s47-initial-fresh-1"
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s47-initial-fresh-2",
+      "run_id": "ddf7548b-632f-4afe-8bcd-226a2c71e06b",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s47-initial-fresh-2"
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s47-final-fresh-0",
+      "run_id": "3e9f7078-25c4-43cd-a89d-823ebeeeb91b",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s47-final-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s47-final-fresh-1",
+      "run_id": "8ec5e2f3-b96c-41c1-ac9a-e0b222d3b10f",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s47-final-fresh-1"
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s47-final-fresh-2",
+      "run_id": "5593169b-9b15-4288-b5c0-418ff08712c1",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s47-final-fresh-2"
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s47-M5-step2-fresh-0",
+      "run_id": "c7a4be33-e461-4a88-bc51-f6dbc2a48840",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s47-M5-step2-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s47-M5-step4-fresh-0",
+      "run_id": "c6a03dce-c717-4d10-bf03-178ada88f3a8",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s47-M5-step4-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s47-C5-step2-fresh-0",
+      "run_id": "82a86a86-3ecf-435e-8ff2-0de9d091c720",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s47-C5-step2-fresh-0"
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s47-C5-step4-fresh-0",
+      "run_id": "f0af15b6-88bb-4160-81b7-3eae40c2e076",
+      "asset_key": [
+        "fresh"
+      ],
+      "check_name": "evidence",
+      "partition": "wikipedia-qdrant-s47-C5-step4-fresh-0"
+    },
+    {
+      "node": "report:all",
+      "run_id": "948e89fb-cd1c-4c27-a692-cdb7b751396e",
+      "asset_key": [
+        "report"
+      ],
+      "check_name": "evidence",
+      "partition": null
+    }
+  ],
+  "adopted_native_origins": 34,
+  "forecast_status": "BLOCK",
+  "admission_status": "USER_AUTHORIZED_FORECAST_EXCEPTION",
+  "forecast_exception": {
+    "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02/forecast-exception.json",
+    "sha256": "f34e83a6c989cbcff0ca80a1f3bc6dc888bc1156f4eafaa4fa468ed39f8cc551",
+    "failed_cost_gate": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01/cells/cost_gate__all/69710dc0-23f8-4690-b3dd-a5b20049d1ea/cost-gate.json",
+    "failed_cost_gate_sha256": "5714484b13fd0baf5d2686f068ad0fc6706d62116bbbb5c083dbc35f54a7d1d7",
+    "original_t0": 1793069813,
+    "original_deadline": 1793113013,
+    "user_text": "그냥 진행해."
+  },
+  "authorized_retries": [
+    {
+      "node": "history_slot0:msmarco-postgres-s11-C1",
+      "prior_run_id": "a5026b92-e418-4d43-beb2-a8697782512d",
+      "reason": "user-requested removal of unrelated-container veto; sole failure occurred before any DB write",
+      "user_text": "빨리 재개해. 그런 조건 없애고.",
+      "recorded_at": 1793078668.2725701
+    },
+    {
+      "node": "history_slot0:msmarco-postgres-s29-M1",
+      "prior_run_id": "2762bc40-6afe-4fb4-bae8-7f579d5d6db4",
+      "reason": "complete removal of user-rejected external-container veto; clean replay from preserved initial snapshot before any insertion",
+      "user_text": "빨리 재개해. 그런 조건 없애고.",
+      "recorded_at": 1793079254.0599391
+    },
+    {
+      "node": "history_slot0:msmarco-postgres-s11-C1",
+      "prior_run_id": "764ffbde-980b-4688-978d-31231301dbd8",
+      "reason": "complete removal of user-rejected external-container veto; clean replay from preserved initial snapshot before any insertion",
+      "user_text": "빨리 재개해. 그런 조건 없애고.",
+      "recorded_at": 1793079254.06096
+    },
+    {
+      "node": "history_slot1:msmarco-postgres-s47-C1",
+      "prior_run_id": "10ab92a3-a133-4b26-a5be-4b2348b0451a",
+      "reason": "user removed disk admission checks; retry the pre-write disk-wait attempt using its original initial snapshot",
+      "user_text": "디스크 검사 빼라고",
+      "recorded_at": 1793083704.5867178
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s47-final-fresh-1",
+      "prior_run_id": "8bf51ce4-59a2-4606-9773-010e1e9a6fe3",
+      "reason": "explicit user resume after controller termination; rerun only the incomplete fresh build from preserved input",
+      "user_text": "재개해.",
+      "recorded_at": 1793111366.986444
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s47-initial-fresh-1",
+      "prior_run_id": "7fa6b500-4ba1-4530-a04f-d38cb6c2c595",
+      "reason": "corrective user instruction to finish the approved scope instead of stopping at the missed time target; rerun only the pre-write rejected fresh cell",
+      "user_text": "아니 시발 왜 멈추는데\n장난하냐고",
+      "recorded_at": 1793116068.834332
+    },
+    {
+      "node": "report:all",
+      "prior_run_id": "0b80bc1b-e1b5-4f60-8e08-527daac112ff",
+      "reason": "finish original analysis/audit after separating resource summary from cleanup journal; all database measurements are complete and unchanged",
+      "user_text": "아니 시발 왜 멈추는데\n장난하냐고",
+      "recorded_at": 1793116642.8123672
+    }
+  ],
+  "disk_policy": {
+    "mode": "OBSERVE_ONLY",
+    "user_text": "디스크 검사 빼라고",
+    "recorded_at": 1793083704.587518,
+    "scope": "capacity,host growth,reservations and owned storage never veto execution; telemetry remains observational"
+  },
+  "retry_revision_refs": {
+    "manifest": {
+      "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02/prelaunch-revisions/r1/manifest.json",
+      "sha256": "44d36071242b1e4445f7170938c732caa356ac68b4e245dc42c0f86fa6b955bb"
+    },
+    "source_hashes": {
+      "path": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02/prelaunch-revisions/r1/source-hashes.json",
+      "sha256": "8badf6801a7bed7c539f0ce47e233a8d97e8c2bf236aa74018f764a804627ea3"
+    }
+  },
+  "counts": {
+    "histories": 48,
+    "incremental_measurements": 192,
+    "fresh_builds": 120,
+    "additional_ef_measurements": 168,
+    "total_quality_conditions": 480,
+    "evaluation_queries": 211200
+  },
+  "report": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02/cells/report__all/948e89fb-cd1c-4c27-a692-cdb7b751396e/report.md",
+  "scope": "clustered selected-scope G5 independent audit; final delivery is separate"
+}

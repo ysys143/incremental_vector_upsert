@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "counts": {
+    "histories": 48,
+    "incremental_measurements": 192,
+    "fresh_builds": 120,
+    "additional_ef_measurements": 168,
+    "total_quality_conditions": 480,
+    "evaluation_queries": 211200
+  },
+  "gate": "G4",
+  "scope": "CLUSTERED_INSERTION_ONLY; final G5 delivery pending"
+}

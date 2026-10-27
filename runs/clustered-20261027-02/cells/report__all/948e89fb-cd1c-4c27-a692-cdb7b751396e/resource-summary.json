@@ -1,0 +1,3729 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "node": "history_slot1:msmarco-qdrant-s29-C5",
+      "started_at": 1793084460.778612,
+      "finished_at": 1793084564.057557,
+      "elapsed_s": 103.27894520759583,
+      "worker_peak_rss_bytes": 1528446976,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot1:msmarco-qdrant-s29-C5",
+        "run_id": "69d327d0-e2ce-4350-81d8-70eb5f52268f"
+      },
+      "sampled_database_summed_rss_peak_bytes": 468504576,
+      "sampled_database_disk_peak_bytes": 259469312,
+      "minimum_host_free_bytes": 26412122112,
+      "docker_samples": 198
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s47-M5-step2-fresh-0",
+      "started_at": 1793094912.856405,
+      "finished_at": 1793094943.375753,
+      "elapsed_s": 30.51934790611267,
+      "worker_peak_rss_bytes": 1295122432,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-postgres-s47-M5-step2-fresh-0",
+        "run_id": "0914d5a9-1850-4467-a149-9775cdcdb48c"
+      },
+      "sampled_database_summed_rss_peak_bytes": 406515712,
+      "sampled_database_disk_peak_bytes": 256380928,
+      "minimum_host_free_bytes": 53581594624,
+      "docker_samples": 55
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s11-initial-fresh-1",
+      "started_at": 1793112197.5568829,
+      "finished_at": 1793112214.3356411,
+      "elapsed_s": 16.77875828742981,
+      "worker_peak_rss_bytes": 907476992,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-qdrant-s11-initial-fresh-1",
+        "run_id": "903260c4-a9ec-4b2e-bcb1-4b8c4c8cb55b"
+      },
+      "sampled_database_summed_rss_peak_bytes": 284332032,
+      "sampled_database_disk_peak_bytes": 103370752,
+      "minimum_host_free_bytes": 67697414144,
+      "docker_samples": 31
+    },
+    {
+      "node": "history_slot1:wikipedia-qdrant-s47-C1",
+      "started_at": 1793085495.856763,
+      "finished_at": 1793085560.416308,
+      "elapsed_s": 64.55954504013062,
+      "worker_peak_rss_bytes": 1437679616,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot1:wikipedia-qdrant-s47-C1",
+        "run_id": "443d2d35-4770-4ffb-bb1f-7870c3792061"
+      },
+      "sampled_database_summed_rss_peak_bytes": 523436032,
+      "sampled_database_disk_peak_bytes": 248872960,
+      "minimum_host_free_bytes": 25358774272,
+      "docker_samples": 118
+    },
+    {
+      "node": "fresh:msmarco-postgres-s29-M5-step4-fresh-0",
+      "started_at": 1793090430.367724,
+      "finished_at": 1793090468.3056839,
+      "elapsed_s": 37.93795990943909,
+      "worker_peak_rss_bytes": 1671659520,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-postgres-s29-M5-step4-fresh-0",
+        "run_id": "271d7c67-0a62-4105-b2b5-888c44a2ff2c"
+      },
+      "sampled_database_summed_rss_peak_bytes": 503291904,
+      "sampled_database_disk_peak_bytes": 334483456,
+      "minimum_host_free_bytes": 58087137280,
+      "docker_samples": 71
+    },
+    {
+      "node": "fresh:msmarco-postgres-s47-initial-fresh-1",
+      "started_at": 1793091824.421264,
+      "finished_at": 1793091875.591962,
+      "elapsed_s": 51.170698165893555,
+      "worker_peak_rss_bytes": 1067466752,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-postgres-s47-initial-fresh-1",
+        "run_id": "2d159353-0cbf-43d6-a127-5c63f95c4cd5"
+      },
+      "sampled_database_summed_rss_peak_bytes": 331915264,
+      "sampled_database_disk_peak_bytes": 191344640,
+      "minimum_host_free_bytes": 54751281152,
+      "docker_samples": 96
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s11-initial-fresh-1",
+      "started_at": 1793092353.451149,
+      "finished_at": 1793092377.945193,
+      "elapsed_s": 24.494044065475464,
+      "worker_peak_rss_bytes": 879755264,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-qdrant-s11-initial-fresh-1",
+        "run_id": "5bb0fb55-a6ea-4e78-b049-16d03bf37500"
+      },
+      "sampled_database_summed_rss_peak_bytes": 265342976,
+      "sampled_database_disk_peak_bytes": 103804928,
+      "minimum_host_free_bytes": 54686961664,
+      "docker_samples": 45
+    },
+    {
+      "node": "smoke_initial:wikipedia-postgres",
+      "started_at": 1793074991.989964,
+      "finished_at": 1793075014.258913,
+      "elapsed_s": 22.268949031829834,
+      "worker_peak_rss_bytes": 1109131264,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "smoke_initial:wikipedia-postgres",
+        "run_id": "eaac35dc-166e-4fd8-91fa-0cd7e27d87dd",
+        "receipt_sha256": "ad33c8024362b446f150db2183b6cfcfe5d83da48fd9e650eed0b4d5231afb06"
+      },
+      "sampled_database_summed_rss_peak_bytes": 303177728,
+      "sampled_database_disk_peak_bytes": 191238144,
+      "minimum_host_free_bytes": 32691593216,
+      "docker_samples": 39
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s47-C5-step4-fresh-0",
+      "started_at": 1793092904.0604742,
+      "finished_at": 1793092940.908167,
+      "elapsed_s": 36.8476927280426,
+      "worker_peak_rss_bytes": 1388724224,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-qdrant-s47-C5-step4-fresh-0",
+        "run_id": "cb474c00-a429-45ab-9def-5fa9eb11692f"
+      },
+      "sampled_database_summed_rss_peak_bytes": 348811264,
+      "sampled_database_disk_peak_bytes": 197931008,
+      "minimum_host_free_bytes": 54385799168,
+      "docker_samples": 70
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s47-C5-step4-fresh-0",
+      "started_at": 1793112632.323494,
+      "finished_at": 1793112663.433432,
+      "elapsed_s": 31.109938144683838,
+      "worker_peak_rss_bytes": 1281310720,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-qdrant-s47-C5-step4-fresh-0",
+        "run_id": "f0af15b6-88bb-4160-81b7-3eae40c2e076"
+      },
+      "sampled_database_summed_rss_peak_bytes": 382926848,
+      "sampled_database_disk_peak_bytes": 188002304,
+      "minimum_host_free_bytes": 67334737920,
+      "docker_samples": 59
+    },
+    {
+      "node": "smoke_fresh:msmarco-qdrant",
+      "started_at": 1793074884.616437,
+      "finished_at": 1793074919.91968,
+      "elapsed_s": 35.3032431602478,
+      "worker_peak_rss_bytes": 1420001280,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "smoke_fresh:msmarco-qdrant",
+        "run_id": "21acbc00-fd16-4ea4-a542-90400e0d4005",
+        "receipt_sha256": "2d2b9512eba817e06484b6d101aa7bf563d8b67ef2676e4df040b07e5a7edb50"
+      },
+      "sampled_database_summed_rss_peak_bytes": 376578048,
+      "sampled_database_disk_peak_bytes": 206995456,
+      "minimum_host_free_bytes": 32856436736,
+      "docker_samples": 68
+    },
+    {
+      "node": "fresh:msmarco-postgres-s11-M5-step2-fresh-0",
+      "started_at": 1793089568.346547,
+      "finished_at": 1793089599.603673,
+      "elapsed_s": 31.257126092910767,
+      "worker_peak_rss_bytes": 1210253312,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-postgres-s11-M5-step2-fresh-0",
+        "run_id": "7220caf6-8181-40e6-ac46-31ad09330a00"
+      },
+      "sampled_database_summed_rss_peak_bytes": 380719104,
+      "sampled_database_disk_peak_bytes": 226209792,
+      "minimum_host_free_bytes": 58742099968,
+      "docker_samples": 56
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s11-initial-fresh-0",
+      "started_at": 1793112177.082839,
+      "finished_at": 1793112194.159679,
+      "elapsed_s": 17.076839923858643,
+      "worker_peak_rss_bytes": 912752640,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-qdrant-s11-initial-fresh-0",
+        "run_id": "5a699ebb-652f-4c8e-9685-bcd70daa1702"
+      },
+      "sampled_database_summed_rss_peak_bytes": 276246528,
+      "sampled_database_disk_peak_bytes": 103370752,
+      "minimum_host_free_bytes": 67702386688,
+      "docker_samples": 31
+    },
+    {
+      "node": "tuning:wikipedia-postgres",
+      "started_at": 1793074402.556821,
+      "finished_at": 1793074783.223674,
+      "elapsed_s": 380.6668529510498,
+      "worker_peak_rss_bytes": 44154880,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "tuning:wikipedia-postgres",
+        "run_id": "2c201f54-8213-4cbe-9175-5a6f4ce3caab",
+        "receipt_sha256": "6cd97cd6b2613c098134477644511b3e05333231942eea6c0722b5ed92704e95"
+      },
+      "sampled_database_summed_rss_peak_bytes": null,
+      "sampled_database_disk_peak_bytes": null,
+      "minimum_host_free_bytes": null,
+      "docker_samples": 0
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s29-M5-step2-fresh-0",
+      "started_at": 1793094128.995114,
+      "finished_at": 1793094159.195253,
+      "elapsed_s": 30.200138807296753,
+      "worker_peak_rss_bytes": 1334116352,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-postgres-s29-M5-step2-fresh-0",
+        "run_id": "684829a2-1575-4e67-b079-570951432ef6"
+      },
+      "sampled_database_summed_rss_peak_bytes": 347455488,
+      "sampled_database_disk_peak_bytes": 261173248,
+      "minimum_host_free_bytes": 53623963648,
+      "docker_samples": 55
+    },
+    {
+      "node": "calibration:msmarco-qdrant-m48",
+      "started_at": 1793072849.086764,
+      "finished_at": 1793073027.345217,
+      "elapsed_s": 178.25845289230347,
+      "worker_peak_rss_bytes": 1531478016,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "calibration:msmarco-qdrant-m48",
+        "run_id": "78f0c4ee-0971-4816-baff-8021b9129523",
+        "receipt_sha256": "09cbf41874346d7b2b7cac48fc7bca6efae0b2e0c0bca5a058ab8ed8a04aeaad"
+      },
+      "sampled_database_summed_rss_peak_bytes": 464011264,
+      "sampled_database_disk_peak_bytes": 207122432,
+      "minimum_host_free_bytes": 34561060864,
+      "docker_samples": 351
+    },
+    {
+      "node": "history_slot2:wikipedia-postgres-s29-M5",
+      "started_at": 1793086890.635697,
+      "finished_at": 1793087167.782051,
+      "elapsed_s": 277.1463541984558,
+      "worker_peak_rss_bytes": 1733017600,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot2:wikipedia-postgres-s29-M5",
+        "run_id": "afae1684-8791-402f-867f-83fa6289b2b3"
+      },
+      "sampled_database_summed_rss_peak_bytes": 522235904,
+      "sampled_database_disk_peak_bytes": 325332992,
+      "minimum_host_free_bytes": 48595931136,
+      "docker_samples": 545
+    },
+    {
+      "node": "fresh:msmarco-postgres-s47-M5-step4-fresh-0",
+      "started_at": 1793091256.6897721,
+      "finished_at": 1793091301.45514,
+      "elapsed_s": 44.76536798477173,
+      "worker_peak_rss_bytes": 1671413760,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-postgres-s47-M5-step4-fresh-0",
+        "run_id": "01ad7a26-7bd1-4683-a4d8-8d93cee4f2c9"
+      },
+      "sampled_database_summed_rss_peak_bytes": 504131584,
+      "sampled_database_disk_peak_bytes": 334663680,
+      "minimum_host_free_bytes": 55007973376,
+      "docker_samples": 78
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s11-C5-step2-fresh-0",
+      "started_at": 1793091936.425292,
+      "finished_at": 1793091957.034038,
+      "elapsed_s": 20.60874605178833,
+      "worker_peak_rss_bytes": 1043202048,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-qdrant-s11-C5-step2-fresh-0",
+        "run_id": "a3ac57d4-7a1d-407b-a90c-2b6918424fb1"
+      },
+      "sampled_database_summed_rss_peak_bytes": 294522880,
+      "sampled_database_disk_peak_bytes": 126337024,
+      "minimum_host_free_bytes": 54751342592,
+      "docker_samples": 38
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s11-C5-step2-fresh-0",
+      "started_at": 1793111891.193075,
+      "finished_at": 1793111912.7678878,
+      "elapsed_s": 21.57481288909912,
+      "worker_peak_rss_bytes": 1257897984,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-qdrant-s11-C5-step2-fresh-0",
+        "run_id": "67a4f411-b0ea-4ded-a4fb-0e4e81756e6b"
+      },
+      "sampled_database_summed_rss_peak_bytes": 327983104,
+      "sampled_database_disk_peak_bytes": 147156992,
+      "minimum_host_free_bytes": 67723878400,
+      "docker_samples": 40
+    },
+    {
+      "node": "history_slot2:wikipedia-postgres-s47-C5",
+      "started_at": 1793087173.9865549,
+      "finished_at": 1793087424.6420639,
+      "elapsed_s": 250.65550899505615,
+      "worker_peak_rss_bytes": 1729544192,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot2:wikipedia-postgres-s47-C5",
+        "run_id": "d3eddc7f-e14b-4141-8b84-0cf8aeeac3cc"
+      },
+      "sampled_database_summed_rss_peak_bytes": 520945664,
+      "sampled_database_disk_peak_bytes": 325357568,
+      "minimum_host_free_bytes": 49806614528,
+      "docker_samples": 491
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s11-M5-step4-fresh-0",
+      "started_at": 1793093407.8328278,
+      "finished_at": 1793093440.138059,
+      "elapsed_s": 32.30523109436035,
+      "worker_peak_rss_bytes": 1522417664,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-postgres-s11-M5-step4-fresh-0",
+        "run_id": "6012b34e-74c3-42b3-814b-c9df4152489e"
+      },
+      "sampled_database_summed_rss_peak_bytes": 436011008,
+      "sampled_database_disk_peak_bytes": 302239744,
+      "minimum_host_free_bytes": 53738315776,
+      "docker_samples": 59
+    },
+    {
+      "node": "fresh:msmarco-postgres-s47-initial-fresh-0",
+      "started_at": 1793091768.8406029,
+      "finished_at": 1793091820.585942,
+      "elapsed_s": 51.745339155197144,
+      "worker_peak_rss_bytes": 1069989888,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-postgres-s47-initial-fresh-0",
+        "run_id": "1d654647-133e-4da5-abbf-ff3b5f5c0cbe"
+      },
+      "sampled_database_summed_rss_peak_bytes": 330735616,
+      "sampled_database_disk_peak_bytes": 191336448,
+      "minimum_host_free_bytes": 54753296384,
+      "docker_samples": 96
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s11-initial-fresh-0",
+      "started_at": 1793092323.121422,
+      "finished_at": 1793092348.092064,
+      "elapsed_s": 24.97064185142517,
+      "worker_peak_rss_bytes": 879951872,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-qdrant-s11-initial-fresh-0",
+        "run_id": "3d75a7d2-7bdf-4401-8f29-918f89948c27"
+      },
+      "sampled_database_summed_rss_peak_bytes": 269365248,
+      "sampled_database_disk_peak_bytes": 103796736,
+      "minimum_host_free_bytes": 54691291136,
+      "docker_samples": 45
+    },
+    {
+      "node": "histories_done:all",
+      "started_at": 1793089456.3965518,
+      "finished_at": 1793089457.709476,
+      "elapsed_s": 1.3129241466522217,
+      "worker_peak_rss_bytes": 53379072,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "histories_done:all",
+        "run_id": "9fb3a36c-e692-4e12-a28d-4e3c81375fcb"
+      },
+      "sampled_database_summed_rss_peak_bytes": null,
+      "sampled_database_disk_peak_bytes": null,
+      "minimum_host_free_bytes": null,
+      "docker_samples": 0
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s29-C5-step4-fresh-0",
+      "started_at": 1793092440.329033,
+      "finished_at": 1793092483.946945,
+      "elapsed_s": 43.61791205406189,
+      "worker_peak_rss_bytes": 1297989632,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-qdrant-s29-C5-step4-fresh-0",
+        "run_id": "a70232e7-79b3-4818-9f59-ca12c5ccfa1b"
+      },
+      "sampled_database_summed_rss_peak_bytes": 333352960,
+      "sampled_database_disk_peak_bytes": 197726208,
+      "minimum_host_free_bytes": 54676672512,
+      "docker_samples": 84
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s29-C5-step4-fresh-0",
+      "started_at": 1793112264.193888,
+      "finished_at": 1793112294.659839,
+      "elapsed_s": 30.465950965881348,
+      "worker_peak_rss_bytes": 1304821760,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-qdrant-s29-C5-step4-fresh-0",
+        "run_id": "4cf22d1e-eb22-4c5d-84b9-67707710d238"
+      },
+      "sampled_database_summed_rss_peak_bytes": 373772288,
+      "sampled_database_disk_peak_bytes": 192925696,
+      "minimum_host_free_bytes": 67685330944,
+      "docker_samples": 58
+    },
+    {
+      "node": "initial:wikipedia-postgres-s29",
+      "started_at": 1793077534.625074,
+      "finished_at": 1793077557.264416,
+      "elapsed_s": 22.639342069625854,
+      "worker_peak_rss_bytes": 1083621376,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "initial:wikipedia-postgres-s29",
+        "run_id": "bf52ee0d-d749-4b27-98cc-f325a2f24d99"
+      },
+      "sampled_database_summed_rss_peak_bytes": 341708800,
+      "sampled_database_disk_peak_bytes": 191238144,
+      "minimum_host_free_bytes": 29656649728,
+      "docker_samples": 40
+    },
+    {
+      "node": "fresh:msmarco-postgres-s29-C5-step4-fresh-0",
+      "started_at": 1793090343.3519208,
+      "finished_at": 1793090382.370702,
+      "elapsed_s": 39.01878118515015,
+      "worker_peak_rss_bytes": 1668923392,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-postgres-s29-C5-step4-fresh-0",
+        "run_id": "305ea033-0285-4306-9370-a4d9edab4571"
+      },
+      "sampled_database_summed_rss_peak_bytes": 433582080,
+      "sampled_database_disk_peak_bytes": 334483456,
+      "minimum_host_free_bytes": 58296332288,
+      "docker_samples": 73
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s29-final-fresh-1",
+      "started_at": 1793094363.5515058,
+      "finished_at": 1793094506.938438,
+      "elapsed_s": 143.3869321346283,
+      "worker_peak_rss_bytes": 1727348736,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-postgres-s29-final-fresh-1",
+        "run_id": "70fe6a1d-519b-40a0-9b31-ee3f6c1a9d5c"
+      },
+      "sampled_database_summed_rss_peak_bytes": 521498624,
+      "sampled_database_disk_peak_bytes": 342077440,
+      "minimum_host_free_bytes": 53582721024,
+      "docker_samples": 281
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s47-C5-step2-fresh-0",
+      "started_at": 1793094836.318252,
+      "finished_at": 1793094866.699819,
+      "elapsed_s": 30.381567001342773,
+      "worker_peak_rss_bytes": 1280032768,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-postgres-s47-C5-step2-fresh-0",
+        "run_id": "496857c6-4277-4645-8a37-7fd8548125dd"
+      },
+      "sampled_database_summed_rss_peak_bytes": 406368256,
+      "sampled_database_disk_peak_bytes": 256380928,
+      "minimum_host_free_bytes": 53574463488,
+      "docker_samples": 55
+    },
+    {
+      "node": "calibration:msmarco-postgres-m32",
+      "started_at": 1793072177.703794,
+      "finished_at": 1793072842.1653461,
+      "elapsed_s": 664.4615521430969,
+      "worker_peak_rss_bytes": 1749336064,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "calibration:msmarco-postgres-m32",
+        "run_id": "53f3cae0-e773-4276-a754-41c308a1b63d",
+        "receipt_sha256": "edb46dac0897a447a0d3db12af16bc5ba19a6befcba6b46f81ea9442acb08c2f"
+      },
+      "sampled_database_summed_rss_peak_bytes": 641175552,
+      "sampled_database_disk_peak_bytes": 426037248,
+      "minimum_host_free_bytes": 34587840512,
+      "docker_samples": 1317
+    },
+    {
+      "node": "initial:wikipedia-postgres-s11",
+      "started_at": 1793077505.0296981,
+      "finished_at": 1793077529.077247,
+      "elapsed_s": 24.04754877090454,
+      "worker_peak_rss_bytes": 1174568960,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "initial:wikipedia-postgres-s11",
+        "run_id": "7c3bc67d-dc82-4a07-b02a-cf89cf5a49e4"
+      },
+      "sampled_database_summed_rss_peak_bytes": 325685248,
+      "sampled_database_disk_peak_bytes": 191238144,
+      "minimum_host_free_bytes": 29761622016,
+      "docker_samples": 42
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s29-final-fresh-2",
+      "started_at": 1793092720.627303,
+      "finished_at": 1793092785.142169,
+      "elapsed_s": 64.51486611366272,
+      "worker_peak_rss_bytes": 1473757184,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-qdrant-s29-final-fresh-2",
+        "run_id": "f46c802c-deac-4f0c-b82b-761aa5e7950c"
+      },
+      "sampled_database_summed_rss_peak_bytes": 367804416,
+      "sampled_database_disk_peak_bytes": 206962688,
+      "minimum_host_free_bytes": 54622593024,
+      "docker_samples": 126
+    },
+    {
+      "node": "fresh:msmarco-postgres-s11-initial-fresh-1",
+      "started_at": 1793090184.579828,
+      "finished_at": 1793090240.146611,
+      "elapsed_s": 55.56678295135498,
+      "worker_peak_rss_bytes": 1061437440,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-postgres-s11-initial-fresh-1",
+        "run_id": "00282443-889e-48bc-9de0-785f9a420b8b"
+      },
+      "sampled_database_summed_rss_peak_bytes": 291528704,
+      "sampled_database_disk_peak_bytes": 191352832,
+      "minimum_host_free_bytes": 58297458688,
+      "docker_samples": 105
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s47-initial-fresh-1",
+      "started_at": 1793093240.6653812,
+      "finished_at": 1793093261.972193,
+      "elapsed_s": 21.306811809539795,
+      "worker_peak_rss_bytes": 875036672,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-qdrant-s47-initial-fresh-1",
+        "run_id": "90cdf591-ed5c-4045-894c-7808f87704b2"
+      },
+      "sampled_database_summed_rss_peak_bytes": 276770816,
+      "sampled_database_disk_peak_bytes": 103796736,
+      "minimum_host_free_bytes": 53927145472,
+      "docker_samples": 39
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s47-initial-fresh-1",
+      "started_at": 1793116073.007661,
+      "finished_at": 1793116103.611403,
+      "elapsed_s": 30.603741884231567,
+      "worker_peak_rss_bytes": 890617856,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-qdrant-s47-initial-fresh-1",
+        "run_id": "1c5d7323-06ec-4f35-b7a0-045d84f9b7b5"
+      },
+      "sampled_database_summed_rss_peak_bytes": 269783040,
+      "sampled_database_disk_peak_bytes": 103759872,
+      "minimum_host_free_bytes": 69101940736,
+      "docker_samples": 54
+    },
+    {
+      "node": "fresh:msmarco-postgres-s11-C5-step2-fresh-0",
+      "started_at": 1793089482.604634,
+      "finished_at": 1793089516.0316942,
+      "elapsed_s": 33.4270601272583,
+      "worker_peak_rss_bytes": 1210286080,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-postgres-s11-C5-step2-fresh-0",
+        "run_id": "735ce9bd-5443-48b2-b6ce-f61deed3bd0b"
+      },
+      "sampled_database_summed_rss_peak_bytes": 340320256,
+      "sampled_database_disk_peak_bytes": 226209792,
+      "minimum_host_free_bytes": 59147792384,
+      "docker_samples": 59
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s29-final-fresh-0",
+      "started_at": 1793112361.279659,
+      "finished_at": 1793112416.837087,
+      "elapsed_s": 55.55742788314819,
+      "worker_peak_rss_bytes": 1375256576,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-qdrant-s29-final-fresh-0",
+        "run_id": "95cbf659-88f9-4530-a412-052a1503b716"
+      },
+      "sampled_database_summed_rss_peak_bytes": 354762752,
+      "sampled_database_disk_peak_bytes": 206929920,
+      "minimum_host_free_bytes": 67473571840,
+      "docker_samples": 107
+    },
+    {
+      "node": "initial:msmarco-postgres-s11",
+      "started_at": 1793077300.9132469,
+      "finished_at": 1793077329.173236,
+      "elapsed_s": 28.259989023208618,
+      "worker_peak_rss_bytes": 1125171200,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "initial:msmarco-postgres-s11",
+        "run_id": "35842163-f127-4458-8ba4-98ea27c70b92"
+      },
+      "sampled_database_summed_rss_peak_bytes": 316911616,
+      "sampled_database_disk_peak_bytes": 191238144,
+      "minimum_host_free_bytes": 31524806656,
+      "docker_samples": 49
+    },
+    {
+      "node": "initial:msmarco-postgres-s29",
+      "started_at": 1793077336.5876548,
+      "finished_at": 1793077363.8990662,
+      "elapsed_s": 27.311411380767822,
+      "worker_peak_rss_bytes": 1151827968,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "initial:msmarco-postgres-s29",
+        "run_id": "8e64e6a0-fe67-4d8d-a8b7-2d926fb978f9"
+      },
+      "sampled_database_summed_rss_peak_bytes": 314593280,
+      "sampled_database_disk_peak_bytes": 191238144,
+      "minimum_host_free_bytes": 30298361856,
+      "docker_samples": 48
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s47-M5-step4-fresh-0",
+      "started_at": 1793112693.753945,
+      "finished_at": 1793112723.1145248,
+      "elapsed_s": 29.3605797290802,
+      "worker_peak_rss_bytes": 1295679488,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-qdrant-s47-M5-step4-fresh-0",
+        "run_id": "c6a03dce-c717-4d10-bf03-178ada88f3a8"
+      },
+      "sampled_database_summed_rss_peak_bytes": 353812480,
+      "sampled_database_disk_peak_bytes": 188006400,
+      "minimum_host_free_bytes": 67216945152,
+      "docker_samples": 56
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s47-M5-step4-fresh-0",
+      "started_at": 1793092975.653396,
+      "finished_at": 1793093013.5285811,
+      "elapsed_s": 37.87518525123596,
+      "worker_peak_rss_bytes": 1413595136,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-qdrant-s47-M5-step4-fresh-0",
+        "run_id": "5a9f55ff-e6a5-4038-af6f-fa19a02ef455"
+      },
+      "sampled_database_summed_rss_peak_bytes": 379367424,
+      "sampled_database_disk_peak_bytes": 197898240,
+      "minimum_host_free_bytes": 54191038464,
+      "docker_samples": 72
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s29-initial-fresh-0",
+      "started_at": 1793094668.455605,
+      "finished_at": 1793094718.35532,
+      "elapsed_s": 49.899714946746826,
+      "worker_peak_rss_bytes": 1058406400,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-postgres-s29-initial-fresh-0",
+        "run_id": "e7318e9d-e3d9-4335-8d87-f66a632931e7"
+      },
+      "sampled_database_summed_rss_peak_bytes": 290193408,
+      "sampled_database_disk_peak_bytes": 191352832,
+      "minimum_host_free_bytes": 53579431936,
+      "docker_samples": 95
+    },
+    {
+      "node": "fresh:msmarco-postgres-s29-final-fresh-1",
+      "started_at": 1793090629.750551,
+      "finished_at": 1793090778.952099,
+      "elapsed_s": 149.20154809951782,
+      "worker_peak_rss_bytes": 1740963840,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-postgres-s29-final-fresh-1",
+        "run_id": "9da78a6b-cbd9-4832-b3f4-63c5ec593183"
+      },
+      "sampled_database_summed_rss_peak_bytes": 526200832,
+      "sampled_database_disk_peak_bytes": 342077440,
+      "minimum_host_free_bytes": 57964859392,
+      "docker_samples": 291
+    },
+    {
+      "node": "history_slot0:msmarco-postgres-s29-M1",
+      "started_at": 1793079546.7863302,
+      "finished_at": 1793079737.2596118,
+      "elapsed_s": 190.47328162193298,
+      "worker_peak_rss_bytes": 1744404480,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot0:msmarco-postgres-s29-M1",
+        "run_id": "55e55417-f56d-4378-aab3-7fcebffe6a66"
+      },
+      "sampled_database_summed_rss_peak_bytes": 525877248,
+      "sampled_database_disk_peak_bytes": 325365760,
+      "minimum_host_free_bytes": 31719669760,
+      "docker_samples": 371
+    },
+    {
+      "node": "smoke_history:msmarco-qdrant-M1",
+      "started_at": 1793075473.0322402,
+      "finished_at": 1793075510.458097,
+      "elapsed_s": 37.425856828689575,
+      "worker_peak_rss_bytes": 1364541440,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "smoke_history:msmarco-qdrant-M1",
+        "run_id": "3f46eb37-c085-4f95-bace-a77cce2ea050",
+        "receipt_sha256": "e568f96388d81d3eefe8f5db9fe85c6edc31999309b043b194bb21c65e27c009"
+      },
+      "sampled_database_summed_rss_peak_bytes": 616382464,
+      "sampled_database_disk_peak_bytes": 245710848,
+      "minimum_host_free_bytes": 32341721088,
+      "docker_samples": 66
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s11-M5-step2-fresh-0",
+      "started_at": 1793111947.365066,
+      "finished_at": 1793111969.08318,
+      "elapsed_s": 21.718113899230957,
+      "worker_peak_rss_bytes": 1237450752,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-qdrant-s11-M5-step2-fresh-0",
+        "run_id": "88b32617-c667-4181-868d-d6edb3208a08"
+      },
+      "sampled_database_summed_rss_peak_bytes": 338149376,
+      "sampled_database_disk_peak_bytes": 147156992,
+      "minimum_host_free_bytes": 67726323712,
+      "docker_samples": 40
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s11-M5-step2-fresh-0",
+      "started_at": 1793092003.536822,
+      "finished_at": 1793092024.616588,
+      "elapsed_s": 21.079766035079956,
+      "worker_peak_rss_bytes": 1013530624,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-qdrant-s11-M5-step2-fresh-0",
+        "run_id": "96af62a2-2e58-42f1-b5fe-2e2b98882934"
+      },
+      "sampled_database_summed_rss_peak_bytes": 339197952,
+      "sampled_database_disk_peak_bytes": 126337024,
+      "minimum_host_free_bytes": 54756487168,
+      "docker_samples": 39
+    },
+    {
+      "node": "fresh:msmarco-postgres-s11-initial-fresh-0",
+      "started_at": 1793090123.227242,
+      "finished_at": 1793090177.494745,
+      "elapsed_s": 54.26750302314758,
+      "worker_peak_rss_bytes": 1062551552,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-postgres-s11-initial-fresh-0",
+        "run_id": "ef8e716f-f766-47cd-822f-29c51b76ef50"
+      },
+      "sampled_database_summed_rss_peak_bytes": 289325056,
+      "sampled_database_disk_peak_bytes": 191344640,
+      "minimum_host_free_bytes": 58300506112,
+      "docker_samples": 102
+    },
+    {
+      "node": "fresh:msmarco-postgres-s47-C5-step4-fresh-0",
+      "started_at": 1793091158.555794,
+      "finished_at": 1793091202.7873778,
+      "elapsed_s": 44.23158383369446,
+      "worker_peak_rss_bytes": 1667170304,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-postgres-s47-C5-step4-fresh-0",
+        "run_id": "4e5943ea-28af-41c3-a247-df17265fa6aa"
+      },
+      "sampled_database_summed_rss_peak_bytes": 459567104,
+      "sampled_database_disk_peak_bytes": 334663680,
+      "minimum_host_free_bytes": 55891804160,
+      "docker_samples": 82
+    },
+    {
+      "node": "history_slot2:wikipedia-qdrant-s29-M5",
+      "started_at": 1793087513.259617,
+      "finished_at": 1793087594.70861,
+      "elapsed_s": 81.44899296760559,
+      "worker_peak_rss_bytes": 1394163712,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot2:wikipedia-qdrant-s29-M5",
+        "run_id": "217fe52b-b8de-4c2e-aa6d-e8fb7964eb5d"
+      },
+      "sampled_database_summed_rss_peak_bytes": 461983744,
+      "sampled_database_disk_peak_bytes": 209076224,
+      "minimum_host_free_bytes": 48789356544,
+      "docker_samples": 153
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s29-C5-step2-fresh-0",
+      "started_at": 1793094052.4947278,
+      "finished_at": 1793094082.400061,
+      "elapsed_s": 29.905333042144775,
+      "worker_peak_rss_bytes": 1346945024,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-postgres-s29-C5-step2-fresh-0",
+        "run_id": "9f176f7b-217d-46ed-a1a4-bb15fc3ff6b1"
+      },
+      "sampled_database_summed_rss_peak_bytes": 348819456,
+      "sampled_database_disk_peak_bytes": 261173248,
+      "minimum_host_free_bytes": 53643026432,
+      "docker_samples": 54
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s47-initial-fresh-0",
+      "started_at": 1793093214.960999,
+      "finished_at": 1793093237.718781,
+      "elapsed_s": 22.757781982421875,
+      "worker_peak_rss_bytes": 900628480,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-qdrant-s47-initial-fresh-0",
+        "run_id": "8462b827-a2c3-4057-9ecd-c0ec96b45a76"
+      },
+      "sampled_database_summed_rss_peak_bytes": 291663872,
+      "sampled_database_disk_peak_bytes": 103796736,
+      "minimum_host_free_bytes": 53931622400,
+      "docker_samples": 40
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s29-final-fresh-0",
+      "started_at": 1793094205.619286,
+      "finished_at": 1793094360.451442,
+      "elapsed_s": 154.83215594291687,
+      "worker_peak_rss_bytes": 1731969024,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-postgres-s29-final-fresh-0",
+        "run_id": "538c2d9a-0120-4d72-9415-24800c751e41"
+      },
+      "sampled_database_summed_rss_peak_bytes": 516362240,
+      "sampled_database_disk_peak_bytes": 342241280,
+      "minimum_host_free_bytes": 53594386432,
+      "docker_samples": 304
+    },
+    {
+      "node": "initial:wikipedia-qdrant-s11",
+      "started_at": 1793077591.10653,
+      "finished_at": 1793077620.904348,
+      "elapsed_s": 29.797817945480347,
+      "worker_peak_rss_bytes": 961839104,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "initial:wikipedia-qdrant-s11",
+        "run_id": "b1353aab-de3a-43a8-995e-4279b398f2ba"
+      },
+      "sampled_database_summed_rss_peak_bytes": 294907904,
+      "sampled_database_disk_peak_bytes": 103370752,
+      "minimum_host_free_bytes": 29463941120,
+      "docker_samples": 56
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s29-M5-step4-fresh-0",
+      "started_at": 1793112325.429182,
+      "finished_at": 1793112355.949566,
+      "elapsed_s": 30.520383834838867,
+      "worker_peak_rss_bytes": 1291354112,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-qdrant-s29-M5-step4-fresh-0",
+        "run_id": "64d0efc4-8a03-4940-a220-f703f2ca40bd"
+      },
+      "sampled_database_summed_rss_peak_bytes": 361078784,
+      "sampled_database_disk_peak_bytes": 192921600,
+      "minimum_host_free_bytes": 67615260672,
+      "docker_samples": 58
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s29-M5-step4-fresh-0",
+      "started_at": 1793092527.7023401,
+      "finished_at": 1793092569.0389361,
+      "elapsed_s": 41.33659601211548,
+      "worker_peak_rss_bytes": 1413971968,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-qdrant-s29-M5-step4-fresh-0",
+        "run_id": "8ed673f3-d8c9-46a3-a48a-70069e18b3f7"
+      },
+      "sampled_database_summed_rss_peak_bytes": 367886336,
+      "sampled_database_disk_peak_bytes": 197693440,
+      "minimum_host_free_bytes": 54666797056,
+      "docker_samples": 79
+    },
+    {
+      "node": "fresh:msmarco-postgres-s29-final-fresh-0",
+      "started_at": 1793090471.475667,
+      "finished_at": 1793090622.578523,
+      "elapsed_s": 151.10285592079163,
+      "worker_peak_rss_bytes": 1742241792,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-postgres-s29-final-fresh-0",
+        "run_id": "3878c7e0-12e5-4b06-a803-6773156215cb"
+      },
+      "sampled_database_summed_rss_peak_bytes": 526110720,
+      "sampled_database_disk_peak_bytes": 342077440,
+      "minimum_host_free_bytes": 57966288896,
+      "docker_samples": 296
+    },
+    {
+      "node": "initial:wikipedia-qdrant-s29",
+      "started_at": 1793077627.148813,
+      "finished_at": 1793077657.1623838,
+      "elapsed_s": 30.01357078552246,
+      "worker_peak_rss_bytes": 867926016,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "initial:wikipedia-qdrant-s29",
+        "run_id": "16a766b1-67ea-42cd-ae74-6761235e060c"
+      },
+      "sampled_database_summed_rss_peak_bytes": 285200384,
+      "sampled_database_disk_peak_bytes": 103370752,
+      "minimum_host_free_bytes": 29394505728,
+      "docker_samples": 57
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s11-C5-step4-fresh-0",
+      "started_at": 1793093331.712884,
+      "finished_at": 1793093365.8213131,
+      "elapsed_s": 34.108429193496704,
+      "worker_peak_rss_bytes": 1528086528,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-postgres-s11-C5-step4-fresh-0",
+        "run_id": "2410f681-e4e1-4087-91cb-d30f46a0eeb5"
+      },
+      "sampled_database_summed_rss_peak_bytes": 468680704,
+      "sampled_database_disk_peak_bytes": 302280704,
+      "minimum_host_free_bytes": 53758963712,
+      "docker_samples": 62
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s29-initial-fresh-1",
+      "started_at": 1793094724.388897,
+      "finished_at": 1793094776.5470579,
+      "elapsed_s": 52.1581609249115,
+      "worker_peak_rss_bytes": 1039482880,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-postgres-s29-initial-fresh-1",
+        "run_id": "155a213f-9548-4f1d-8a43-56e192cc4c92"
+      },
+      "sampled_database_summed_rss_peak_bytes": 320819200,
+      "sampled_database_disk_peak_bytes": 191344640,
+      "minimum_host_free_bytes": 53581787136,
+      "docker_samples": 98
+    },
+    {
+      "node": "history_slot2:wikipedia-qdrant-s47-C5",
+      "started_at": 1793087599.436403,
+      "finished_at": 1793087685.3013198,
+      "elapsed_s": 85.86491680145264,
+      "worker_peak_rss_bytes": 1376616448,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot2:wikipedia-qdrant-s47-C5",
+        "run_id": "adb4d1cb-1123-49b8-8946-e73a48ad7a34"
+      },
+      "sampled_database_summed_rss_peak_bytes": 500432896,
+      "sampled_database_disk_peak_bytes": 253710336,
+      "minimum_host_free_bytes": 48344776704,
+      "docker_samples": 163
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s47-initial-fresh-0",
+      "started_at": 1793112897.689952,
+      "finished_at": 1793112914.61343,
+      "elapsed_s": 16.92347812652588,
+      "worker_peak_rss_bytes": 900366336,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-qdrant-s47-initial-fresh-0",
+        "run_id": "f871fd9b-2738-45bf-b8a8-ff3b5a0433ca"
+      },
+      "sampled_database_summed_rss_peak_bytes": 290754560,
+      "sampled_database_disk_peak_bytes": 103370752,
+      "minimum_host_free_bytes": 66782097408,
+      "docker_samples": 31
+    },
+    {
+      "node": "history_slot1:wikipedia-postgres-s47-C1",
+      "started_at": 1793085140.485159,
+      "finished_at": 1793085331.5615811,
+      "elapsed_s": 191.07642221450806,
+      "worker_peak_rss_bytes": 1731657728,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot1:wikipedia-postgres-s47-C1",
+        "run_id": "c58eb421-4005-433c-bea0-17cc5e306881"
+      },
+      "sampled_database_summed_rss_peak_bytes": 568291328,
+      "sampled_database_disk_peak_bytes": 325386240,
+      "minimum_host_free_bytes": 25676742656,
+      "docker_samples": 373
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s29-final-fresh-1",
+      "started_at": 1793112422.465585,
+      "finished_at": 1793112477.16561,
+      "elapsed_s": 54.70002508163452,
+      "worker_peak_rss_bytes": 1404223488,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-qdrant-s29-final-fresh-1",
+        "run_id": "e019c146-f8ba-4ca0-b582-0fd8958ec803"
+      },
+      "sampled_database_summed_rss_peak_bytes": 401018880,
+      "sampled_database_disk_peak_bytes": 206901248,
+      "minimum_host_free_bytes": 67339816960,
+      "docker_samples": 105
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s11-initial-fresh-2",
+      "started_at": 1793093996.398506,
+      "finished_at": 1793094050.279063,
+      "elapsed_s": 53.8805570602417,
+      "worker_peak_rss_bytes": 1052508160,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-postgres-s11-initial-fresh-2",
+        "run_id": "69d23721-8e72-481f-aaea-6121889daaf4"
+      },
+      "sampled_database_summed_rss_peak_bytes": 341450752,
+      "sampled_database_disk_peak_bytes": 191352832,
+      "minimum_host_free_bytes": 53648879616,
+      "docker_samples": 102
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s11-final-fresh-2",
+      "started_at": 1793093737.390783,
+      "finished_at": 1793093880.889045,
+      "elapsed_s": 143.49826192855835,
+      "worker_peak_rss_bytes": 1730641920,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-postgres-s11-final-fresh-2",
+        "run_id": "7c0a48e1-5e03-4bdd-a05a-bc4569b6d021"
+      },
+      "sampled_database_summed_rss_peak_bytes": 523362304,
+      "sampled_database_disk_peak_bytes": 342044672,
+      "minimum_host_free_bytes": 53678321664,
+      "docker_samples": 281
+    },
+    {
+      "node": "initialized:all",
+      "started_at": 1793077723.56921,
+      "finished_at": 1793077724.6113641,
+      "elapsed_s": 1.04215407371521,
+      "worker_peak_rss_bytes": 44056576,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "initialized:all",
+        "run_id": "7f596766-c753-494f-9140-fe0bf9bef545"
+      },
+      "sampled_database_summed_rss_peak_bytes": null,
+      "sampled_database_disk_peak_bytes": null,
+      "minimum_host_free_bytes": null,
+      "docker_samples": 0
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s11-final-fresh-1",
+      "started_at": 1793092139.824864,
+      "finished_at": 1793092213.4111722,
+      "elapsed_s": 73.5863082408905,
+      "worker_peak_rss_bytes": 1468104704,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-qdrant-s11-final-fresh-1",
+        "run_id": "647e39b0-34e3-4b83-81e6-7c0e4738c086"
+      },
+      "sampled_database_summed_rss_peak_bytes": 354004992,
+      "sampled_database_disk_peak_bytes": 206962688,
+      "minimum_host_free_bytes": 54684942336,
+      "docker_samples": 143
+    },
+    {
+      "node": "history_slot2:msmarco-qdrant-s47-C5",
+      "started_at": 1793086540.11997,
+      "finished_at": 1793086628.9490938,
+      "elapsed_s": 88.82912373542786,
+      "worker_peak_rss_bytes": 1443086336,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot2:msmarco-qdrant-s47-C5",
+        "run_id": "9f58ba56-4b8f-4efb-8351-48dcf5b0bdbd"
+      },
+      "sampled_database_summed_rss_peak_bytes": 458002432,
+      "sampled_database_disk_peak_bytes": 252227584,
+      "minimum_host_free_bytes": 23783223296,
+      "docker_samples": 168
+    },
+    {
+      "node": "calibration:msmarco-postgres-m16",
+      "started_at": 1793071663.653381,
+      "finished_at": 1793072173.485707,
+      "elapsed_s": 509.83232593536377,
+      "worker_peak_rss_bytes": 1753939968,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "calibration:msmarco-postgres-m16",
+        "run_id": "e62d40fc-5cac-401d-a3ce-cae7749b3725",
+        "receipt_sha256": "d88610b1b6988a869b6792e4a00f5a83b4fff7732f270d794bf52a8d890a181c"
+      },
+      "sampled_database_summed_rss_peak_bytes": 595021824,
+      "sampled_database_disk_peak_bytes": 375705600,
+      "minimum_host_free_bytes": 34710630400,
+      "docker_samples": 1010
+    },
+    {
+      "node": "history_slot2:msmarco-qdrant-s29-M5",
+      "started_at": 1793086448.672745,
+      "finished_at": 1793086533.252095,
+      "elapsed_s": 84.57934999465942,
+      "worker_peak_rss_bytes": 1523695616,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot2:msmarco-qdrant-s29-M5",
+        "run_id": "1a1e4bbb-176f-4211-9c0a-99f5e68667b8"
+      },
+      "sampled_database_summed_rss_peak_bytes": 481214464,
+      "sampled_database_disk_peak_bytes": 226635776,
+      "minimum_host_free_bytes": 23742775296,
+      "docker_samples": 161
+    },
+    {
+      "node": "smoke_fresh:wikipedia-postgres",
+      "started_at": 1793074950.9131489,
+      "finished_at": 1793074987.317104,
+      "elapsed_s": 36.40395522117615,
+      "worker_peak_rss_bytes": 1724039168,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "smoke_fresh:wikipedia-postgres",
+        "run_id": "eaac35dc-166e-4fd8-91fa-0cd7e27d87dd",
+        "receipt_sha256": "1dd6a50c65c076babf6228d898e44e7874a197e32ee18854a80ed627c72619e3"
+      },
+      "sampled_database_summed_rss_peak_bytes": 479457280,
+      "sampled_database_disk_peak_bytes": 341995520,
+      "minimum_host_free_bytes": 32795533312,
+      "docker_samples": 68
+    },
+    {
+      "node": "fresh:msmarco-postgres-s11-final-fresh-2",
+      "started_at": 1793089959.948378,
+      "finished_at": 1793090117.728437,
+      "elapsed_s": 157.7800588607788,
+      "worker_peak_rss_bytes": 1746141184,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-postgres-s11-final-fresh-2",
+        "run_id": "165e2705-1d67-4575-b696-ed4e369f400d"
+      },
+      "sampled_database_summed_rss_peak_bytes": 525828096,
+      "sampled_database_disk_peak_bytes": 342208512,
+      "minimum_host_free_bytes": 58322079744,
+      "docker_samples": 309
+    },
+    {
+      "node": "tuning:msmarco-qdrant",
+      "started_at": 1793073266.4048388,
+      "finished_at": 1793074395.701226,
+      "elapsed_s": 1129.2963871955872,
+      "worker_peak_rss_bytes": 42942464,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "tuning:msmarco-qdrant",
+        "run_id": "07534a17-ec58-4493-835c-22eeaff89ecc",
+        "receipt_sha256": "f7285dfcf54bd01244017656cd8f4c3328eeed7394eab75119c589271df32bed"
+      },
+      "sampled_database_summed_rss_peak_bytes": null,
+      "sampled_database_disk_peak_bytes": null,
+      "minimum_host_free_bytes": null,
+      "docker_samples": 0
+    },
+    {
+      "node": "history_slot1:msmarco-postgres-s47-C1",
+      "started_at": 1793083989.94278,
+      "finished_at": 1793084198.2576928,
+      "elapsed_s": 208.3149127960205,
+      "worker_peak_rss_bytes": 1738227712,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot1:msmarco-postgres-s47-C1",
+        "run_id": "91e2fc3c-c447-4dbc-a612-9387a438ce96"
+      },
+      "sampled_database_summed_rss_peak_bytes": 526102528,
+      "sampled_database_disk_peak_bytes": 325382144,
+      "minimum_host_free_bytes": 26079563776,
+      "docker_samples": 407
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s11-final-fresh-0",
+      "started_at": 1793092069.0756,
+      "finished_at": 1793092135.7315981,
+      "elapsed_s": 66.65599822998047,
+      "worker_peak_rss_bytes": 1799782400,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-qdrant-s11-final-fresh-0",
+        "run_id": "f2e66b41-dc05-44c0-90d3-1748fd9a1159"
+      },
+      "sampled_database_summed_rss_peak_bytes": 372133888,
+      "sampled_database_disk_peak_bytes": 206962688,
+      "minimum_host_free_bytes": 54727966720,
+      "docker_samples": 130
+    },
+    {
+      "node": "history_slot0:wikipedia-postgres-s29-M1",
+      "started_at": 1793080322.46269,
+      "finished_at": 1793080511.9276679,
+      "elapsed_s": 189.46497774124146,
+      "worker_peak_rss_bytes": 1731805184,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot0:wikipedia-postgres-s29-M1",
+        "run_id": "cba854f2-38d2-4642-bbac-5eb768dc6119"
+      },
+      "sampled_database_summed_rss_peak_bytes": 429375488,
+      "sampled_database_disk_peak_bytes": 325361664,
+      "minimum_host_free_bytes": 29922836480,
+      "docker_samples": 370
+    },
+    {
+      "node": "fresh:msmarco-postgres-s29-initial-fresh-2",
+      "started_at": 1793091061.722272,
+      "finished_at": 1793091113.6135921,
+      "elapsed_s": 51.89132022857666,
+      "worker_peak_rss_bytes": 1053605888,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-postgres-s29-initial-fresh-2",
+        "run_id": "b20bf099-075f-449b-b2c0-1878509e4988"
+      },
+      "sampled_database_summed_rss_peak_bytes": 327237632,
+      "sampled_database_disk_peak_bytes": 191352832,
+      "minimum_host_free_bytes": 56665710592,
+      "docker_samples": 98
+    },
+    {
+      "node": "initial:msmarco-qdrant-s11",
+      "started_at": 1793077401.6158059,
+      "finished_at": 1793077428.686869,
+      "elapsed_s": 27.07106304168701,
+      "worker_peak_rss_bytes": 989282304,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "initial:msmarco-qdrant-s11",
+        "run_id": "780ee6f1-4ccf-4255-87f5-00e9c7d3ae86"
+      },
+      "sampled_database_summed_rss_peak_bytes": 310599680,
+      "sampled_database_disk_peak_bytes": 103407616,
+      "minimum_host_free_bytes": 30065266688,
+      "docker_samples": 51
+    },
+    {
+      "node": "initial:msmarco-qdrant-s29",
+      "started_at": 1793077432.541022,
+      "finished_at": 1793077460.731158,
+      "elapsed_s": 28.190135955810547,
+      "worker_peak_rss_bytes": 1009729536,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "initial:msmarco-qdrant-s29",
+        "run_id": "f058ea4d-fc1b-4ff8-8435-801c31c955e4"
+      },
+      "sampled_database_summed_rss_peak_bytes": 258985984,
+      "sampled_database_disk_peak_bytes": 103723008,
+      "minimum_host_free_bytes": 30017982464,
+      "docker_samples": 54
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s11-final-fresh-2",
+      "started_at": 1793112121.043094,
+      "finished_at": 1793112173.064905,
+      "elapsed_s": 52.02181100845337,
+      "worker_peak_rss_bytes": 1407827968,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-qdrant-s11-final-fresh-2",
+        "run_id": "48c2a37d-c933-4457-a15e-8493729565ba"
+      },
+      "sampled_database_summed_rss_peak_bytes": 362868736,
+      "sampled_database_disk_peak_bytes": 206929920,
+      "minimum_host_free_bytes": 67698962432,
+      "docker_samples": 100
+    },
+    {
+      "node": "fresh:msmarco-postgres-s47-final-fresh-0",
+      "started_at": 1793091306.4659672,
+      "finished_at": 1793091457.941609,
+      "elapsed_s": 151.4756417274475,
+      "worker_peak_rss_bytes": 1745747968,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-postgres-s47-final-fresh-0",
+        "run_id": "52ccd7a3-6eae-444e-ab82-6cd4d566468b"
+      },
+      "sampled_database_summed_rss_peak_bytes": 525549568,
+      "sampled_database_disk_peak_bytes": 342052864,
+      "minimum_host_free_bytes": 54781169664,
+      "docker_samples": 295
+    },
+    {
+      "node": "tuned:all",
+      "started_at": 1793074797.98564,
+      "finished_at": 1793074798.0783648,
+      "elapsed_s": 0.09272480010986328,
+      "worker_peak_rss_bytes": 42205184,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "tuned:all",
+        "run_id": "4bea44ef-adbc-40f9-9467-b0caf5bff90b",
+        "receipt_sha256": "d056028a4311b39dd02e065823d9a055f6e178956b66d5ed1bb63c482f3f74bf"
+      },
+      "sampled_database_summed_rss_peak_bytes": null,
+      "sampled_database_disk_peak_bytes": null,
+      "minimum_host_free_bytes": null,
+      "docker_samples": 0
+    },
+    {
+      "node": "smoke_history:msmarco-postgres-M1",
+      "started_at": 1793075289.934329,
+      "finished_at": 1793075391.3559449,
+      "elapsed_s": 101.42161583900452,
+      "worker_peak_rss_bytes": 1721139200,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "smoke_history:msmarco-postgres-M1",
+        "run_id": "0db09b67-0f9e-4dbc-affe-9dbfe078b44c",
+        "receipt_sha256": "7b630138396ef3a1b86b3595b0f07db7053e93ea155df8f36fe410ce326a3a1d"
+      },
+      "sampled_database_summed_rss_peak_bytes": 523763712,
+      "sampled_database_disk_peak_bytes": 325214208,
+      "minimum_host_free_bytes": 32360624128,
+      "docker_samples": 192
+    },
+    {
+      "node": "prepared:all",
+      "started_at": 1793071638.144424,
+      "finished_at": 1793071638.439206,
+      "elapsed_s": 0.2947819232940674,
+      "worker_peak_rss_bytes": 45580288,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "prepared:all",
+        "run_id": "1455ea4d-8af4-4588-a9fc-a5e37c4dbc90",
+        "receipt_sha256": "bcee2a06fe219dbfe2dd96d2ae4317ea678ef9b91301d2e236f7f54fd566c891"
+      },
+      "sampled_database_summed_rss_peak_bytes": null,
+      "sampled_database_disk_peak_bytes": null,
+      "minimum_host_free_bytes": null,
+      "docker_samples": 0
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s47-final-fresh-1",
+      "started_at": 1793112785.625916,
+      "finished_at": 1793112838.513736,
+      "elapsed_s": 52.88782000541687,
+      "worker_peak_rss_bytes": 1385316352,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-qdrant-s47-final-fresh-1",
+        "run_id": "8ec5e2f3-b96c-41c1-ac9a-e0b222d3b10f"
+      },
+      "sampled_database_summed_rss_peak_bytes": 371855360,
+      "sampled_database_disk_peak_bytes": 206934016,
+      "minimum_host_free_bytes": 66891948032,
+      "docker_samples": 102
+    },
+    {
+      "node": "history_slot0:wikipedia-qdrant-s29-M1",
+      "started_at": 1793080818.785318,
+      "finished_at": 1793080867.112629,
+      "elapsed_s": 48.32731103897095,
+      "worker_peak_rss_bytes": 1649541120,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot0:wikipedia-qdrant-s29-M1",
+        "run_id": "86ad3f6b-bffc-43f5-b362-8ee4093d6bf3"
+      },
+      "sampled_database_summed_rss_peak_bytes": 540860416,
+      "sampled_database_disk_peak_bytes": 225468416,
+      "minimum_host_free_bytes": 28779040768,
+      "docker_samples": 89
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s47-initial-fresh-2",
+      "started_at": 1793111829.743257,
+      "finished_at": 1793111883.992992,
+      "elapsed_s": 54.24973487854004,
+      "worker_peak_rss_bytes": 1073446912,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-postgres-s47-initial-fresh-2",
+        "run_id": "38b3e7e0-0ba0-4cbb-bac3-ad615a36532f"
+      },
+      "sampled_database_summed_rss_peak_bytes": 341282816,
+      "sampled_database_disk_peak_bytes": 191352832,
+      "minimum_host_free_bytes": 67717918720,
+      "docker_samples": 103
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s47-final-fresh-0",
+      "started_at": 1793094990.2671201,
+      "finished_at": 1793095136.40348,
+      "elapsed_s": 146.13635993003845,
+      "worker_peak_rss_bytes": 1718452224,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-postgres-s47-final-fresh-0",
+        "run_id": "f9e11925-cd86-4e8f-9419-69215f5a4960"
+      },
+      "sampled_database_summed_rss_peak_bytes": 521564160,
+      "sampled_database_disk_peak_bytes": 342052864,
+      "minimum_host_free_bytes": 53540548608,
+      "docker_samples": 286
+    },
+    {
+      "node": "calibration:msmarco-qdrant-m64",
+      "started_at": 1793073032.151339,
+      "finished_at": 1793073239.092602,
+      "elapsed_s": 206.94126296043396,
+      "worker_peak_rss_bytes": 1511686144,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "calibration:msmarco-qdrant-m64",
+        "run_id": "a3dc0c23-6822-44c8-bd9b-ef0376cf2a06",
+        "receipt_sha256": "ad25b7ae18d7e3e9fb5ac586647cca3e700ec831fabbff77c137c6238689148d"
+      },
+      "sampled_database_summed_rss_peak_bytes": 446345216,
+      "sampled_database_disk_peak_bytes": 206995456,
+      "minimum_host_free_bytes": 34438946816,
+      "docker_samples": 409
+    },
+    {
+      "node": "history_slot1:msmarco-qdrant-s11-M1",
+      "started_at": 1793084404.8147368,
+      "finished_at": 1793084457.871627,
+      "elapsed_s": 53.05689024925232,
+      "worker_peak_rss_bytes": 1393999872,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot1:msmarco-qdrant-s11-M1",
+        "run_id": "2171d82e-5358-40a9-99c1-163cb4c6a267"
+      },
+      "sampled_database_summed_rss_peak_bytes": 549752832,
+      "sampled_database_disk_peak_bytes": 225603584,
+      "minimum_host_free_bytes": 25029246976,
+      "docker_samples": 97
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s47-final-fresh-0",
+      "started_at": 1793112729.502998,
+      "finished_at": 1793112781.589878,
+      "elapsed_s": 52.08687996864319,
+      "worker_peak_rss_bytes": 1429192704,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-qdrant-s47-final-fresh-0",
+        "run_id": "3e9f7078-25c4-43cd-a89d-823ebeeeb91b"
+      },
+      "sampled_database_summed_rss_peak_bytes": 363229184,
+      "sampled_database_disk_peak_bytes": 206934016,
+      "minimum_host_free_bytes": 67081162752,
+      "docker_samples": 101
+    },
+    {
+      "node": "smoke_history:wikipedia-postgres-C5",
+      "started_at": 1793075513.840384,
+      "finished_at": 1793075663.741635,
+      "elapsed_s": 149.90125107765198,
+      "worker_peak_rss_bytes": 1718435840,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "smoke_history:wikipedia-postgres-C5",
+        "run_id": "f4fbc4cb-81ca-4336-b17f-cf611b0348c8",
+        "receipt_sha256": "b54f33f10ab799d91d7981cc7262c2cf18d6f9c82d4297ed1bc2866c539b1560"
+      },
+      "sampled_database_summed_rss_peak_bytes": 483409920,
+      "sampled_database_disk_peak_bytes": 325169152,
+      "minimum_host_free_bytes": 32328830976,
+      "docker_samples": 291
+    },
+    {
+      "node": "history_slot2:msmarco-postgres-s47-C5",
+      "started_at": 1793085835.3441322,
+      "finished_at": 1793086095.629879,
+      "elapsed_s": 260.28574681282043,
+      "worker_peak_rss_bytes": 1816133632,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot2:msmarco-postgres-s47-C5",
+        "run_id": "eb796917-5bfd-4aec-b882-941f42683039"
+      },
+      "sampled_database_summed_rss_peak_bytes": 523608064,
+      "sampled_database_disk_peak_bytes": 325365760,
+      "minimum_host_free_bytes": 23810846720,
+      "docker_samples": 512
+    },
+    {
+      "node": "cost_gate:all",
+      "started_at": 1793077269.5723789,
+      "finished_at": 1793077270.408459,
+      "elapsed_s": 0.8360800743103027,
+      "worker_peak_rss_bytes": 47792128,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "cost_gate:all",
+        "run_id": "97111ff1-96b7-43ce-846d-cab03d61c2b3"
+      },
+      "sampled_database_summed_rss_peak_bytes": null,
+      "sampled_database_disk_peak_bytes": null,
+      "minimum_host_free_bytes": null,
+      "docker_samples": 0
+    },
+    {
+      "node": "fresh:msmarco-postgres-s47-final-fresh-1",
+      "started_at": 1793091463.77885,
+      "finished_at": 1793091612.654502,
+      "elapsed_s": 148.87565183639526,
+      "worker_peak_rss_bytes": 1745780736,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-postgres-s47-final-fresh-1",
+        "run_id": "4b7c5ef7-4728-4c75-ab13-6bd161aa65be"
+      },
+      "sampled_database_summed_rss_peak_bytes": 526364672,
+      "sampled_database_disk_peak_bytes": 342077440,
+      "minimum_host_free_bytes": 54763110400,
+      "docker_samples": 291
+    },
+    {
+      "node": "history_slot0:msmarco-qdrant-s11-C1",
+      "started_at": 1793079936.972949,
+      "finished_at": 1793079989.8746932,
+      "elapsed_s": 52.90174412727356,
+      "worker_peak_rss_bytes": 1794867200,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot0:msmarco-qdrant-s11-C1",
+        "run_id": "7e2f69d4-75e9-4560-945a-74a4146157c3"
+      },
+      "sampled_database_summed_rss_peak_bytes": 570081280,
+      "sampled_database_disk_peak_bytes": 225361920,
+      "minimum_host_free_bytes": 31324155904,
+      "docker_samples": 97
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s29-initial-fresh-2",
+      "started_at": 1793092842.7535338,
+      "finished_at": 1793092864.854173,
+      "elapsed_s": 22.10063910484314,
+      "worker_peak_rss_bytes": 890159104,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-qdrant-s29-initial-fresh-2",
+        "run_id": "166fbe82-cc34-495c-8aa3-ab5b743824fe"
+      },
+      "sampled_database_summed_rss_peak_bytes": 307118080,
+      "sampled_database_disk_peak_bytes": 103796736,
+      "minimum_host_free_bytes": 54569185280,
+      "docker_samples": 41
+    },
+    {
+      "node": "history_slot0:msmarco-qdrant-s47-M5",
+      "started_at": 1793080054.209614,
+      "finished_at": 1793080131.01011,
+      "elapsed_s": 76.80049586296082,
+      "worker_peak_rss_bytes": 1502380032,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot0:msmarco-qdrant-s47-M5",
+        "run_id": "93580c95-d889-46c6-b111-397aa847d7e5"
+      },
+      "sampled_database_summed_rss_peak_bytes": 472895488,
+      "sampled_database_disk_peak_bytes": 255975424,
+      "minimum_host_free_bytes": 30150565888,
+      "docker_samples": 144
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s47-final-fresh-1",
+      "started_at": 1793111374.47599,
+      "finished_at": 1793111538.897412,
+      "elapsed_s": 164.4214220046997,
+      "worker_peak_rss_bytes": 1791148032,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-postgres-s47-final-fresh-1",
+        "run_id": "601d39c2-a9bd-4dea-83ab-d7c286e596b6"
+      },
+      "sampled_database_summed_rss_peak_bytes": 522076160,
+      "sampled_database_disk_peak_bytes": 342241280,
+      "minimum_host_free_bytes": 67740798976,
+      "docker_samples": 322
+    },
+    {
+      "node": "history_slot2:msmarco-postgres-s29-M5",
+      "started_at": 1793085567.39431,
+      "finished_at": 1793085830.433028,
+      "elapsed_s": 263.0387179851532,
+      "worker_peak_rss_bytes": 1752989696,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot2:msmarco-postgres-s29-M5",
+        "run_id": "e8622111-ad3a-413e-a600-198e83ec055f"
+      },
+      "sampled_database_summed_rss_peak_bytes": 526061568,
+      "sampled_database_disk_peak_bytes": 325332992,
+      "minimum_host_free_bytes": 23989755904,
+      "docker_samples": 516
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s29-initial-fresh-2",
+      "started_at": 1793112586.688927,
+      "finished_at": 1793112603.9307141,
+      "elapsed_s": 17.24178719520569,
+      "worker_peak_rss_bytes": 902725632,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-qdrant-s29-initial-fresh-2",
+        "run_id": "137b37f5-64a2-4d31-9a0d-a1663d424b21"
+      },
+      "sampled_database_summed_rss_peak_bytes": 274681856,
+      "sampled_database_disk_peak_bytes": 103370752,
+      "minimum_host_free_bytes": 67332653056,
+      "docker_samples": 31
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s47-final-fresh-2",
+      "started_at": 1793093148.5783901,
+      "finished_at": 1793093211.195062,
+      "elapsed_s": 62.6166718006134,
+      "worker_peak_rss_bytes": 1448001536,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-qdrant-s47-final-fresh-2",
+        "run_id": "bd32e57a-b9ec-4ed9-9f0e-88a286caaeca"
+      },
+      "sampled_database_summed_rss_peak_bytes": 371515392,
+      "sampled_database_disk_peak_bytes": 206995456,
+      "minimum_host_free_bytes": 53957517312,
+      "docker_samples": 122
+    },
+    {
+      "node": "smoke_history:wikipedia-qdrant-M1",
+      "started_at": 1793075818.145746,
+      "finished_at": 1793075848.7491698,
+      "elapsed_s": 30.603423833847046,
+      "worker_peak_rss_bytes": 1387380736,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "smoke_history:wikipedia-qdrant-M1",
+        "run_id": "fc84da91-4be7-4012-9e89-e8d8e6b46ac4",
+        "receipt_sha256": "7c74fc53990092c1af119421fe6eeb30e481dfd89fcafcb0d94bb04cafd20b40"
+      },
+      "sampled_database_summed_rss_peak_bytes": 541069312,
+      "sampled_database_disk_peak_bytes": 225460224,
+      "minimum_host_free_bytes": 32296566784,
+      "docker_samples": 53
+    },
+    {
+      "node": "history_slot3:wikipedia-postgres-s29-C1",
+      "started_at": 1793088837.279614,
+      "finished_at": 1793089030.642285,
+      "elapsed_s": 193.36267113685608,
+      "worker_peak_rss_bytes": 1724039168,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot3:wikipedia-postgres-s29-C1",
+        "run_id": "b72173a3-cc1e-4bdd-b25e-0bfc9379c4c7"
+      },
+      "sampled_database_summed_rss_peak_bytes": 520663040,
+      "sampled_database_disk_peak_bytes": 325365760,
+      "minimum_host_free_bytes": 44969775104,
+      "docker_samples": 378
+    },
+    {
+      "node": "fresh:msmarco-postgres-s47-initial-fresh-2",
+      "started_at": 1793091880.542096,
+      "finished_at": 1793091933.0,
+      "elapsed_s": 52.45790410041809,
+      "worker_peak_rss_bytes": 1058160640,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-postgres-s47-initial-fresh-2",
+        "run_id": "0bc1e837-33d1-4674-82ee-97ef7f783af1"
+      },
+      "sampled_database_summed_rss_peak_bytes": 327950336,
+      "sampled_database_disk_peak_bytes": 191352832,
+      "minimum_host_free_bytes": 54752317440,
+      "docker_samples": 99
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s11-initial-fresh-2",
+      "started_at": 1793092384.247376,
+      "finished_at": 1793092405.268894,
+      "elapsed_s": 21.021517992019653,
+      "worker_peak_rss_bytes": 912293888,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-qdrant-s11-initial-fresh-2",
+        "run_id": "195be3bf-5daa-44d2-838d-557addf83cb4"
+      },
+      "sampled_database_summed_rss_peak_bytes": 284012544,
+      "sampled_database_disk_peak_bytes": 103796736,
+      "minimum_host_free_bytes": 54687993856,
+      "docker_samples": 38
+    },
+    {
+      "node": "smoke_history:wikipedia-postgres-M1",
+      "started_at": 1793075666.478152,
+      "finished_at": 1793075750.057148,
+      "elapsed_s": 83.57899594306946,
+      "worker_peak_rss_bytes": 1712586752,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "smoke_history:wikipedia-postgres-M1",
+        "run_id": "35c2984a-2654-45ae-a9e0-3ca226cb154b",
+        "receipt_sha256": "21105bf50bd5deb752512481133fa3eb8fc8b083707a9f20c741624f08e39016"
+      },
+      "sampled_database_summed_rss_peak_bytes": 519745536,
+      "sampled_database_disk_peak_bytes": 325210112,
+      "minimum_host_free_bytes": 32305541120,
+      "docker_samples": 158
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s47-M5-step2-fresh-0",
+      "started_at": 1793112668.121047,
+      "finished_at": 1793112689.1121018,
+      "elapsed_s": 20.99105477333069,
+      "worker_peak_rss_bytes": 1109803008,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-qdrant-s47-M5-step2-fresh-0",
+        "run_id": "c7a4be33-e461-4a88-bc51-f6dbc2a48840"
+      },
+      "sampled_database_summed_rss_peak_bytes": 314765312,
+      "sampled_database_disk_peak_bytes": 142827520,
+      "minimum_host_free_bytes": 67287560192,
+      "docker_samples": 39
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s47-M5-step2-fresh-0",
+      "started_at": 1793092944.9782689,
+      "finished_at": 1793092970.609243,
+      "elapsed_s": 25.630974054336548,
+      "worker_peak_rss_bytes": 1125384192,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-qdrant-s47-M5-step2-fresh-0",
+        "run_id": "4bfb2340-88d8-41e0-b684-3c3039431409"
+      },
+      "sampled_database_summed_rss_peak_bytes": 348463104,
+      "sampled_database_disk_peak_bytes": 149536768,
+      "minimum_host_free_bytes": 54241087488,
+      "docker_samples": 48
+    },
+    {
+      "node": "fresh:msmarco-postgres-s11-C5-step4-fresh-0",
+      "started_at": 1793089522.56651,
+      "finished_at": 1793089564.8582761,
+      "elapsed_s": 42.29176616668701,
+      "worker_peak_rss_bytes": 1632436224,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-postgres-s11-C5-step4-fresh-0",
+        "run_id": "ac4ef781-fc01-4e7c-8841-0fee1fe6a1e6"
+      },
+      "sampled_database_summed_rss_peak_bytes": 432562176,
+      "sampled_database_disk_peak_bytes": 330010624,
+      "minimum_host_free_bytes": 58842243072,
+      "docker_samples": 77
+    },
+    {
+      "node": "history_slot0:msmarco-qdrant-s29-M1",
+      "started_at": 1793079992.995887,
+      "finished_at": 1793080046.924354,
+      "elapsed_s": 53.92846703529358,
+      "worker_peak_rss_bytes": 1799159808,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot0:msmarco-qdrant-s29-M1",
+        "run_id": "c2ebea3b-265c-4fdd-a985-1a72cb21680e"
+      },
+      "sampled_database_summed_rss_peak_bytes": 547266560,
+      "sampled_database_disk_peak_bytes": 225599488,
+      "minimum_host_free_bytes": 30887636992,
+      "docker_samples": 100
+    },
+    {
+      "node": "history_slot3:wikipedia-postgres-s11-C5",
+      "started_at": 1793088578.5891268,
+      "finished_at": 1793088833.2637088,
+      "elapsed_s": 254.67458200454712,
+      "worker_peak_rss_bytes": 1724628992,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot3:wikipedia-postgres-s11-C5",
+        "run_id": "405205a5-89b7-4b29-8f27-eafe47b9961d"
+      },
+      "sampled_database_summed_rss_peak_bytes": 522465280,
+      "sampled_database_disk_peak_bytes": 325341184,
+      "minimum_host_free_bytes": 45230628864,
+      "docker_samples": 500
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s11-initial-fresh-2",
+      "started_at": 1793112218.055978,
+      "finished_at": 1793112234.603086,
+      "elapsed_s": 16.547107934951782,
+      "worker_peak_rss_bytes": 912048128,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-qdrant-s11-initial-fresh-2",
+        "run_id": "4425a30f-71ad-4d7f-940b-7bd25f4f08da"
+      },
+      "sampled_database_summed_rss_peak_bytes": 270594048,
+      "sampled_database_disk_peak_bytes": 103370752,
+      "minimum_host_free_bytes": 67695357952,
+      "docker_samples": 30
+    },
+    {
+      "node": "history_slot1:wikipedia-qdrant-s11-M1",
+      "started_at": 1793085338.306773,
+      "finished_at": 1793085392.615791,
+      "elapsed_s": 54.3090181350708,
+      "worker_peak_rss_bytes": 1386561536,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot1:wikipedia-qdrant-s11-M1",
+        "run_id": "dab55499-75e9-448e-a582-673a0098bb6b"
+      },
+      "sampled_database_summed_rss_peak_bytes": 554954752,
+      "sampled_database_disk_peak_bytes": 225472512,
+      "minimum_host_free_bytes": 25438834688,
+      "docker_samples": 99
+    },
+    {
+      "node": "fresh:msmarco-postgres-s29-C5-step2-fresh-0",
+      "started_at": 1793090307.505724,
+      "finished_at": 1793090341.266368,
+      "elapsed_s": 33.76064395904541,
+      "worker_peak_rss_bytes": 1432322048,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-postgres-s29-C5-step2-fresh-0",
+        "run_id": "c6d04360-befb-4252-928b-2569e87f92c0"
+      },
+      "sampled_database_summed_rss_peak_bytes": 410918912,
+      "sampled_database_disk_peak_bytes": 271069184,
+      "minimum_host_free_bytes": 58313543680,
+      "docker_samples": 61
+    },
+    {
+      "node": "smoke_history:wikipedia-qdrant-C5",
+      "started_at": 1793075758.031455,
+      "finished_at": 1793075815.095552,
+      "elapsed_s": 57.06409692764282,
+      "worker_peak_rss_bytes": 1372815360,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "smoke_history:wikipedia-qdrant-C5",
+        "run_id": "1c17fc2e-dd9c-4e82-9feb-be3bbfc217ef",
+        "receipt_sha256": "687387421a27dcd68101914b39e1b61c792b99160192378a68ffbf03e094024f"
+      },
+      "sampled_database_summed_rss_peak_bytes": 445779968,
+      "sampled_database_disk_peak_bytes": 218341376,
+      "minimum_host_free_bytes": 32299786240,
+      "docker_samples": 105
+    },
+    {
+      "node": "path_guard:qdrant",
+      "started_at": 1793075099.081017,
+      "finished_at": 1793075112.3227541,
+      "elapsed_s": 13.241737127304077,
+      "worker_peak_rss_bytes": 892895232,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "path_guard:qdrant",
+        "run_id": "607d69ae-ee5a-4693-8813-bc3dbd7ca614",
+        "receipt_sha256": "9a317e8723d7b215f28596128c919527a1fd37a720376ed03933a4e4e500cb88"
+      },
+      "sampled_database_summed_rss_peak_bytes": 252252160,
+      "sampled_database_disk_peak_bytes": 103407616,
+      "minimum_host_free_bytes": 32573665280,
+      "docker_samples": 24
+    },
+    {
+      "node": "history_slot3:wikipedia-postgres-s47-M1",
+      "started_at": 1793089034.248199,
+      "finished_at": 1793089232.6314502,
+      "elapsed_s": 198.38325119018555,
+      "worker_peak_rss_bytes": 1728069632,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot3:wikipedia-postgres-s47-M1",
+        "run_id": "2495da07-10fc-4e4c-b67d-353846bd8325"
+      },
+      "sampled_database_summed_rss_peak_bytes": 521912320,
+      "sampled_database_disk_peak_bytes": 325382144,
+      "minimum_host_free_bytes": 43194040320,
+      "docker_samples": 386
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s47-C5-step4-fresh-0",
+      "started_at": 1793094872.057285,
+      "finished_at": 1793094908.384953,
+      "elapsed_s": 36.32766795158386,
+      "worker_peak_rss_bytes": 1592836096,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-postgres-s47-C5-step4-fresh-0",
+        "run_id": "96b52835-5ab8-4048-80de-dbe08cd2e35c"
+      },
+      "sampled_database_summed_rss_peak_bytes": 484679680,
+      "sampled_database_disk_peak_bytes": 309956608,
+      "minimum_host_free_bytes": 53587836928,
+      "docker_samples": 66
+    },
+    {
+      "node": "history_slot2:wikipedia-postgres-s11-M5",
+      "started_at": 1793086631.540242,
+      "finished_at": 1793086886.6738691,
+      "elapsed_s": 255.1336271762848,
+      "worker_peak_rss_bytes": 1734344704,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot2:wikipedia-postgres-s11-M5",
+        "run_id": "394b3537-93f2-4d27-93a6-e29377cd0691"
+      },
+      "sampled_database_summed_rss_peak_bytes": 522489856,
+      "sampled_database_disk_peak_bytes": 325349376,
+      "minimum_host_free_bytes": 23671640064,
+      "docker_samples": 501
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s11-C5-step2-fresh-0",
+      "started_at": 1793093295.988849,
+      "finished_at": 1793093326.5223591,
+      "elapsed_s": 30.533510208129883,
+      "worker_peak_rss_bytes": 1331494912,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-postgres-s11-C5-step2-fresh-0",
+        "run_id": "fba790f4-5226-430c-b728-d1fda501e19e"
+      },
+      "sampled_database_summed_rss_peak_bytes": 406249472,
+      "sampled_database_disk_peak_bytes": 259854336,
+      "minimum_host_free_bytes": 53909250048,
+      "docker_samples": 55
+    },
+    {
+      "node": "smoke_history:msmarco-postgres-C5",
+      "started_at": 1793075114.870629,
+      "finished_at": 1793075285.134262,
+      "elapsed_s": 170.2636330127716,
+      "worker_peak_rss_bytes": 1712635904,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "smoke_history:msmarco-postgres-C5",
+        "run_id": "a8a10796-e87b-4ca5-9876-814323bafe4a",
+        "receipt_sha256": "2ac893d4a3b8d88747dc5237bf9af79930f430318cf46ec37e0beb6ac5abd1b4"
+      },
+      "sampled_database_summed_rss_peak_bytes": 489820160,
+      "sampled_database_disk_peak_bytes": 325369856,
+      "minimum_host_free_bytes": 32459264000,
+      "docker_samples": 328
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s29-M5-step2-fresh-0",
+      "started_at": 1793112299.8460171,
+      "finished_at": 1793112321.313792,
+      "elapsed_s": 21.467774868011475,
+      "worker_peak_rss_bytes": 1149468672,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-qdrant-s29-M5-step2-fresh-0",
+        "run_id": "42749232-750a-4ddf-9add-53fbc22bbab6"
+      },
+      "sampled_database_summed_rss_peak_bytes": 352215040,
+      "sampled_database_disk_peak_bytes": 148832256,
+      "minimum_host_free_bytes": 67678306304,
+      "docker_samples": 40
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s29-M5-step2-fresh-0",
+      "started_at": 1793092486.2732759,
+      "finished_at": 1793092523.920646,
+      "elapsed_s": 37.64737010002136,
+      "worker_peak_rss_bytes": 1164902400,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-qdrant-s29-M5-step2-fresh-0",
+        "run_id": "1b40d7d9-36c1-471c-a7fc-f4343c460071"
+      },
+      "sampled_database_summed_rss_peak_bytes": 379432960,
+      "sampled_database_disk_peak_bytes": 160968704,
+      "minimum_host_free_bytes": 54672379904,
+      "docker_samples": 71
+    },
+    {
+      "node": "history_slot0:wikipedia-qdrant-s47-M5",
+      "started_at": 1793080869.65369,
+      "finished_at": 1793080943.595617,
+      "elapsed_s": 73.94192695617676,
+      "worker_peak_rss_bytes": 1462648832,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot0:wikipedia-qdrant-s47-M5",
+        "run_id": "72f6fdf5-6eef-4557-a0f4-cfb6a0cb03e9"
+      },
+      "sampled_database_summed_rss_peak_bytes": 474992640,
+      "sampled_database_disk_peak_bytes": 220151808,
+      "minimum_host_free_bytes": 28194836480,
+      "docker_samples": 138
+    },
+    {
+      "node": "history_slot0:wikipedia-qdrant-s11-C1",
+      "started_at": 1793080768.084804,
+      "finished_at": 1793080816.2364569,
+      "elapsed_s": 48.151652812957764,
+      "worker_peak_rss_bytes": 1641676800,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot0:wikipedia-qdrant-s11-C1",
+        "run_id": "4515e2a7-ac08-43cc-9b92-1c8a7415900a"
+      },
+      "sampled_database_summed_rss_peak_bytes": 556982272,
+      "sampled_database_disk_peak_bytes": 225480704,
+      "minimum_host_free_bytes": 29202673664,
+      "docker_samples": 88
+    },
+    {
+      "node": "fresh:msmarco-postgres-s47-C5-step2-fresh-0",
+      "started_at": 1793091118.318252,
+      "finished_at": 1793091153.54972,
+      "elapsed_s": 35.231467962265015,
+      "worker_peak_rss_bytes": 1359298560,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-postgres-s47-C5-step2-fresh-0",
+        "run_id": "7da614c0-f064-4e28-8589-1338033598cd"
+      },
+      "sampled_database_summed_rss_peak_bytes": 374067200,
+      "sampled_database_disk_peak_bytes": 261779456,
+      "minimum_host_free_bytes": 56327368704,
+      "docker_samples": 63
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s29-C5-step4-fresh-0",
+      "started_at": 1793094088.2696471,
+      "finished_at": 1793094123.663092,
+      "elapsed_s": 35.393444776535034,
+      "worker_peak_rss_bytes": 1622687744,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-postgres-s29-C5-step4-fresh-0",
+        "run_id": "d085c401-5eaa-4bb1-83e1-511008eae946"
+      },
+      "sampled_database_summed_rss_peak_bytes": 492609536,
+      "sampled_database_disk_peak_bytes": 330641408,
+      "minimum_host_free_bytes": 53631393792,
+      "docker_samples": 65
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s11-M5-step4-fresh-0",
+      "started_at": 1793111973.018131,
+      "finished_at": 1793112000.7908711,
+      "elapsed_s": 27.772740125656128,
+      "worker_peak_rss_bytes": 1408155648,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-qdrant-s11-M5-step4-fresh-0",
+        "run_id": "da653609-c4bf-47a1-a3bb-b0f7a678152b"
+      },
+      "sampled_database_summed_rss_peak_bytes": 357052416,
+      "sampled_database_disk_peak_bytes": 178540544,
+      "minimum_host_free_bytes": 67721977856,
+      "docker_samples": 52
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s11-M5-step4-fresh-0",
+      "started_at": 1793092028.040003,
+      "finished_at": 1793092065.678487,
+      "elapsed_s": 37.63848400115967,
+      "worker_peak_rss_bytes": 1331593216,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-qdrant-s11-M5-step4-fresh-0",
+        "run_id": "85e34dcc-a09a-446c-8b76-58373e00a892"
+      },
+      "sampled_database_summed_rss_peak_bytes": 348282880,
+      "sampled_database_disk_peak_bytes": 192159744,
+      "minimum_host_free_bytes": 54753722368,
+      "docker_samples": 72
+    },
+    {
+      "node": "history_slot3:wikipedia-qdrant-s11-C5",
+      "started_at": 1793089237.4121752,
+      "finished_at": 1793089322.829609,
+      "elapsed_s": 85.4174337387085,
+      "worker_peak_rss_bytes": 1381548032,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot3:wikipedia-qdrant-s11-C5",
+        "run_id": "1c11a3db-ff48-40a5-9049-b099cc9e1052"
+      },
+      "sampled_database_summed_rss_peak_bytes": 475119616,
+      "sampled_database_disk_peak_bytes": 248434688,
+      "minimum_host_free_bytes": 52837961728,
+      "docker_samples": 162
+    },
+    {
+      "node": "calibration:wikipedia-qdrant-m64",
+      "started_at": 1793074579.836493,
+      "finished_at": 1793074776.4031842,
+      "elapsed_s": 196.56669116020203,
+      "worker_peak_rss_bytes": 1553170432,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "calibration:wikipedia-qdrant-m64",
+        "run_id": "b4c2a6dc-88f8-4680-b1ee-7972741b909f",
+        "receipt_sha256": "f9e5e3192f15d5f3325b8ee756d415cd3120b4d58aafd87e418a0cfc97a662a1"
+      },
+      "sampled_database_summed_rss_peak_bytes": 436740096,
+      "sampled_database_disk_peak_bytes": 206934016,
+      "minimum_host_free_bytes": 33050169344,
+      "docker_samples": 388
+    },
+    {
+      "node": "fresh:msmarco-postgres-s11-M5-step4-fresh-0",
+      "started_at": 1793089605.366569,
+      "finished_at": 1793089647.909738,
+      "elapsed_s": 42.543169021606445,
+      "worker_peak_rss_bytes": 1598504960,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-postgres-s11-M5-step4-fresh-0",
+        "run_id": "6064facb-c925-4e07-83c3-c69bcade7dc3"
+      },
+      "sampled_database_summed_rss_peak_bytes": 494174208,
+      "sampled_database_disk_peak_bytes": 330010624,
+      "minimum_host_free_bytes": 58561744896,
+      "docker_samples": 77
+    },
+    {
+      "node": "inputs:wikipedia",
+      "started_at": 1793071455.7059,
+      "finished_at": 1793071600.008884,
+      "elapsed_s": 144.30298399925232,
+      "worker_peak_rss_bytes": 1526136832,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "inputs:wikipedia",
+        "run_id": "366032d6-0f26-4799-81d8-c9b14472f00b",
+        "receipt_sha256": "a5eb134072a77dadc4c498a6fc870c8adb0c7cc0e04db54c32eab99b46757db2"
+      },
+      "sampled_database_summed_rss_peak_bytes": null,
+      "sampled_database_disk_peak_bytes": null,
+      "minimum_host_free_bytes": null,
+      "docker_samples": 0
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s47-initial-fresh-2",
+      "started_at": 1793116110.570254,
+      "finished_at": 1793116127.524178,
+      "elapsed_s": 16.95392394065857,
+      "worker_peak_rss_bytes": 902643712,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-qdrant-s47-initial-fresh-2",
+        "run_id": "ddf7548b-632f-4afe-8bcd-226a2c71e06b"
+      },
+      "sampled_database_summed_rss_peak_bytes": 281169920,
+      "sampled_database_disk_peak_bytes": 103370752,
+      "minimum_host_free_bytes": 69100818432,
+      "docker_samples": 31
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s47-C5-step2-fresh-0",
+      "started_at": 1793092868.502571,
+      "finished_at": 1793092898.913559,
+      "elapsed_s": 30.410987854003906,
+      "worker_peak_rss_bytes": 1172586496,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-qdrant-s47-C5-step2-fresh-0",
+        "run_id": "9d286161-d52e-49eb-b5d1-3a79930e98c3"
+      },
+      "sampled_database_summed_rss_peak_bytes": 338821120,
+      "sampled_database_disk_peak_bytes": 149536768,
+      "minimum_host_free_bytes": 54481088512,
+      "docker_samples": 57
+    },
+    {
+      "node": "history_slot3:wikipedia-qdrant-s47-M1",
+      "started_at": 1793089384.7754931,
+      "finished_at": 1793089442.197026,
+      "elapsed_s": 57.42153286933899,
+      "worker_peak_rss_bytes": 1429602304,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot3:wikipedia-qdrant-s47-M1",
+        "run_id": "3093e90d-50a1-4f26-a8e1-6ccb2ac6b97b"
+      },
+      "sampled_database_summed_rss_peak_bytes": 615866368,
+      "sampled_database_disk_peak_bytes": 257581056,
+      "minimum_host_free_bytes": 59262550016,
+      "docker_samples": 107
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s47-C5-step2-fresh-0",
+      "started_at": 1793112606.748232,
+      "finished_at": 1793112628.743985,
+      "elapsed_s": 21.995753049850464,
+      "worker_peak_rss_bytes": 1071316992,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-qdrant-s47-C5-step2-fresh-0",
+        "run_id": "82a86a86-3ecf-435e-8ff2-0de9d091c720"
+      },
+      "sampled_database_summed_rss_peak_bytes": 332189696,
+      "sampled_database_disk_peak_bytes": 142827520,
+      "minimum_host_free_bytes": 67321827328,
+      "docker_samples": 40
+    },
+    {
+      "node": "fresh:msmarco-postgres-s29-final-fresh-2",
+      "started_at": 1793090781.7394,
+      "finished_at": 1793090935.7494872,
+      "elapsed_s": 154.0100872516632,
+      "worker_peak_rss_bytes": 1743323136,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-postgres-s29-final-fresh-2",
+        "run_id": "7306405f-afce-41e1-b23c-76deb56a1828"
+      },
+      "sampled_database_summed_rss_peak_bytes": 479002624,
+      "sampled_database_disk_peak_bytes": 342241280,
+      "minimum_host_free_bytes": 57925038080,
+      "docker_samples": 302
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s47-M5-step4-fresh-0",
+      "started_at": 1793094948.6844769,
+      "finished_at": 1793094986.4162781,
+      "elapsed_s": 37.7318012714386,
+      "worker_peak_rss_bytes": 1603715072,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-postgres-s47-M5-step4-fresh-0",
+        "run_id": "a8d6e52f-8d42-4923-b6b1-29cfc92e0909"
+      },
+      "sampled_database_summed_rss_peak_bytes": 419725312,
+      "sampled_database_disk_peak_bytes": 309956608,
+      "minimum_host_free_bytes": 53575720960,
+      "docker_samples": 69
+    },
+    {
+      "node": "history_slot0:wikipedia-postgres-s11-C1",
+      "started_at": 1793080134.8334231,
+      "finished_at": 1793080320.179069,
+      "elapsed_s": 185.34564590454102,
+      "worker_peak_rss_bytes": 1798537216,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot0:wikipedia-postgres-s11-C1",
+        "run_id": "c7a7cd03-0e65-4ad9-b5c3-196fab3ce846"
+      },
+      "sampled_database_summed_rss_peak_bytes": 434900992,
+      "sampled_database_disk_peak_bytes": 325382144,
+      "minimum_host_free_bytes": 30052065280,
+      "docker_samples": 363
+    },
+    {
+      "node": "fresh:msmarco-postgres-s29-M5-step2-fresh-0",
+      "started_at": 1793090389.45603,
+      "finished_at": 1793090423.480041,
+      "elapsed_s": 34.02401113510132,
+      "worker_peak_rss_bytes": 1429143552,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-postgres-s29-M5-step2-fresh-0",
+        "run_id": "3b5bca71-19d3-404d-9143-6f89d8875768"
+      },
+      "sampled_database_summed_rss_peak_bytes": 409890816,
+      "sampled_database_disk_peak_bytes": 271069184,
+      "minimum_host_free_bytes": 58287640576,
+      "docker_samples": 62
+    },
+    {
+      "node": "history_slot0:wikipedia-postgres-s47-M5",
+      "started_at": 1793080514.992854,
+      "finished_at": 1793080763.219462,
+      "elapsed_s": 248.22660779953003,
+      "worker_peak_rss_bytes": 1729806336,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot0:wikipedia-postgres-s47-M5",
+        "run_id": "c0e5df16-929f-4ecb-b5e5-50045388ec23"
+      },
+      "sampled_database_summed_rss_peak_bytes": 522153984,
+      "sampled_database_disk_peak_bytes": 325349376,
+      "minimum_host_free_bytes": 29592707072,
+      "docker_samples": 488
+    },
+    {
+      "node": "initial:wikipedia-qdrant-s47",
+      "started_at": 1793077662.649997,
+      "finished_at": 1793077692.875076,
+      "elapsed_s": 30.22507905960083,
+      "worker_peak_rss_bytes": 880672768,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "initial:wikipedia-qdrant-s47",
+        "run_id": "5dc48638-b4ae-4a7c-806d-212153d9d182"
+      },
+      "sampled_database_summed_rss_peak_bytes": 281313280,
+      "sampled_database_disk_peak_bytes": 103723008,
+      "minimum_host_free_bytes": 29382492160,
+      "docker_samples": 57
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s29-final-fresh-2",
+      "started_at": 1793094511.0696168,
+      "finished_at": 1793094664.209994,
+      "elapsed_s": 153.1403772830963,
+      "worker_peak_rss_bytes": 1725431808,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-postgres-s29-final-fresh-2",
+        "run_id": "7dcce67c-3ce3-4cc3-97e1-d5762d7cef60"
+      },
+      "sampled_database_summed_rss_peak_bytes": 516452352,
+      "sampled_database_disk_peak_bytes": 342077440,
+      "minimum_host_free_bytes": 53581164544,
+      "docker_samples": 292
+    },
+    {
+      "node": "history_slot3:wikipedia-qdrant-s29-C1",
+      "started_at": 1793089328.462205,
+      "finished_at": 1793089381.627717,
+      "elapsed_s": 53.16551208496094,
+      "worker_peak_rss_bytes": 1392295936,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot3:wikipedia-qdrant-s29-C1",
+        "run_id": "307fcbb7-39f3-41f0-9847-0398e8674ca1"
+      },
+      "sampled_database_summed_rss_peak_bytes": 564891648,
+      "sampled_database_disk_peak_bytes": 225464320,
+      "minimum_host_free_bytes": 59641729024,
+      "docker_samples": 97
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s29-final-fresh-1",
+      "started_at": 1793092649.339234,
+      "finished_at": 1793092713.863074,
+      "elapsed_s": 64.52383995056152,
+      "worker_peak_rss_bytes": 1459109888,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-qdrant-s29-final-fresh-1",
+        "run_id": "6a5562d9-0980-4f1b-a24c-5fac101e04bd"
+      },
+      "sampled_database_summed_rss_peak_bytes": 410808320,
+      "sampled_database_disk_peak_bytes": 206925824,
+      "minimum_host_free_bytes": 54632947712,
+      "docker_samples": 125
+    },
+    {
+      "node": "fresh:msmarco-postgres-s11-initial-fresh-2",
+      "started_at": 1793090246.167997,
+      "finished_at": 1793090301.3440409,
+      "elapsed_s": 55.17604398727417,
+      "worker_peak_rss_bytes": 1063878656,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-postgres-s11-initial-fresh-2",
+        "run_id": "feb99e74-c884-4365-8c2f-aca2b081f176"
+      },
+      "sampled_database_summed_rss_peak_bytes": 331751424,
+      "sampled_database_disk_peak_bytes": 191352832,
+      "minimum_host_free_bytes": 58336464896,
+      "docker_samples": 104
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s47-initial-fresh-2",
+      "started_at": 1793093265.358828,
+      "finished_at": 1793093289.105389,
+      "elapsed_s": 23.74656105041504,
+      "worker_peak_rss_bytes": 876838912,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-qdrant-s47-initial-fresh-2",
+        "run_id": "3f90697e-6ef6-434b-8495-391d0273582d"
+      },
+      "sampled_database_summed_rss_peak_bytes": 286978048,
+      "sampled_database_disk_peak_bytes": 103796736,
+      "minimum_host_free_bytes": 53920575488,
+      "docker_samples": 44
+    },
+    {
+      "node": "initial:wikipedia-postgres-s47",
+      "started_at": 1793077561.6470988,
+      "finished_at": 1793077587.868556,
+      "elapsed_s": 26.2214572429657,
+      "worker_peak_rss_bytes": 1052803072,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "initial:wikipedia-postgres-s47",
+        "run_id": "88e196ef-4e2b-4d89-8401-736dd91d217c"
+      },
+      "sampled_database_summed_rss_peak_bytes": 341282816,
+      "sampled_database_disk_peak_bytes": 191238144,
+      "minimum_host_free_bytes": 29529350144,
+      "docker_samples": 46
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s29-C5-step2-fresh-0",
+      "started_at": 1793092409.579495,
+      "finished_at": 1793092438.193727,
+      "elapsed_s": 28.614232063293457,
+      "worker_peak_rss_bytes": 1180614656,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-qdrant-s29-C5-step2-fresh-0",
+        "run_id": "880d9b6f-ca20-4503-884b-b8bce476e6c2"
+      },
+      "sampled_database_summed_rss_peak_bytes": 371097600,
+      "sampled_database_disk_peak_bytes": 160968704,
+      "minimum_host_free_bytes": 54687412224,
+      "docker_samples": 54
+    },
+    {
+      "node": "history_slot1:msmarco-postgres-s29-C5",
+      "started_at": 1793083717.084874,
+      "finished_at": 1793083977.950402,
+      "elapsed_s": 260.86552810668945,
+      "worker_peak_rss_bytes": 1735311360,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot1:msmarco-postgres-s29-C5",
+        "run_id": "1361efb3-7935-4320-bf9e-113b4efc1664"
+      },
+      "sampled_database_summed_rss_peak_bytes": 525213696,
+      "sampled_database_disk_peak_bytes": 325353472,
+      "minimum_host_free_bytes": 26164539392,
+      "docker_samples": 513
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s29-C5-step2-fresh-0",
+      "started_at": 1793112238.488139,
+      "finished_at": 1793112260.022648,
+      "elapsed_s": 21.53450918197632,
+      "worker_peak_rss_bytes": 1153875968,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-qdrant-s29-C5-step2-fresh-0",
+        "run_id": "a9d87d45-b440-4897-828d-395259bc0755"
+      },
+      "sampled_database_summed_rss_peak_bytes": 378400768,
+      "sampled_database_disk_peak_bytes": 148832256,
+      "minimum_host_free_bytes": 67691900928,
+      "docker_samples": 40
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s11-M5-step2-fresh-0",
+      "started_at": 1793093372.3515232,
+      "finished_at": 1793093401.982168,
+      "elapsed_s": 29.63064479827881,
+      "worker_peak_rss_bytes": 1317240832,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-postgres-s11-M5-step2-fresh-0",
+        "run_id": "0d840033-1558-4367-98ee-6330d7a0e247"
+      },
+      "sampled_database_summed_rss_peak_bytes": 387588096,
+      "sampled_database_disk_peak_bytes": 259854336,
+      "minimum_host_free_bytes": 53748572160,
+      "docker_samples": 54
+    },
+    {
+      "node": "calibration:wikipedia-postgres-m16",
+      "started_at": 1793073245.7995179,
+      "finished_at": 1793073750.7931688,
+      "elapsed_s": 504.9936509132385,
+      "worker_peak_rss_bytes": 1736589312,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "calibration:wikipedia-postgres-m16",
+        "run_id": "cd1d76cd-acb9-4859-adcc-cfa88a7a795d",
+        "receipt_sha256": "241d866fe826fa9e2de3eb064f927100f84bb1a6ad50b2fad2a09b082e5fb53a"
+      },
+      "sampled_database_summed_rss_peak_bytes": 577699840,
+      "sampled_database_disk_peak_bytes": 392450048,
+      "minimum_host_free_bytes": 34315718656,
+      "docker_samples": 1005
+    },
+    {
+      "node": "history_slot1:wikipedia-postgres-s11-M1",
+      "started_at": 1793084654.031134,
+      "finished_at": 1793084861.720577,
+      "elapsed_s": 207.68944311141968,
+      "worker_peak_rss_bytes": 1695498240,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot1:wikipedia-postgres-s11-M1",
+        "run_id": "9840cd87-d820-4f4c-aa29-d6687bf1012f"
+      },
+      "sampled_database_summed_rss_peak_bytes": 520609792,
+      "sampled_database_disk_peak_bytes": 325390336,
+      "minimum_host_free_bytes": 26052308992,
+      "docker_samples": 406
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s29-final-fresh-2",
+      "started_at": 1793112483.8113961,
+      "finished_at": 1793112538.211915,
+      "elapsed_s": 54.40051889419556,
+      "worker_peak_rss_bytes": 1381662720,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-qdrant-s29-final-fresh-2",
+        "run_id": "6fcc35f5-2008-4876-9de3-7e7c7326790c"
+      },
+      "sampled_database_summed_rss_peak_bytes": 389275648,
+      "sampled_database_disk_peak_bytes": 206897152,
+      "minimum_host_free_bytes": 67367583744,
+      "docker_samples": 105
+    },
+    {
+      "node": "inputs:msmarco",
+      "started_at": 1793071455.032959,
+      "finished_at": 1793071601.725792,
+      "elapsed_s": 146.69283294677734,
+      "worker_peak_rss_bytes": 1611300864,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "inputs:msmarco",
+        "run_id": "8545c3a6-a0b4-44ab-a693-2d484b6252cb",
+        "receipt_sha256": "fdefcc155eb2b12eb7f7af6eb4a9976a55cc08b619ed80ef457c6fadee9dd75b"
+      },
+      "sampled_database_summed_rss_peak_bytes": null,
+      "sampled_database_disk_peak_bytes": null,
+      "minimum_host_free_bytes": null,
+      "docker_samples": 0
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s29-initial-fresh-2",
+      "started_at": 1793094780.418247,
+      "finished_at": 1793094831.888101,
+      "elapsed_s": 51.46985411643982,
+      "worker_peak_rss_bytes": 1050460160,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-postgres-s29-initial-fresh-2",
+        "run_id": "f5791b18-71fa-47de-bb6c-e72d6f64f442"
+      },
+      "sampled_database_summed_rss_peak_bytes": 284377088,
+      "sampled_database_disk_peak_bytes": 191352832,
+      "minimum_host_free_bytes": 53571489792,
+      "docker_samples": 96
+    },
+    {
+      "node": "history_slot2:wikipedia-qdrant-s11-M5",
+      "started_at": 1793087427.507394,
+      "finished_at": 1793087507.91546,
+      "elapsed_s": 80.40806603431702,
+      "worker_peak_rss_bytes": 1371275264,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot2:wikipedia-qdrant-s11-M5",
+        "run_id": "537e53a6-e780-4553-86b0-99979773f29f"
+      },
+      "sampled_database_summed_rss_peak_bytes": 475758592,
+      "sampled_database_disk_peak_bytes": 214302720,
+      "minimum_host_free_bytes": 49126932480,
+      "docker_samples": 151
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s11-C5-step4-fresh-0",
+      "started_at": 1793091961.948436,
+      "finished_at": 1793091999.552672,
+      "elapsed_s": 37.604235887527466,
+      "worker_peak_rss_bytes": 1336508416,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-qdrant-s11-C5-step4-fresh-0",
+        "run_id": "764609be-c541-408e-8ebe-8ce3f4f7040a"
+      },
+      "sampled_database_summed_rss_peak_bytes": 367910912,
+      "sampled_database_disk_peak_bytes": 192126976,
+      "minimum_host_free_bytes": 54754942976,
+      "docker_samples": 72
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s29-final-fresh-0",
+      "started_at": 1793092573.084726,
+      "finished_at": 1793092643.258949,
+      "elapsed_s": 70.17422294616699,
+      "worker_peak_rss_bytes": 1473806336,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-qdrant-s29-final-fresh-0",
+        "run_id": "149d8309-eab6-494b-97a5-b35ce4bba6da"
+      },
+      "sampled_database_summed_rss_peak_bytes": 397078528,
+      "sampled_database_disk_peak_bytes": 206962688,
+      "minimum_host_free_bytes": 54643822592,
+      "docker_samples": 137
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s11-C5-step4-fresh-0",
+      "started_at": 1793111916.7536871,
+      "finished_at": 1793111944.478912,
+      "elapsed_s": 27.72522497177124,
+      "worker_peak_rss_bytes": 1414660096,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-qdrant-s11-C5-step4-fresh-0",
+        "run_id": "e5e28cc3-9d39-4077-b613-c1ac612ac4a6"
+      },
+      "sampled_database_summed_rss_peak_bytes": 358674432,
+      "sampled_database_disk_peak_bytes": 178548736,
+      "minimum_host_free_bytes": 67725996032,
+      "docker_samples": 52
+    },
+    {
+      "node": "initial:msmarco-postgres-s47",
+      "started_at": 1793077372.456554,
+      "finished_at": 1793077396.887357,
+      "elapsed_s": 24.430803060531616,
+      "worker_peak_rss_bytes": 1182334976,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "initial:msmarco-postgres-s47",
+        "run_id": "3e96ece9-a735-4f9d-af62-3ecd49fb899b"
+      },
+      "sampled_database_summed_rss_peak_bytes": 327933952,
+      "sampled_database_disk_peak_bytes": 191238144,
+      "minimum_host_free_bytes": 30149566464,
+      "docker_samples": 43
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s29-M5-step4-fresh-0",
+      "started_at": 1793094164.794284,
+      "finished_at": 1793094199.7629309,
+      "elapsed_s": 34.96864676475525,
+      "worker_peak_rss_bytes": 1613168640,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-postgres-s29-M5-step4-fresh-0",
+        "run_id": "a133dcb7-5a0e-47a2-8c3b-048fb23d7bd9"
+      },
+      "sampled_database_summed_rss_peak_bytes": 463011840,
+      "sampled_database_disk_peak_bytes": 330641408,
+      "minimum_host_free_bytes": 53620977664,
+      "docker_samples": 65
+    },
+    {
+      "node": "fresh:msmarco-postgres-s47-M5-step2-fresh-0",
+      "started_at": 1793091210.515774,
+      "finished_at": 1793091252.936047,
+      "elapsed_s": 42.42027306556702,
+      "worker_peak_rss_bytes": 1342701568,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-postgres-s47-M5-step2-fresh-0",
+        "run_id": "b1dba6ef-67ad-4963-a372-f444920aacf0"
+      },
+      "sampled_database_summed_rss_peak_bytes": 420691968,
+      "sampled_database_disk_peak_bytes": 261779456,
+      "minimum_host_free_bytes": 55442874368,
+      "docker_samples": 76
+    },
+    {
+      "node": "history_slot1:wikipedia-postgres-s29-C5",
+      "started_at": 1793084868.199807,
+      "finished_at": 1793085136.37134,
+      "elapsed_s": 268.17153310775757,
+      "worker_peak_rss_bytes": 1724891136,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot1:wikipedia-postgres-s29-C5",
+        "run_id": "2283777d-4743-4df3-a9f7-cc45c97a92ec"
+      },
+      "sampled_database_summed_rss_peak_bytes": 522547200,
+      "sampled_database_disk_peak_bytes": 325349376,
+      "minimum_host_free_bytes": 25831505920,
+      "docker_samples": 524
+    },
+    {
+      "node": "tuning:wikipedia-qdrant",
+      "started_at": 1793074787.690702,
+      "finished_at": 1793074787.843332,
+      "elapsed_s": 0.15263009071350098,
+      "worker_peak_rss_bytes": 44515328,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "tuning:wikipedia-qdrant",
+        "run_id": "253f1f46-1865-4fcf-aa45-2e1ceda82236",
+        "receipt_sha256": "26acac0179c3e2f32c8edc6ad026c0d4e4e3370a87d3dd6925e691a0d2ebd626"
+      },
+      "sampled_database_summed_rss_peak_bytes": null,
+      "sampled_database_disk_peak_bytes": null,
+      "minimum_host_free_bytes": null,
+      "docker_samples": 0
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s11-final-fresh-0",
+      "started_at": 1793112003.701209,
+      "finished_at": 1793112056.8253329,
+      "elapsed_s": 53.1241238117218,
+      "worker_peak_rss_bytes": 1543503872,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-qdrant-s11-final-fresh-0",
+        "run_id": "351def62-4c4e-465f-8a87-ac18a9b317b6"
+      },
+      "sampled_database_summed_rss_peak_bytes": 369172480,
+      "sampled_database_disk_peak_bytes": 206929920,
+      "minimum_host_free_bytes": 67718459392,
+      "docker_samples": 103
+    },
+    {
+      "node": "history_slot1:msmarco-postgres-s11-M1",
+      "started_at": 1793084202.1594949,
+      "finished_at": 1793084398.263021,
+      "elapsed_s": 196.10352611541748,
+      "worker_peak_rss_bytes": 1741996032,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot1:msmarco-postgres-s11-M1",
+        "run_id": "02915743-8721-4a09-b7c2-7b9714ebecbc"
+      },
+      "sampled_database_summed_rss_peak_bytes": 526114816,
+      "sampled_database_disk_peak_bytes": 325390336,
+      "minimum_host_free_bytes": 25312296960,
+      "docker_samples": 383
+    },
+    {
+      "node": "fresh:msmarco-postgres-s29-initial-fresh-0",
+      "started_at": 1793090939.5035038,
+      "finished_at": 1793090995.962325,
+      "elapsed_s": 56.458821296691895,
+      "worker_peak_rss_bytes": 1062567936,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-postgres-s29-initial-fresh-0",
+        "run_id": "a63c2d96-85e1-4715-a118-0593b4c4b2fb"
+      },
+      "sampled_database_summed_rss_peak_bytes": 310046720,
+      "sampled_database_disk_peak_bytes": 191352832,
+      "minimum_host_free_bytes": 57719255040,
+      "docker_samples": 106
+    },
+    {
+      "node": "fresh:msmarco-postgres-s11-final-fresh-1",
+      "started_at": 1793089807.47146,
+      "finished_at": 1793089956.475808,
+      "elapsed_s": 149.0043478012085,
+      "worker_peak_rss_bytes": 1737621504,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-postgres-s11-final-fresh-1",
+        "run_id": "d10371f5-f92e-4c9f-bf04-c94f74a89c66"
+      },
+      "sampled_database_summed_rss_peak_bytes": 461082624,
+      "sampled_database_disk_peak_bytes": 342077440,
+      "minimum_host_free_bytes": 58491039744,
+      "docker_samples": 292
+    },
+    {
+      "node": "history_slot3:msmarco-qdrant-s29-C1",
+      "started_at": 1793088451.537083,
+      "finished_at": 1793088511.4872131,
+      "elapsed_s": 59.950130224227905,
+      "worker_peak_rss_bytes": 1407188992,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot3:msmarco-qdrant-s29-C1",
+        "run_id": "b38aa088-fc59-481a-be49-fe25f2b8dc46"
+      },
+      "sampled_database_summed_rss_peak_bytes": 590880768,
+      "sampled_database_disk_peak_bytes": 261251072,
+      "minimum_host_free_bytes": 45764009984,
+      "docker_samples": 110
+    },
+    {
+      "node": "tuning:msmarco-postgres",
+      "started_at": 1793072870.0275562,
+      "finished_at": 1793073030.4115698,
+      "elapsed_s": 160.3840136528015,
+      "worker_peak_rss_bytes": 44007424,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "tuning:msmarco-postgres",
+        "run_id": "cbf7e02b-d21b-46e1-8ef5-cdf1385b3ca0",
+        "receipt_sha256": "dded3a4b0ee561142e8702050251cddeb391740db183f09f36d53fe8383867ee"
+      },
+      "sampled_database_summed_rss_peak_bytes": null,
+      "sampled_database_disk_peak_bytes": null,
+      "minimum_host_free_bytes": null,
+      "docker_samples": 0
+    },
+    {
+      "node": "history_slot3:msmarco-qdrant-s47-M1",
+      "started_at": 1793088517.6200478,
+      "finished_at": 1793088575.960563,
+      "elapsed_s": 58.34051513671875,
+      "worker_peak_rss_bytes": 1367392256,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot3:msmarco-qdrant-s47-M1",
+        "run_id": "324861e9-5541-40e8-a064-bbbe810462bf"
+      },
+      "sampled_database_summed_rss_peak_bytes": 614182912,
+      "sampled_database_disk_peak_bytes": 258662400,
+      "minimum_host_free_bytes": 45401440256,
+      "docker_samples": 107
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s11-initial-fresh-1",
+      "started_at": 1793093940.3709571,
+      "finished_at": 1793093991.4831371,
+      "elapsed_s": 51.11217999458313,
+      "worker_peak_rss_bytes": 1054343168,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-postgres-s11-initial-fresh-1",
+        "run_id": "5dfa1dac-dc2b-4d86-880f-a8ddf299b70f"
+      },
+      "sampled_database_summed_rss_peak_bytes": 303439872,
+      "sampled_database_disk_peak_bytes": 191352832,
+      "minimum_host_free_bytes": 53662666752,
+      "docker_samples": 97
+    },
+    {
+      "node": "history_slot3:msmarco-qdrant-s11-C5",
+      "started_at": 1793088365.3440042,
+      "finished_at": 1793088448.67811,
+      "elapsed_s": 83.33410573005676,
+      "worker_peak_rss_bytes": 1446739968,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot3:msmarco-qdrant-s11-C5",
+        "run_id": "dccf2dff-04c7-4e28-b5bc-78580245b4f6"
+      },
+      "sampled_database_summed_rss_peak_bytes": 499163136,
+      "sampled_database_disk_peak_bytes": 245207040,
+      "minimum_host_free_bytes": 46075428864,
+      "docker_samples": 156
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s11-final-fresh-1",
+      "started_at": 1793093590.5306811,
+      "finished_at": 1793093733.715702,
+      "elapsed_s": 143.1850209236145,
+      "worker_peak_rss_bytes": 1729282048,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-postgres-s11-final-fresh-1",
+        "run_id": "c08425ff-2fa9-4535-a81c-db426ba5f08e"
+      },
+      "sampled_database_summed_rss_peak_bytes": 523423744,
+      "sampled_database_disk_peak_bytes": 342077440,
+      "minimum_host_free_bytes": 53691355136,
+      "docker_samples": 280
+    },
+    {
+      "node": "path_guard:postgres",
+      "started_at": 1793075083.60555,
+      "finished_at": 1793075097.139423,
+      "elapsed_s": 13.533872842788696,
+      "worker_peak_rss_bytes": 1068449792,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "path_guard:postgres",
+        "run_id": "7f2e6989-ba6f-41eb-8013-da309c7d16c7",
+        "receipt_sha256": "c811a61aefaa2c3e0eac70692e046cd0829d0a032a72172639f17e5ca2c7a3bd"
+      },
+      "sampled_database_summed_rss_peak_bytes": 328364032,
+      "sampled_database_disk_peak_bytes": 191238144,
+      "minimum_host_free_bytes": 32579481600,
+      "docker_samples": 22
+    },
+    {
+      "node": "smoke_initial:msmarco-qdrant",
+      "started_at": 1793074921.2360058,
+      "finished_at": 1793074946.3778088,
+      "elapsed_s": 25.14180302619934,
+      "worker_peak_rss_bytes": 943210496,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "smoke_initial:msmarco-qdrant",
+        "run_id": "21acbc00-fd16-4ea4-a542-90400e0d4005",
+        "receipt_sha256": "25c41b6417b4a6ae9e544bcc0d7e476c6b3a9fb968b15e654b5d02a147f027b5"
+      },
+      "sampled_database_summed_rss_peak_bytes": 325455872,
+      "sampled_database_disk_peak_bytes": 103407616,
+      "minimum_host_free_bytes": 32814997504,
+      "docker_samples": 48
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s11-final-fresh-2",
+      "started_at": 1793092217.7581508,
+      "finished_at": 1793092319.476288,
+      "elapsed_s": 101.71813726425171,
+      "worker_peak_rss_bytes": 1433665536,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-qdrant-s11-final-fresh-2",
+        "run_id": "2d7366b7-06d7-46ce-b677-8f70e6e96f83"
+      },
+      "sampled_database_summed_rss_peak_bytes": 349306880,
+      "sampled_database_disk_peak_bytes": 176308224,
+      "minimum_host_free_bytes": 54691389440,
+      "docker_samples": 198
+    },
+    {
+      "node": "initial:msmarco-qdrant-s47",
+      "started_at": 1793077463.186357,
+      "finished_at": 1793077498.7586648,
+      "elapsed_s": 35.5723078250885,
+      "worker_peak_rss_bytes": 937050112,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "initial:msmarco-qdrant-s47",
+        "run_id": "f742dae4-97d8-4736-a79e-4f6072e7bec1"
+      },
+      "sampled_database_summed_rss_peak_bytes": 271654912,
+      "sampled_database_disk_peak_bytes": 103796736,
+      "minimum_host_free_bytes": 29916839936,
+      "docker_samples": 68
+    },
+    {
+      "node": "history_slot2:msmarco-qdrant-s11-M5",
+      "started_at": 1793086367.636814,
+      "finished_at": 1793086444.34381,
+      "elapsed_s": 76.7069959640503,
+      "worker_peak_rss_bytes": 1390510080,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot2:msmarco-qdrant-s11-M5",
+        "run_id": "ce7de0df-83d0-4875-8bec-79a16784ccc5"
+      },
+      "sampled_database_summed_rss_peak_bytes": 482398208,
+      "sampled_database_disk_peak_bytes": 219701248,
+      "minimum_host_free_bytes": 23754649600,
+      "docker_samples": 143
+    },
+    {
+      "node": "fresh:msmarco-postgres-s11-final-fresh-0",
+      "started_at": 1793089650.5662909,
+      "finished_at": 1793089803.452681,
+      "elapsed_s": 152.886390209198,
+      "worker_peak_rss_bytes": 1741127680,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-postgres-s11-final-fresh-0",
+        "run_id": "016ee01e-1a8d-4beb-84d5-f7762f67f532"
+      },
+      "sampled_database_summed_rss_peak_bytes": 525840384,
+      "sampled_database_disk_peak_bytes": 342077440,
+      "minimum_host_free_bytes": 58505027584,
+      "docker_samples": 297
+    },
+    {
+      "node": "history_slot0:msmarco-postgres-s47-M5",
+      "started_at": 1793079260.890595,
+      "finished_at": 1793079534.460583,
+      "elapsed_s": 273.56998801231384,
+      "worker_peak_rss_bytes": 1744814080,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot0:msmarco-postgres-s47-M5",
+        "run_id": "d4c15dcf-af55-4836-ab58-bab061ad1828"
+      },
+      "sampled_database_summed_rss_peak_bytes": 524865536,
+      "sampled_database_disk_peak_bytes": 325353472,
+      "minimum_host_free_bytes": 31747342336,
+      "docker_samples": 537
+    },
+    {
+      "node": "history_slot0:msmarco-postgres-s11-C1",
+      "started_at": 1793079741.7229,
+      "finished_at": 1793079934.1812181,
+      "elapsed_s": 192.45831823349,
+      "worker_peak_rss_bytes": 1748467712,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot0:msmarco-postgres-s11-C1",
+        "run_id": "8098926c-f997-43ec-9ee2-604bdd757b59"
+      },
+      "sampled_database_summed_rss_peak_bytes": 523300864,
+      "sampled_database_disk_peak_bytes": 325373952,
+      "minimum_host_free_bytes": 31596044288,
+      "docker_samples": 377
+    },
+    {
+      "node": "fresh:msmarco-postgres-s29-initial-fresh-1",
+      "started_at": 1793091001.1590211,
+      "finished_at": 1793091055.1211362,
+      "elapsed_s": 53.96211504936218,
+      "worker_peak_rss_bytes": 1060896768,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-postgres-s29-initial-fresh-1",
+        "run_id": "fe501878-46c1-451e-8f6a-d5426afcecca"
+      },
+      "sampled_database_summed_rss_peak_bytes": 329248768,
+      "sampled_database_disk_peak_bytes": 191344640,
+      "minimum_host_free_bytes": 57199112192,
+      "docker_samples": 102
+    },
+    {
+      "node": "smoke_fresh:wikipedia-qdrant",
+      "started_at": 1793075017.288569,
+      "finished_at": 1793075051.9467578,
+      "elapsed_s": 34.658188819885254,
+      "worker_peak_rss_bytes": 1377697792,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "smoke_fresh:wikipedia-qdrant",
+        "run_id": "abc50334-9602-4d29-9802-dc09140e94a0",
+        "receipt_sha256": "a69fbb73607f1a3f234d8e9c5203cbaccec7c2c73299b45f665bf591f462cdb4"
+      },
+      "sampled_database_summed_rss_peak_bytes": 359284736,
+      "sampled_database_disk_peak_bytes": 206934016,
+      "minimum_host_free_bytes": 32647614464,
+      "docker_samples": 67
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s11-final-fresh-1",
+      "started_at": 1793112059.987805,
+      "finished_at": 1793112115.724268,
+      "elapsed_s": 55.73646306991577,
+      "worker_peak_rss_bytes": 1487716352,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-qdrant-s11-final-fresh-1",
+        "run_id": "5f7293bb-0997-45f9-b82b-56e764f40929"
+      },
+      "sampled_database_summed_rss_peak_bytes": 409194496,
+      "sampled_database_disk_peak_bytes": 206929920,
+      "minimum_host_free_bytes": 67701223424,
+      "docker_samples": 104
+    },
+    {
+      "node": "calibration:wikipedia-qdrant-m48",
+      "started_at": 1793074397.346426,
+      "finished_at": 1793074576.054219,
+      "elapsed_s": 178.70779299736023,
+      "worker_peak_rss_bytes": 1557741568,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "calibration:wikipedia-qdrant-m48",
+        "run_id": "7a9ac8e3-2f85-42fc-86af-00957693a35b",
+        "receipt_sha256": "f1c97fdb9f2cca0a19368e361af069100fbba15e8f6b613b8abcbd7c1d35312b"
+      },
+      "sampled_database_summed_rss_peak_bytes": 441749504,
+      "sampled_database_disk_peak_bytes": 206934016,
+      "minimum_host_free_bytes": 33614344192,
+      "docker_samples": 353
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s11-initial-fresh-0",
+      "started_at": 1793093884.553267,
+      "finished_at": 1793093933.5626361,
+      "elapsed_s": 49.009369134902954,
+      "worker_peak_rss_bytes": 1066352640,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-postgres-s11-initial-fresh-0",
+        "run_id": "31cd72a7-9407-4f5d-bde9-550c14129b3b"
+      },
+      "sampled_database_summed_rss_peak_bytes": 341336064,
+      "sampled_database_disk_peak_bytes": 191344640,
+      "minimum_host_free_bytes": 53673701376,
+      "docker_samples": 92
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s11-final-fresh-0",
+      "started_at": 1793093443.372724,
+      "finished_at": 1793093586.3499908,
+      "elapsed_s": 142.97726678848267,
+      "worker_peak_rss_bytes": 1730215936,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-postgres-s11-final-fresh-0",
+        "run_id": "f40e355a-6a82-482f-a739-c615baacfe05"
+      },
+      "sampled_database_summed_rss_peak_bytes": 523468800,
+      "sampled_database_disk_peak_bytes": 342077440,
+      "minimum_host_free_bytes": 53722513408,
+      "docker_samples": 281
+    },
+    {
+      "node": "calibration:wikipedia-postgres-m32",
+      "started_at": 1793073753.2829409,
+      "finished_at": 1793074389.8728151,
+      "elapsed_s": 636.5898742675781,
+      "worker_peak_rss_bytes": 1791705088,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "calibration:wikipedia-postgres-m32",
+        "run_id": "0e9e306e-2776-4815-b349-3baef25d1ca5",
+        "receipt_sha256": "9c75e033364b1859ece880a5e5590b531429b6a208b2c61b90aed36f6326f700"
+      },
+      "sampled_database_summed_rss_peak_bytes": 633311232,
+      "sampled_database_disk_peak_bytes": 426004480,
+      "minimum_host_free_bytes": 34136530944,
+      "docker_samples": 1264
+    },
+    {
+      "node": "smoke_fresh:msmarco-postgres",
+      "started_at": 1793074818.462564,
+      "finished_at": 1793074855.922935,
+      "elapsed_s": 37.460371017456055,
+      "worker_peak_rss_bytes": 1749516288,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "smoke_fresh:msmarco-postgres",
+        "run_id": "0acbb504-3bc1-4151-adca-c954f7d3d05e",
+        "receipt_sha256": "fd4a2aca798aa2379a43bcdd1b8f845a4c524bfe00a1f43b15f010a368057c7c"
+      },
+      "sampled_database_summed_rss_peak_bytes": 518946816,
+      "sampled_database_disk_peak_bytes": 341995520,
+      "minimum_host_free_bytes": 32993849344,
+      "docker_samples": 70
+    },
+    {
+      "node": "smoke_history:msmarco-qdrant-C5",
+      "started_at": 1793075396.879431,
+      "finished_at": 1793075465.8827982,
+      "elapsed_s": 69.00336718559265,
+      "worker_peak_rss_bytes": 1365082112,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "smoke_history:msmarco-qdrant-C5",
+        "run_id": "2ed8663e-f6d6-4599-8893-f9c455b013c7",
+        "receipt_sha256": "c338d6c9e127bf99f9f050f86e1acc036b95f9072102af906141863722f42d6b"
+      },
+      "sampled_database_summed_rss_peak_bytes": 501805056,
+      "sampled_database_disk_peak_bytes": 254586880,
+      "minimum_host_free_bytes": 32376127488,
+      "docker_samples": 129
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s47-final-fresh-0",
+      "started_at": 1793093016.26598,
+      "finished_at": 1793093078.448087,
+      "elapsed_s": 62.18210697174072,
+      "worker_peak_rss_bytes": 1460027392,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-qdrant-s47-final-fresh-0",
+        "run_id": "7cceeb36-0105-4a87-826a-ee15727d4c50"
+      },
+      "sampled_database_summed_rss_peak_bytes": 401100800,
+      "sampled_database_disk_peak_bytes": 206925824,
+      "minimum_host_free_bytes": 54170832896,
+      "docker_samples": 121
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s47-initial-fresh-1",
+      "started_at": 1793111768.566433,
+      "finished_at": 1793111823.244318,
+      "elapsed_s": 54.67788505554199,
+      "worker_peak_rss_bytes": 1077608448,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-postgres-s47-initial-fresh-1",
+        "run_id": "cc4a731e-0175-46c7-bb86-67681c8c9a3f"
+      },
+      "sampled_database_summed_rss_peak_bytes": 325472256,
+      "sampled_database_disk_peak_bytes": 191344640,
+      "minimum_host_free_bytes": 67724898304,
+      "docker_samples": 103
+    },
+    {
+      "node": "history_slot3:msmarco-postgres-s29-C1",
+      "started_at": 1793087692.249689,
+      "finished_at": 1793087890.51398,
+      "elapsed_s": 198.26429080963135,
+      "worker_peak_rss_bytes": 1746042880,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot3:msmarco-postgres-s29-C1",
+        "run_id": "ab71b848-c413-45f3-88e5-ff2288061bcc"
+      },
+      "sampled_database_summed_rss_peak_bytes": 523481088,
+      "sampled_database_disk_peak_bytes": 325390336,
+      "minimum_host_free_bytes": 47184281600,
+      "docker_samples": 387
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s29-initial-fresh-0",
+      "started_at": 1793112545.188975,
+      "finished_at": 1793112562.922348,
+      "elapsed_s": 17.733372926712036,
+      "worker_peak_rss_bytes": 897236992,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-qdrant-s29-initial-fresh-0",
+        "run_id": "fcd0149b-6a3e-408d-8457-f65659f370ca"
+      },
+      "sampled_database_summed_rss_peak_bytes": 285798400,
+      "sampled_database_disk_peak_bytes": 103370752,
+      "minimum_host_free_bytes": 67360776192,
+      "docker_samples": 32
+    },
+    {
+      "node": "history_slot3:msmarco-postgres-s11-C5",
+      "started_at": 1793088091.573301,
+      "finished_at": 1793088360.3824692,
+      "elapsed_s": 268.80916810035706,
+      "worker_peak_rss_bytes": 1747795968,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot3:msmarco-postgres-s11-C5",
+        "run_id": "788d3ed4-8f4b-445f-8bbd-bd335ee16c47"
+      },
+      "sampled_database_summed_rss_peak_bytes": 525234176,
+      "sampled_database_disk_peak_bytes": 325349376,
+      "minimum_host_free_bytes": 46783320064,
+      "docker_samples": 528
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s29-initial-fresh-0",
+      "started_at": 1793092791.804607,
+      "finished_at": 1793092812.5752552,
+      "elapsed_s": 20.77064824104309,
+      "worker_peak_rss_bytes": 888995840,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-qdrant-s29-initial-fresh-0",
+        "run_id": "acbc181d-62a6-42f2-bf1e-b69c81b00285"
+      },
+      "sampled_database_summed_rss_peak_bytes": 298954752,
+      "sampled_database_disk_peak_bytes": 103796736,
+      "minimum_host_free_bytes": 54614642688,
+      "docker_samples": 38
+    },
+    {
+      "node": "history_slot3:msmarco-postgres-s47-M1",
+      "started_at": 1793087893.5837681,
+      "finished_at": 1793088088.399806,
+      "elapsed_s": 194.8160378932953,
+      "worker_peak_rss_bytes": 1753677824,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot3:msmarco-postgres-s47-M1",
+        "run_id": "47abc104-cc00-45bb-863c-0f4ddefe0a2f"
+      },
+      "sampled_database_summed_rss_peak_bytes": 522022912,
+      "sampled_database_disk_peak_bytes": 325382144,
+      "minimum_host_free_bytes": 47074004992,
+      "docker_samples": 380
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s47-final-fresh-2",
+      "started_at": 1793112841.7141278,
+      "finished_at": 1793112894.0400279,
+      "elapsed_s": 52.325900077819824,
+      "worker_peak_rss_bytes": 1410252800,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-qdrant-s47-final-fresh-2",
+        "run_id": "5593169b-9b15-4288-b5c0-418ff08712c1"
+      },
+      "sampled_database_summed_rss_peak_bytes": 371523584,
+      "sampled_database_disk_peak_bytes": 206929920,
+      "minimum_host_free_bytes": 66784301056,
+      "docker_samples": 101
+    },
+    {
+      "node": "fresh:wikipedia-qdrant-s29-initial-fresh-1",
+      "started_at": 1793112565.9102552,
+      "finished_at": 1793112584.326894,
+      "elapsed_s": 18.41663885116577,
+      "worker_peak_rss_bytes": 878690304,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-qdrant-s29-initial-fresh-1",
+        "run_id": "74a7016d-4833-4fcd-8570-3994935c1950"
+      },
+      "sampled_database_summed_rss_peak_bytes": 279261184,
+      "sampled_database_disk_peak_bytes": 103370752,
+      "minimum_host_free_bytes": 67341086720,
+      "docker_samples": 34
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s47-initial-fresh-0",
+      "started_at": 1793111707.2551758,
+      "finished_at": 1793111762.104672,
+      "elapsed_s": 54.84949612617493,
+      "worker_peak_rss_bytes": 1052409856,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-postgres-s47-initial-fresh-0",
+        "run_id": "2f94952f-5918-43f5-8019-b2e32fa4c4fa"
+      },
+      "sampled_database_summed_rss_peak_bytes": 289599488,
+      "sampled_database_disk_peak_bytes": 191336448,
+      "minimum_host_free_bytes": 67723419648,
+      "docker_samples": 104
+    },
+    {
+      "node": "fresh:wikipedia-postgres-s47-final-fresh-2",
+      "started_at": 1793111545.161927,
+      "finished_at": 1793111705.0363462,
+      "elapsed_s": 159.8744192123413,
+      "worker_peak_rss_bytes": 1791508480,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:wikipedia-postgres-s47-final-fresh-2",
+        "run_id": "de0b5fc9-b56b-4955-8320-b6666f11ff7f"
+      },
+      "sampled_database_summed_rss_peak_bytes": 522502144,
+      "sampled_database_disk_peak_bytes": 342233088,
+      "minimum_host_free_bytes": 67728142336,
+      "docker_samples": 313
+    },
+    {
+      "node": "smoke_initial:wikipedia-qdrant",
+      "started_at": 1793075053.6549351,
+      "finished_at": 1793075080.283672,
+      "elapsed_s": 26.628736972808838,
+      "worker_peak_rss_bytes": 948486144,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "smoke_initial:wikipedia-qdrant",
+        "run_id": "abc50334-9602-4d29-9802-dc09140e94a0",
+        "receipt_sha256": "1863d5af932253c0bb0d9b3d82ae96594e47bd43d1276e2aac5ac5866e895dc0"
+      },
+      "sampled_database_summed_rss_peak_bytes": 298446848,
+      "sampled_database_disk_peak_bytes": 103370752,
+      "minimum_host_free_bytes": 32586018816,
+      "docker_samples": 51
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s47-final-fresh-1",
+      "started_at": 1793093082.137356,
+      "finished_at": 1793093143.8933408,
+      "elapsed_s": 61.75598478317261,
+      "worker_peak_rss_bytes": 1465925632,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-qdrant-s47-final-fresh-1",
+        "run_id": "b91b2df0-e115-44c3-911e-9edb1106968d"
+      },
+      "sampled_database_summed_rss_peak_bytes": 362078208,
+      "sampled_database_disk_peak_bytes": 206995456,
+      "minimum_host_free_bytes": 54152556544,
+      "docker_samples": 120
+    },
+    {
+      "node": "history_slot1:wikipedia-qdrant-s29-C5",
+      "started_at": 1793085399.117486,
+      "finished_at": 1793085493.149353,
+      "elapsed_s": 94.03186702728271,
+      "worker_peak_rss_bytes": 1393278976,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot1:wikipedia-qdrant-s29-C5",
+        "run_id": "40b55cf7-7b17-4904-bb80-8256ae375758"
+      },
+      "sampled_database_summed_rss_peak_bytes": 448655360,
+      "sampled_database_disk_peak_bytes": 250322944,
+      "minimum_host_free_bytes": 25383227392,
+      "docker_samples": 179
+    },
+    {
+      "node": "history_slot1:msmarco-qdrant-s47-C1",
+      "started_at": 1793084568.2022872,
+      "finished_at": 1793084646.768218,
+      "elapsed_s": 78.56593084335327,
+      "worker_peak_rss_bytes": 1393180672,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot1:msmarco-qdrant-s47-C1",
+        "run_id": "34623bb2-6344-44c6-b333-ab07f9d25821"
+      },
+      "sampled_database_summed_rss_peak_bytes": 558489600,
+      "sampled_database_disk_peak_bytes": 261906432,
+      "minimum_host_free_bytes": 26239197184,
+      "docker_samples": 144
+    },
+    {
+      "node": "fresh:msmarco-qdrant-s29-initial-fresh-1",
+      "started_at": 1793092817.280055,
+      "finished_at": 1793092838.005505,
+      "elapsed_s": 20.725450038909912,
+      "worker_peak_rss_bytes": 894058496,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-qdrant-s29-initial-fresh-1",
+        "run_id": "451b7433-d0a2-476b-9da0-2364db29f5a5"
+      },
+      "sampled_database_summed_rss_peak_bytes": 276869120,
+      "sampled_database_disk_peak_bytes": 103796736,
+      "minimum_host_free_bytes": 54612373504,
+      "docker_samples": 38
+    },
+    {
+      "node": "smoke_initial:msmarco-postgres",
+      "started_at": 1793074859.421172,
+      "finished_at": 1793074881.216043,
+      "elapsed_s": 21.79487109184265,
+      "worker_peak_rss_bytes": 1128775680,
+      "origin": {
+        "kind": "adopted",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-01",
+        "node": "smoke_initial:msmarco-postgres",
+        "run_id": "0acbb504-3bc1-4151-adca-c954f7d3d05e",
+        "receipt_sha256": "091a325165f767283453149045f0a509571fe763eef293507191065335d0d89f"
+      },
+      "sampled_database_summed_rss_peak_bytes": 342609920,
+      "sampled_database_disk_peak_bytes": 191238144,
+      "minimum_host_free_bytes": 32877109248,
+      "docker_samples": 38
+    },
+    {
+      "node": "history_slot2:msmarco-postgres-s11-M5",
+      "started_at": 1793086098.961985,
+      "finished_at": 1793086360.652145,
+      "elapsed_s": 261.69015979766846,
+      "worker_peak_rss_bytes": 1752940544,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "history_slot2:msmarco-postgres-s11-M5",
+        "run_id": "bde0ae52-5a96-4daa-a8cd-7a421110906b"
+      },
+      "sampled_database_summed_rss_peak_bytes": 526442496,
+      "sampled_database_disk_peak_bytes": 325365760,
+      "minimum_host_free_bytes": 23759392768,
+      "docker_samples": 514
+    },
+    {
+      "node": "fresh:msmarco-postgres-s47-final-fresh-2",
+      "started_at": 1793091616.346878,
+      "finished_at": 1793091765.050984,
+      "elapsed_s": 148.70410585403442,
+      "worker_peak_rss_bytes": 1742274560,
+      "origin": {
+        "kind": "current",
+        "root": "/Users/jaesolshin/Documents/GitHub/incremental_vector_upsert/runs/clustered-20261027-02",
+        "node": "fresh:msmarco-postgres-s47-final-fresh-2",
+        "run_id": "2c21c5fe-7ba4-4bcb-88fc-3315bfb5efa0"
+      },
+      "sampled_database_summed_rss_peak_bytes": 525422592,
+      "sampled_database_disk_peak_bytes": 342069248,
+      "minimum_host_free_bytes": 54756392960,
+      "docker_samples": 291
+    }
+  ],
+  "scope": "worker OS high-water RSS; DB process VmRSS sums sampled roughly every five Docker samples and may count shared pages repeatedly; sampled disk is not continuous peak"
+}

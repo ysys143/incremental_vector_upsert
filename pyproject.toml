@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "incremental-vector-upsert"
+version = "0.1.0"
+description = "Local incremental vector index quality experiments"
+requires-python = ">=3.11"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["vectorbench*"]
