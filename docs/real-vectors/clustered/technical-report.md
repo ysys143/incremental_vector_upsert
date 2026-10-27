@@ -86,6 +86,10 @@ M5의 각 배치 크기는 C5의 해당 배치 크기와 일치시켰다. M1·M5
 
 5회 경로에서는 중간에 각기 다른 벡터 집합이 들어 있다. 중간 시점의 C5와 M5를 동일 데이터에 대한 직접 비교로 해석하지 않았으며, 각자의 현재 데이터 재구축 기준과 비교했다. 최종 상태에서는 네 경로의 데이터가 같으므로 직접 비교가 가능하다.
 
+![네 가지 삽입 경로와 동일 최종 데이터 대조 설계](figures/insertion-design.png)
+
+그림 1. 네 경로는 같은 초기 인덱스에서 출발하며 최종 2만 벡터가 같다. 색은 군집, 아래 구분선은 논리적 배치를 나타낸다. 구조 설명용 도식으로 실제 군집 크기나 벡터 좌표를 표현하지 않는다. [벡터 이미지](figures/insertion-design.svg)
+
 ### 4.4 규모와 대조군
 
 | 항목 | 완료 수 | 의미 |
@@ -158,6 +162,17 @@ Dot 거리, 단일 shard·replica, 양자화 없이 사용했다. `indexing_thre
 
 검색에는 `exact=false`와 지정한 `hnsw_ef`를 사용했다. 워밍업 이후 시간 측정 전후 상세 telemetry 차이에서 HNSW 검색 수 증가를 확인하고 plain·exact 검색 증가가 0인지 확인했다. `indexed_only`로 미인덱싱 데이터를 검색 대상에서 숨기는 방식은 사용하지 않았다.
 
+다음 표는 높은 재현율의 원인이 정확 검색 우회인지 확인한 근거를 요약한다.
+
+| 검증 대상 | pgvector | Qdrant | 해석의 범위 |
+|---|---|---|---|
+| 순차·정확 검색 우회 | `enable_seqscan=off` 및 질의별 지정 HNSW 계획 확인 | `exact=false`, 측정 구간 plain·exact 카운터 증가 0 | 설정값만으로 판정하지 않음 |
+| 실제 ANN 실행 | 대표 `EXPLAIN ANALYZE`의 인덱스 실행 확인 | 측정 구간 HNSW 카운터 증가 확인 | 평가 검색 경로의 증거 |
+| 데이터 누락 방지 | 현재 ID·벡터·메타데이터 원장 대조 | 같은 원장 대조 및 indexed 수=point 수 | 미인덱싱 꼬리를 숨기지 않음 |
+| 검사 자체의 음성 대조 | seqscan 허용·인덱스 제거·잘못된 인덱스 경로 거부 | plain·exact 실행 및 telemetry 누락 거부 | 스모크에서 잘못된 경로의 검출 확인 |
+
+이 검증은 보고된 평가 경로에 해당하며 제품의 모든 검색 요청에 대한 일반 보증은 아니다.
+
 ### 5.6 정확성 검사와 지연시간의 범위
 
 각 상태의 ID·벡터·메타데이터를 읽어 이벤트 원장과 대조했다. 원본 float32 값을 float64로 변환해 현재 데이터 집합의 정확한 내적 순위를 계산했고 동률은 ID로 정렬했다. 일부 질의는 별도 스칼라 계산과 교차 확인했다. 최종 전체 데이터의 정답을 적재 비율로 보정하는 방식은 사용하지 않았다.
@@ -195,6 +210,10 @@ C5−M5와 상호작용의 12개 조합씩, 총 24개를 주 비교로 지정했
 | Wikipedia–Cohere | Qdrant | 29 | 99.7150% | +0.0200 | [-0.0278, +0.0700] |
 | Wikipedia–Cohere | Qdrant | 47 | 99.7417% | +0.0461 | [-0.0083, +0.1000] |
 
+![클러스터별 5회 삽입의 재구축 대비 Recall 차이와 구간](figures/final-history-gap.png)
+
+그림 2. C5의 최종 Recall@100에서 독립 fresh 구축 3회의 평균을 뺀 값이다. 점은 시드별 차이, 가로선은 질의 쌍 부트스트랩 2,000회의 설명용 95% 구간이다. 음수는 증분 인덱스의 재현율이 낮다는 뜻이다. 구축 자체의 변동을 모두 포함한 구간이나 다중 비교 보정 구간은 아니다. [벡터 이미지](figures/final-history-gap.svg)
+
 차이의 부호는 시드와 제품에 따라 달랐다. MS MARCO/pgvector의 시드 29·47에서는 설명용 95% 구간이 양수였지만, 이를 제품 전반의 증분 구축 우위로 일반화할 수 없다.
 
 C5의 Recall@10은 MS MARCO/pgvector 99.9333∼99.9500%, MS MARCO/Qdrant 99.6833∼99.9333%, Wikipedia/pgvector 99.9833∼100%, Wikipedia/Qdrant 99.9667∼100%였다. Recall@10이 거의 포화된 조건에서도 Recall@100을 함께 확인했다.
@@ -212,6 +231,10 @@ C5의 Recall@10은 MS MARCO/pgvector 99.9333∼99.9500%, MS MARCO/Qdrant 99.6833
 
 pgvector에서는 두 데이터의 모든 시드에서 C5−M5가 작은 양수였다. 반면 Qdrant/MS MARCO에서는 음수였으며, 분할하면 항상 좋아진다는 방향은 얻지 못했다. 주 비교 24건은 다중 비교를 고려한 구간이 모두 0을 포함했다.
 
+![주 비교 24건의 다중 비교를 고려한 구간](figures/primary-contrasts.png)
+
+그림 3. 12개 데이터·DB·시드 조합의 C5−M5와 상호작용을 모두 표시했다. 가로선은 질의 쌍 부트스트랩 100,000회, 비교별 α=0.05/24의 구간이다. 모든 구간이 0을 포함하며, 이는 동등성의 증명은 아니다. 색은 제품 구분이며 성능 순위를 뜻하지 않는다. [벡터 이미지](figures/primary-contrasts.svg)
+
 따라서 이번 결과로 작은 배치의 삽입이 우수하다고 결론 내릴 수 없다. 관측 차이의 방향은 경로·제품·데이터에 따라 달랐으며, 주 비교에서 통계적으로 명확한 차이를 확인하지 못했다.
 
 ### 7.3 탐색 강도를 낮춘 보조 평가
@@ -228,6 +251,10 @@ pgvector에서는 두 데이터의 모든 시드에서 C5−M5가 작은 양수�
 | Wikipedia–Cohere | pgvector | 128 | 95.2633∼95.4183% | +0.0367∼+0.1606 |
 | Wikipedia–Cohere | Qdrant | 100 | 96.8733∼97.1950% | -0.1000∼+0.0878 |
 | Wikipedia–Cohere | Qdrant | 128 | 98.1583∼98.3150% | -0.0461∼+0.0094 |
+
+![동일한 최종 C5 인덱스에서 ef에 따른 Recall 변화](figures/ef-sensitivity.png)
+
+그림 4. 시드별로 ef=100·128과 동결된 운영 ef에서 측정한 최종 C5 재현율이다. 운영 ef는 MS MARCO/pgvector 1000, Wikipedia/pgvector 512, Qdrant 256으로 서로 다르다. 점만 실제 측정값이고 선은 시각적 연결이며 중간 ef를 측정한 결과가 아니다. 모든 패널은 같은 재현율 축을 사용한다. [벡터 이미지](figures/ef-sensitivity.svg)
 
 ef를 낮추면 절대 재현율은 크게 떨어졌다. 특히 MS MARCO/pgvector의 ef=100에서는 약 84%였다. 그럼에도 증분−fresh 차이는 양·음 양쪽에 나타났다. 이 보조 결과는 탐색 설정의 중요성을 보여주지만, 다수의 추가 비교를 포함하므로 특정 양수·음수 하나를 확증적 결과로 해석하지 않는다.
 
@@ -322,3 +349,13 @@ qdrant/qdrant@sha256:94728574965d17c6485dd361aa3c0818b325b9016dac5ea6afec7b4b270
 - [Wikipedia–Cohere 문서 벡터](https://comp21storage.z5.web.core.windows.net/wiki-cohere-35M/wikipedia_base.bin), [질의 벡터](https://comp21storage.z5.web.core.windows.net/wiki-cohere-35M/wikipedia_query.bin)
 
 실제 사용 바이트의 해시·추출 범위는 실행 manifest의 source 참조와 데이터 준비 receipt를 기준으로 한다. 공개 URL의 향후 내용이 동일하다고 가정하지 않는다. 제품 버전·튜닝·데이터 분할·스냅샷을 바꾸면 동일 실험의 재현과 구별해 기록해야 한다.
+
+## 부록 B. 표·그림 생성
+
+그림 2∼4는 공개된 `endpoints.json`, `contrasts.json`, `ef-curves.json`의 기존 수치로 생성했다. 재측정이나 통계 구간 재계산은 하지 않았다. 그림 1은 네 삽입 경로의 설계 도식이다. PNG는 문서 표시용, SVG는 확대·재사용용이다.
+
+```sh
+uv run --no-project --with matplotlib python scripts/render_clustered_figures.py
+```
+
+[생성 스크립트](../../../scripts/render_clustered_figures.py)는 출력 위치와 원본 집계 경로를 고정하며 DB를 실행하지 않는다.
