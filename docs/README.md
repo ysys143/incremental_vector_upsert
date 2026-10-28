@@ -12,6 +12,8 @@
 
 ### 클러스터별 삽입 후속 실험
 
+- [재집계 — fresh·1회·5회 삽입 및 삽입 전후 비교](real-vectors/clustered/three-way-comparison.md)
+
 - [대규모 증분 갱신 후속 과제 — 리소스 확보 후 재개](real-vectors/clustered/large-scale-follow-up.md)
 
 - [완료 결과 — 수치·한계·원시 증거](real-vectors/clustered/results.md)
