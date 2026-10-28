@@ -26,17 +26,19 @@ def save(fig,name):
         if ext=='svg': path.write_text('\n'.join(line.rstrip() for line in path.read_text().splitlines())+'\n')
     plt.close(fig)
 def get(d,b,seed):return next(r for r in rows if (r['dataset'],r['db'],int(r['seed']))==(d,b,seed))
-fig,axes=plt.subplots(2,2,figsize=(11,7.2),sharex=True,sharey=True)
+fig,axes=plt.subplots(2,2,figsize=(12.5,8),sharex=True,sharey=True)
 for ax,(d,b) in zip(axes.flat,groups):
     for i,path in enumerate(paths):
         for j,seed in enumerate(seeds):
             r=get(d,b,seed);val=float(r[path+'_change_initial_200_pp']);y=i+(j-1)*.20
             ax.plot(val,y,marker=markers[j],color=colors[path[0]],ms=6,linestyle='none')
-    ax.axvline(0,color='#666666',ls='--',lw=1);ax.set_title(title(d,b));ax.set_yticks(range(4),paths);ax.set_ylim(3.65,-.65);ax.set_xlim(-1,.1);ax.grid(axis='x',alpha=.2)
-fig.legend([plt.Line2D([],[],color='#333',marker=m,linestyle='none') for m in markers],[f'Seed {s}' for s in seeds],loc='upper center',bbox_to_anchor=(.5,.947),ncol=3,frameon=False)
-fig.suptitle('Before vs. after insertion: paired 200 queries',fontsize=14)
-fig.supxlabel('Final − initial Recall@100 (percentage points; each state uses its own exact neighbors)')
-fig.tight_layout(rect=(0,.045,1,.9));save(fig,'before-after-insertion')
+    ax.axvline(0,color='#666666',ls='--',lw=1);ax.set_title(title(d,b));ax.set_yticks(range(4),['M1: mixed (1 batch)','M5: mixed (5 batches)','C1: clustered (1 batch)','C5: clustered (5 batches)']);ax.tick_params(axis='both',labelbottom=True,labelleft=True);ax.set_ylim(3.65,-.65);ax.set_xlim(-1,.1);ax.grid(axis='x',alpha=.2)
+color_handles=[plt.Line2D([],[],color=colors[x],marker='o',linestyle='none') for x in ('M','C')]
+seed_handles=[plt.Line2D([],[],color='#333',marker=m,linestyle='none') for m in markers]
+fig.legend(color_handles+seed_handles,['Mixed order (M)','Clustered order (C)']+[f'Seed {s}' for s in seeds],loc='upper center',bbox_to_anchor=(.5,.935),ncol=5,frameon=False)
+fig.suptitle('Recall@100 change after insertion: 200 paired queries',fontsize=14)
+fig.supxlabel('Final − initial Recall@100 (percentage points; −0.8 = −0.8%p)')
+fig.tight_layout(rect=(0,.045,1,.88));save(fig,'before-after-insertion')
 fig,axes=plt.subplots(2,2,figsize=(11,8.5),sharex=True,sharey=True)
 for ax,(d,b) in zip(axes.flat,groups):
     labels=[]
@@ -48,6 +50,7 @@ for ax,(d,b) in zip(axes.flat,groups):
     ax.axvline(0,color='#666666',ls='--',lw=1);ax.set_title(title(d,b));ax.set_yticks(range(12),labels);ax.set_ylim(11.7,-.7);ax.grid(axis='x',alpha=.2)
     for y in (2.5,5.5,8.5):ax.axhline(y,color='#ddd',lw=.7)
 fig.suptitle('Incremental vs. fresh: all insertion paths',fontsize=14)
+fig.legend(color_handles,['Mixed order (M)','Clustered order (C)'],loc='upper center',bbox_to_anchor=(.5,.945),ncol=2,frameon=False)
 fig.supxlabel('Incremental − mean of three fresh builds, Recall@100 (percentage points)')
-fig.tight_layout(rect=(0,.045,1,.95));save(fig,'three-way-history-gap')
+fig.tight_layout(rect=(0,.045,1,.90));save(fig,'three-way-history-gap')
 print('PASS: two figures in PNG and SVG, 48 point estimates per figure')
