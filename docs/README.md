@@ -12,6 +12,8 @@
 
 ### 클러스터별 삽입 후속 실험
 
+- [대규모 증분 갱신 후속 과제 — 리소스 확보 후 재개](real-vectors/clustered/large-scale-follow-up.md)
+
 - [완료 결과 — 수치·한계·원시 증거](real-vectors/clustered/results.md)
 - [클러스터별 삽입 최초 계획과 실행 중 변경](real-vectors/clustered-insertion-plan.md)
 - [실험표 — 실행 manifest 생성의 기준](real-vectors/clustered-insertion-matrix.json)
